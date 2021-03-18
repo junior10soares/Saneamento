@@ -37,7 +37,7 @@ export function ConstructionFilters({ constructions, locations, categories }) {
         <TitleObras>
           Obras em <strong>andamento</strong>
         </TitleObras>
-          <Form>
+        {/*   <Form>
             <Row>
               <Column grid="4">
                 <Input
@@ -70,7 +70,7 @@ export function ConstructionFilters({ constructions, locations, categories }) {
               <Button  label="Voltar" full width="150px" />
               </Column>
             </Row>
-          </Form>
+          </Form> */}
         <Container>
           <Row>
             <WorkCarousel />
