@@ -158,6 +158,15 @@ export const Center = styled.div`
     position: relative;   
     `;
 
+export const CenterVideo = styled.div`
+max-width: ${theme.center}px;
+margin: 0 auto;
+display: flex;
+width: 100%;
+position: relative;   
+`;
+
+
  export const Video = styled.div`   
     width: 1154px;
     height: 35vh;
@@ -230,8 +239,7 @@ export const TextHome = styled.div`
 
 `
 
-export const TitleHome = styled.h1`
- 
+export const TitleHome = styled.h1` 
     color: ${props => props.light ? '#ffffff' : theme.textColor};
     display: block;
     font-size: 36px;
@@ -242,6 +250,22 @@ export const TitleHome = styled.h1`
     align-items: flex-start;
     margin: auto;
     text-align: ${props => props.center ? 'center' : 'left'};
+    padding-bottom: ${props => props.padding ? '80px' : ''};
+    @media (max-width: 768px) {
+        width: 100%;
+        font-size: 24px;
+        margin: ${theme.spacing * 2}px 0;
+    }
+`;
+
+export const TitleVideo = styled.h1` 
+     width: 100%;
+     padding-bottom: 80px;
+    color: ${props => props.light ? '#ffffff' : theme.textColor};
+    text-align: ${props => props.center ? 'center' : 'left'};
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 400;
     @media (max-width: 768px) {
         width: 100%;
         font-size: 24px;
@@ -293,7 +317,12 @@ export const InstagramFrame = styled.iframe`
 }
 `;
 
-export const ContainerVideos = styled.div`
-background-color: red;
+export const Iframe = styled.div`
+display: flex;
+iframe {
+  width: 100%;
+height: 240px;
+margin-left: 34px;
+}
 `;
 

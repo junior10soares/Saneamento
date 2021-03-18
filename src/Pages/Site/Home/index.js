@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useMemo, useState} from 'react';
+import React, {Fragment, useCallback, useEffect, useMemo, useState} from 'react';
 import {Link} from 'react-router-dom';
 import { CardImageLink } from '../../../components/CardImageLink';
 import { FullBanner } from '../../../components/FullBanner';
@@ -7,8 +7,8 @@ import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 import "pure-react-carousel/dist/react-carousel.es.css";
 import CarouselNoticias from "react-multi-carousel";
+import CarouselVideo from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
 
 import api from '../../../services/api';
 import { 
@@ -21,9 +21,9 @@ import {
   TitleHome,
   ButtonLink,
   Center,
-  Video,
   InstagramFrame,
-  ContainerVideos
+  CenterVideo,
+  TitleVideo,
  } from './styles';
 import macrodrenagem from '../../../assets/public/imagens/Home/macrodrenagem.jpg';
 import residuos from '../../../assets/public/imagens/Home/residuos_solidos.jpg';
@@ -35,6 +35,7 @@ import { CardArticle } from '../../../components/CardArticle';
 import { Footer } from '../../../components/Footer';
 import { ContactArea } from '../../../components/ContactArea';
 import Loader from '../../../components/Loader';
+import CardVideo from '../../../components/CardVideos';
 
 const Home = () =>  {
 const [swiper, updateSwiper] = useState(null);
@@ -138,6 +139,19 @@ const renderNews = () => {
 }
 
 
+const renderVideos = () => {
+  if(!loading && !videos.length){
+    return <Loader />
+  }
+
+  return(
+    <CardVideo content={videos}/>    
+
+  );
+}
+
+
+
 
 
 
@@ -210,39 +224,17 @@ const renderNews = () => {
 
       <Container color="#E5E5E5" full>
         <Column grid="15">
-        <TitleHome>
+        <TitleVideo center>
           Galeria de <strong>{'\u00A0'}vídeos</strong>
-        </TitleHome>
-        <Center>
-          <CarouselProvider
-            visibleSlides={counterNumbersCarrousel}
-            totalSlides={8}
-            step={1}
-            dragStep={1}
-            naturalSlideWidth={400}
-            naturalSlideHeight={400}
-          >
-            <Slider className="sliderVideo">
-              {videos?.map((video, index) => {
-                if (index > 8) return;
-
-                return (
-                  <Slide
-                    key={`video-item-${Math.floor(Math.random() * 10)}-index`}
-                  >
-                    <VideoItem video={video} />
-                  </Slide>
-                );
-              })}
-            </Slider>
-            <DotGroup className="dots" />
-          </CarouselProvider>
-        </Center>
+        </TitleVideo>
+        <CenterVideo>
+          {renderVideos()}            
+        </CenterVideo>
         </Column>
       </Container>
 
       <ContainerHome>
-        <TitleHome center>
+        <TitleHome center padding>
           Notícias e<strong>&nbsp;eventos</strong>
         </TitleHome>
         <Center>
