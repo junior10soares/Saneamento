@@ -122,6 +122,7 @@ export const TitleSection = styled.h1`
     font-size: 36px;
     line-height: 1.2;
     font-weight: 400;
+    padding-bottom: 60px;
     text-align: ${props => props.center ? 'center' : 'left'};
     @media (max-width: 768px) {
         font-size: 24px;
@@ -142,6 +143,9 @@ export const TextSection = styled.div`
     font-weight: 300;
     /* padding-left: 70px;
     padding-right: 70px; */
+    p {
+     padding: 0 65px;
+    }
 `;
 
 export const BannerPage = styled.div`
