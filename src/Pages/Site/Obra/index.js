@@ -5,7 +5,7 @@ import ReactHtmlParser from "react-html-parser";
 import { Header } from "../../../components/Header";
 import {Line} from 'rc-progress';
 import {FiFileText, FiHeadphones, FiXCircle, FiStar} from 'react-icons/fi'
-import { Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, SlideMacro, TextSection } from './styles';
+import { Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, SlideMacro, TextSection, WhatsappButton } from './styles';
 import { Footer } from "../../../components/Footer";
 import { AlbumPhotos } from "../../../components/AlbumPhotos";
 import { StepsConstruction } from "../../../components/StepsConstruction";
@@ -159,9 +159,9 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
                   </Plantao>
                 </div>
 
-                {!!construction.whatsapp_active && (
+                {!!construction?.whatsapp_active && (
                   <div className="buttonAlign">
-                    <WhatsappButton href={construction.whatsapp} target="_blank">
+                    <WhatsappButton href={construction?.whatsapp} target="_blank">
                       Nosso Whatsapp
                     </WhatsappButton>
                   </div>
@@ -184,7 +184,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
                     </Projeto>
                   </div>
                   <div className="buttonAlignResponsive">
-                    <Plantao style={{ minWidth: 200}} href="https://sanear.vercel.app/plantao-social" target="_blank">
+                    <Plantao style={{ minWidth: 200}} href="/plantao-social" target="_blank">
                       <FiHeadphones />Plantão Social
                     </Plantao>
                   </div>

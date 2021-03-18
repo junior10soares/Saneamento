@@ -228,3 +228,56 @@ export const Projeto = styled.a`
     }
 
 `;
+
+export const WhatsappButton = styled.a`
+    height: 60px;
+    padding: 0 ${theme.spacing * 4}px;
+    background: #27AE60;
+    font-size: 14px;
+    line-height: 60px;
+    min-width: 160px;
+    cursor: pointer;
+    color: #ffffff;
+    display: inline-block;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    text-decoration: none;
+    &:before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        background: url(/whatsapp-ico.svg);
+        background-size: cover;
+        margin: 0 4px;
+    }
+`;
+
+export const WhatsappButtonMobile = styled.a`
+    height: 60px;
+    background: #27AE60;
+    font-size: 14px;
+    line-height: 60px;
+    width: 60px;
+    cursor: pointer;
+    color: #ffffff;
+    display: inline-block;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    text-decoration: none;
+    &:before {
+        content: '';
+        width: 26px;
+        height: 25px;
+        background: url(/whatsapp-ico.svg);
+        background-size: cover;
+        margin: 0 0px;
+    }
+`;
+
+
