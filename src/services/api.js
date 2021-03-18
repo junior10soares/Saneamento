@@ -14,5 +14,5 @@ const api = axios.create({
 
 export default api;
 
-/* export const baseURL = "http://api-homologa-semasa.cityconnect.com.br;" */
-export const baseURL = "http://localhost:8000"
+export const baseURL = "https://api-sanear.cityconnect.com.br"
+/* export const baseURL = "http://localhost:8000" */
