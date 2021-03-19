@@ -35,9 +35,9 @@ const CardVideo = ({content}) => {
         <Swiper {...params}>
             {content?.map((video) =>(
                   <Slide key={video?.uuid}>
-                  <iframe src={video?.url} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe src={video?.url.replace('watch?v=', 'embed/')} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </Slide>            
-            ))}            
+            ))}  
        </Swiper>
         <Arrow direction="left" onClick={goPrev}>
             <MdChevronLeft />
