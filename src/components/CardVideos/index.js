@@ -35,7 +35,7 @@ const CardVideo = ({content}) => {
         <Swiper {...params}>
             {content?.map((video) =>(
                   <Slide key={video?.uuid}>
-                  <iframe src={video?.url} allowfullscreen></iframe>
+                  <iframe src={video?.url} allowfullscreen frameBorder="0"></iframe>
                   </Slide>            
             ))}            
   
