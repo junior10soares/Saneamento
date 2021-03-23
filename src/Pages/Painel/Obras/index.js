@@ -52,9 +52,7 @@ const PainelObras = () => {
     }
   }, []);
 
-  const handleModal = () => {
-    setOpenModal((state) => !state); 
-  }
+ 
 
   useEffect(() => {
     getConstructions();
@@ -110,7 +108,9 @@ const PainelObras = () => {
                 <Link to={"/painel/edit/obras/" + construction.uuid}>
                   <Edit />
                 </Link>
-                <ObraIcon className="obrasIcon" onClick={handleModal} />
+                <Link to={`/painel/obra/fase-obra/${construction.uuid}`}>
+                <ObraIcon className="obrasIcon" />
+                </Link>
                 <FlatButton
                   onClick={() => deleteConstruction(construction.uuid)}
                 >

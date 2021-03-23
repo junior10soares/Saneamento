@@ -3,9 +3,9 @@ import {notify} from '../Notification';
 import { CookieStorage } from "cookie-storage";
 
 const cookieStorage = new CookieStorage();
-export const baseURL = "http://localhost:8000";
+export const baseURL = "http://api-homologa-semasa.cityconnect.com.br";
 const api = axios.create({
-  baseURL: "http://localhost:8000/api/v1",
+  baseURL: "http://api-homologa-semasa.cityconnect.com.br/api/v1",
   // baseURL: process.env.APP_API_BASE_URL,
 });
 

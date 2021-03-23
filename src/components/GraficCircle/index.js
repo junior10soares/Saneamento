@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {Container, Arrow} from './styles';
+import {Container, Trash, Arrow} from './styles';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 import { MdChevronRight, MdChevronLeft } from "react-icons/md";
+import { FiTrash } from 'react-icons/fi';
 
-const GraficCircle = ({data}) => {
+const GraficCircle = ({data, visibleTrash}) => {
   const [swiper, updateSwiper] = useState(null);
-  const [workPhase, setWorkPhase] = useState(data); 
   const params = {
     swiper,
     slidesPerView: 3,
@@ -34,7 +34,7 @@ const GraficCircle = ({data}) => {
     };
 
   return(
-  <Container className="tester">
+  <Container>
     <Swiper {...params}>
         {data?.map((item) => (   
         <div className="single-chart" key={item.uuid}>
@@ -53,6 +53,9 @@ const GraficCircle = ({data}) => {
                 <text x="18" y="20.35" className="percentage">{`${item.percentage}%`}</text>
               </svg>
                 <p className="title">{item.name}</p>
+                <Trash visible={visibleTrash}>
+                <FiTrash className="visibleTrash" />
+                </Trash>
             </div>
           ))}
       </Swiper>

@@ -51,7 +51,6 @@ export const Container = styled.div`
   font-size: 0.5em;
   text-anchor: middle;
 }
-
     @media(max-width: 1024px){
       padding: ${theme.spacing * 8}px 48px;
       max-width: 706px;
@@ -61,6 +60,14 @@ export const Container = styled.div`
         width: 100%;
     }
 `;
+
+export const Trash = styled.div`
+${({visibleTrash}) => visibleTrash ? css`
+display: block;
+` : css`
+display: none;
+`}
+`
 
 
 export const Arrow = styled.button`
