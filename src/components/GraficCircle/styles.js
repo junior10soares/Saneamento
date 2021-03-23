@@ -1,13 +1,9 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+import theme from '../../GlobalStyle/theme';
 
 export const Container = styled.div`
-  .flex-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.single-chart {
-  width: 33%;
+  .single-chart {
+  width: 100%;
   justify-content: space-around ;
 }
 
@@ -55,4 +51,44 @@ export const Container = styled.div`
   font-size: 0.5em;
   text-anchor: middle;
 }
+
+    @media(max-width: 1024px){
+      padding: ${theme.spacing * 8}px 48px;
+      max-width: 706px;
+    }
+    @media (max-width: 768px) {
+        /* padding: ${theme.spacing * 4}px; */
+        width: 100%;
+    }
 `;
+
+
+export const Arrow = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(211, 216, 210, 0.29);
+  border-radius: 45px;
+  border: none;
+  top: 54%;
+  z-index: 9999;
+  font-size: 3.2rem;
+  color: #000;
+
+  ${props =>
+    props.direction === "left"
+      ? css`
+          left: 9%;
+        `
+      : css`
+          right: 9%;
+        `}
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+`;
+

@@ -5,7 +5,7 @@ import ReactHtmlParser from "react-html-parser";
 import { Header } from "../../../components/Header";
 import {Line} from 'rc-progress';
 import {FiFileText, FiHeadphones, FiXCircle, FiStar} from 'react-icons/fi'
-import { Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, SlideMacro, TextSection, WhatsappButton } from './styles';
+import { Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, SlideMacro, TextSection, WhatsappButton, Grafic } from './styles';
 import { Footer } from "../../../components/Footer";
 import { AlbumPhotos } from "../../../components/AlbumPhotos";
 import { StepsConstruction } from "../../../components/StepsConstruction";
@@ -102,14 +102,24 @@ const Obra = () => {
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState();
   const [construction, setConstruction] = useState([]);
+  const [workPhase, setWorkPhase] = useState([]);
 
   const constructionResponse = useCallback(() => {
     api.get(`work/${id}`).then(({ data }) => setConstruction(data.data));
    }, [id])
 
+   const workPahseResponse = useCallback(() => {
+    api.get(`work-phase`, {
+      data: {
+        work_uuid: id
+      }
+    }).then(({ data }) => setWorkPhase(data.data));
+   }, [id])
+
    useEffect(() => {
     constructionResponse();
-   }, [constructionResponse]);
+    workPahseResponse()
+   }, [constructionResponse, workPahseResponse]);
 
   const markers = useMemo(() => {
     const marks = construction?.work_coordinates?.map(({ lat, long, name }) => ({
@@ -130,6 +140,8 @@ const Obra = () => {
  function handleClose() {
     setOpen(false);
   }
+
+  console.log('workPhase', workPhase)
 
 /*   function handleNext(index){
     setCurrentSlide(index);
@@ -209,14 +221,16 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
               <TitleSection className="text-center">
                 Fases da <strong>obras</strong>
               </TitleSection>
-              <div className="desktopStepBar">
+          <Grafic>
+          <GraficCircle data={workPhase} />
+          </Grafic>
+     {/*          <div className="desktopStepBar">
                 <StepsConstruction phase={construction?.work_fase} />
               </div>
               <div className="responsiveStepBar">
                 <Line style={{ position: "absolute", zIndex: -1}} percent={construction?.work_fase + "0"} strokeWidth="7" trailWidth="7" strokeColor="#27AE60" />
                   <strong style={{ zIndex: 1, marginLeft: "50%", fontSize: 17, paddingTop: 5 }}>{construction?.work_fase + '0%'}</strong>
-              </div>
-              <GraficCircle />
+              </div> */}
             </Center>
           </Container>
           <Container>

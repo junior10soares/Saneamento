@@ -16,6 +16,7 @@ import PainelObras from '../Pages/Painel/Obras';
 import PainelVideos from '../Pages/Painel/Videos';
 import PainelNoticias from '../Pages/Painel/Noticias';
 import ObrasCreate from '../Pages/Painel/Obras/create';
+import PhaseWork from '../Pages/Painel/PhaseWork';
 
 const Routes = () => {
   return(
@@ -29,14 +30,15 @@ const Routes = () => {
         <Route exact path="/projeto-socioambiental" component={ProjetoSocioambiental} />
         <Route exact path="/residuos" component={Residuos} />
         <Route exact path="/sobre" component={Sobre} />
-        <Route exact path="/sistemas-monitoramento" component={SistemaMonitoramento} />
-       
+        <Route exact path="/sistemas-monitoramento" component={SistemaMonitoramento} />       
         <Route exact path="/auth/login" component={Login} />
         <Route exact path="/painel/banner" component={Banner} />
         <Route exact path="/painel/videos" component={PainelVideos} />
         <Route exact path="/painel/noticias" component={PainelNoticias} />
         <Route exact path="/painel/obras" component={PainelObras} />
         <Route exact path="/painel/obras/create" component={ObrasCreate} />
+        <Route exact path="/painel/obra/fase-obra/:id" component={PhaseWork} />
+
 
     </Switch>
   );

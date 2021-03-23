@@ -41,7 +41,6 @@ const PainelVideos = () => {
 
   const handleSendVideo = async (data) => {
     setLoading(true);
-    console.log('data',data);
     // Sample Video
     // https://www.youtube.com/embed/L7OLY4HCctQ
     try {

@@ -1,16 +1,30 @@
 import React, { useCallback, useEffect, useState } from "react";
 import {Link} from "react-router-dom";
+import {FiXCircle} from 'react-icons/fi';
+import { useForm } from "react-hook-form";
 import DashboardLayout from "../../../components/DashboardLayout";
 import DashboardButton from "../../../components/DashboardButton";
 import FlatButton from "../../../components/FlatButton";
-import {Container, ActionIcons, ConstructionsList, FilterSection, RegisterButton} from './styles';
+import {Container, ActionIcons, ConstructionsList, FilterSection, RegisterButton, Modal, ModalContent, ModalForm, Form, ButtonForm} from './styles';
 import { Edit, Delete } from "@material-ui/icons";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
 import { ReactComponent as ListIcon } from "../../../assets/public/list-icon.svg";
 import request from "../../../services/api";
+import { ReactComponent as ObraIcon } from "../../../assets/public/obras.svg";
+import {notify} from '../../../Notification';
+import FormContainer from "../../../components/Form/FormContainer";
+import FormItem from "../../../components/Form/FormItem";
+import { ErrorMessage } from "@hookform/error-message";
+import Spacer from "../../../components/Spacer";
+import BootstrapInput from "../../../components/BootstrapInput";
+
 
 const PainelObras = () => {
   const [constructions, setConstructions] = useState([]);
+  const [openModal, setOpenModal] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const { register, handleSubmit, errors } = useForm();
+
 
   const getConstructions = useCallback(async () => {
     try {
@@ -38,9 +52,32 @@ const PainelObras = () => {
     }
   }, []);
 
+  const handleModal = () => {
+    setOpenModal((state) => !state); 
+  }
+
   useEffect(() => {
     getConstructions();
   }, []);
+
+  const onSubmit = async (data) => {
+    setLoading(true);
+    // Sample Video
+    // https://www.youtube.com/embed/L7OLY4HCctQ
+    try {
+      const response = await request.post('video', data);
+
+      setLoading(false);
+      setModalActive(false);
+      if(response.status === 201){
+        notify('success', 'Video cadastrado com sucesso')
+      }
+
+    } catch (error) {
+      setLoading(false);
+    }
+  };
+  
 
   const hasConstructions = constructions.length > 0;
 
@@ -73,7 +110,7 @@ const PainelObras = () => {
                 <Link to={"/painel/edit/obras/" + construction.uuid}>
                   <Edit />
                 </Link>
-
+                <ObraIcon className="obrasIcon" onClick={handleModal} />
                 <FlatButton
                   onClick={() => deleteConstruction(construction.uuid)}
                 >

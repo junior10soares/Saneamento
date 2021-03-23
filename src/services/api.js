@@ -1,18 +1,18 @@
 import axios from 'axios';
+import {notify} from '../Notification';
+import { CookieStorage } from "cookie-storage";
 
-
-/* const api = axios.create({
-  baseURL: 'http://api-homologa-semasa.cityconnect.com.br/api/v1',
-}); */
+const cookieStorage = new CookieStorage();
+export const baseURL = "http://localhost:8000";
 const api = axios.create({
-  baseURL: 'https://api-sanear.cityconnect.com.br/api/v1',
+  baseURL: "http://localhost:8000/api/v1",
+  // baseURL: process.env.APP_API_BASE_URL,
 });
 
-/* const api = axios.create({
-  baseURL: 'http://localhost:8000/api/v1',
-}); */
+api.interceptors.request.use(function (config) {
+  const token = cookieStorage.getItem('@senarsemasa:token');
+  config.headers.Authorization =  token ? `Bearer ${token}` : '';
+  return config;
+});
 
 export default api;
-
-export const baseURL = "https://api-sanear.cityconnect.com.br"
-/* export const baseURL = "http://localhost:8000" */

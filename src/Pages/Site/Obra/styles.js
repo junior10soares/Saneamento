@@ -110,8 +110,6 @@ export const Row = styled.div`
     }
 `;
 
-
-
 export const TitleSection = styled.h1`
     /* max-width: 650px; */
     width: 100%;
@@ -284,4 +282,10 @@ export const WhatsappButtonMobile = styled.a`
     }
 `;
 
-
+export const Grafic = styled.div`
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+`;

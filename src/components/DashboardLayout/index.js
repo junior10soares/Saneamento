@@ -23,7 +23,7 @@ export default function DashboardLayout({ children, title }) {
   });
 
   const handleModal = () => {
-    console.log('clicou!',  setOpenModal((state) => !state));    
+    setOpenModal((state) => !state);    
   }
 
   const cookieStorage = new CookieStorage();
