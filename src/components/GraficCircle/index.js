@@ -5,7 +5,7 @@ import 'swiper/css/swiper.css';
 import { MdChevronRight, MdChevronLeft } from "react-icons/md";
 import { FiTrash } from 'react-icons/fi';
 
-const GraficCircle = ({data, visibleTrash}) => {
+const GraficCircle = ({data, visibleTrash, action}) => {
   const [swiper, updateSwiper] = useState(null);
   const params = {
     swiper,
@@ -53,7 +53,10 @@ const GraficCircle = ({data, visibleTrash}) => {
                 <text x="18" y="20.35" className="percentage">{`${item.percentage}%`}</text>
               </svg>
                 <p className="title">{item.name}</p>
-                <Trash visible={visibleTrash}>
+                <Trash 
+                visibleTrash={visibleTrash}
+                onClick={action}
+                >
                 <FiTrash className="visibleTrash" />
                 </Trash>
             </div>

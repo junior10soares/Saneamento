@@ -69,6 +69,10 @@ const PhaseWork = () => {
     }
   }
 
+  const handleDelete = (id) => {
+    alert(id);
+  }
+
   useEffect(() => {
     workPhaseResponse();
   }, [workPhaseResponse])
@@ -97,7 +101,7 @@ const PhaseWork = () => {
                 Fases da <strong>obras</strong>
               </TitleSection>
           <Grafic>
-          <GraficCircle data={workPhase} />
+          <GraficCircle data={workPhase} visibleTrash action={handleDelete(workPhase.uuid)} />
           </Grafic>
             </Center>
           </Container>

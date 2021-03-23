@@ -64,6 +64,10 @@ export const Container = styled.div`
 export const Trash = styled.div`
 ${({visibleTrash}) => visibleTrash ? css`
 display: block;
+cursor: pointer;
+&:hover {
+  color: red;
+}
 ` : css`
 display: none;
 `}
