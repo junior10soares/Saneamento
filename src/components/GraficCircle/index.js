@@ -33,6 +33,8 @@ const GraficCircle = ({data, visibleTrash, action}) => {
       }
     };
 
+
+
   return(
   <Container>
     <Swiper {...params}>
@@ -55,7 +57,7 @@ const GraficCircle = ({data, visibleTrash, action}) => {
                 <p className="title">{item.name}</p>
                 <Trash 
                 visibleTrash={visibleTrash}
-                onClick={action}
+                onClick={() => action(item.uuid)}
                 >
                 <FiTrash className="visibleTrash" />
                 </Trash>

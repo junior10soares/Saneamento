@@ -17,7 +17,6 @@ const PhaseWork = () => {
   const { id } = useParams();
   const [loading, setLoading] = useState(false);
   const [workPhase, setWorkPhase] = useState([]);
-  const [work, setWork] = useState([]);
   const form = useRef();
 
 
@@ -69,14 +68,30 @@ const PhaseWork = () => {
     }
   }
 
-  const handleDelete = (id) => {
-    alert(id);
-  }
+  const handleDelete = useCallback(
+    async (id) => {
+      try {
+        await api({
+          url: "work-phase/" + id,
+          method: "delete",
+        });
+
+        setWorkPhase((currentGrafic) =>
+        currentGrafic.filter((current) => current.uuid !== id)
+      );
+        notify('success', 'Banner removido com sucesso!');
+
+      } catch (err) {
+        console.log(err);
+        notify('error', 'Houve um erro ao excluir o banner');
+      }
+    },
+    []
+  );
 
   useEffect(() => {
     workPhaseResponse();
   }, [workPhaseResponse])
-
 
   return (
     <DashboardLayout title="Obra">
@@ -101,7 +116,11 @@ const PhaseWork = () => {
                 Fases da <strong>obras</strong>
               </TitleSection>
           <Grafic>
-          <GraficCircle data={workPhase} visibleTrash action={handleDelete(workPhase.uuid)} />
+          <GraficCircle
+           data={workPhase}
+            visibleTrash 
+            action={handleDelete} 
+            />
           </Grafic>
             </Center>
           </Container>

@@ -105,7 +105,7 @@ const PainelObras = () => {
               <span>Volta Redonda</span>
 
               <ActionIcons>
-                <Link to={"/painel/edit/obras/" + construction.uuid}>
+                <Link to={"/painel/obras/edit/" + construction.uuid}>
                   <Edit />
                 </Link>
                 <Link to={`/painel/obra/fase-obra/${construction.uuid}`}>

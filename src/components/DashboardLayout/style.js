@@ -52,11 +52,10 @@ export const SideBar = styled.aside`
 
     li {
       width: 100%;
-      padding: 14px 0;
+      margin-bottom: 38px;
 
-      a {
+      a  {
         transition: 0.1s;
-        padding: 14px 0;
         display: flex;
         align-items: center;
         text-decoration: none;
@@ -75,18 +74,19 @@ export const SideBar = styled.aside`
           svg {
             fill: #c7cadd;
           }
-        }
+        }   
 
-        &:hover,
-        &.active {
-          border-right: 4px solid #5e81f4;
+      }
+      &:hover,
+        &.active {         
           color: #5e81f4;
+          -webkit-box-shadow: 2px 0 0 0 #529DFF;
+          box-shadow: 3px 0 0 0 #529DFF;
 
           svg {
             fill: #5e81f4;
           }
         }
-      }
     }
   }
 `;
@@ -109,12 +109,11 @@ height: 110px;
 opacity: 1;
     transition: opacity 251ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 167ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     top: 87px;
-    right: 163px;
+    right: 63px;
     transform-origin: -16px 26px;
-    width: 133px;
+    width: 150px;
     padding-top: 8px;
     padding-bottom: 8px;   
-    padding-left: 16px;
     color: rgba(0, 0, 0, 0.87);
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     background-color: #fff;
@@ -128,22 +127,34 @@ opacity: 1;
     list-style: none;
     color: rgba(0, 0, 0, 0.87);
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    background-color: #fff;
-    width: 138px;
-
+    width: 100%; 
     li{
-      width: auto;
-    overflow: hidden;
-    font-size: 1rem;
-    box-sizing: border-box;
-    min-height: 48px;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    padding-top: 6px;
-    white-space: nowrap;
-    letter-spacing: 0.00938em;
-    padding-bottom: 6px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+overflow: hidden;
+font-size: 1rem;
+box-sizing: border-box;
+min-height: 48px;
+font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+font-weight: 400;
+line-height: 1.5;
+padding-top: 6px;
+white-space: nowrap;
+letter-spacing: 0.00938em;
+padding-bottom: 6px;
+padding-left: 16px;
+cursor: pointer;
+svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+}
+&:hover {
+      background-color: #ddd;
+    }
+
     }
     }
 

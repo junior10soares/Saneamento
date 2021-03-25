@@ -17,6 +17,7 @@ import PainelVideos from '../Pages/Painel/Videos';
 import PainelNoticias from '../Pages/Painel/Noticias';
 import ObrasCreate from '../Pages/Painel/Obras/create';
 import PhaseWork from '../Pages/Painel/PhaseWork';
+import ObraEdit from '../Pages/Painel/Obras/Edit';
 
 const Routes = () => {
   return(
@@ -37,6 +38,7 @@ const Routes = () => {
         <Route exact path="/painel/noticias" component={PainelNoticias} />
         <Route exact path="/painel/obras" component={PainelObras} />
         <Route exact path="/painel/obras/create" component={ObrasCreate} />
+        <Route exact path="/painel/obras/edit/:id" component={ObraEdit} />
         <Route exact path="/painel/obra/fase-obra/:id" component={PhaseWork} />
 
 

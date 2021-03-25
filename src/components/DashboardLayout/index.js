@@ -1,40 +1,56 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useCallback, useState} from "react";
 import {Link, useHistory, useLocation} from "react-router-dom";
-import { CookieStorage } from "cookie-storage";
 import { ExpandMore } from "@material-ui/icons";
 import FlatButton from "../FlatButton";
+import { CookieStorage } from "cookie-storage";
 import { Container, Header, SideBar, Content, Modal } from "./style";
 import { ReactComponent as ObraIcon } from "../../assets/public/obras.svg";
 import { ReactComponent as VideoIcon } from "../../assets/public/videos.svg";
 import { ReactComponent as NoticiaIcon } from "../../assets/public/noticias.svg";
 import { ReactComponent as BannerIcon } from "../../assets/public/banner.svg";
-import logo from '../../assets/public/imagens/header/logo.svg';
 
-export default function DashboardLayout({ children, title }) {
+import logo from '../../assets/public/imagens/header/logo.svg';
+import api from '../../services/api';
+import { FiLogOut, FiUser, FiUsers } from "react-icons/fi";
+import { useAuth } from "../../hooks/auth";
+
+const DashboardLayout = ({ children, title }) => {
+  const { signOut } = useAuth();
   const { push } = useHistory();
   const { pathname } = useLocation();
   const [openModal, setOpenModal] = useState(false);
+  const [user, setUSer] = useState({});
+  const cookieStorage = new CookieStorage();
 
-  useEffect(() => {
-    const cookieStorage = new CookieStorage();
-
-    const token = cookieStorage.getItem("@senarsemasa:token");
-    if (!token) push("/auth/login");
-  });
 
   const handleModal = () => {
     setOpenModal((state) => !state);    
   }
 
-  const cookieStorage = new CookieStorage();
-  const token = cookieStorage.getItem("@senarsemasa:token");
+  const userRequest = useCallback(() => {
+    api.get('me').then(({ data }) => setUSer(data.data));
+   }, []);
 
+   useEffect(() => { 
+     const token = cookieStorage.getItem("@senarsemasa:token");
+     if (!token) push("/auth/login");
+   }, []);
+
+   useEffect(() => {
+    userRequest();
+   }, [userRequest]);
+
+   const handleSignUp = () => {
+    cookieStorage.getItem("@senarsemasa:token");
+    push("/auth/login");
+   }
+
+   console.log('teste',pathname)
   return (
     <>
       <Container>
         <Header onClick={handleModal}>
-          <img src="https://i.pravatar.cc/150?img=60" />
-          <span>Fulano de tal</span>
+          <span>{user.name}</span>
           <FlatButton>
             <ExpandMore />
           </FlatButton>
@@ -46,7 +62,7 @@ export default function DashboardLayout({ children, title }) {
               <Link to="/painel/obras">
                 <a
                   className={
-                    pathname.name === 'obras' ? "active" : "inactive"
+                    pathname.name === '/painel/obras' ? "active" : "inactive"
                 
                   }
                 >
@@ -91,6 +107,7 @@ export default function DashboardLayout({ children, title }) {
                 </a>
               </Link>
             </li>
+           
           </ul>
         </SideBar>
         <Content>
@@ -100,12 +117,20 @@ export default function DashboardLayout({ children, title }) {
         {openModal && (
           <Modal>
           <ul>
-            <li>Teste</li>
+            <li>
+              <FiUser />
+            Perfil
+            </li>
+            <li onClick={handleSignUp}>
+              <FiLogOut />
+            Sair
+            </li>
             </ul>     
          </Modal>    
      )}   
-      </Container>
-          
+      </Container>          
     </>
   );
 }
+
+export default DashboardLayout;

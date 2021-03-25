@@ -1,29 +1,22 @@
 import { useState, useCallback, useEffect } from "react";
-import Link from "next/link";
-import MapComponent from "@/components/FormMap";
-import DashboardLayout from "@/components/DashboardLayout";
-import DashboardButton from "@/components/DashboardButton";
-import FlatButton from "@/components/FlatButton";
-import convertToBase64 from "@/helpers/convertToBase64";
-
+import { Link, useParams, useHistory  } from "react-router-dom";
+import MapComponent from "../../../../components/FormMap";
+import DashboardLayout from "../../../../components/DashboardLayout";
+import DashboardButton from "../../../../components/DashboardButton";
+import FlatButton from "../../../../components/FlatButton";
+import convertToBase64 from "../../../../helpers/convertToBase64";
 import { Delete } from "@material-ui/icons";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import StepConnector from "@material-ui/core/StepConnector";
 import StepLabel from "@material-ui/core/StepLabel";
-
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
-import { ReactComponent as ListIcon } from "../../../../public/list-icon.svg";
-
-import request from "@/services/api";
-
+import { ReactComponent as ListIcon } from "../../../../assets/public/list-icon.svg";
+import request from "../../../../services/api";
 import { withStyles } from "@material-ui/core/styles";
-
-import BootstrapInput from "@/components/Input/BootstrapInput";
-import FileInput from "@/components/FileInput";
-
-import { useRouter } from "next/router";
+import BootstrapInput from "../../../../components/BootstrapInput";
+import FileInput from "../../../../components/FileInput";
 
 import {
   Container,
@@ -38,29 +31,16 @@ import {
   ActionIcons,
   FormItem,
   ErrorLabel,
-} from "@/styles/dashboard/create/obras";
+} from "./styles";
 
-export async function getServerSideProps(context) {
-  const {
-    params: { id },
-  } = context;
 
-  const constructionResponse = await request({ url: `work/${id}` });
-  const categoriesResponse = await request({ url: "work-category" });
-
-  return {
-    props: {
-      construction: constructionResponse?.data.data,
-      categories: categoriesResponse?.data.data,
-    },
-  };
-}
-
-export default function Obras({ construction, categories }) {
-  const router = useRouter();
-
+const ObraEdit = () =>  {
+  const { id } = useParams();
+  const history = useHistory();  
   const [uploadedImage, setUploadedImage] = useState(null);
   const [imageInBase64, setImageInBase64] = useState(null);
+  const [construction, setConstruction] = useState([]);
+  const [categories, setCategories] = useState([]);
 
   const [uploadedDocuments, setUploadedDocuments] = useState([]);
   const [documentsInBase64, setDocumentsInBase64] = useState([]);
@@ -68,11 +48,23 @@ export default function Obras({ construction, categories }) {
   const [loading, setLoading] = useState(false);
 
   const [activeStep, setActiveStep] = useState(0);
-  const [categoryId, setCategoryId] = useState(construction.work_category.uuid);
+  const [categoryId, setCategoryId] = useState(construction?.work_category?.uuid);
   const [location, setLocation] = useState({
-    lat: construction.work_coordinates[0].lat,
-    lng: construction.work_coordinates[0].long,
+    lat: construction?.work_coordinates?.lat,
+    lng: construction?.work_coordinates?.long,
   });
+
+  const workRequest = useCallback(() => {
+    request.get(`work/${id}`).then(({ data }) => setConstruction(data.data));
+   }, []);
+  const categoriesRequest = useCallback(() => {
+    request.get(`work-category`).then(({ data }) => setCategories(data.data));
+  }, []); 
+  
+     useEffect(() => {
+      workRequest();
+      categoriesRequest()
+     }, [workRequest, categoriesRequest]);
 
   const { register, handleSubmit, setValue, errors } = useForm();
 
@@ -136,14 +128,14 @@ export default function Obras({ construction, categories }) {
     } = construction;
 
     setValue("name", name);
-    setValue("work_categories_uuid", construction.work_category.uuid);
+    setValue("work_categories_uuid", construction?.work_category?.uuid);
     setValue("work_fase", work_fase);
     setValue("description", description);
     setValue("whatsapp", whatsapp);
     setValue("whatsapp_active", whatsapp_active);
     setValue("work_location", {
-      lat: construction.work_coordinates[0].lat,
-      lng: construction.work_coordinates[0].long,
+      lat: construction?.work_coordinates?.lat,
+      lng: construction?.work_coordinates?.long,
     });
 
     setActiveStep(work_fase);
@@ -495,3 +487,5 @@ export default function Obras({ construction, categories }) {
     </DashboardLayout>
   );
 }
+
+export default ObraEdit;

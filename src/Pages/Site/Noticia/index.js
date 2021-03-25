@@ -7,7 +7,7 @@ import { Footer } from "../../../components/Footer";
 import { CardArticle } from "../../../components/CardArticle";
 import  SocialShare  from "../../../components/SocialShare";
 import { Link } from "react-router-dom";
-import api from '../../../services/api';
+import api, {baseURL} from '../../../services/api';
 
 /* export async function getServerSideProps(context) {
   const { params } = context;
@@ -30,7 +30,6 @@ const Noticia = () => {
   const { id } = useParams();
   const [news, setNews] = useState([]);
   const [article, setArticle] = useState('')
-  const baseUrl = "https://api-sanear.cityconnect.com.br";
 
    const newIdRequest = useCallback(() => {
     api.get(`news/${id}`).then(({ data }) => setArticle(data?.data));
@@ -52,7 +51,7 @@ const Noticia = () => {
   return (
     <>
     <Header />
-    <BannerPage image={baseUrl + "/" + article.img} />
+    <BannerPage image={baseURL + "/" + article.img} />
     <Container>
       <Center>
         <Row>

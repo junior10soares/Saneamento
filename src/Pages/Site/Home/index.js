@@ -150,11 +150,6 @@ const renderVideos = () => {
   );
 }
 
-
-
-
-
-
   return (
     <>
      <Header  />     
@@ -169,7 +164,6 @@ const renderVideos = () => {
             Obras de <strong>Macrodrenagem</strong>
           </span>
         </CardImageLink>
-
         <CardImageLink
           image={residuos}
           theme="primary"
@@ -189,7 +183,6 @@ const renderVideos = () => {
           </span>
         </CardImageLink>
       </ContainerCardHome>
-
       <Container>
         <Row>
           <Column grid="5">

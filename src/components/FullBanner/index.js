@@ -6,10 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
+import {baseURL} from '../../services/api';
 
 export function FullBanner({ images }) {
   const [swiper, updateSwiper] = useState(null);
-  const baseUrl = "https://api-sanear.cityconnect.com.br"
 
   const params = {
     swiper,
@@ -46,7 +46,7 @@ export function FullBanner({ images }) {
      <Swiper {...params}>
          {images.map((image) => (
           <CarouselItem>
-            <img src={baseUrl + "/" + image} />
+            <img src={baseURL + "/" + image} />
           </CarouselItem>
         ))}
      </Swiper>
