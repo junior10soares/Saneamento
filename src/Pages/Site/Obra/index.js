@@ -224,13 +224,13 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
           <Grafic>
           <GraficCircle data={workPhase} />
           </Grafic>
-     {/*          <div className="desktopStepBar">
+              <div className="desktopStepBar">
                 <StepsConstruction phase={construction?.work_fase} />
               </div>
               <div className="responsiveStepBar">
                 <Line style={{ position: "absolute", zIndex: -1}} percent={construction?.work_fase + "0"} strokeWidth="7" trailWidth="7" strokeColor="#27AE60" />
                   <strong style={{ zIndex: 1, marginLeft: "50%", fontSize: 17, paddingTop: 5 }}>{construction?.work_fase + '0%'}</strong>
-              </div> */}
+              </div>
             </Center>
           </Container>
           <Container>
