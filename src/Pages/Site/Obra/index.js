@@ -220,10 +220,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
             <Center>
               <TitleSection className="text-center">
                 Fases da <strong>obras</strong>
-              </TitleSection>
-          <Grafic>
-          <GraficCircle data={workPhase} />
-          </Grafic>
+              </TitleSection>      
               <div className="desktopStepBar">
                 <StepsConstruction phase={construction?.work_fase} />
               </div>
@@ -233,6 +230,21 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
               </div>
             </Center>
           </Container>
+
+          <Container>
+            <Center>
+              <TitleSection className="text-center">
+                Fases da <strong>obras</strong>
+              </TitleSection>
+          <Grafic>
+          <GraficCircle data={workPhase} />
+          </Grafic> 
+            </Center>
+          </Container>      
+
+
+
+
           <Container>
             <Center>
               <TitleSection className="text-center">
