@@ -4,6 +4,7 @@ import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 import { MdChevronRight, MdChevronLeft } from "react-icons/md";
 import { FiTrash } from 'react-icons/fi';
+import { ListItemAvatar } from '@material-ui/core';
 
 
 const GraficCircle = ({data, visibleTrash, action}) => {
@@ -63,13 +64,12 @@ const GraficCircle = ({data, visibleTrash, action}) => {
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
                 <path className="circle"
-                  stroke-dasharray="60, 100"
+                  stroke-dasharray={item.percentage + "," + "100"}
                   d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                 />                
-                <text x="18" y="20.35" className="percentage">{`${item.percentage}%`}                       
-                </text>             
+                <text x="18" y="20.35" className="percentage">{`${item.percentage}%`}</text>             
               </svg>             
                 <p className="title">{item.name}</p>               
                 <Trash 

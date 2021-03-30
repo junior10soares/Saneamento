@@ -1,10 +1,8 @@
 import styled, {css} from 'styled-components';
 import theme from '../../GlobalStyle/theme';
 
-export const Container = styled.div``
-
-export const Single = styled.div`
-  &.single-chart {
+export const Container = styled.div`
+ .single-chart {
   width: 100%;
   justify-content: space-around ;
   position: relative;
@@ -36,7 +34,6 @@ export const Single = styled.div`
   }
 }
 
-
 .circular-chart.green .circle {
   stroke: #4CC790;
 }
@@ -50,6 +47,11 @@ export const Single = styled.div`
 }
 
 
+
+`
+
+export const Single = styled.div`
+ 
 
 
 
