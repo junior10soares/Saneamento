@@ -1,8 +1,10 @@
 import styled, {css} from 'styled-components';
 import theme from '../../GlobalStyle/theme';
 
-export const Container = styled.div`
- .single-chart {
+export const Container = styled.div``
+
+export const Single = styled.div`
+  &.single-chart {
   width: 100%;
   justify-content: space-around ;
   position: relative;
@@ -11,7 +13,7 @@ export const Container = styled.div`
 .circular-chart {
   display: block;
   margin: 10px auto;
-  max-width: 80%;
+  max-width: 68%;
   max-height: 250px;
 }
 
@@ -47,11 +49,6 @@ export const Container = styled.div`
 }
 
 
-
-`
-
-export const Single = styled.div`
- 
 
 
 

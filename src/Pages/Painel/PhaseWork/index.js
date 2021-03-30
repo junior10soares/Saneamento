@@ -110,6 +110,7 @@ const PhaseWork = () => {
           </ButtonForm>
       </Form>
         </ContainerForm>
+        <ContainerForm>
         <Container>
             <Center>
               <TitleSection className="text-center">
@@ -121,9 +122,12 @@ const PhaseWork = () => {
             visibleTrash 
             action={handleDelete} 
             />
-          </Grafic>
+          </Grafic> 
             </Center>
           </Container>
+        </ContainerForm>
+        
+   
     </DashboardLayout>
   );
 }

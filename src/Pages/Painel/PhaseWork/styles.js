@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 export const ContainerForm = styled.div`
   width: 100%;
-  max-width: 92%;
+  max-width: 80%;
 
 `;
 
@@ -28,8 +28,8 @@ export const Center = styled.div`
 
 export const Grafic = styled.div`
     width: 70%;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: center;
     margin: auto;
 `;
