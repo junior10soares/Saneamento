@@ -4,7 +4,7 @@ import api from "../../../services/api";
 import ReactHtmlParser from "react-html-parser";
 import { Header } from "../../../components/Header";
 import {Line} from 'rc-progress';
-import {FiFileText, FiHeadphones, FiXCircle, FiStar} from 'react-icons/fi'
+import {FiFileText, FiHeadphones, FiXCircle, FiStar, FiEye} from 'react-icons/fi'
 import { Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, SlideMacro, TextSection, WhatsappButton, Grafic } from './styles';
 import { Footer } from "../../../components/Footer";
 import { AlbumPhotos } from "../../../components/AlbumPhotos";
@@ -219,7 +219,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
           <Container>
             <Center>
               <TitleSection className="text-center">
-                Fases da <strong>obras</strong>
+              Progressso  <strong>total</strong>
               </TitleSection>      
               <div className="desktopStepBar">
                 <StepsConstruction phase={construction?.work_fase} />
@@ -240,11 +240,8 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
           <GraficCircle data={workPhase} />
           </Grafic> 
             </Center>
-          </Container>      
-
-
-
-
+          </Container>
+          
           <Container>
             <Center>
               <TitleSection className="text-center">
@@ -291,19 +288,37 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
               </DocumentsList>
             </Center>
           </Container>
-          <SlideMacro>
+          <SlideMacro>            
             {data.map((imagem) => (
-              <div className="contentSlide" key={imagem.id}>
-                <div className="contentImage">
-                <img src={`${imagem.image}`} alt="" width={360} height={300}
-                onClick={() => handleModal(imagem.id)}
-                />
-                </div>
-              </div>
-
-              ))}
-
-            </SlideMacro>
+            <div className="contentSlide">
+              <div className="image-flip">
+                        <div className="mainflip">
+                            <div className="frontside">
+                                <div className="card">
+                                    <div className="card-body">
+                                      <img src={`${imagem.image}`} alt="" width={360} height={300}
+                                          onClick={() => handleModal(imagem.id)}
+                                          />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="backside">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <p className="card-text">Sem descrição</p>                                       
+                                         <div className="icone">
+                                            <FiEye size={24}
+                                              onClick={() => handleModal(imagem.id)}
+                                            />
+                                           </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                ))}
+              </SlideMacro> 
               {/* <Modal open={open}>
           <BoxModal>
             <BtnFecharModal onClick={handleClose}>

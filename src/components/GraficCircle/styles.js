@@ -1,10 +1,13 @@
 import styled, {css} from 'styled-components';
 import theme from '../../GlobalStyle/theme';
 
-export const Container = styled.div`
-  .single-chart {
+export const Container = styled.div``
+
+export const Single = styled.div`
+  &.single-chart {
   width: 100%;
   justify-content: space-around ;
+  position: relative;
 }
 
 .circular-chart {
@@ -33,17 +36,11 @@ export const Container = styled.div`
   }
 }
 
-.circular-chart.orange .circle {
-  stroke: #ff9f00;
-}
 
 .circular-chart.green .circle {
   stroke: #4CC790;
 }
 
-.circular-chart.blue .circle {
-  stroke: #3c9ee5;
-}
 
 .percentage {
   fill: #666;
@@ -51,6 +48,11 @@ export const Container = styled.div`
   font-size: 0.5em;
   text-anchor: middle;
 }
+
+
+
+
+
     @media(max-width: 1024px){
       padding: ${theme.spacing * 8}px 48px;
       max-width: 706px;
@@ -101,5 +103,22 @@ export const Arrow = styled.button`
   @media screen and (max-width: 1024px) {
     display: none;
   }
+`;
+
+export const Modal = styled.div`
+display: block;
+position: absolute;
+bottom: 26%;
+left: 4%;
+background: rgb(11 12 12 / 43%);
+color: #fff;
+border-radius: 12px;
+max-width: 244px;
+font-size: 13px;
+font-weight: 600;
+text-align: left;
+padding: 0 16px;
+transition: all 50ms;
+transform: 10ms;
 `;
 
