@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {Container, Trash, Arrow, Single, Modal} from './styles';
+import {Container, Trash, Arrow, Single, Modal, Edit, Content} from './styles';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 import { MdChevronRight, MdChevronLeft } from "react-icons/md";
-import { FiTrash } from 'react-icons/fi';
+import { FiEdit, FiTrash } from 'react-icons/fi';
 import { ListItemAvatar } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 
 const GraficCircle = ({data, visibleTrash, action}) => {
@@ -43,7 +44,6 @@ const GraficCircle = ({data, visibleTrash, action}) => {
       setIsShown((state) => !state);
 
     }
-    console.log('isShow',isShow);
 
   return(
   <Container>
@@ -71,13 +71,21 @@ const GraficCircle = ({data, visibleTrash, action}) => {
                 />                
                 <text x="18" y="20.35" className="percentage">{`${item.percentage}%`}</text>             
               </svg>             
-                <p className="title">{item.name}</p>               
-                <Trash 
-                visibleTrash={visibleTrash}
-                onClick={() => action(item.uuid)}
-                >
-                <FiTrash className="visibleTrash" />
-                </Trash>
+                <p className="title">{item.name}</p>
+                <Content className="content_edit">
+                  <Trash 
+                    visibleTrash={visibleTrash}
+                    onClick={() => action(item.uuid)}
+                    >
+                    <FiTrash className="visibleTrash" />                
+                  </Trash>
+                  <Edit visibleTrash={visibleTrash}>                  
+                    <Link to={`${'/painel/fase-obra/edit'}/${item.uuid}`}>
+                    <FiEdit className="visibleEdit" style={{marginLeft: '24px'}} />
+                    </Link>
+                  </Edit>
+                </Content>               
+                
             </Single>       
           
           ))}

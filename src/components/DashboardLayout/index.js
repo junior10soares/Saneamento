@@ -32,7 +32,7 @@ const DashboardLayout = ({ children, title }) => {
    }, []);
 
    useEffect(() => { 
-     const token = cookieStorage.getItem("@senarsemasa:token");
+     const token = cookieStorage.getItem("senarsemasatoken");
      if (!token) push("/auth/login");
    }, []);
 
@@ -41,11 +41,10 @@ const DashboardLayout = ({ children, title }) => {
    }, [userRequest]);
 
    const handleSignUp = () => {
-    cookieStorage.getItem("@senarsemasa:token");
+    cookieStorage.getItem("senarsemasatoken");
     push("/auth/login");
    }
 
-   console.log('teste',pathname)
   return (
     <>
       <Container>

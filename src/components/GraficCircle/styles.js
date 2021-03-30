@@ -74,6 +74,31 @@ display: none;
 `}
 `
 
+export const Edit = styled.div`
+svg {
+  color: #000;
+  &:hover {
+    color: #5271DB;
+  }
+}
+${({visibleTrash}) => visibleTrash ? css`
+display: block;
+cursor: pointer;
+&:hover {
+  color: red;
+}
+` : css`
+display: none;
+`}
+`
+
+export const Content = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+
 
 export const Arrow = styled.button`
   display: flex;

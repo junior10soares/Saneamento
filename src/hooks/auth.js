@@ -8,7 +8,7 @@ export const AuthContext = createContext({});
 
 const cookieStorage = new CookieStorage();
 export const AuthProvider = ({ children }) => {
-  const token = cookieStorage.getItem("@senarsemasa:token");
+  const token = cookieStorage.getItem("senarsemasatoken");
   const [data, setData] = useState(() => {
 
     if (token) {
@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
 
     const { access_token: token } = response.data;
 
-    cookieStorage.setItem("@senarsemasa:token", token);
+    cookieStorage.setItem("senarsemasatoken", token);
 
     axios.defaults.headers.authorization = `Bearer ${token}`;
 
@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const signOut = useCallback(() => {
-    cookieStorage.removeItem("@senarsemasa:token");
+    cookieStorage.removeItem("senarsemasatoken");
     setData({});
   }, [setData]);
 
