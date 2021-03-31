@@ -307,14 +307,16 @@ export const ContainerHome = styled.div`
     }
 `;
 
+
 export const InstagramFrame = styled.iframe`
-  width: 500px;
-  height: 100vh;
+  width: 0;
+  height: 592px;
 @media (max-width: 320px){
     width: 500px;
     height: 390px;
     margin-bottom: 20px;
 }
+
 `;
 
 export const Iframe = styled.div`

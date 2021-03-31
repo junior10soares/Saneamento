@@ -95,15 +95,20 @@ export const CardMacro = styled.article`
 `;
 
 export const Title = styled.h2`
-    display: block;
     color: #ffffff;
     font-weight: 400;
     font-size: 24px;
     position: absolute;
-    padding: ${theme.spacing * 3}px;
+    padding: 24px;
     bottom: 0;
     margin: 0;
     z-index: 10;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 296px;
+    text-align: center;
     @media (max-width: 768px) {
         font-size: 18px;
     }

@@ -36,6 +36,7 @@ import { Footer } from '../../../components/Footer';
 import { ContactArea } from '../../../components/ContactArea';
 import Loader from '../../../components/Loader';
 import CardVideo from '../../../components/CardVideos';
+import { FiFacebook, FiInstagram } from 'react-icons/fi';
 
 const Home = () =>  {
 const [swiper, updateSwiper] = useState(null);
@@ -283,20 +284,27 @@ const renderVideos = () => {
 </CarouselNoticias>
         </Center>
       </ContainerHome>
-      <Container>
+      <Container>      
         <Center>
           <Row center>
-            <Column grid="7" className="text-center">
-              <InstagramFrame
+            <Column grid="6" className="text-center">
+              <TitleHome left style={{marginBottom: '24px'}}>
+                <FiInstagram style={{marginRight: '10px'}}/>
+                Instagram
+              </TitleHome>
+              <InstagramFrame 
                 src="https://cdn.lightwidget.com/widgets/725a90d3dbcc5049b0f84b89ef07b6aa.html"
                 scrolling="no"
                 allowtransparency="true"
                 className="lightwidget-widget"
-                allowFullScreen
-             
+                allowFullScreen             
               ></InstagramFrame>
             </Column>
             <Column grid="6" className="text-center">
+            <TitleHome left style={{marginBottom: '24px'}}>
+                <FiFacebook style={{marginRight: '10px'}}/>
+                Facebook
+              </TitleHome>
               <div
                 className="fb-page"
                 data-href="https://www.facebook.com/sanearsantoandre/"
