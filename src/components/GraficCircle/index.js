@@ -21,11 +21,25 @@ const GraficCircle = ({data, visibleTrash, action}) => {
     speed: 500,
     shouldSwiperUpdate: true,
     loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
     getSwiper: updateSwiper,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      425: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 0
+      }
+    }
   };
     const goNext = () => {
       if (swiper !== null) {

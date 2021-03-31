@@ -89,6 +89,23 @@ export const Container = styled.div`
     }
 `;
 
+export const ContainerGrafic = styled.div`
+    max-width: ${props => props.full ? '100%' : theme.center + 'px'};
+    margin: 0 auto;
+    display: flex;
+    padding: ${theme.spacing * 8}px 16px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    background: ${props => props.color};
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        /* padding: ${theme.spacing * 4}px; */
+        width: 100%;
+    }
+`;
+
 export const Center = styled.div`
     max-width: ${theme.center}px;
     margin: 0 auto;
@@ -407,4 +424,18 @@ export const Grafic = styled.div`
     align-items: center;
     text-align: center;
     margin: auto;
+
+    @media(max-width: 1024px){
+        width: 100%;
+        margin-left: 137px;
+    }
+    @media(max-width: 768px){
+        width: 100%;
+        margin-left: 77px;
+    }
+    @media(max-width: 425px){
+        width: 100%;
+        margin-left: 35px;
+    }
+    
 `;

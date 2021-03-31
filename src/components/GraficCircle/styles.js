@@ -1,13 +1,18 @@
 import styled, {css} from 'styled-components';
 import theme from '../../GlobalStyle/theme';
 
-export const Container = styled.div``
+export const Container = styled.div`
+
+`
 
 export const Single = styled.div`
   &.single-chart {
-  width: 100%;
+  width: 25% !important;
   justify-content: space-around ;
   position: relative;
+  @media (max-width: 1024px){
+    padding: 0 !important;
+  }
 }
 
 .circular-chart {
@@ -15,6 +20,11 @@ export const Single = styled.div`
   margin: 10px auto;
   max-width: 68%;
   max-height: 250px;
+
+  @media (max-width: 425px){
+    max-width: 100%;
+
+  }
 }
 
 .circle-bg {
@@ -38,6 +48,9 @@ export const Single = styled.div`
 
 .circular-chart.green .circle {
   stroke: #4CC790;
+  @media(max-width: 1024px){
+    max-width: 100%;
+  }
 }
 
 

@@ -5,7 +5,7 @@ import ReactHtmlParser from "react-html-parser";
 import { Header } from "../../../components/Header";
 import {Line} from 'rc-progress';
 import {FiFileText, FiHeadphones, FiXCircle, FiStar, FiEye} from 'react-icons/fi'
-import { Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, SlideMacro, TextSection, WhatsappButton, Grafic } from './styles';
+import { Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, SlideMacro, TextSection, WhatsappButton, Grafic, ContainerGrafic } from './styles';
 import { Footer } from "../../../components/Footer";
 import { AlbumPhotos } from "../../../components/AlbumPhotos";
 import { StepsConstruction } from "../../../components/StepsConstruction";
@@ -231,7 +231,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
             </Center>
           </Container>
 
-          <Container>
+          <ContainerGrafic className="container_obras">
             <Center>
               <TitleSection className="text-center">
                 Fases da <strong>obras</strong>
@@ -240,7 +240,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
           <GraficCircle data={workPhase} />
           </Grafic> 
             </Center>
-          </Container>
+          </ContainerGrafic>
           
           <Container>
             <Center>

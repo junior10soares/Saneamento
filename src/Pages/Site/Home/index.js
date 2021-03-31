@@ -146,7 +146,7 @@ const renderVideos = () => {
   }
 
   return(
-    <CardVideo content={videos}/>    
+    <CardVideo content={videos}/>   
 
   );
 }
@@ -155,7 +155,7 @@ const renderVideos = () => {
     <>
      <Header  />     
      <FullBanner images={bannerImages} />
-     <ContainerCardHome column>
+     <ContainerCardHome column> 
         <CardImageLink
           image={macrodrenagem}
           theme="ternary"
