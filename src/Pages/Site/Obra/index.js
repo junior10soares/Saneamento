@@ -219,7 +219,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
           <Container>
             <Center>
               <TitleSection className="text-center">
-              Progressso  <strong>total</strong>
+              Progresso  <strong>total</strong>
               </TitleSection>      
               <div className="desktopStepBar">
                 <StepsConstruction phase={construction?.work_fase} />
