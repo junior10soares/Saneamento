@@ -166,8 +166,8 @@ export const TextSection = styled.div`
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
-    /* padding-left: 70px;
-    padding-right: 70px; */
+    padding-left: 70px;
+    padding-right: 70px;
 `;
 
 

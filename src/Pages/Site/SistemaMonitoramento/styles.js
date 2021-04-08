@@ -111,9 +111,8 @@ export const Row = styled.div`
 `;
 
 export const TitleSection = styled.h1`
-    /* max-width: 650px; */
+    max-width: 650px;
     width: 100%;
-    /* padding-left: 70px; */
     margin: 0 0 ${theme.spacing}px;
     color: ${props => props.light ? '#ffffff' : theme.textColor};
     display: block;

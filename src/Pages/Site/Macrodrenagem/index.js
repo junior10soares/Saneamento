@@ -25,7 +25,7 @@ const Macrodrenagem = () => {
       <Container>
         <Center>
           <TitleSection center>
-            <strong>Macrodrenagem</strong>
+          O que são drenagem e <strong>macrodrenagem?</strong>
           </TitleSection>
           <TextSection columns="1">
             <p style={{ textAlign: "justify" }}>
@@ -93,6 +93,9 @@ const Macrodrenagem = () => {
             <p style={{ textAlign: "justify" }}>
               O investimento para o Complexo Viário Cassaquera é de R$ 35
               milhões. As principais etapas das obras são:
+              <p style={{ textAlign: "justify" }}>              
+              O investimento para o Complexo Viário Cassaquera é de R$ 40 milhões. Além da canalização do córrego Cassaquera, o Semasa está construindo um novo sistema viário na avenida Luiz Ignácio de Anhaia Melo. A via receberá asfalto, iluminação de LED, projeto paisagístico e novos semáforos. As melhorias tanto no córrego quanto na avenida serão realizadas até a rua Fernando Costa, no Parque Gerassi.
+              </p>
             </p>
           </TextSection>
 
@@ -109,8 +112,7 @@ const Macrodrenagem = () => {
               evita enchentes.
             </p>
             <p style={{ textAlign: "justify" }}>
-              A implementação do novo piscinão busca proporcionar diversos
-              benefícios para a população, como:
+            Santo André ganhará um novo piscinão na  região do córrego Guarará, na avenida Capitão Mário Toledo de Camargo, no Jardim Ipanema. O tanque de detenção será o maior equipamento municipal, com capacidade de armazenamento de água de 263 mil m². A obra visa:
             </p>
             <p style={{ textAlign: "justify" }}>
               • Reduzir a ocorrência de alagamentos.

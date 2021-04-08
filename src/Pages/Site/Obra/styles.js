@@ -383,11 +383,10 @@ export const WhatsappButton = styled.a`
     justify-content: center;
     border-radius: 30px;
     text-decoration: none;
-    &:before {
+    & svg {
         content: '';
         width: 25px;
         height: 25px;
-        background: url(/whatsapp-ico.svg);
         background-size: cover;
         margin: 0 4px;
     }

@@ -4,6 +4,7 @@ import api from "../../../services/api";
 import ReactHtmlParser from "react-html-parser";
 import { Header } from "../../../components/Header";
 import {Line} from 'rc-progress';
+import {FaWhatsapp} from 'react-icons/fa';
 import {FiFileText, FiHeadphones, FiXCircle, FiStar, FiEye} from 'react-icons/fi'
 import { Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, SlideMacro, TextSection, WhatsappButton, Grafic, ContainerGrafic } from './styles';
 import { Footer } from "../../../components/Footer";
@@ -175,7 +176,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
                 {!!construction?.whatsapp_active && (
                   <div className="buttonAlign">
                     <WhatsappButton href={construction?.whatsapp} target="_blank">
-                      Nosso Whatsapp
+                      <FaWhatsapp />Nosso Whatsapp
                     </WhatsappButton>
                   </div>
                 )}
@@ -186,7 +187,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
             <Center>
               <HeaderPage style={{marginBottom: 60}}>
                 <TitleSection center>
-                  Detalhe das <strong>Obras</strong>
+                Complexo Viário <strong>Cassaquera</strong>
                 </TitleSection>
               </HeaderPage>
               <div className="responsiveStepBar">
@@ -245,7 +246,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
           <Container>
             <Center>
               <TitleSection className="text-center">
-                Desenho do <strong>projeto</strong>
+                Arquivo em <strong>'documentos das obras'</strong>
               </TitleSection>
             </Center>
 

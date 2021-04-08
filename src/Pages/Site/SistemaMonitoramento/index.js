@@ -96,7 +96,7 @@ const SistemaMonitoramento = ({ constructions }) =>  {
             <p style={{ textAlign: "justify" }}>
               As intervenções preveem diversas melhorias para o sistema, como 25
               novas câmeras para monitorar córregos e o rio Tamanduateí
-              (atualmente, existem 17, 9 pluviômetros (existem 2), 23
+              (atualmente, existem 17), 9 pluviômetros (existem 2), 23
               fluviômetros (existem 9) e 7 estações meteorológicas (existem 5,
               mas 3 estão fora do ar); desenvolvimento de softwares de simulação
               de inundações, modelagem hidrográfica para o município e de gestão
@@ -106,11 +106,7 @@ const SistemaMonitoramento = ({ constructions }) =>  {
               pontos de Santo André.
             </p>
             <p style={{ textAlign: "justify" }}>
-              O novo sistema de monitoramento de chuva será operado e
-              centralizado em uma nova sala localizada no prédio da Prefeitura.
-              As imagens e informações também serão passadas ao Semasa para que
-              seus técnicos façam a manutenção preventiva da rede de drenagem
-              nos eventos pós-chuva.
+            O novo sistema de monitoramento de chuva será operado e centralizado em uma nova sala da Defesa Civil, localizada no prédio da Prefeitura. As imagens e informações também serão passadas ao CECOI (Centro de Controle Operacional Integrado) do Semasa para que seus técnicos façam a manutenção preventiva da rede de drenagem nos eventos pós-chuva.
             </p>
           </TextSection>
         </Center>
