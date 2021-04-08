@@ -89,14 +89,12 @@ const Macrodrenagem = () => {
               passaram a ser coletados e tratados devidamente. Isso corresponde
               a aproximadamente 80% de redução de esgoto despejado no curso
               d’água.
-            </p>
-            <p style={{ textAlign: "justify" }}>
-              O investimento para o Complexo Viário Cassaquera é de R$ 35
-              milhões. As principais etapas das obras são:
+            </p>           
+          
               <p style={{ textAlign: "justify" }}>              
               O investimento para o Complexo Viário Cassaquera é de R$ 40 milhões. Além da canalização do córrego Cassaquera, o Semasa está construindo um novo sistema viário na avenida Luiz Ignácio de Anhaia Melo. A via receberá asfalto, iluminação de LED, projeto paisagístico e novos semáforos. As melhorias tanto no córrego quanto na avenida serão realizadas até a rua Fernando Costa, no Parque Gerassi.
               </p>
-            </p>
+            
           </TextSection>
 
           <Title>
