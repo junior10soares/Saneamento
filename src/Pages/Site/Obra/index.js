@@ -234,7 +234,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
           <ContainerGrafic className="container_obras">
             <Center>
               <TitleSection className="text-center">
-                Fases da <strong>obras</strong>
+                Fases das <strong>obras</strong>
               </TitleSection>
           <Grafic>
           <GraficCircle data={workPhase} />
