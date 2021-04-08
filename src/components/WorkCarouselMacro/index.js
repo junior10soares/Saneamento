@@ -58,7 +58,7 @@ function WorkCarouselMacro({ category }) {
     <Center>
         <Swiper {...params}>
           {works?.map((work) => (
-                 <Link href={`/obra/${work?.uuid}`}>
+                 <Link to={`/obra/${work?.uuid}`}>
                 <CardConstructionMacro title={work?.name} image={work?.img} />
             </Link> 
   ))}

@@ -243,22 +243,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
             </Center>
           </ContainerGrafic>
           
-          <Container>
-            <Center>
-              <TitleSection className="text-center">
-                Arquivo em <strong>'documentos das obras'</strong>
-              </TitleSection>
-            </Center>
-
-            <DocumentsList>
-                <div className="Grid">
-                    <div className="column1">
-                        <span><FiFileText /><a href="/documentos/CASSAQUERA_COMUNICAÇÃO-Model.pdf" target="_blank">Desenho do Projeto</a></span>
-                     </div>
-                </div>
-
-              </DocumentsList>
-          </Container>
+          
           <Container>
             <Center>
               <AlbumPhotos
@@ -283,6 +268,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
                      <div className="column2">
                         <span><FiFileText /><a href="/documentos/Outorga_do_DAEE.pdf" target="_blank">Outorga do DAEE</a></span>
                         <span><FiFileText /><a href="/documentos/salvaguardas_ambientais_e_sociais.pdf" target="_blank">Salvaguardas Ambientais e Sociais</a></span>
+                        <span><FiFileText /><a href="/documentos/CASSAQUERA_COMUNICAÇÃO-Model.pdf" target="_blank">Desenho do Projeto</a></span>
                      </div>
                 </div>
 
