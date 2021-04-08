@@ -22,7 +22,10 @@ const PainelVideos = () => {
     try {
       const response = await request({
         url: "video",
-        method: 'GET'
+        method: 'GET',
+        params : {
+          paginate: false,
+        }  
       });
 
       setVideos(response.data.data);

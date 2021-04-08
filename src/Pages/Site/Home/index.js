@@ -84,8 +84,14 @@ const locationsResponse = useCallback(() => {
 }, []);
 
 const videosResponse = useCallback(() => {
- api.get('video?order[id]=desc').then(({ data }) => setVideo(data.data));
+ api.get('video?order[id]=desc', {
+  params : {
+    paginate: false,
+  } 
+ }).then(({ data }) => setVideo(data.data));
 }, [])
+
+
 
 const newsResponse = useCallback(() => {
  api.get('news?order[id]=desc').then(({ data }) => setNews(data.data));
