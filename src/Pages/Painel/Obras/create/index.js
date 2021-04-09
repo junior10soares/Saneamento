@@ -181,8 +181,8 @@ export default function ObrasCreate() {
           img: uploadedImage,
         }    
 
-        const response = await request.post('work', create);   
-        /* 
+             const response = await request.post('work', create);   
+        
              console.log('response', response.data.data.uuid)
              const coordinate = {
               works_uuid: response.data.data.uuid,
@@ -195,7 +195,7 @@ export default function ObrasCreate() {
         request.post('work-coordinate', coordinate);
 
         console.log('coordinate', coordinate)
-        console.log('coordinate', response) */
+        console.log('coordinate', response)
 
         if(response.status === 200 || response.status === 201){
           notify('success', 'Obra cadastrada com sucesso!');
