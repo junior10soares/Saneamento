@@ -129,6 +129,31 @@ export default function ObrasCreate() {
   };
 
 
+
+/*   useEffect(() => {
+    async function convert() {
+      if (uploadedImage) {
+        const converted = await convertToBase64(uploadedImage);
+        setImageInBase64(converted);
+      }
+    }
+
+    convert();
+  }, [uploadedImage, setImageInBase64]);
+
+  //Detects documents upload
+
+  useEffect(() => {
+    async function convert() {
+      if (uploadedDocuments) {
+        const converted = await convertToBase64(uploadedDocuments);
+        setDocumentsInBase64(converted);
+      }
+    }
+
+    convert();
+  }, [uploadedDocuments, setDocumentsInBase64]); */
+
   const { register, handleSubmit, setValue, errors } = useForm();
 
   const handleStep = (step) => () => {
@@ -146,6 +171,28 @@ export default function ObrasCreate() {
       return { lat, lng };
     },
     [setValue, location]
+  );
+
+  const sendCoordinates = useCallback(
+    async ({ uuid, name }) => {
+      try {
+        await request({
+          method: "post",
+          url: "work-coordinate",
+          body: {
+            works_uuid: uuid,
+            name: name,
+            lat: location.lat,
+            long: location.lng,
+            reference: "reference",
+          },
+        });
+      } catch (error) {
+        notify('error', 'Oops! Não foi possivel pegar as coordenadas, tente novamente!');
+
+      }
+    },
+    [location]
   );
 
   const Connector = withStyles({
@@ -170,50 +217,28 @@ export default function ObrasCreate() {
     async (data) => {
       try {
         setLoading(true);
+        data.img = uploadedImage;
+        data.work_documents = uploadedDocuments;
+        data.work_fase = Number(data.work_fase);
+        data.work_categories_uuid = categoryId;
 
-        const create =  {
-          name: data.name,
-          description: data.description,
-          whatsapp: data.whatsapp,
-          whatsapp_active: data.whatsapp_active,
-          work_categories_uuid: data.work_categories_uuid,
-          work_fase: data.work_fase,
-          img: uploadedImage,
-        }    
-
-        const response = await request.post('work', create);   
-        /* 
-             console.log('response', response.data.data.uuid)
-             const coordinate = {
-              works_uuid: response.data.data.uuid,
-              name: data.name,
-              lat: location.lat,
-              long: location.lng,
-              reference: "reference",
-             }
-
-        request.post('work-coordinate', coordinate);
-
-        console.log('coordinate', coordinate)
-        console.log('coordinate', response) */
+        const response = await request.post('work', data);        
+        await sendCoordinates(response.data.data);
 
         if(response.status === 200 || response.status === 201){
           notify('success', 'Obra cadastrada com sucesso!');
         }
-        
+
         router.push("/painel/obras");
       } catch (error) {
-        console.log(error);
         setLoading(false);
         notify('error', 'Oops! Houve um erro ao cadastrar, tente novamente!');
-        
+
       }
     },
-    []
+    [categoryId, location]
   );
-  
-  console.log(location.lat)
-  console.log(location.lng)
+
 
   return (
     <DashboardLayout title="Obras">
@@ -258,12 +283,27 @@ export default function ObrasCreate() {
             </FormItem>
           </FormItem>
 
-          <FormItem style={{ marginLeft: '10px'}}>
-          <input type="text" hidden name="description" ref={register}  />
+          <FormItem column>
+            <textarea
+              name="description"
+              placeholder="Descrição"
+              ref={register({ required: "Descrição obrogatória." })}
+              style={{ width: "96.5%" }}
+            />
+
+            <ErrorMessage
+              errors={errors}
+              name="description"
+              render={({ message }) => <ErrorLabel>{message}</ErrorLabel>}
+            />
+          </FormItem>
+
+          <FormItem column>
+          <input type="text" hidden name="description" ref={register} />
             <Editor
               apiKey="jmxkgsh5p1wvnnjxdghns4la6w678kpcz905navyed34m8t6"
               init={{
-                height: 400,
+                height: 500,
                 menubar: false,
                 plugins: [
                   "advlist autolink lists link image charmap print preview anchor",
@@ -310,6 +350,27 @@ export default function ObrasCreate() {
             </FormItem>
 
             <FormItem>
+              {/* <Select
+                labelId="work_categories_uuid"
+                id="work_categories_uuid"
+                name="work_categories_uuid"
+                inputRef={register({ required: true })}
+                value={categoryId}
+                onChange={(event) => {
+                  setCategoryId(event.target.value);
+                  setValue("work_categories_uuid", event.target.value);
+                }}
+                placeholder="Selecionar Categoria"
+                input={<BootstrapInput fullWidth />}
+              >
+                <MenuItem value="" disabled selected>
+                  <em>Selecionar Categoria</em>
+                </MenuItem>
+                {categories.map((category) => (
+                  <MenuItem value={category.uuid}>{category.name}</MenuItem>
+                ))}
+              </Select> */}
+
               <select
                 name="work_categories_uuid"
                 id="work_categories_uuid"
