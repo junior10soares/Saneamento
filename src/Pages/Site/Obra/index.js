@@ -5,8 +5,8 @@ import ReactHtmlParser from "react-html-parser";
 import { Header } from "../../../components/Header";
 import {Line} from 'rc-progress';
 import {FaWhatsapp} from 'react-icons/fa';
-import {FiFileText, FiHeadphones, FiXCircle, FiStar, FiEye} from 'react-icons/fi'
-import { Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, SlideMacro, TextSection, WhatsappButton, Grafic, ContainerGrafic } from './styles';
+import {FiFileText, FiHeadphones, FiXCircle, FiStar, FiEye, FiDownload} from 'react-icons/fi'
+import { Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, SlideMacro, TextSection, WhatsappButton, Grafic, ContainerGrafic, DocumentsListContainer, Doc } from './styles';
 import { Footer } from "../../../components/Footer";
 import { AlbumPhotos } from "../../../components/AlbumPhotos";
 import { StepsConstruction } from "../../../components/StepsConstruction";
@@ -251,30 +251,90 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
                 videos={construction.work_videos}
               />
             </Center>
-          </Container>
+          </Container>   
           <Container>
             <Center>
               <TitleSection className="text-center">
                 Documentos das <strong>obras</strong>
               </TitleSection>
-              <DocumentsList>
-                <div className="Grid">
-                    <div className="column1">
-                        <span><FiFileText /><a href="/documentos/Licenca_de_operacao_Lara.pdf" target="_blank">Licenca de Operacao Lara</a></span>
-                        <span><FiFileText /><a href="/documentos/Licenca_de_operaçãot_terra_forte.pdf" target="_blank">Licenca de Operação Terra Forte</a></span>
-                        <span><FiFileText /><a href="/documentos/Licenca_para_uso_de_terra_proveniente_de_jazida.pdf" target="_blank">Licenca para Uso de Terra Proveniente de Jazida</a></span>
-                     </div>
+              <DocumentsListContainer>              
+              <div className="Grid">
+                    <div className="column">
+                      <Doc>
+                        <span>
+                        <FiFileText />
+                        </span>                        
+                        <p className="p"><a href="/documentos/Licenca_de_operacao_Lara.pdf" target="_blank">Licenca de Operação</a>
+                        <a href="/documentos/Licenca_de_operacao_Lara.pdf" download>
+                        <FiDownload />
+                        </a>
+                        </p>
+                      </Doc>
 
-                     <div className="column2">
-                        <span><FiFileText /><a href="/documentos/Outorga_do_DAEE.pdf" target="_blank">Outorga do DAEE</a></span>
-                        <span><FiFileText /><a href="/documentos/salvaguardas_ambientais_e_sociais.pdf" target="_blank">Salvaguardas Ambientais e Sociais</a></span>
-                        <span><FiFileText /><a href="/documentos/CASSAQUERA_COMUNICAÇÃO-Model.pdf" target="_blank">Desenho do Projeto</a></span>
-                     </div>
-                </div>
+                      <Doc>
+                        <span>
+                        <FiFileText />
+                        </span>                        
+                        <p className="p"><a href="/documentos/Licenca_de_operaçãot_terra_forte.pdf" target="_blank">Licenca Terra Forte</a>
+                        <a href="/documentos/Licenca_de_operaçãot_terra_forte.pdf" download>
+                        <FiDownload />
+                        </a>
+                        </p>
+                      </Doc>                      
+                
+                    </div>
+                    <div className="column">
+                    <Doc>
+                        <span>
+                        <FiFileText />
+                        </span>                        
+                        <p className="p"><a href="/documentos/Licenca_para_uso_de_terra_proveniente_de_jazida.pdf" target="_blank">Licenca Proveniente Jazida</a>
+                        <a href="/documentos/Licenca_para_uso_de_terra_proveniente_de_jazida.pdf" download>
+                        <FiDownload />
+                        </a>
+                        </p>
+                      </Doc>
 
-              </DocumentsList>
-            </Center>
-          </Container>
+                      <Doc>
+                        <span>
+                        <FiFileText />
+                        </span>                        
+                        <p className="p"><a href="/documentos/Outorga_do_DAEE.pdf" target="_blank">Outorga do DAEE</a>
+                        <a href="/documentos/Outorga_do_DAEE.pd" download>
+                        <FiDownload />
+                        </a>
+                        </p>
+                      </Doc>
+                    </div>
+                    <div className="column">
+                    <Doc>
+                        <span>
+                        <FiFileText />
+                        </span>                        
+                        <p className="p"><a href="/documentos/salvaguardas_ambientais_e_sociais.pdf" target="_blank">Ambientais e Sociais</a>
+                        <a href="/documentos/salvaguardas_ambientais_e_sociais.pdf" download>
+                        <FiDownload />
+                        </a>
+                        </p>
+                      </Doc>
+
+                      <Doc>
+                        <span>
+                        <FiFileText />
+                        </span>                        
+                        <p className="p"><a href="/documentos/CASSAQUERA_COMUNICAÇÃO-Model.pdf" target="_blank">Desenho do Projeto</a>
+                        <a href="/documentos/CASSAQUERA_COMUNICAÇÃO-Model.pdf" download>
+                        <FiDownload />
+                        </a>
+                        </p>
+                      </Doc>
+                      </div>
+               </div> 
+          
+                </DocumentsListContainer>
+         
+                </Center>
+              </Container>
           <SlideMacro>            
             {data.map((imagem) => (
             <div className="contentSlide">

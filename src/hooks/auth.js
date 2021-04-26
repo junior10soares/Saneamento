@@ -16,15 +16,10 @@ export const AuthProvider = ({ children }) => {
       return { token };
     }
 
-   /*  if(!token){
-      window.location.href = '/auth/login';
-    } */
-
     return {};
   });
 
   const signIn = useCallback(async ({ email, password }) => {
-    console.log('email', email, 'passs', password)
     const response = await api.post('login', {
       email,
       password

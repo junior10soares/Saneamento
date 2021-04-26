@@ -41,7 +41,7 @@ const DashboardLayout = ({ children, title }) => {
    }, [userRequest]);
 
    const handleSignUp = () => {
-    cookieStorage.getItem("senarsemasatoken");
+    cookieStorage.removeItem("senarsemasatoken");
     push("/auth/login");
    }
 

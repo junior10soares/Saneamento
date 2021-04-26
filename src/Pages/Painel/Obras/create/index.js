@@ -138,15 +138,16 @@ export default function ObrasCreate() {
 
   const handleMapClick = useCallback(
     (event) => {
-      const lat = event.latLng.lat();
-      const lng = event.latLng.lng();
+      const lat = event?.latLng?.lat();
+      const lng = event?.latLng?.lng();
 
-      setValue("work_location", { lat, lng });
+      setValue("work_coordinates", { lat, lng });
       setLocation({ lat, lng });
       return { lat, lng };
     },
     [setValue, location]
   );
+
 
   const Connector = withStyles({
     active: {
@@ -181,23 +182,21 @@ export default function ObrasCreate() {
           img: uploadedImage,
         }    
 
-             const response = await request.post('work', create);   
+             const response = await request.post('work', create);
         
-             console.log('response', response.data.data.uuid)
              const coordinate = {
               works_uuid: response.data.data.uuid,
               name: data.name,
-              lat: location.lat,
               long: location.lng,
+              lat: location.lat,
               reference: "reference",
              }
+             
+           request.post('work-coordinate', coordinate);
 
-        request.post('work-coordinate', coordinate);
+     
 
-        console.log('coordinate', coordinate)
-        console.log('coordinate', response)
-
-        if(response.status === 200 || response.status === 201){
+        if(await response.status === 200 || await response.status === 201) {
           notify('success', 'Obra cadastrada com sucesso!');
         }
         
@@ -384,7 +383,7 @@ export default function ObrasCreate() {
 
           <MapContainer>
             <input
-              name="work_location"
+              name="work_coordinates"
               hidden
               ref={register({ required: "Local da obra é obrigatório" })}
             />

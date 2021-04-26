@@ -438,3 +438,91 @@ export const Grafic = styled.div`
     }
     
 `;
+
+export const DocumentsListContainer = styled.div`
+width: 100%;
+margin: 0 auto;
+text-align: center;
+.Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1050px;
+    gap: 20px;
+
+    @media (max-width: 1193px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 927px){
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        .column {
+            margin: auto;
+        }
+    }
+}
+`;
+
+export const Doc = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 357px;
+    background: #fff;
+    height: 60px;
+    
+
+
+    & + div {
+        margin-top: 16px;
+    }
+    
+
+ p{
+
+     width: 100%;
+    background: #fff;   
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #BEBEBE;
+    border-top: 1px solid #BEBEBE;
+    border-right: 1px solid #BEBEBE;
+    opacity: 0.6;
+
+    & a{
+        text-decoration: none;
+        color: #000;
+    } 
+
+    & svg {
+        a {
+            
+        }
+        
+    margin-left: 50px;
+
+    }   
+
+ }
+
+
+  >  span{
+    background: #27AE60;
+    width: 74px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+
+    & svg {
+        font-size: 26px;
+        color: #fff;
+    }
+}
+
+`;
