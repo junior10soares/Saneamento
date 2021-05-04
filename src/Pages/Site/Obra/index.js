@@ -96,6 +96,11 @@ const data =  [
   }
 ]
 
+const markersLocation = [
+  {lat: '-23.6798734', lng: '-46.4905275', name: 'Rua Fernando costa machado'},
+  {lat: '-23.6735387', lng: '-46.4960711', name: 'Rua Fernando costa machado'}
+]
+
 
 const Obra = () => {
   const { id } = useParams();
@@ -131,6 +136,8 @@ const Obra = () => {
 
     return marks;
   }, [construction]);
+
+
 
 
   function handleModal(id) {
@@ -213,14 +220,31 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
                 </div>
               </div>
               <TextSection style={{ marginTop: 110}} columns="2">
-                <p>{ReactHtmlParser(construction?.description)}</p>
+                <p>
+                O Semasa realiza desde 12 de junho de 2020 as obras do Complexo Viário Cassaquera, que iniciaram com a canalização de um trecho de 1,7 quilômetro do córrego Cassaquera. As intervenções vão melhorar o escoamento de águas superficiais, contribuindo para minimizar a incidência de enchentes e pontos de alagamento. Os serviços também visam diminuir problemas de descarte irregular de resíduos às margens do curso d'água. 
+
+A avenida Luiz Ignácio de Anhaia Melo também está recebendo um novo sistema viário, que será composto de duas pistas com três faixas de cada lado do córrego até a rua Fernando Costa, no Parque Gerassi. A via terá nova pavimentação, sinalização, iluminação de LED e projeto paisagístico. As obras vão facilitar o acesso ao Rodoanel e a ligação entre as avenidas Giovanni Battista Pirelli e Valentim Magalhães. 
+
+As intervenções também vão melhorar o sistema de mobilidade urbana tanto para motoristas quanto para pedestres. Serão implantadas duas novas travessias próximas às ruas Fernando Pessoa e Assis Chateaubriand, o que irá permitir a passagem de veículos e de pessoas sobre o córrego. Além disso, serão readequadas as travessias que ficam na região das ruas João Caetano e Fernando Costa. 
+
+Com investimento de R$ 40 milhões, as obras do Complexo Viário Cassaquera têm oito frentes de trabalho: 
+
+• Remoção da camada de terra do fundo do canal. 
+• Criação da nova base do córrego, com aplicação de camada com rachão, bica corrida e lastro de concreto. 
+• Instalação e assentamento de aduelas (estruturas de concreto armado que formam a base e o novo traçado do córrego). 
+• Concretagem das vigas de coroamento das aduelas: etapa para ‘unificar’ as aduelas, tendo em vista que elas vêm moduladas. Após, o canal fica solidificado como se fosse uma única peça. 
+• Compatibilização do leito do Cassaquera: nivelamento do canal com a altura das pistas da avenida Luiz Ignácio de Anhaia Melo. 
+• Interligação de resíduos domésticos lançados irregularmente no córrego com a rede coletora de esgoto. 
+• Execução da microdrenagem, que consiste em implantação de guias, sarjetas, bocas de lobos e bueiros. 
+• Execução do pavimento ao longo das duas marginais do córrego. 
+                </p>
               </TextSection>
             </Center>
           </Container>
           <Container>
             <Center>
               <TitleSection className="text-center">
-              Progresso  <strong>total</strong>
+              <strong>Progresso</strong> total
               </TitleSection>      
               <div className="desktopStepBar">
                 <StepsConstruction phase={construction?.work_fase} />
@@ -235,7 +259,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
           <ContainerGrafic className="container_obras">
             <Center>
               <TitleSection className="text-center">
-                Fases das <strong>obras</strong>
+                Fases <strong>das</strong> obras
               </TitleSection>
           <Grafic>
           <GraficCircle data={workPhase} />
@@ -255,7 +279,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
           <Container>
             <Center>
               <TitleSection className="text-center">
-                Documentos das <strong>obras</strong>
+                Documentos <strong>das</strong> obras
               </TitleSection>
               <DocumentsListContainer>              
               <div className="Grid">
@@ -393,7 +417,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
         )}
           <Container>
             <Center>
-              <MapComponent markers={markers} />
+              <MapComponent markers={markersLocation} />
             </Center>
           </Container>
         </>

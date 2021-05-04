@@ -52,11 +52,7 @@ const SistemaMonitoramento = ({ constructions }) =>  {
           </TitleSection>
           <TextSection columns="1">
             <p style={{ textAlign: "justify" }}>
-              Santo André terá o seu sistema de monitoramento de chuva ampliado
-              e modernizado, a fim de substanciar a velocidade e a qualidade dos
-              alertas à população, bem como a eficiência das providências a
-              serem tomadas em decorrência das adversidades pluviométricas. Os
-              principais benefícios são:
+            Santo André terá o seu sistema de monitoramento e alerta de chuva ampliado e modernizado, a fim de otimizar a velocidade e a qualidade dos alertas enviados à população, bem como possibilitar mais eficiência de medidas que devem ser tomadas em decorrência de adversidades pluviométricas. Os principais benefícios são: 
               <p>
                 • Minimizar prejuízos materiais, de saúde e demais problemas à
                 população.
@@ -94,20 +90,10 @@ const SistemaMonitoramento = ({ constructions }) =>  {
               <p>• Alertar previamente a população em situação de risco.</p>
             </p>
             <p style={{ textAlign: "justify" }}>
-              As intervenções preveem diversas melhorias para o sistema, como 25
-              novas câmeras para monitorar córregos e o rio Tamanduateí
-              (atualmente, existem 17), 9 pluviômetros (existem 2), 23
-              fluviômetros (existem 9) e 7 estações meteorológicas (existem 5,
-              mas 3 estão fora do ar); desenvolvimento de softwares de simulação
-              de inundações, modelagem hidrográfica para o município e de gestão
-              de alertas; implantação de 1.321 bocas de lobo inteligentes (com
-              sensor volumétrico); adequação e reabilitação de equipamentos já
-              existentes; além de sirenes de alertas instaladas em diversos
-              pontos de Santo André.
+            As intervenções preveem diversas melhorias para o sistema, como 25 novas câmeras para monitorar córregos e o rio Tamanduateí (atualmente, existem 17), 9 pluviômetros (existem 2), 23 fluviômetros (existem 9) e 7 estações meteorológicas (existem 5, mas 3 estão fora do ar); desenvolvimento de softwares de simulação de inundações, modelagem hidrográfica para o município e de gestão de alertas; implantação de 1.321 bocas de lobo inteligentes (com sensor volumétrico para alertar quando os equipamentos estão cheios de resíduos); e adequação e reabilitação de equipamentos já existentes. 
             </p>
             <p style={{ textAlign: "justify" }}>
-            O novo sistema de monitoramento de chuva será operado e centralizado em uma nova sala da Defesa Civil, localizada no prédio da Prefeitura. As imagens e informações também serão passadas ao CECOI (Centro de Controle Operacional Integrado) do Semasa para que seus técnicos façam a manutenção preventiva da rede de drenagem nos eventos pós-chuva.
-            </p>
+            O novo sistema de monitoramento de chuva será operado e centralizado em uma nova sala da Defesa Civil, localizada no prédio da Prefeitura. As imagens e informações também serão passadas ao Cecoi (Centro de Controle Operacional Integrado) do Semasa para que seus técnicos façam a manutenção preventiva da rede de drenagem nos eventos pós-chuva.             </p>
           </TextSection>
         </Center>
       </Container>

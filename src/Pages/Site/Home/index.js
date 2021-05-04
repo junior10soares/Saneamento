@@ -197,17 +197,12 @@ const renderVideos = () => {
           </Column>
           <Column grid="7">
             <TitleHome>
-              Sobre o{'\u00A0'}<strong> programa</strong>
+            <strong>Sobre o{'\u00A0'}programa</strong>
             </TitleHome>
             <TextHome>
               <p style={{ textAlign: "justify" }}>
-                O Sanear Santo André (Saneasa) é um dos maiores programas de
-                saneamento, drenagem e infraestrutura urbana da história do
-                município. As intervenções são executadas pelo Semasa (Serviço
-                Municipal de Saneamento Ambiental de Santo André), com
-                financiamento de US$ 50 milhões pela CAF – Banco de Desenvolvimento da América Latina.
-                O Semasa e a Prefeitura vão investir US$ 12,5 milhões como contrapartida.
-              </p>
+              O Sanear Santo André (Saneasa) é um dos maiores programas de saneamento, drenagem e infraestrutura urbana da história do município. As intervenções são executadas pelo Semasa (Serviço Municipal de Saneamento Ambiental de Santo André), com financiamento de US$ 50 milhões pela CAF – Banco de Desenvolvimento da América Latina. O Semasa e a Prefeitura vão investir US$ 12,5 milhões como contrapartida. 
+         </p>
               <div className="buttonContainer">
               <ButtonLink theme="primary" href="/sobre">
               Saiba mais
@@ -225,7 +220,7 @@ const renderVideos = () => {
       <Container color="#E5E5E5" full>
         <Column grid="15">
         <TitleVideo center>
-          Galeria de <strong>{'\u00A0'}vídeos</strong>
+          Galeria de <strong> vídeos</strong>
         </TitleVideo>
         <CenterVideo>
           {renderVideos()}            
@@ -235,7 +230,7 @@ const renderVideos = () => {
 
       <ContainerHome>
         <TitleHome center padding>
-          Notícias e<strong>&nbsp;eventos</strong>
+          <strong>Notícias</strong>&nbsp;e eventos
         </TitleHome>
         <Center>
          
