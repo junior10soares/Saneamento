@@ -221,13 +221,13 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
               </div>
               <TextSection style={{ marginTop: 110}} columns="2">
                 <p>
-                O Semasa realiza desde 12 de junho de 2020 as obras do Complexo Viário Cassaquera, que iniciaram com a canalização de um trecho de 1,7 quilômetro do córrego Cassaquera. As intervenções vão melhorar o escoamento de águas superficiais, contribuindo para minimizar a incidência de enchentes e pontos de alagamento. Os serviços também visam diminuir problemas de descarte irregular de resíduos às margens do curso d'água. 
+                O Semasa realiza desde 12 de junho de 2020 as obras do Complexo Viário Cassaquera, que iniciaram com a canalização de um trecho de 1,7 quilômetro do córrego Cassaquera. As intervenções vão <strong>melhorar o escoamento de águas superficiais</strong>, contribuindo para minimizar a incidência de enchentes e pontos de alagamento. Os serviços também visam <strong>diminuir problemas de descarte irregular</strong> de resíduos às margens do curso d'água. 
 
 A avenida Luiz Ignácio de Anhaia Melo também está recebendo um novo sistema viário, que será composto de duas pistas com três faixas de cada lado do córrego até a rua Fernando Costa, no Parque Gerassi. A via terá nova pavimentação, sinalização, iluminação de LED e projeto paisagístico. As obras vão facilitar o acesso ao Rodoanel e a ligação entre as avenidas Giovanni Battista Pirelli e Valentim Magalhães. 
 
-As intervenções também vão melhorar o sistema de mobilidade urbana tanto para motoristas quanto para pedestres. Serão implantadas duas novas travessias próximas às ruas Fernando Pessoa e Assis Chateaubriand, o que irá permitir a passagem de veículos e de pessoas sobre o córrego. Além disso, serão readequadas as travessias que ficam na região das ruas João Caetano e Fernando Costa. 
+As intervenções também vão melhorar o <strong>sistema de mobilidade urbana</strong> tanto para motoristas quanto para pedestres. Serão implantadas duas novas travessias próximas às ruas Fernando Pessoa e Assis Chateaubriand, o que irá permitir a passagem de veículos e de pessoas sobre o córrego. Além disso, serão readequadas as travessias que ficam na região das ruas João Caetano e Fernando Costa. 
 
-Com investimento de R$ 40 milhões, as obras do Complexo Viário Cassaquera têm oito frentes de trabalho: 
+Com investimento de R$ 40 milhões, as obras do Complexo Viário Cassaquera têm <strong>oito frentes de trabalho</strong>: 
 
 • Remoção da camada de terra do fundo do canal. 
 • Criação da nova base do córrego, com aplicação de camada com rachão, bica corrida e lastro de concreto. 
@@ -259,7 +259,7 @@ Com investimento de R$ 40 milhões, as obras do Complexo Viário Cassaquera têm
           <ContainerGrafic className="container_obras">
             <Center>
               <TitleSection className="text-center">
-                Fases <strong>das</strong> obras
+              <strong>Fases</strong> das <strong>obras</strong>
               </TitleSection>
           <Grafic>
           <GraficCircle data={workPhase} />
@@ -279,7 +279,7 @@ Com investimento de R$ 40 milhões, as obras do Complexo Viário Cassaquera têm
           <Container>
             <Center>
               <TitleSection className="text-center">
-                Documentos <strong>das</strong> obras
+              <strong>Documentos</strong>das <strong>obras</strong>
               </TitleSection>
               <DocumentsListContainer>              
               <div className="Grid">

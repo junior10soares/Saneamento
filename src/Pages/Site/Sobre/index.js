@@ -43,13 +43,13 @@ const Sobre = ({ workLocations }) =>  {
           </TitleSection>
           <TextSection columns="2">
             <p style={{ textAlign: "justify" }}>
-            O Sanear Santo André (Saneasa) é um dos maiores programas de saneamento, drenagem, combate às enchentes e infraestrutura urbana da história do município. As intervenções são executadas pelo Semasa (Serviço Municipal de Saneamento Ambiental de Santo André), com financiamento de US$ 50 milhões pela CAF – Banco de Desenvolvimento da América Latina. A Prefeitura e o Semasa investirão US$ 12,5 milhões como contrapartida. 
+            O Sanear Santo André (Saneasa) é um dos <strong>maiores programas de saneamento, drenagem, combate às enchentes e infraestrutura</strong> urbana da história do município. As intervenções são executadas pelo Semasa (Serviço Municipal de Saneamento Ambiental de Santo André), com financiamento de US$ 50 milhões pela CAF – Banco de Desenvolvimento da América Latina. A Prefeitura e o Semasa investirão US$ 12,5 milhões como contrapartida. 
             </p>
             <p style={{ textAlign: "justify" }}>
-            As primeiras intervenções começaram em junho de 2020 com a canalização do córrego Cassaquera, que também contempla a criação de um novo sistema viário na avenida Luiz Ignácio de Anhaia Melo. Estas obras ganharam o nome de Complexo Viário Cassaquera. 
+            As primeiras intervenções começaram em junho de 2020 com a canalização do córrego Cassaquera, que também contempla a criação de um novo sistema viário na avenida Luiz Ignácio de Anhaia Melo. Estas obras ganharam o nome de <strong>Complexo Viário Cassaquera. </strong>
             </p>
             <p style={{ textAlign: "justify" }}>
-            O Programa Sanear Santo André ainda inclui a construção de mais 20 Estações de Coleta, um piscinão na sub-bacia do córrego Guarará com diversas obras de drenagem e a modernização e ampliação do sistema de monitoramento de chuva da cidade. As obras serão realizadas até 2024. 
+            O Programa Sanear Santo André ainda inclui a construção de mais <strong>20 Estações de Coleta</strong>, um <strong>piscinão </strong>na sub-bacia do córrego Guarará com diversas obras de drenagem e a modernização e <strong>ampliação do sistema de monitoramento de chuva</strong> da cidade. As obras serão realizadas até 2024. 
 
              Os investimentos têm como objetivo: 
             </p>

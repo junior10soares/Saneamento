@@ -103,30 +103,33 @@ const locations = [
           </TitleSection>
           <TextSection columns="2">
             <p style={{ textAlign: "justify" }}>
-            Com o Programa Sanear Santo André, o Semasa terá mais 20 Estações de Coleta, o que dobrará a capacidade de o município receber resíduos recicláveis, entulho, móveis, restos de pequenas construções, pneus, óleo de cozinha e lixo eletrônico (computador, geladeira, fogão etc). 
+            <strong>Com o Programa Sanear Santo André, o Semasa terá mais 0 Estações de Coleta, </strong><strong>o que dobrará a capacidade de o município receber resíduos recicláveis, entulho, móveis, restos de pequenas construções, pneus, óleo de cozinha e lixo eletrônico (computador, geladeira, fogão etc).</strong>
             </p>
             <p style={{ textAlign: "justify" }}>
-            Só em 2021, serão construídos mais 10 ecopontos (as outras 10 unidades estão previstas para serem implantadas em 2022). Os novos equipamentos têm a missão de: 
+            <strong>Só em 2021, serão construídos mais 10 ecopontos (as outras 10 unidades estão previstas para serem implantadas em 2022). Os novos equipamentos têm a missão de:</strong>
             </p>
             <p style={{ textAlign: "justify" }}>
               • Ampliar a reciclagem.
               </p>
             <p style={{ textAlign: "justify" }}>
-              • Diminuir pontos de descarte irregular de resíduos.
+            <strong> • Diminuir pontos de descarte irregular de resíduos.</strong>
             </p>
             <p style={{ textAlign: "justify" }}>
-              • Aumentar a criação de postos de trabalho nas duas cooperativas
+            <strong>• Aumentar a criação de postos de trabalho nas duas cooperativas
               de reciclagem que são parceiras da cidade – a CoopCicla e a
-              CidadeLimpa.
+              CidadeLimpa.</strong>
             </p>
             <p style={{ textAlign: "justify" }}>
-              • Proporcionar economia de recursos gastos em locais que sofrem com o despejo de materiais. 
+            <strong>• Proporcionar economia de recursos gastos em locais que sofrem com o despejo de materiais. </strong>
             </p>
             <p style={{ textAlign: "justify" }}>
-            150 mil pessoas vão ser beneficiadas com os novos ecopontos. Ao todo, a cidade passará a ter 42 equipamentos públicos para recebimento de resíduos. 
+            150 mil pessoas vão ser beneficiadas com os novos ecopontos. <strong>Ao todo, a cidade passará a ter 42 equipamentos públicos para recebimento de resíduos.</strong> 
             </p>
             <p style={{ textAlign: "justify" }}>
-            Todos os equipamentos públicos também terão um sistema de filmagem de qualidade para que possam ser evitados furtos e invasões. Para isso, haverá monitoramento dos locais em um Centro de Controle Operacional. Veja abaixo a localização dos 10 ecopontos que serão construídos em 2021. 
+            <strong>As novas Estações de Coleta serão mais modernas. Os locais vão receber caçambas compactadoras para melhorar a eficiência do sistema e reduzir o número de viagens de caminhões que levam os resíduos às cooperativas de reciclagem.</strong>            
+               </p>
+            <p style={{ textAlign: "justify" }}>
+            <strong>Todos os equipamentos públicos também terão um sistema de filmagem de qualidade para que possam ser evitados furtos e invasões</strong>. <strong>Para isso, haverá monitoramento dos locais em um Centro de Controle Operacional. Veja abaixo a</strong> localização dos 10 ecopontos que <strong>serão construídos em 2021. </strong>
             </p>
           </TextSection>
         </Center>

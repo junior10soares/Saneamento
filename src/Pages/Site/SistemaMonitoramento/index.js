@@ -52,48 +52,60 @@ const SistemaMonitoramento = ({ constructions }) =>  {
           </TitleSection>
           <TextSection columns="1">
             <p style={{ textAlign: "justify" }}>
-            Santo André terá o seu sistema de monitoramento e alerta de chuva ampliado e modernizado, a fim de otimizar a velocidade e a qualidade dos alertas enviados à população, bem como possibilitar mais eficiência de medidas que devem ser tomadas em decorrência de adversidades pluviométricas. Os principais benefícios são: 
+            <strong>Santo André terá o seu sistema de monitoramento e alerta de chuva ampliado e modernizado, 
+            a fim de otimizar a velocidade e a qualidade dos alertas enviados à população, bem como 
+            possibilitar mais eficiência de medidas que devem ser tomadas em decorrência de adversidades 
+            pluviométricas. Os principais benefícios são:</strong> 
               <p>
-                • Minimizar prejuízos materiais, de saúde e demais problemas à
-                população.
+              <strong>• Minimizar prejuízos materiais, de saúde e demais problemas à
+                população.</strong>
               </p>
               <p>
-                • Registrar o histórico do comportamento das inundações para
-                melhoria do processo de gestão.
+              <strong>• Registrar o histórico do comportamento das inundações para
+                melhoria do processo de gestão.</strong>
               </p>
               <p>
-                • Ter indicadores estatísticos, de ocorrências, desempenho de
-                produtividade e atendimento.
+              <strong>• Ter indicadores estatísticos, de ocorrências, desempenho de
+                produtividade e atendimento.</strong>
               </p>
               <p>• Apoiar planejamento e decisões estratégicas.</p>
               <p>
-                • Identificar causas e problemas, bem como responsabilidades.
+              <strong>• Identificar causas e problemas, bem como responsabilidades.</strong>
               </p>
               <p>
-                • Obter maior eficiência ao detectar e comunicar ocorrências
-                críticas e desastres.
+              <strong>• Obter maior eficiência ao detectar e comunicar ocorrências
+                críticas e desastres.</strong>
               </p>
               <p>
-                • Melhorar a qualidade do atendimento de solicitações feitas
-                pela população.
+              <strong>• Melhorar a qualidade do atendimento de solicitações feitas
+                pela população.</strong>
               </p>
-              <p>• Agilizar a limpeza e/ ou os reparos após ocorrências.</p>
+              <p><strong>• Agilizar a limpeza e/ ou os reparos após ocorrências.</strong></p>
               <p>
-                • Reduzir o número de chamados e solicitações por meio de outros
-                canais atendimento.
+              <strong>• Reduzir o número de chamados e solicitações por meio de outros
+                canais atendimento.</strong>
               </p>
               <p>
-                • Estreitar o relacionamento com a população, incentivando a
-                participação colaborativa na gestão.
+              <strong>• Estreitar o relacionamento com a população, incentivando a
+                participação colaborativa na gestão.</strong>
               </p>
-              <p>• Realizar análise de previsão meteorológica.</p>
-              <p>• Alertar previamente a população em situação de risco.</p>
+              <p><strong>• Realizar análise de previsão meteorológica.</strong></p>
+              <p><strong>• Alertar previamente a população em situação de risco.</strong></p>
             </p>
             <p style={{ textAlign: "justify" }}>
-            As intervenções preveem diversas melhorias para o sistema, como 25 novas câmeras para monitorar córregos e o rio Tamanduateí (atualmente, existem 17), 9 pluviômetros (existem 2), 23 fluviômetros (existem 9) e 7 estações meteorológicas (existem 5, mas 3 estão fora do ar); desenvolvimento de softwares de simulação de inundações, modelagem hidrográfica para o município e de gestão de alertas; implantação de 1.321 bocas de lobo inteligentes (com sensor volumétrico para alertar quando os equipamentos estão cheios de resíduos); e adequação e reabilitação de equipamentos já existentes. 
+            <strong>As intervenções preveem diversas melhorias para o sistema, como </strong>25 novas câmeras <strong>para 
+            monitorar córregos e o rio Tamanduateí (atualmente, existem 17),</strong> 9 pluviômetros
+             (<strong>existem 2</strong>), 23 fluviômetros (<strong>existem 9</strong>) e 7 estações meteorológicas
+              (<strong>existem 5, mas 3 
+             estão fora do ar</strong>); <strong>desenvolvimento de </strong>softwares de simulação de inundações, 
+             <strong>modelagem 
+             hidrográfica para o município e de gestão de alertas; implantação de</strong> 1.321 bocas de lobo 
+             inteligentes (<strong>com sensor volumétrico para alertar quando os equipamentos estão cheios de resíduos</strong>); 
+             <strong>e adequação e </strong>reabilitação de equipamentos <strong>já existentes. </strong>
             </p>
             <p style={{ textAlign: "justify" }}>
-            O novo sistema de monitoramento de chuva será operado e centralizado em uma nova sala da Defesa Civil, localizada no prédio da Prefeitura. As imagens e informações também serão passadas ao Cecoi (Centro de Controle Operacional Integrado) do Semasa para que seus técnicos façam a manutenção preventiva da rede de drenagem nos eventos pós-chuva.             </p>
+            <strong>O novo sistema de monitoramento de chuva será operado e centralizado em uma nova sala da Defesa Civil, localizada no prédio da Prefeitura. As imagens e informações também serão passadas ao Cecoi (Centro de Controle Operacional Integrado) do Semasa para que seus técnicos façam a manutenção preventiva da rede de drenagem nos eventos pós-chuva.</strong>        
+                   </p>
           </TextSection>
         </Center>
       </Container>
