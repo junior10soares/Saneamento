@@ -201,8 +201,10 @@ const renderVideos = () => {
             </TitleHome>
             <TextHome>
               <p style={{ textAlign: "justify" }}>
-              O Sanear Santo André (Saneasa) é um dos maiores programas de saneamento, drenagem e infraestrutura urbana da história do município. As intervenções são executadas pelo Semasa (Serviço Municipal de Saneamento Ambiental de Santo André), com financiamento de US$ 50 milhões pela CAF – Banco de Desenvolvimento da América Latina. O Semasa e a Prefeitura vão investir US$ 12,5 milhões como contrapartida. 
-         </p>
+                O Sanear Santo André (Saneasa) é um dos <strong>maiores programas de saneamento, drenagem e infraestrutura</strong> urbana da história do município. 
+                As intervenções são executadas pelo Semasa (Serviço Municipal de Saneamento Ambiental de Santo André), com financiamento de US$ 50 
+                milhões pela CAF – Banco de Desenvolvimento da América Latina. O Semasa e a Prefeitura vão investir US$ 12,5 milhões como contrapartida. 
+              </p>
               <div className="buttonContainer">
               <ButtonLink theme="primary" href="/sobre">
               Saiba mais

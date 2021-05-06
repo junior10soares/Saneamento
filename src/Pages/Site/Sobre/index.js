@@ -50,7 +50,8 @@ const Sobre = ({ workLocations }) =>  {
             </p>
             <p style={{ textAlign: "justify" }}>
             O Programa Sanear Santo André ainda inclui a construção de mais <strong>20 Estações de Coleta</strong>, um <strong>piscinão </strong>na sub-bacia do córrego Guarará com diversas obras de drenagem e a modernização e <strong>ampliação do sistema de monitoramento de chuva</strong> da cidade. As obras serão realizadas até 2024. 
-
+            </p>
+            <p>
              Os investimentos têm como objetivo: 
             </p>
             <p style={{ textAlign: "justify" }}>• Reduzir a incidência de enchentes. </p>
