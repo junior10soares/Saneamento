@@ -97,8 +97,8 @@ const data =  [
 ]
 
 const markersLocation = [
-  {lat: '-23.6798734', lng: '-46.4905275', name: 'Rua Fernando costa machado'},
-  {lat: '-23.6735387', lng: '-46.4960711', name: 'Rua Fernando costa machado'}
+  {lat: '-23.6735387', lng: '-46.4960711', name: 'Rua Fernando costa machado'},
+  {lat: '-23.6796537', lng: '-46.4954872', name: 'Fim das Intervenções'}
 ]
 
 
@@ -221,23 +221,35 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
               </div>
               <TextSection style={{ marginTop: 110}} columns="2">
                 <p>
-                O Semasa realiza desde 12 de junho de 2020 as obras do Complexo Viário Cassaquera, que iniciaram com a canalização de um trecho de 1,7 quilômetro do córrego Cassaquera. As intervenções vão <strong>melhorar o escoamento de águas superficiais</strong>, contribuindo para minimizar a incidência de enchentes e pontos de alagamento. Os serviços também visam <strong>diminuir problemas de descarte irregular</strong> de resíduos às margens do curso d'água. 
-
-A avenida Luiz Ignácio de Anhaia Melo também está recebendo um novo sistema viário, que será composto de duas pistas com três faixas de cada lado do córrego até a rua Fernando Costa, no Parque Gerassi. A via terá nova pavimentação, sinalização, iluminação de LED e projeto paisagístico. As obras vão facilitar o acesso ao Rodoanel e a ligação entre as avenidas Giovanni Battista Pirelli e Valentim Magalhães. 
-
-As intervenções também vão melhorar o <strong>sistema de mobilidade urbana</strong> tanto para motoristas quanto para pedestres. Serão implantadas duas novas travessias próximas às ruas Fernando Pessoa e Assis Chateaubriand, o que irá permitir a passagem de veículos e de pessoas sobre o córrego. Além disso, serão readequadas as travessias que ficam na região das ruas João Caetano e Fernando Costa. 
-
-Com investimento de R$ 40 milhões, as obras do Complexo Viário Cassaquera têm <strong>oito frentes de trabalho</strong>: 
-
-• Remoção da camada de terra do fundo do canal. 
-• Criação da nova base do córrego, com aplicação de camada com rachão, bica corrida e lastro de concreto. 
-• Instalação e assentamento de aduelas (estruturas de concreto armado que formam a base e o novo traçado do córrego). 
-• Concretagem das vigas de coroamento das aduelas: etapa para ‘unificar’ as aduelas, tendo em vista que elas vêm moduladas. Após, o canal fica solidificado como se fosse uma única peça. 
-• Compatibilização do leito do Cassaquera: nivelamento do canal com a altura das pistas da avenida Luiz Ignácio de Anhaia Melo. 
-• Interligação de resíduos domésticos lançados irregularmente no córrego com a rede coletora de esgoto. 
-• Execução da microdrenagem, que consiste em implantação de guias, sarjetas, bocas de lobos e bueiros. 
-• Execução do pavimento ao longo das duas marginais do córrego. 
+                  O Semasa realiza desde 12 de junho de 2020 as obras do Complexo Viário Cassaquera, que iniciaram com a canalização de um trecho de 1,7 
+                  quilômetro do córrego Cassaquera. As intervenções vão <strong>melhorar o escoamento de águas superficiais</strong>, contribuindo 
+                  para minimizar a incidência de enchentes e pontos de alagamento. Os serviços também visam 
+                  <strong>diminuir problemas de descarte irregular</strong> de resíduos às margens do curso d'água. 
                 </p>
+                <p>        
+                  A avenida Luiz Ignácio de Anhaia Melo também está recebendo um novo sistema viário, que será composto de duas pistas com três faixas de cada 
+                  lado do córrego até a rua Fernando Costa, no Parque Gerassi. A via terá nova pavimentação, sinalização, iluminação de LED e projeto paisagístico. 
+                  As obras vão facilitar o acesso ao Rodoanel e a ligação entre as avenidas Giovanni Battista Pirelli e Valentim Magalhães. 
+                </p>
+                <p> 
+                  As intervenções também vão melhorar o <strong>sistema de mobilidade urbana</strong> tanto para motoristas quanto para pedestres. 
+                  Serão implantadas duas novas travessias próximas às ruas Fernando Pessoa e Assis Chateaubriand, o que irá permitir a passagem de veículos e 
+                  de pessoas sobre o córrego. Além disso, serão readequadas as travessias que ficam na região das ruas João Caetano e Fernando Costa. 
+                </p>
+                <p> 
+                  Com investimento de R$ 40 milhões, as obras do Complexo Viário Cassaquera têm <strong>oito frentes de trabalho</strong>: 
+                </p>      
+                <p style={{ textAlign: "justify" }}>• Remoção da camada de terra do fundo do canal.</p>
+                <p style={{ textAlign: "justify" }}>• Criação da nova base do córrego, com aplicação de camada com rachão, bica corrida e lastro de concreto.</p> 
+                <p style={{ textAlign: "justify" }}>• Instalação e assentamento de aduelas (estruturas de concreto armado que formam a 
+                base e o novo traçado do córrego). </p>
+                <p style={{ textAlign: "justify" }}>• Concretagem das vigas de coroamento das aduelas: etapa para ‘unificar’ as aduelas, tendo em vista que 
+                elas vêm moduladas. Após, o canal fica solidificado como se fosse uma única peça.</p> 
+                <p style={{ textAlign: "justify" }}>• Compatibilização do leito do Cassaquera: nivelamento do canal com a altura das pistas da avenida 
+                Luiz Ignácio de Anhaia Melo.</p> 
+                <p style={{ textAlign: "justify" }}>• Interligação de resíduos domésticos lançados irregularmente no córrego com a rede coletora de esgoto.</p> 
+                <p style={{ textAlign: "justify" }}>• Execução da microdrenagem, que consiste em implantação de guias, sarjetas, bocas de lobos e bueiros. </p>
+                <p style={{ textAlign: "justify" }}>• Execução do pavimento ao longo das duas marginais do córrego.</p> 
               </TextSection>
             </Center>
           </Container>
@@ -259,7 +271,7 @@ Com investimento de R$ 40 milhões, as obras do Complexo Viário Cassaquera têm
           <ContainerGrafic className="container_obras">
             <Center>
               <TitleSection className="text-center">
-              <strong>Fases</strong> das <strong>obras</strong>
+              <strong>Fases</strong> das obras
               </TitleSection>
           <Grafic>
           <GraficCircle data={workPhase} />
@@ -279,7 +291,7 @@ Com investimento de R$ 40 milhões, as obras do Complexo Viário Cassaquera têm
           <Container>
             <Center>
               <TitleSection className="text-center">
-              <strong>Documentos</strong>das <strong>obras</strong>
+              <strong>Documentos</strong> das obras
               </TitleSection>
               <DocumentsListContainer>              
               <div className="Grid">
