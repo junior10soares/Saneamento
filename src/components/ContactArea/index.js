@@ -25,12 +25,15 @@ export function ContactArea() {
   const { register, handleSubmit, setValue, errors, reset } = useForm();
 
   const onSubmit = useCallback( async (data) => {
+    // console.log(data)
     try {
         setLoading(true);
-        const response = await api({
-          url: "contact",
-          method: "post",
-          body: data,
+        const response = await api.post('contact', {
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          sector: data.sector,
+          message: data.message
         });
 
         console.log('response', response)
@@ -38,7 +41,9 @@ export function ContactArea() {
             notify('success', 'Formulario enviado com sucesso!');
         }
         reset(response);
+        setLoading(false);
       }catch (err) {
+        console.log(err)
         notify('error', 'Oops! Houve um erro ao enviar, tente novamente!');
         setLoading(false);
       }
