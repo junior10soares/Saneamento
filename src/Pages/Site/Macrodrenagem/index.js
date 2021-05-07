@@ -27,7 +27,7 @@ const Macrodrenagem = () => {
           <TitleSection center>
            <strong>Obras de Macrodrenagem</strong>
           </TitleSection>
-          <TitleSection center style={{fontSize: 16}}>
+          <TitleSection center style={{fontSize: 21}}>
           O que são <strong>drenagem</strong> e <strong>macrodrenagem?</strong> 
           </TitleSection>
           <TextSection columns="1">

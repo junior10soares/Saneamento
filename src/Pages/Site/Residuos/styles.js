@@ -146,7 +146,7 @@ export const BannerPage = styled.div`
 export const TextSection = styled.div`
     margin: ${theme.spacing * 3}px 0;
     color: ${theme.textColor};
-    font-size: 16px;
+    font-size: 21px;
     line-height: 1.5;
     font-weight: 300;
     /* padding-left: 70px;
