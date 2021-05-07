@@ -50,7 +50,7 @@ export function Header() {
           {listmenu.map((item) => (
             <Link to={item.url} onClick={() => setVisibleMenu(false)}>
               <a className={router.pathname === item.url ? "active" : ""}>
-                {item.label}
+                <strong>{item.label}</strong>
               </a>
             </Link>
           ))}
