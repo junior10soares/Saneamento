@@ -157,6 +157,24 @@ const renderVideos = () => {
   );
 }
 
+  window.fbAsyncInit = function () {
+      window.FB.init({
+          appId: '478490393450873',
+          cookie: true,
+          xfbml: true,
+          version: 'v10.0'
+      });
+  };
+
+  // load facebook sdk script
+  (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/pt_BR/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
   return (
     <>
      <Header  />     

@@ -125,7 +125,8 @@ const locations = [
             • Proporcionar economia de recursos gastos em locais que sofrem com o despejo de materiais.
             </p>
             <p style={{ textAlign: "justify" }}>
-            <strong>150 mil pessoas vão ser beneficiadas</strong> com os novos ecopontos. Ao todo, a cidade passará a ter 42 equipamentos públicos para recebimento de resíduos.
+            <strong>150 mil pessoas vão ser beneficiadas</strong> com os novos ecopontos. Ao todo, a cidade passará a ter 41 equipamentos públicos para 
+            recebimento de resíduos. O raio de distância entre as unidades será de até 1,5 quilômetro.
             </p>
             <p style={{ textAlign: "justify" }}>
             As novas Estações de Coleta serão mais <strong>modernas</strong>. Os locais vão receber caçambas compactadoras para melhorar a eficiência do sistema 

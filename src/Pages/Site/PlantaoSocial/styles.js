@@ -48,7 +48,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: flex-end;
     padding-right: 24px;
-    transform: translateY(125px);
+    transform: translateY(5px);
     position: relative;
     z-index: 41;
     a {
@@ -152,6 +152,7 @@ export const ContentPageSocial = styled.div`
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    font-size: 21px;
 
     .foto {
       width: 100%;
@@ -179,4 +180,14 @@ height: 100%;
 background-position: center;
 margin-top: 100px;
 background-image: url(${props => props.image});
+`;
+
+export const TextSection = styled.div`
+    margin: ${theme.spacing * 3}px 0;
+    color: ${theme.textColor};
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 300;
+    /* padding-left: 70px;
+    padding-right: 70px; */
 `;

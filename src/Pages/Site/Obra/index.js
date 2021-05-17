@@ -194,7 +194,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
             <Center>
               <HeaderPage style={{marginBottom: 60}}>
                 <TitleSection center>
-                Complexo Viário <strong>Cassaquera</strong>
+                <strong>Complexo Viário Cassaquera</strong>
                 </TitleSection>
               </HeaderPage>
               <div className="responsiveStepBar">

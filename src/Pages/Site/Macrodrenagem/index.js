@@ -69,10 +69,6 @@ const Macrodrenagem = () => {
                 • Diminuir o assoreamento, que é quando ocorre deslizamento de terra e outros resíduos das margens para o leito.
               </p>
               <p style={{ textAlign: "justify" }}>
-                • Acabar com o assoreamento, que é quando ocorre deslizamento de
-                terra e outros resíduos das margens para o leito.
-              </p>
-              <p style={{ textAlign: "justify" }}>
                 • Regularizar a coleta e o tratamento de esgoto no trecho da canalização, ajudando na despoluição do curso d’água e preservando o meio ambiente. 
               </p>
             </p>
