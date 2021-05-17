@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import { Card, Title, Badge } from "./style";
+import { Card, Title, Badge, LinkTitle } from "./style";
 import ReactHtmlParser from "react-html-parser";
 
 export function CardArticle({ content, full }) {
@@ -26,8 +26,12 @@ export function CardArticle({ content, full }) {
     <>
       <Card full={full} >
         <Badge>{content?.news_categories.name}</Badge>
-        <Title>{content?.title}</Title>
-        <p key={content?.uuid}>
+          <Title>
+            <Link to={`/noticias/${removedAccent(content?.title)}/${content?.uuid}`}>
+            {content?.title}
+            </Link>
+          </Title>
+        <p style={{ marginTop: 120 }} key={content?.uuid}>
           {description?.length > maxLength
             ? ReactHtmlParser(trimmed?.replace(/(<([^>]+)>)/gi, ""))
             : ReactHtmlParser(description?.replace(/(<([^>]+)>)/gi, ""))}
