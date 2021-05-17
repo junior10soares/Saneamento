@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 import { Header } from "../../../components/Header";
-import {BannerPage, Center, Container,ContentPageSocial, ImageSocial, Row, TitleSection} from './styles';
+import {BannerPage, Center, Container,ContentPageSocial, ImageSocial, Row, TitleSection, TextSection} from './styles';
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { Footer } from "../../../components/Footer";
 import { CardConstruction } from "../../../components/CardConstruction";
@@ -15,23 +15,19 @@ const PlantaoSocial = () => {
       <Header />
       <BannerPage image={plantao} />
       <Container>
-        <div className="buttonWhatas">
-          <a
-            href="https://api.whatsapp.com/send?phone=5511937503181"
-            target="_blank"
-          >
-            Plantão Social
-          </a>
-        </div>
         <Center>
-          <TitleSection>
+          <TitleSection center>
             <strong>Plantão Social</strong>
           </TitleSection>
-
-          <ContentPageSocial>
-            <div className="foto">
-              <ImageSocial image={social} />
-            </div>
+          <div className="buttonWhatas">
+            <a
+              href="https://api.whatsapp.com/send?phone=5511937503181"
+              target="_blank"
+            >
+              Plantão Social
+            </a>
+          </div>
+          <TextSection>
             <div className="contentText">
               <p>
                 As obras do Complexo Viário Cassaquera contam com um Plantão
@@ -55,7 +51,7 @@ const PlantaoSocial = () => {
                 uso de máscara no ambiente.
               </p>
             </div>
-          </ContentPageSocial>
+          </TextSection>
         </Center>
       </Container>
       <Footer />

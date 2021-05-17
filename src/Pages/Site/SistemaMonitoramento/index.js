@@ -48,7 +48,7 @@ const SistemaMonitoramento = ({ constructions }) =>  {
       <Container>
         <Center>
           <TitleSection center>
-            Sistema de monitoramento
+            <strong>Sistema de monitoramento</strong>
           </TitleSection>
           <TextSection columns="1">
             <p style={{ textAlign: "justify" }}>
@@ -94,8 +94,8 @@ const SistemaMonitoramento = ({ constructions }) =>  {
             </p>
             <p style={{ textAlign: "justify" }}>
             As intervenções preveem diversas melhorias para o sistema, como <strong>25 novas câmeras</strong> para 
-            monitorar córregos e o rio Tamanduateí (atualmente, existem 17), <strong>9 pluviômetros</strong>
-             (existem 2), <strong>23 fluviômetros</strong> (existem 9) e <strong>7 estações meteorológicas</strong>
+            monitorar córregos e o rio Tamanduateí (atualmente, existem 17), <strong>9 pluviômetros</strong> (existem 2),
+            &nbsp;<strong>23 fluviômetros</strong> (existem 9) e <strong>7 estações meteorológicas</strong>
               (existem 5, mas 3 
              estão fora do ar); <strong>desenvolvimento de softwares de simulação de inundações</strong>, 
              modelagem 
