@@ -34,7 +34,7 @@ export const Card = styled.article`
             width: 0;
           `
           }
-    min-height: 286px;
+    height: 340px;
     padding: 32px;
     box-sizing: border-box;
     text-align: left;
@@ -107,7 +107,6 @@ export const Title = styled.h2`
 export const Link = styled.a`
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   background: transparent;
