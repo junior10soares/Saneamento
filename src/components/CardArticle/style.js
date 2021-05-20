@@ -86,14 +86,30 @@ export const Card = styled.article`
     width: 95% !important;
     margin: 8px auto;
   }
+
+  .title-link {
+    display: block;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+
+    @media(max-width: 768px){
+      max-width: 15ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+  }
 `;
 
 export const Title = styled.h2`
   display: block;
   color: #ffffff;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 28px;
   margin: 0;
+  cursor: pointer;
 
   @media(max-width: 768px){
     max-width: 15ch;
