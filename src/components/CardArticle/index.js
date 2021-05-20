@@ -26,19 +26,9 @@ export function CardArticle({ content, full }) {
     <>
       <Card full={full} >
         <Badge>{content?.news_categories.name}</Badge>
-          <Title>
-            <Link to={`/noticias/${removedAccent(content?.title)}/${content?.uuid}`}>
+          <Title onClick={() => {window.location(`/noticias/${removedAccent(content?.title)}/${content?.uuid}`)}}>
             {content?.title}
-            </Link>
           </Title>
-        <p style={{ marginTop: 120 }} key={content?.uuid}>
-          {description?.length > maxLength
-            ? ReactHtmlParser(trimmed?.replace(/(<([^>]+)>)/gi, ""))
-            : ReactHtmlParser(description?.replace(/(<([^>]+)>)/gi, ""))}
-        </p>
-        <Link className="link" to={`/noticias/${removedAccent(content?.title)}/${content?.uuid}`}>
-          Leia mais...
-        </Link>
       </Card>
     </>
   );
