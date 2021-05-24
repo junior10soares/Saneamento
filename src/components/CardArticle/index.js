@@ -26,7 +26,7 @@ export function CardArticle({ content, full }) {
     <>
       <Card full={full} >
         <Badge>{content?.news_categories.name}</Badge>
-          <Title onClick={() => {window.location(`/noticias/${removedAccent(content?.title)}/${content?.uuid}`)}}>
+          <Title onClick={() => {window.open(`/noticias/${removedAccent(content?.title)}/${content?.uuid}`)}}>
             {content?.title}
           </Title>
       </Card>
