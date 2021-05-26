@@ -20,7 +20,7 @@ export function CardArticle({ content, full }) {
      const slug = text?.normalize("NFD").replace(/[^a-zA-Zs]/g, "-");
       return slug?.toLowerCase();
     }		
-
+    
 
   return (
     <>
