@@ -36,7 +36,7 @@ const Noticia = () => {
    }, [id]);
 
    const newsRequest = useCallback(() => {
-    api.get('news').then(({ data }) => setNews(data?.data));
+    api.get('news?paginate=false').then(({ data }) => setNews(data?.data));
    }, []);
 
    useEffect(() => {
@@ -48,6 +48,7 @@ const Noticia = () => {
 
    console.log('newss',article.title);
    console.log('newss_article',article);
+   
   return (
     <>
     <Header />

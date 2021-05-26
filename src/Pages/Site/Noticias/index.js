@@ -12,7 +12,7 @@ import api from "../../../services/api";
 const Notícias = () => {
   const [news, setNews] = useState([]);
   const noticias = useCallback(() => {
-    api.get('news?order[id]=desc').then(({ data }) => setNews(data.data));
+    api.get('news?order[id]=desc&paginate=false').then(({ data }) => setNews(data.data));
    }, []);
 
    useEffect(() => {
