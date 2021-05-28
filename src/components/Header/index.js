@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ButtonMenu, HeaderStyle, Menu, Spacer } from "./style";
 import {Link, useLocation} from "react-router-dom";
 import logo from '../../assets/public/imagens/header/logo.svg'
+import { useGA4React } from "ga-4-react";
 
 const listmenu = [
   {
@@ -39,6 +40,9 @@ export function Header() {
 
   const [isMenuOpen, setVisibleMenu] = useState(false);
 
+  const ga4React = useGA4React();
+  console.log(ga4React);
+  
   return (
     <>
       <HeaderStyle>
