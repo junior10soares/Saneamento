@@ -144,7 +144,7 @@ const ProjetoSocioambiental = () => {
                                 </span>
                             </div>
                             <div className="row">
-                                <span className="span-column" style={{ marginRight: 15}}>
+                                <span className="span-column" style={{ marginRight: 40}}>
                                     <Document
                                         file="/documentos/projeto_socioambiental/Folder_arborização_urbana.pdf"
                                         onLoadError={console.error}
@@ -153,7 +153,7 @@ const ProjetoSocioambiental = () => {
                                     </Document>
                                     <a href="/documentos/projeto_socioambiental/Folder_arborização_urbana.pdf" target="_blank">Arborização Urbana</a>
                                 </span>
-                                <span className="span-column" style={{ marginRight: 15}}>
+                                <span className="span-column" style={{ marginRight: 40}}>
                                     <Document
                                         file="/documentos/projeto_socioambiental/Folder_orientação_aos_moradores.pdf"
                                         onLoadError={console.error}
@@ -162,7 +162,7 @@ const ProjetoSocioambiental = () => {
                                     </Document>
                                     <a href="/documentos/projeto_socioambiental/Folder_orientação_aos_moradores.pdf" target="_blank">Orientação aos moradores</a>
                                 </span>
-                                <span className="span-column">
+                                <span className="span-column" style={{ marginRight: 40}}>
                                     <Document
                                         file="/documentos/projeto_socioambiental/Como_fazer_uma_horta.pdf"
                                         onLoadError={console.error}
@@ -170,6 +170,15 @@ const ProjetoSocioambiental = () => {
                                         <Page pageNumber={1} height={250} width={250} />
                                     </Document>
                                     <a href="/documentos/projeto_socioambiental/Como_fazer_uma_horta.pdf" target="_blank">Como fazer uma horta</a>
+                                </span>
+                                <span className="span-column">
+                                    <Document
+                                        file="/documentos/projeto_socioambiental/Folder_resíduos_sólidos.pdf"
+                                        onLoadError={console.error}
+                                    >
+                                        <Page pageNumber={1} height={250} width={250} />
+                                    </Document>
+                                    <a href="/documentos/projeto_socioambiental/Folder_resíduos_sólidos.pdf" target="_blank">O lixo nosso de cada dia</a>
                                 </span>
                             </div>
                         </div>
