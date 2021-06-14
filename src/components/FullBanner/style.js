@@ -16,6 +16,10 @@ export const Banner = styled.div`
   li: {
     margin: 0 !important;
   }
+
+  @media(max-width: 768px){
+    height: 70vh;
+  }
 `;
 
 export const Slide = styled.li`

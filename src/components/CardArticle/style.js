@@ -112,10 +112,9 @@ export const Title = styled.h2`
   cursor: pointer;
 
   @media(max-width: 768px){
-    max-width: 15ch;
+  max-width: 15ch;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
   }
 
 `;

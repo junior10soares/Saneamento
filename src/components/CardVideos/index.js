@@ -31,24 +31,9 @@ const CardVideo = ({content}) => {
       };
       
     return(
-    <Container>
-        <Swiper {...params}>
-            {content?.map((video) =>(
-                  <Slide key={video?.uuid}>
-                  <iframe src={video?.url.replace('watch?v=', 'embed/')} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </Slide>            
-            ))}  
-       </Swiper>
-        <Arrow direction="left" onClick={goPrev}>
-            <MdChevronLeft />
-            </Arrow>
-            <Arrow direction="right" onClick={goNext}>
-            <MdChevronRight />
-        </Arrow>
-        </Container>
-
-
-
+          <Slide key={content?.uuid}>
+              <iframe src={content?.url.replace('watch?v=', 'embed/')} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Slide>
     );
 }
 

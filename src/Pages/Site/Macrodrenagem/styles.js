@@ -168,6 +168,11 @@ export const TextSection = styled.div`
     font-weight: 300;
     padding-left: 70px;
     padding-right: 70px;
+
+    @media (max-width: 768px) {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
 `;
 
 

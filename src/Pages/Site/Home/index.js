@@ -7,7 +7,7 @@ import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 import "pure-react-carousel/dist/react-carousel.es.css";
 import CarouselNoticias from "react-multi-carousel";
-import CarouselVideo from "react-multi-carousel";
+import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import api from '../../../services/api';
@@ -150,9 +150,11 @@ const renderVideos = () => {
   if(!loading && !videos.length){
     return <Loader />
   }
-
+  
   return(
-    <CardVideo content={videos}/>   
+    videos.map((item) => (
+      <CardVideo content={item}/>  
+    )) 
 
   );
 }
@@ -242,9 +244,49 @@ const renderVideos = () => {
         <TitleVideo center>
           Galeria de <strong> vídeos</strong>
         </TitleVideo>
-        <CenterVideo>
-          {renderVideos()}            
-        </CenterVideo>
+        <Center>
+        <Carousel
+          arrows
+          autoPlaySpeed={3000}
+          centerMode={false}
+          infinite
+          responsive={{
+            desktop: {
+              breakpoint: {
+                max: 3000,
+                min: 1027
+              },
+              items: 3,
+              partialVisibilityGutter: 40
+            },
+            mobile: {
+              breakpoint: {
+                max: 768,
+                min: 0,
+              },
+              items: 1,
+              partialVisibilityGutter: 30
+            },
+            tablet: {
+              breakpoint: {
+                max: 1024,
+                min: 464
+              },
+              items: 2,
+              partialVisibilityGutter: 30
+            }
+          }}
+          swipeable
+          draggable
+          minimumTouchDrag={80}
+          focusOnSelect={false}
+          showDots={false}
+          sliderClass=""
+          slidesToSlide={1}
+        >
+          {renderVideos()}
+          </Carousel>
+          </Center>
         </Column>
       </Container>
 
@@ -281,7 +323,7 @@ const renderVideos = () => {
     },
     mobile: {
       breakpoint: {
-        max: 600,
+        max: 768,
         min: 0,
       },
       items: 1,
