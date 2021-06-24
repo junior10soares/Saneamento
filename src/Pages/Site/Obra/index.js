@@ -224,7 +224,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
                   O Semasa realiza desde 12 de junho de 2020 as obras do Complexo Viário Cassaquera, que iniciaram com a canalização de um trecho de 1,7 
                   quilômetro do córrego Cassaquera. As intervenções vão <strong>melhorar o escoamento de águas superficiais</strong>, contribuindo 
                   para minimizar a incidência de enchentes e pontos de alagamento. Os serviços também visam 
-                  <strong>diminuir problemas de descarte irregular</strong> de resíduos às margens do curso d'água. 
+                  <strong> diminuir problemas de descarte irregular</strong> de resíduos às margens do curso d'água. 
                 </p>
                 <p>        
                   A avenida Luiz Ignácio de Anhaia Melo também está recebendo um novo sistema viário, que será composto de duas pistas com três faixas de cada 
