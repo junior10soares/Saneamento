@@ -178,7 +178,7 @@ const ProjetoSocioambiental = () => {
                                     >
                                         <Page pageNumber={1} height={250} width={250} />
                                     </Document>
-                                    <a href="/documentos/projeto_socioambiental/Folder_resíduos_sólidos.pdf" target="_blank">O lixo nosso de cada dia</a>
+                                    <a href="/documentos/projeto_socioambiental/Folder_lixo_nosso_cada_dia.pdf" target="_blank">O lixo nosso de cada dia</a>
                                 </span>
                             </div>
                         </div>
