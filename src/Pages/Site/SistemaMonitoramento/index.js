@@ -109,6 +109,8 @@ const SistemaMonitoramento = ({ constructions }) =>  {
               <p>• Realizar análise de previsão meteorológica.</p>
               <p>• Alertar previamente a população em situação de risco.</p>
             </p>
+
+          <p style={{fontWeight: "bold"}}>As intervenções no sistema de monitoramento de chuva preveem:</p>
           </TextSection>
             <Center>
               <DocumentsList>
@@ -116,11 +118,11 @@ const SistemaMonitoramento = ({ constructions }) =>  {
                   <div className="row">
                     <span className="span-column" style={{marginLeft: 5, marginRight: 6}}>
                       <img style={{ height: 50, width: 50}} src={fluviometros} />
-                      <p style={{margin: 0}}>13 Fluviômetros</p>
+                      <p style={{margin: 0}}>23 fluviômetros (existem 9)</p>
                     </span>
                     <span className="span-column" style={{marginRight: 6}}>
                       <img style={{ height: 50, width: 50}} src={estacoes} />
-                      <p style={{margin: 0, marginRight: 10}}>7 Estações meteorológicas</p>
+                      <p style={{margin: 0, marginRight: 10}}>7 Estações meteorológicas (existem 5, mas 3 estão fora do ar)</p>
                     </span>
                     <span className="span-column" style={{marginRight: 6}}>
                       <img style={{ height: 50, width: 50}} src={reabilitacao} />
@@ -151,11 +153,11 @@ const SistemaMonitoramento = ({ constructions }) =>  {
                   <div className="row">
                     <span className="span-column" style={{marginLeft: 5, marginRight: 6}}>
                       <img style={{ height: 50, width: 50}} src={pluviometros} />
-                      <p style={{margin: 0}}>9 Pluviômetros</p>
+                      <p style={{margin: 0}}>9 pluviômetros (existem 2)</p>
                     </span>
                     <span className="span-column" style={{marginRight: 6}}>
                       <img style={{ height: 50, width: 50}} src={boca_lobos} />
-                      <p style={{margin: 0}}>Boca de lobos inteligentes</p>
+                      <p style={{margin: 0}}>1600 Bocas de lobos inteligentes</p>
                     </span>
                     <span className="span-column" style={{marginRight: 6}}>
                       <img style={{ height: 50, width: 50}} src={servidores} />
