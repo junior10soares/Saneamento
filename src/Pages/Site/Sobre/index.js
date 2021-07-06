@@ -8,7 +8,10 @@ import {
   TextSection,
   BannerPage,
   ImagemSobre,
+  Column,
+  Rounded
 } from "./styles";
+import { TimeLine } from "../../../components/TimeLine"
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { Footer } from "../../../components/Footer";
 import MapComponent from "../../../components/MapComponent";
@@ -68,7 +71,20 @@ const Sobre = ({ workLocations }) =>  {
         </ImagemSobre>
           </TextSection>
         </Center>
-      
+        <div style={{
+          margin: "0 auto",
+          display: "block",
+        }}>
+          <Column>
+          
+              <Rounded color="#d6ac36" after="Mobilização para buscar recursos junto a CAF">
+                  <p>2017</p>
+              </Rounded>
+              <Rounded color="#d6ac36" before="28 de setembro Envio de projeto de lei à câmara">
+                  2018
+              </Rounded>
+          </Column>
+        </div>
       </Container>
       <Container>
       </Container>

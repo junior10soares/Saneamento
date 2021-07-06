@@ -172,3 +172,39 @@ text-align: center;
 }
 
 `;
+
+export const Rounded = styled.div
+`
+    background-color: ${props => props.color};
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    margin: 0;
+
+    &::before {
+        color: black;
+        content: "${props => props.before ? props.before : ''}";
+        position: relative;
+        margin: 0;
+        left: 0;
+    }
+
+    &::after {
+        color: black;
+        content: "${props => props.after ? props.after : ''}";
+        position: absolute;
+        margin: 0;
+        right: 0;
+        
+    }
+`
+
+export const Column = styled.div
+`
+    display: flex;
+    flex-direction: column;
+    max-width: ${theme.center}px;
+    margin: 0 auto;
+    display: block;
+`
