@@ -198,7 +198,7 @@ export const Rounded = styled.div
       left: 0;
       font-weight: normal;
       font-size: calc(8px + (18 - 8) * ((100vw - 300px) / (1600 - 300)));
-      width: 40%;
+      width: 45%;
       text-align: end;
     }
 
@@ -211,7 +211,27 @@ export const Rounded = styled.div
       right: 0;
       font-weight: normal;
       font-size: calc(8px + (18 - 8) * ((100vw - 300px) / (1600 - 300)));
-      width: 40%;
+      width: 45%;
+    }
+
+    @media (max-width: 1024px) {
+      &::before {      
+        width: 43%;
+      }
+
+      &::after {
+        width: 43%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      &::before {      
+        width: 41%;
+      }
+
+      &::after {
+        width: 41%;
+      }
     }
 `
 
@@ -227,6 +247,15 @@ export const Column = styled.div
 export const TimelineContainer = styled.div
 `
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`
+
+export const TimelineLine = styled.div
+`
+  display: flex;
   width: 100%; 
   justify-content: center;
   position: relative;
@@ -235,4 +264,18 @@ export const TimelineContainer = styled.div
     margin-top: 10px;
   }    
 
+`
+
+export const TimelineTitle = styled.div
+`
+  display: flex;
+  width: 100%; 
+  justify-content: center;
+
+  & > h2 {
+    font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 100;
+    opacity: 0.7;
+    text-align: center;
+  }
 `
