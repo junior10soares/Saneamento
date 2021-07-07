@@ -175,28 +175,43 @@ text-align: center;
 
 export const Rounded = styled.div
 `
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: ${props => props.color};
-    height: 50px;
-    width: 50px;
+    height: calc(30px + (70 - 30) * ((100vw - 300px) / (1600 - 300)));
+    width: calc(30px + (70 - 30) * ((100vw - 300px) / (1600 - 300)));
     border-radius: 50%;
     color: white;
-    margin: 0;
+    margin: 0;    
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: calc(10px + (24 - 10) * ((100vw - 300px) / (1600 - 300)));
 
-    &::before {
-        color: black;
-        content: "${props => props.before ? props.before : ''}";
-        position: relative;
-        margin: 0;
-        left: 0;
+    &::before {      
+      color: black;
+      opacity: 0.6;
+      ${props => props.before ? `{ content: '${props.before}' }` : ''};
+      position: absolute;
+      margin: 0;
+      left: 0;
+      font-weight: normal;
+      font-size: calc(8px + (18 - 8) * ((100vw - 300px) / (1600 - 300)));
+      width: 40%;
+      text-align: end;
     }
 
     &::after {
-        color: black;
-        content: "${props => props.after ? props.after : ''}";
-        position: absolute;
-        margin: 0;
-        right: 0;
-        
+      color: black;
+      opacity: 0.6;
+      ${props => props.after ? `{ content: '${props.after}' }` : ''};
+      position: absolute;
+      margin: 0;
+      right: 0;
+      font-weight: normal;
+      font-size: calc(8px + (18 - 8) * ((100vw - 300px) / (1600 - 300)));
+      width: 40%;
     }
 `
 
@@ -207,4 +222,17 @@ export const Column = styled.div
     max-width: ${theme.center}px;
     margin: 0 auto;
     display: block;
+`
+
+export const TimelineContainer = styled.div
+`
+  display: flex;
+  width: 100%; 
+  justify-content: center;
+  position: relative;
+
+  & + & {
+    margin-top: 10px;
+  }    
+
 `

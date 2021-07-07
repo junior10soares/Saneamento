@@ -8,10 +8,9 @@ import {
   TextSection,
   BannerPage,
   ImagemSobre,
-  Column,
-  Rounded
+  Rounded,
+  TimelineContainer
 } from "./styles";
-import { TimeLine } from "../../../components/TimeLine"
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { Footer } from "../../../components/Footer";
 import MapComponent from "../../../components/MapComponent";
@@ -72,18 +71,43 @@ const Sobre = ({ workLocations }) =>  {
           </TextSection>
         </Center>
         <div style={{
-          margin: "0 auto",
-          display: "block",
+          // margin: "0 auto",
+          display: "flex",
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: '100%'
         }}>
-          <Column>
-          
-              <Rounded color="#d6ac36" after="Mobilização para buscar recursos junto a CAF">
-                  <p>2017</p>
-              </Rounded>
-              <Rounded color="#d6ac36" before="28 de setembro Envio de projeto de lei à câmara">
-                  2018
-              </Rounded>
-          </Column>
+          <TimelineContainer>
+            <Rounded color="#D7A187" after="Mobilização para buscar recursos junto a CAF">
+                2017
+            </Rounded>
+          </TimelineContainer>
+          <TimelineContainer>
+            <Rounded color="#0A5DAB" before="28 de Setembro - Envio de projeto de lei à câmara">
+                2018
+            </Rounded>
+          </TimelineContainer>
+          <TimelineContainer>
+            <Rounded color="#62B948" after="24 e 26 de Junho - Visita de representantes da CAF">
+                2019
+            </Rounded>
+          </TimelineContainer>
+          <TimelineContainer>
+            <Rounded color="#F14E1D" before="17 de Dezembro - Aval do Senado para financiamento do banco">
+                2019
+            </Rounded>
+          </TimelineContainer>
+          <TimelineContainer>
+            <Rounded color="#0A5DAB" after="30 de Dezembro - Assinatura do contrato com a CAF">
+                2019
+            </Rounded>
+          </TimelineContainer>
+          <TimelineContainer>
+            <Rounded color="#F14E1D" before="12 de Junho - Início das obras do complexo viário cassaquera">
+                2020
+            </Rounded>
+          </TimelineContainer>
         </div>
       </Container>
       <Container>
