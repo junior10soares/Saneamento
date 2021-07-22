@@ -35,8 +35,8 @@ const locations = [
   },
   {
     name: "Santa Maria",
-    lat: "-23.6520941",
-    lng: "-46.5488333",
+    lat: "-23.6524486",
+    lng: "-46.5490063", 
   },
   {
     name: 'Jardim',
