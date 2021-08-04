@@ -125,7 +125,7 @@ const locations = [
             • Proporcionar economia de recursos gastos em locais que sofrem com o despejo de materiais.
             </p>
             <p style={{ textAlign: "justify" }}>
-            <strong>150 mil pessoas vão ser beneficiadas</strong> com os novos ecopontos. Ao todo, a cidade passará a ter 40 equipamentos públicos para 
+            <strong>Mais de 170 mil pessoas vão ser beneficiadas</strong> com os novos ecopontos. Ao todo, a cidade passará a ter 40 equipamentos públicos para 
             recebimento de resíduos. O raio de distância entre as unidades será de até 1,5 quilômetro.
             </p>
             <p style={{ textAlign: "justify" }}>
