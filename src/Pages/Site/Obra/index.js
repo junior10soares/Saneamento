@@ -5,21 +5,14 @@ import ReactHtmlParser from "react-html-parser";
 import { Header } from "../../../components/Header";
 import {Line} from 'rc-progress';
 import {FaWhatsapp} from 'react-icons/fa';
-import {FiFileText, FiHeadphones, FiXCircle, FiStar, FiEye, FiDownload} from 'react-icons/fi';
-import { 
-  Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, 
-  SlideMacro, TextSection, WhatsappButton, Grafic, ContainerGrafic, DocumentsListContainer, Doc,
-  Card, Image, Depoimento, Name, Info, DepoimentoInfo } from './styles';
+import {FiFileText, FiHeadphones, FiXCircle, FiStar, FiEye, FiDownload} from 'react-icons/fi'
+import { Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, SlideMacro, TextSection, WhatsappButton, Grafic, ContainerGrafic, DocumentsListContainer, Doc } from './styles';
 import { Footer } from "../../../components/Footer";
 import { AlbumPhotos } from "../../../components/AlbumPhotos";
 import { StepsConstruction } from "../../../components/StepsConstruction";
-import { CardDepoimento } from "../../../components/CardDepoimento";
 import MapComponent from "../../../components/MapComponent";
 import { DocumentsList } from "../../../components/DocumentsList";
-import { ImQuotesRight } from 'react-icons/im';
 import { ModalSlide } from "../../../components/ModalSlide";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import img1 from '../../../assets/public/imagens/MacroSlide/img1.jpg';
 import img2 from '../../../assets/public/imagens/MacroSlide/img2.jpg';
 import img3 from '../../../assets/public/imagens/MacroSlide/img3.jpg';
@@ -29,11 +22,6 @@ import img6 from '../../../assets/public/imagens/MacroSlide/img6.jpg';
 import img7 from '../../../assets/public/imagens/MacroSlide/img7.jpg';
 import img8 from '../../../assets/public/imagens/MacroSlide/img8.jpg';
 import img9 from '../../../assets/public/imagens/MacroSlide/img9.jpg';
-import teste1 from '../../../assets/public/imagens/depoimento/teste1.jpg';
-import depoimento1 from '../../../assets/public/imagens/depoimento/trerezinha.jpg';
-import depoimento2 from '../../../assets/public/imagens/depoimento/abelar.jpg';
-import depoimento3 from '../../../assets/public/imagens/depoimento/jose.jpg';
-import depoimento4 from '../../../assets/public/imagens/depoimento/marcia.jpg';
 import GraficCircle from '../../../components/GraficCircle';
 
 
@@ -111,37 +99,6 @@ const data =  [
 const markersLocation = [
   {lat: '-23.6735387', lng: '-46.4960711', name: 'Rua Fernando costa machado'},
   {lat: '-23.6796537', lng: '-46.4954872', name: 'Fim das Intervenções'}
-]
-
-const depoimentos = [
-  {
-    id: 0,
-    text: "Todo dia eu passo aqui e fico olhando. Não vejo a hora de tudo ficar pronto. Vou ter orgulho demorar aqui.",
-    nome: "Terezinha Bezerra da Silva",
-    info: "69 anos, moradora da Vila Homero Thon",
-    image: depoimento1
-  },
-  {
-    id: 1,
-    text: "Não pensava que iria ficar bonito desse jeito. Eu nem acreditava mais que iriam fazer melhorias na nossa região.",
-    nome: "Abelar Ferreira dos Santos",
-    info: "80 anos, morador da Vila Guarani",
-    image: depoimento2
-  },
-  {
-    id: 2,
-    text: "Eu tenho certeza de que vai melhorar as condições de saúde e ambientais, a valorização das nossas casas e fomentar o comércio.",
-    nome: "José Fernandes de Almeida",
-    info: "73, morador do  Centreville",
-    image: depoimento3
-  },
-  {
-    id: 3,
-    text: "Anos atrás era muito diferente. Era barro. Agora, não. Vamos ter nova calçada, rede de esgoto. Estou apostando todas as minhas fichas nesta obra.",
-    nome: "Márcia Pereira Bueno",
-    info: "80 anos, morador da Vila Guarani",
-    image: depoimento4
-  }
 ]
 
 
@@ -470,61 +427,6 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
           </ModalSlide>
           </Container>
         )}
-          <Center>
-          <Carousel
-            arrows={false}
-            autoPlaySpeed={0}
-            centerMode={false}
-            responsive={{
-              desktop: {
-                breakpoint: {
-                  max: 4000,
-                  min: 1027
-                },
-                items: 2,
-                partialVisibilityGutter: 0
-              },
-              mobile: {
-                breakpoint: {
-                  max: 768,
-                  min: 0,
-                },
-                items: 1,
-                partialVisibilityGutter: 30
-              },
-              tablet: {
-                breakpoint: {
-                  max: 1024,
-                  min: 464
-                },
-                items: 2,
-                partialVisibilityGutter: 30
-              }
-            }}
-            swipeable
-            draggable
-            minimumTouchDrag={80}
-            focusOnSelect={false}
-            showDots={true}
-            sliderClass=""
-            slidesToSlide={2}
-            renderButtonGroupOutside={true}
-            >
-              {depoimentos.map((item) => (
-                <Card>
-                  <Image src={item.image} alt="image" />
-                  <DepoimentoInfo>
-                      <Depoimento>{item.text}</Depoimento>
-                      <Name>{item.nome},</Name>
-                      <Info>{item.info}.</Info>
-                  </DepoimentoInfo>
-                  <div style={{marginRight: 10, marginLeft: 25, top: 0, height: "200px"}}>
-                  <ImQuotesRight color="#2f80ed" size={60} />
-                  </div>
-              </Card>
-              ))}
-          </Carousel>
-          </Center>  
           <Container>
             <Center>
               <MapComponent markers={markersLocation} />
