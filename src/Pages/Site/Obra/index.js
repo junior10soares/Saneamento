@@ -29,10 +29,10 @@ import img6 from '../../../assets/public/imagens/MacroSlide/img6.jpg';
 import img7 from '../../../assets/public/imagens/MacroSlide/img7.jpg';
 import img8 from '../../../assets/public/imagens/MacroSlide/img8.jpg';
 import img9 from '../../../assets/public/imagens/MacroSlide/img9.jpg';
-import depoimento1 from '../../../assets/public/imagens/depoimento/trerezinha.jpg';
-import depoimento2 from '../../../assets/public/imagens/depoimento/abelar.jpg';
-import depoimento3 from '../../../assets/public/imagens/depoimento/jose.jpg';
-import depoimento4 from '../../../assets/public/imagens/depoimento/marcia.jpg';
+import depoimento1 from '../../../assets/public/imagens/depoimento/depoimento1.jpg';
+import depoimento2 from '../../../assets/public/imagens/depoimento/depoimento2.jpg';
+import depoimento3 from '../../../assets/public/imagens/depoimento/depoimento3.jpg';
+import depoimento4 from '../../../assets/public/imagens/depoimento/depoimento4.jpg';
 import GraficCircle from '../../../components/GraficCircle';
 
 
