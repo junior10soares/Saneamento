@@ -526,3 +526,52 @@ export const Doc = styled.div`
 }
 
 `;
+
+export const Card = styled.div`
+    border: 1px solid;
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    border-color: lightgrey;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+`
+
+export const Image = styled.img`
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    object-fit: cover;
+`
+
+export const Depoimento = styled.p`
+    font-size: 19px;
+    color: grey;
+    font-family: 'Roboto',sans-serif;
+    text-align: left;
+`
+
+export const DepoimentoInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
+
+export const Name = styled.p`
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+`
+
+export const Info = styled.p`
+    font-size: 15px;
+    color: grey;
+    font-family: 'Roboto',sans-serif;
+    margin-top: 0;
+`

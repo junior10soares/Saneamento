@@ -470,6 +470,9 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
           </Container>
         )}
           <Center>
+              <TitleSection className="text-center">
+                Depoimentos <strong>de Moradores</strong>
+              </TitleSection>
           <Carousel
             arrows={false}
             autoPlaySpeed={0}
