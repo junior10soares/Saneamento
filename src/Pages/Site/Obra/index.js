@@ -29,7 +29,6 @@ import img6 from '../../../assets/public/imagens/MacroSlide/img6.jpg';
 import img7 from '../../../assets/public/imagens/MacroSlide/img7.jpg';
 import img8 from '../../../assets/public/imagens/MacroSlide/img8.jpg';
 import img9 from '../../../assets/public/imagens/MacroSlide/img9.jpg';
-import teste1 from '../../../assets/public/imagens/depoimento/teste1.jpg';
 import depoimento1 from '../../../assets/public/imagens/depoimento/trerezinha.jpg';
 import depoimento2 from '../../../assets/public/imagens/depoimento/abelar.jpg';
 import depoimento3 from '../../../assets/public/imagens/depoimento/jose.jpg';
