@@ -508,6 +508,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
             sliderClass=""
             slidesToSlide={2}
             renderButtonGroupOutside={true}
+            renderDotsOutside={true}
             >
               {depoimentos.map((item) => (
                 <Card>
