@@ -9,7 +9,7 @@ import {FiFileText, FiHeadphones, FiXCircle, FiStar, FiEye, FiDownload} from 're
 import { 
   Center, Container, Row, TitleSection, BannerPage, HeaderPage, Plantao, Projeto, 
   SlideMacro, TextSection, WhatsappButton, Grafic, ContainerGrafic, DocumentsListContainer, Doc,
-  Card, Image, Depoimento, Name, Info, DepoimentoInfo } from './styles';
+  Card, Image, Depoimento, Name, Info, DepoimentoInfo, IconDiv } from './styles';
 import { Footer } from "../../../components/Footer";
 import { AlbumPhotos } from "../../../components/AlbumPhotos";
 import { StepsConstruction } from "../../../components/StepsConstruction";
@@ -509,7 +509,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
             focusOnSelect={false}
             showDots={true}
             sliderClass=""
-            slidesToSlide={2}
+            slidesToSlide={1}
             renderButtonGroupOutside={true}
             renderDotsOutside={true}
             >
@@ -521,9 +521,9 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
                       <Name>{item.nome},</Name>
                       <Info>{item.info}.</Info>
                   </DepoimentoInfo>
-                  <div style={{marginRight: 10, marginLeft: 25, top: 0, height: "200px"}}>
+                  <IconDiv>
                   <ImQuotesRight color="#2f80ed" size={60} />
-                  </div>
+                  </IconDiv>
               </Card>
               ))}
           </Carousel>

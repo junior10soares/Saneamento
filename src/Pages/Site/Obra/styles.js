@@ -538,6 +538,11 @@ export const Card = styled.div`
     justify-content: center;
     align-items: center;
     margin: 10px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: 90%;
+    }
 `
 
 export const Image = styled.img`
@@ -549,10 +554,14 @@ export const Image = styled.img`
 `
 
 export const Depoimento = styled.p`
-    font-size: 19px;
+    font-size: 16px;
     color: grey;
     font-family: 'Roboto',sans-serif;
     text-align: left;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 `
 
 export const DepoimentoInfo = styled.div`
@@ -562,16 +571,36 @@ export const DepoimentoInfo = styled.div`
 `
 
 export const Name = styled.p`
-    font-size: 15px;
+    font-size: 14px;
     color: grey;
     font-weight: bold;
     font-family: 'Roboto',sans-serif;
     margin: 0;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 `
 
 export const Info = styled.p`
-    font-size: 15px;
+    font-size: 14px;
     color: grey;
     font-family: 'Roboto',sans-serif;
     margin-top: 0;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+`
+
+export const IconDiv = styled.div`
+    marginRight: 10px;
+    marginLeft: 25px;
+    top: 0;
+    height: 200px;
+
+    @media (max-width: 768px) {
+        height: 0;
+        visibility: hidden;
+    }
 `
