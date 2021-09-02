@@ -173,7 +173,7 @@ const ProjetoSocioambiental = () => {
                                 </span>
                                 <span className="span-column">
                                     <Document
-                                        file="/documentos/projeto_socioambiental/Folder_resíduos_sólidos.pdf"
+                                        file="/documentos/projeto_socioambiental/Folder_lixo_nosso_cada_dia.pdf"
                                         onLoadError={console.error}
                                     >
                                         <Page pageNumber={1} height={250} width={250} />
