@@ -157,7 +157,7 @@ const SistemaMonitoramento = ({ constructions }) =>  {
                     </span>
                     <span className="span-column" style={{marginRight: 6}}>
                       <img style={{ height: 50, width: 50}} src={boca_lobos} />
-                      <p style={{margin: 0}}>1600 Bocas de lobos inteligentes</p>
+                      <p style={{margin: 0}}>560 Bocas de lobo inteligentes</p>
                     </span>
                     <span className="span-column" style={{marginRight: 6}}>
                       <img style={{ height: 50, width: 50}} src={servidores} />
