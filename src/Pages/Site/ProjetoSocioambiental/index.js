@@ -316,87 +316,118 @@ const ProjetoSocioambiental = () => {
                         <div className="Grid">
                             <div className="row">
                                 <span className="span-column">
-                                    <Document
-                                        file="/documentos/projeto_socioambiental/Banner_água.pdf"
-                                        onLoadError={console.error}
-                                    >
-                                        <Page pageNumber={1} height={200} width={200} />
-                                    </Document>
+                                    <a href="/documentos/projeto_socioambiental/Banner_água.pdf" target="_blank">
+                                        <Document
+                                            file="/documentos/projeto_socioambiental/Banner_água.pdf"
+                                            onLoadError={console.error}
+                                        >
+                                            <Page pageNumber={1} height={200} width={200} />
+                                        </Document>
+                                    </a>
                                     <a href="/documentos/projeto_socioambiental/Banner_água.pdf" target="_blank">Economia de Água</a>
                                 </span>
                                 <span className="span-column">
-                                    <Document
-                                        file="/documentos/projeto_socioambiental/Banner_arborização.pdf"
-                                        onLoadError={console.error}
-                                    >
-                                        <Page pageNumber={1} height={200} width={200} />
-                                    </Document>
+                                    <a href="/documentos/projeto_socioambiental/Banner_arborização.pdf" target="_blank">
+                                        <Document
+                                            file="/documentos/projeto_socioambiental/Banner_arborização.pdf"
+                                            onLoadError={console.error}
+                                        >
+                                            <Page pageNumber={1} height={200} width={200} />
+                                        </Document>
+                                    </a>
                                     <a href="/documentos/projeto_socioambiental/Banner_arborização.pdf" target="_blank">Benefícios da Arborização Urbana</a>
                                 </span>
                                 <span className="span-column">
-                                    <Document
-                                        file="/documentos/projeto_socioambiental/Banner_hortas_urbanas.pdf"
-                                        onLoadError={console.error}
-                                    >
-                                        <Page pageNumber={1} height={200} width={200} />
-                                    </Document>
+                                    <a href="/documentos/projeto_socioambiental/Banner_hortas_urbanas.pdf" target="_blank">
+                                        <Document
+                                            file="/documentos/projeto_socioambiental/Banner_hortas_urbanas.pdf"
+                                            onLoadError={console.error}
+                                        >
+                                            <Page pageNumber={1} height={200} width={200} />
+                                        </Document>
+                                    </a>
                                     <a href="/documentos/projeto_socioambiental/Banner_hortas_urbanas.pdf" target="_blank">Hortas Urbanas</a>
                                 </span>
                                 <span className="span-column">
-                                    <Document
-                                        file="/documentos/projeto_socioambiental/Banner_resíduos.pdf"
-                                        onLoadError={console.error}
-                                    >
-                                        <Page pageNumber={1} height={200} width={200} />
-                                    </Document>
+                                    <a href="/documentos/projeto_socioambiental/Banner_resíduos.pdf" target="_blank">
+                                        <Document
+                                            file="/documentos/projeto_socioambiental/Banner_resíduos.pdf"
+                                            onLoadError={console.error}
+                                        >
+                                            <Page pageNumber={1} height={200} width={200} />
+                                        </Document>
+                                    </a>
                                     <a href="/documentos/projeto_socioambiental/Banner_resíduos.pdf" target="_blank" className="break-tag">Resíduos Sólidos - Descarte com Responsabilidade</a>
                                 </span>
                                 <span className="span-column">
-                                    <Document
-                                        file="/documentos/projeto_socioambiental/Banner_saúde_saneamento.pdf"
-                                        onLoadError={console.error}
-                                    >
-                                        <Page pageNumber={1} height={200} width={200} />
-                                    </Document>
+                                    <a href="/documentos/projeto_socioambiental/Banner_saúde_saneamento.pdf" target="_blank">
+                                        <Document
+                                            file="/documentos/projeto_socioambiental/Banner_saúde_saneamento.pdf"
+                                            onLoadError={console.error}
+                                        >
+                                            <Page pageNumber={1} height={200} width={200} />
+                                        </Document>
+                                    </a>
                                     <a href="/documentos/projeto_socioambiental/Banner_saúde_saneamento.pdf" target="_blank">Saúde e saneamento ambiental</a>
                                 </span>
                             </div>
                             <div className="row">
                                 <span className="span-column" style={{ marginRight: 40}}>
-                                    <Document
-                                        file="/documentos/projeto_socioambiental/Folder_arborização_urbana.pdf"
-                                        onLoadError={console.error}
-                                    >
-                                        <Page pageNumber={1} height={250} width={250} />
-                                    </Document>
+                                    <a href="/documentos/projeto_socioambiental/Folder_arborização_urbana.pdf" target="_blank">
+                                        <Document
+                                            file="/documentos/projeto_socioambiental/Folder_arborização_urbana.pdf"
+                                            onLoadError={console.error}
+                                        >
+                                            <Page pageNumber={1} height={250} width={250} />
+                                        </Document>
+                                    </a>
                                     <a href="/documentos/projeto_socioambiental/Folder_arborização_urbana.pdf" target="_blank">Arborização Urbana</a>
                                 </span>
                                 <span className="span-column" style={{ marginRight: 40}}>
-                                    <Document
-                                        file="/documentos/projeto_socioambiental/Folder_orientação_aos_moradores.pdf"
-                                        onLoadError={console.error}
-                                    >
-                                        <Page pageNumber={1} height={250} width={250} />
-                                    </Document>
+                                    <a href="/documentos/projeto_socioambiental/Folder_orientação_aos_moradores.pdf" target="_blank">
+                                        <Document
+                                            file="/documentos/projeto_socioambiental/Folder_orientação_aos_moradores.pdf"
+                                            onLoadError={console.error}
+                                        >
+                                            <Page pageNumber={1} height={250} width={250} />
+                                        </Document>
+                                    </a>          
                                     <a href="/documentos/projeto_socioambiental/Folder_orientação_aos_moradores.pdf" target="_blank">Orientação aos moradores</a>
                                 </span>
                                 <span className="span-column" style={{ marginRight: 40}}>
-                                    <Document
-                                        file="/documentos/projeto_socioambiental/Como_fazer_uma_horta.pdf"
-                                        onLoadError={console.error}
-                                    >
-                                        <Page pageNumber={1} height={250} width={250} />
-                                    </Document>
+                                    <a href="/documentos/projeto_socioambiental/Como_fazer_uma_horta.pdf" target="_blank">
+                                        <Document
+                                            file="/documentos/projeto_socioambiental/Como_fazer_uma_horta.pdf"
+                                            onLoadError={console.error}
+                                        >
+                                            <Page pageNumber={1} height={250} width={250} />
+                                        </Document>
+                                    </a>
                                     <a href="/documentos/projeto_socioambiental/Como_fazer_uma_horta.pdf" target="_blank">Como fazer uma horta</a>
                                 </span>
                                 <span className="span-column">
+                                    <a href="/documentos/projeto_socioambiental/Folder_lixo_nosso_cada_dia.pdf" target="_blank">    
                                     <Document
                                         file="/documentos/projeto_socioambiental/Folder_lixo_nosso_cada_dia.pdf"
                                         onLoadError={console.error}
                                     >
                                         <Page pageNumber={1} height={250} width={250} />
                                     </Document>
+                                    </a>
                                     <a href="/documentos/projeto_socioambiental/Folder_lixo_nosso_cada_dia.pdf" target="_blank">O lixo nosso de cada dia</a>
+                                </span>
+                            </div>
+                            <div className="row">
+                                <span className="span-column">
+                                    <a href="/documentos/projeto_socioambiental/Cartilha_infantil_saneamento_ambiental.pdf" target="_blank">
+                                        <Document
+                                            file="/documentos/projeto_socioambiental/Cartilha_infantil_saneamento_ambiental.pdf"
+                                            onLoadError={console.error}
+                                        >
+                                            <Page pageNumber={1} height={250} width={250} />
+                                        </Document>
+                                    </a>
+                                    <a href="/documentos/projeto_socioambiental/Cartilha_infantil_saneamento_ambiental.pdf" target="_blank">Saneamento ambiental</a>
                                 </span>
                             </div>
                         </div>
