@@ -107,8 +107,7 @@ const locations = [
             recicláveis, entulho, móveis, restos de pequenas construções, pneus, óleo de cozinha e lixo eletrônico (computador, geladeira, fogão etc).
             </p>
             <p style={{ textAlign: "justify" }}>
-            Só em 2021, serão construídos mais 10 ecopontos (as outras 10 unidades estão previstas para serem implantadas em 2022). Os novos 
-              equipamentos têm a missão de:
+            Em 2022, serão construídos mais 10 eco pontos. Os novos equipamentos têm a missão de:
             </p>
             <p style={{ textAlign: "justify" }}>
               • Ampliar a reciclagem.

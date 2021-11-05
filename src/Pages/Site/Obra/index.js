@@ -28,7 +28,6 @@ import img5 from '../../../assets/public/imagens/MacroSlide/img5.jpg';
 import img6 from '../../../assets/public/imagens/MacroSlide/img6.jpg';
 import img7 from '../../../assets/public/imagens/MacroSlide/img7.jpg';
 import img8 from '../../../assets/public/imagens/MacroSlide/img8.jpg';
-import img9 from '../../../assets/public/imagens/MacroSlide/img9.jpg';
 import depoimento1 from '../../../assets/public/imagens/depoimento/depoimento1.jpg';
 import depoimento2 from '../../../assets/public/imagens/depoimento/depoimento2.jpg';
 import depoimento3 from '../../../assets/public/imagens/depoimento/depoimento3.jpg';
@@ -71,40 +70,44 @@ const options = {
 const data =  [
   {
       "id": 0,
-      "image": img1
+      "image": img1,
+      "desc": "Movimentação de terra"
   },
   {
       "id": 1,
-      "image": img2
+      "image": img2,
+      "desc": "Nova base do canal."
   },
   {
       "id": 2,
-      "image": img3
+      "image": img3,
+      "desc": "Assentamento de aduelas"
   },
   {
       "id": 3,
-      "image": img4
+      "image": img4,
+      "desc": "Compatibilização das margens"
   },
   {
       "id": 4,
-      "image": img5
+      "image": img5,
+      "desc": "Guias e sarjetas"
   },
   {
       "id": 5,
-      "image": img6
+      "image": img6,
+      "desc": "Microdrenagem"
   },
   {
       "id": 6,
-      "image": img7
+      "image": img7,
+      "desc": "Pavimentação"
   },
   {
       "id": 7,
-      "image": img8
+      "image": img8,
+      "desc": "Sinalização"
   },
-  {
-      "id": 8,
-      "image": img9
-  }
 ]
 
 const markersLocation = [
@@ -430,7 +433,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
                             <div className="backside">
                                 <div className="card">
                                     <div className="card-body">
-                                        <p className="card-text">Sem descrição</p>                                       
+                                        <p className="card-text">{imagem.desc}</p>                                       
                                          <div className="icone">
                                             <FiEye size={24}
                                               onClick={() => handleModal(imagem.id)}
