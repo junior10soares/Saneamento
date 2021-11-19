@@ -47,14 +47,12 @@ const EstudoCatadores = () => {
                         <Grid item md={6} xs={12}>
                             <TextSection columns="1">
                                 <p>
-                                    O estudo de catadores informais possibilitará a atuação integrada de vários setores 
-                                    da Prefeitura de Santo André, permitindo que o município crie ações e projetos de 
-                                    assistência social, saúde pública, cuidado e bem-estar animal, economia solidária, 
-                                    qualificação profissional e empreendedorismo. A pesquisa também é uma importante 
-                                    ferramenta para que o Semasa possa inserir os profissionais no mercado formal, por 
-                                    meio do trabalho de triagem e venda de recicláveis nas cooperativas da cidade. 
-                                    Atualmente, existem a CoopCicla e a CidadeLimpa, mas o Semasa estuda criar a 
-                                    terceira cooperativa de reciclagem.
+                                    O Semasa realiza, desde novembro de 2021, uma pesquisa em campo para mapear o 
+                                    contingente de pessoas que recolhem resíduos recicláveis pelas ruas de Santo André 
+                                    e trabalham com a compra e venda desses materiais, a exemplo de profissionais que 
+                                    atuam em depósitos e ferro velho. É uma iniciativa para que a cidade possa criar 
+                                    políticas públicas e compreender o cenário e o fluxo de comercialização de resíduos 
+                                    secos.
                                 </p>
                             </TextSection>
                         </Grid>
