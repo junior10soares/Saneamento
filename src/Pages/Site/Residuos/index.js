@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useState } from "react";
 import { Header } from "../../../components/Header";
 import {
-Container,
-Center,
-Row,
-TitleSection,
-BannerPage,
-TextSection
+  Container,
+  Center,
+  Row,
+  TitleSection,
+  BannerPage,
+  HeaderPage,
+  TextSection,
+  EstudoCatadores
 } from "./styles";
 import MapComponent from "../../../components/MapComponent";
 import "pure-react-carousel/dist/react-carousel.es.css";
@@ -16,6 +18,7 @@ import WorkCarousel from "../../../components/WorkCarousel";
 import api from "../../../services/api";
 import capa from '../../../assets/public/imagens/ResiduosSolidos/capa.png';
 
+import { FiClipboard } from 'react-icons/fi';
 
 const locations = [
   {
@@ -97,11 +100,34 @@ const locations = [
       <Header />
       <BannerPage image={capa} />
       <Container>
+        <div className="desktopStepBar" style={{ width: "100%"}}>
+          <div className="groupButtons">
+            <div className="buttonAlign">
+              <EstudoCatadores href="/estudo-de-catadores" target="_blank">
+                <FiClipboard />
+                Estudo de catadores
+              </EstudoCatadores>
+            </div>
+          </div>
+        </div>
+
         <Center>
-          <TitleSection center>
-            Gestão de <strong>Resíduos Sólidos</strong>
-          </TitleSection>
-          <TextSection columns="2">
+          <HeaderPage style={{marginBottom: 60}}>
+            <TitleSection center>
+              Gestão de <strong>Resíduos Sólidos</strong>
+            </TitleSection>
+          </HeaderPage>
+          <div className="responsiveStepBar">
+            <div className="groupButtonsResponsive">
+              <div className="buttonAlignResponsive">
+                <EstudoCatadores style={{ minWidth: 200}} href="/estudo-de-catadores" target="_blank">
+                  <FiClipboard />
+                  Estudo de catadores
+                </EstudoCatadores>
+              </div>
+            </div>
+          </div>
+          <TextSection style={{ marginTop: 110 }} columns="2">
             <p style={{ textAlign: "justify" }}>
             Com o Programa Sanear Santo André, o Semasa terá mais <strong>20 Estações de Coleta</strong>, o que dobrará a capacidade de o município receber resíduos 
             recicláveis, entulho, móveis, restos de pequenas construções, pneus, óleo de cozinha e lixo eletrônico (computador, geladeira, fogão etc).
