@@ -133,22 +133,52 @@ export const TitleSection = styled.h1`
 `;
 
 export const BannerPage = styled.div`
-    background-repeat: no-repeat;
-    background-position: 10% 66%;
-    background-position-x: center;
-    background-size: cover;
-    background-attachment: scroll;
-    height: 400px;
-    background-color: black;
-    background-image: url(${props => props.image});
+  background-repeat: no-repeat;
+  background-position: 10% 66%;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 400px;
+  background-color: black;
+  background-image: url(${props => props.image});
+`;
+
+export const HeaderPage = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: ${theme.spacing * 8}px;
 `;
 
 export const TextSection = styled.div`
-    margin: ${theme.spacing * 3}px 0;
-    color: ${theme.textColor};
-    font-size: 21px;
-    line-height: 1.5;
-    font-weight: 300;
-    /* padding-left: 70px;
-    padding-right: 70px; */
+  margin: ${theme.spacing * 3}px 0;
+  color: ${theme.textColor};
+  font-size: 21px;
+  line-height: 1.5;
+  font-weight: 300;
+  /* padding-left: 70px;
+  padding-right: 70px; */
+`;
+
+export const EstudoCatadores = styled.a`
+  height: 60px;
+  padding: 0 ${theme.spacing * 4}px;
+  background: #1182C6;
+  font-size: 14px;
+  line-height: 60px;
+  min-width: 160px;
+  cursor: pointer;
+  color: #ffffff;
+  display: inline-block;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  text-decoration: none;
+  
+  & svg {
+    font-size: 25px;
+    margin-right: 4px;
+  }
 `;
