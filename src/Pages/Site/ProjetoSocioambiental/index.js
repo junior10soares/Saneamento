@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import { Header } from "../../../components/Header";
-import {Container,Center, Row, BannerPage, TextSection, TitleSection} from './styles';
+import { Container,Center, Row, BannerPage, HeaderPage, TextSection, TitleSection, Projeto, EstudoCatadores } from './styles';
 import { DocumentsList } from '../../../components/DocumentsList';
 import { Document, Page } from "react-pdf";
 import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+import { FiStar, FiClipboard } from 'react-icons/fi';
 
 import { Footer } from "../../../components/Footer";
 import banner from '../../../assets/public/imagens/Projeto/projeto_banner.jpeg';
@@ -72,11 +74,34 @@ const ProjetoSocioambiental = () => {
             <Header />
             <BannerPage style={{ backgroundPositionY: "25%"}} image={banner} />
             <Container>
+                <div className="desktopStepBar" style={{ width: "100%"}}>
+                    <div className="groupButtons">
+                        <div className="buttonAlign">
+                            <EstudoCatadores href="/estudo-de-catadores" target="_blank">
+                                <FiClipboard />
+                                Estudo de catadores
+                            </EstudoCatadores>
+                        </div>
+                    </div>
+                </div>
+
                 <Center>
-                    <TitleSection center>
-                        <strong>Projeto de Trabalho Técnico Socioambiental</strong>
-                    </TitleSection>
-                    <TextSection columns="1">
+                    <HeaderPage style={{marginBottom: 60}}>
+                        <TitleSection center>
+                            <strong>Projeto de Trabalho Técnico Socioambiental</strong>
+                        </TitleSection>
+                    </HeaderPage>
+                    <div className="responsiveStepBar">
+                        <div className="groupButtonsResponsive">
+                            <div className="buttonAlignResponsive">
+                                <EstudoCatadores style={{ minWidth: 200}} href="/estudo-de-catadores" target="_blank">
+                                    <FiClipboard />
+                                    Estudo de catadores
+                                </EstudoCatadores>
+                            </div>
+                        </div>
+                    </div>
+                    <TextSection style={{ marginTop: 110 }} columns="1">
                         <p>
                         O Projeto de Trabalho Técnico Socioambiental (PTTSA) 
                         compreende um conjunto de ações educativas e de mobilização social 
