@@ -465,10 +465,11 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
         {open === true && (
           <Container style={{ marginTop: 10}}>
           <ModalSlide toggleModal={handleClose} currentSlide={current}>
-            {data.map((imagem) => (
+            {data.map((imagem) => (<>
                 <img src={`${imagem.image}`} alt="" className="image-modal"
                 />
-              ))}
+                <p className='imagemDesc'>{imagem.desc}</p>
+              </>))}
           </ModalSlide>
           </Container>
         )}
