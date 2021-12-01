@@ -111,7 +111,7 @@ const EstudoCatadores = () => {
                                     Santo André, no prazo de até seis meses. O estudo obterá informações de perfil 
                                     socioeconômico, renda, faixa-etária, etnia, sexo, sistema de coleta de setores do 
                                     município, sistema de vendas e outras variáveis do trabalho, quantidade de materiais 
-                                    coletados, além de questões relacionadas a saneamento, saúde e etc.
+                                    coletados, além de questões relacionadas <strong> à saúde, saneamento básico </strong> e etc.
                                 </p>
                                 <p>
                                     A pesquisa ainda permitirá o fortalecimento de políticas públicas para a causa 
