@@ -18,6 +18,7 @@ export const Container = styled.div`
       flex-direction: row;
       justify-content: flex-end;
       width: 100%;
+      z-index: 0;
     }
 
     .groupButtonsResponsive {
@@ -26,6 +27,7 @@ export const Container = styled.div`
       justify-content: center;
       width: 100%;
       margin-top: -15px;
+      z-index: 0;
     }
 
     .buttonAlign{

@@ -9,7 +9,7 @@ export const OverlayWrapper = styled.div`
   top: 0;
   height: 100%;
   width: 100%;
-  z-index: 5;
+  z-index: 10000;
   background: rgba(34, 47, 62, 0.9);
   color: white;
 `;
@@ -130,6 +130,14 @@ export const ModalContent = styled.div`
 
   p {
     font-size: 20px;
+
+    &.imagemDesc {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 4px 16px;
+      border-radius: 8px;
+      bottom: 24px;
+    }
   }
 
   @media(max-width: 768px) {
