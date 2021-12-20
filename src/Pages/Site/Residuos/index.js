@@ -28,8 +28,8 @@ const locations = [
   },
   {
     name: "Bangu",
-    lat: "-23.647502",
-    lng: "-46.5251817",
+    lat: "-23.641372",
+    lng: "-46.5218887",
   },
   {
     name: "Jd. Cristiane",
@@ -37,9 +37,9 @@ const locations = [
     lng: "-46.5321896",
   },
   {
-    name: "Santa Maria",
-    lat: "-23.6524486",
-    lng: "-46.5490063", 
+    name: "",
+    lat: "-23.7303635",
+    lng: "-46.4945559", 
   },
   {
     name: 'Jardim',
@@ -48,8 +48,8 @@ const locations = [
   },
   {
     name: 'Jd. Alvorada',
-    lat: '-23.6913025',
-    lng: '-46.5232287'
+    lat: '-23.6942366',
+    lng: '-46.5218557'
   },
   {
     name: "Palmeiras",
@@ -160,7 +160,7 @@ const locations = [
             <p style={{ textAlign: "justify" }}>
             Todos os equipamentos públicos também terão um sistema de filmagem de qualidade para que possam ser evitados furtos e invasões. 
             Para isso, haverá monitoramento dos locais em um Centro de Controle Operacional. Veja abaixo a <strong>localização dos 10 ecopontos</strong> que 
-            serão construídos em 2021.
+            serão construídos no começo de 2022.
             </p>
           </TextSection>
         </Center>
