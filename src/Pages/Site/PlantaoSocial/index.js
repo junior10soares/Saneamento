@@ -8,6 +8,8 @@ import { AlbumPhotos } from "../../../components/AlbumPhotos";
 import WorkCarousel from "../../../components/WorkCarousel";
 import plantao from '../../../assets/public/imagens/Plantao/plantao.jpg';
 import social from '../../../assets/public/imagens/Plantao/social.jpg';
+import plantao2 from '../../../assets/public/imagens/Plantao/plantao2.jpeg';
+import plantao3 from '../../../assets/public/imagens/Plantao/plantao3.jpeg';
 
 const PlantaoSocial = () => {
   return (
@@ -30,28 +32,51 @@ const PlantaoSocial = () => {
           <TextSection>
             <div className="contentText">
               <p>
-                As obras do Complexo Viário Cassaquera contam com um Plantão
-                Social exclusivo para que os moradores de Santo André possam
-                saber mais informações sobre as intervenções e os seus
-                benefícios, tirar dúvidas e levar demandas e sugestões.
-              </p>
-              <p>
-                O atendimento é realizado por uma assistente social no canteiro
-                de obras, que fica na avenida Pedro Américo, s/n. O serviço
-                ocorre de segunda a sexta-feira, das 9h às 12h e das 13h às 15h.
-              </p>
-              <p>
-                Os interessados ainda podem buscar atendimento à distância. Para
-                isso, basta entrar em contato pelo número (11) 93750-3181,
-                inclusive por meio do WhatsApp.
-              </p>
-              <p>
-                O plantão ocorre de acordo com os protocolos de saúde para
-                evitar o contágio pelo coronavírus. Desta forma, é obrigatório o
-                uso de máscara no ambiente.
+              Ter um canal exclusivo para conversar com moradores envolvidos em uma obra de grande porte, 
+              como a do Complexo Viário Cassaquera, é fundamental. Por isso, criamos o Plantão Social, que, 
+              desde outubro de 2020, já realizou mais de 330 atendimentos com a população que reside na região da avenida 
+              Professor Luiz Ignácio de Anhaia Mello.
               </p>
             </div>
           </TextSection>
+          <div>
+          <img src={plantao2} alt="Semasa"/>
+          </div>
+
+          <TextSection>
+            <div className="contentText">
+              <p>
+                O atendimento é feito por uma assistente social, responsável por acolher e ouvir a população, tirar dúvidas, 
+                resolver problemas, encaminhar sugestões e levar diversas informações sobre as obras, a fim de proporcionar 
+                mais transparência e conhecimento acerca das melhorias que estão sendo executadas pelo Semasa.
+              </p>
+              <p>
+                Quem quiser utilizar o canal pode ligar ou mandar mensagem para o WhatsApp (11) 93750-3181, 
+                de segunda a sexta-feira, das 9h às 12h e das 13h às 15h.
+              </p>
+              <p>
+              O Plantão Social também promoveu diversas reuniões de diálogo social junto à população para abordar sobre as 
+              obras de saneamento, infraestrutura e mobilidade urbana realizadas ao longo da avenida Luiz Ignácio de 
+              Anhaia Mello. Foram 21 encontros, on-line e presenciais, que contaram com a participação de mais de 250 munícipes.
+              </p>
+            </div>
+          </TextSection>
+
+          <div>
+            <img src={plantao3} alt="Semasa"/>
+          </div>
+
+          <TextSection>
+            <div className="contentText">
+              <p>
+                Para ficar mais próximo dos moradores impactados pelas intervenções do Complexo Viário Cassaquera, 
+                o plantão chegou a funcionar no CEU das Artes Jardim Marek e depois ao lado do canteiro de obras. 
+                Com a finalização das obras, o atendimento passou a ser realizado a distância.
+              </p>
+            </div>
+          </TextSection>
+          <div>
+          </div>
         </Center>
       </Container>
       <Footer />
