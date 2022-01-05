@@ -57,7 +57,21 @@ export function ContactArea() {
         <Container color="#27AE60" full>
           <Center>
             <TitleSection light center>
-              Entre em <strong>contato</strong>
+            <a 
+              className="mailto" href="mailto:comunicacao@semasa.sp.gov.br">
+              <button style={{
+                  fontWeight: "bold",
+                  fontSize: 40,
+                  textDecorationLine: "none",
+                  backgroundColor: "transparent",
+                  borderStyle:"solid",
+                  borderColor: "white",
+                  borderRadius:10,
+                  color:"white",                  
+                  padding: 10
+                }} type="button">
+              Entre em contato</button>
+            </a>
             </TitleSection>
             {/* <Row>
               <Column grid="6">
@@ -145,16 +159,6 @@ export function ContactArea() {
             </Button>
               </Column>
             </Row> */}
-            <div>
-              <Row>
-                <span style={{
-                  fontWeight: "bold",
-                  color: "white",
-                  marginRight: 5
-                }}>Email:</span>
-              <a className="mailto" href="mailto:comunicacao@semasa.sp.gov.br" target="_blank">Comunicação Semasa</a>
-              </Row>
-            </div>
           </Center>
         </Container>
       </form>

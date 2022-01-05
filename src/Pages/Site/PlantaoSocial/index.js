@@ -40,7 +40,14 @@ const PlantaoSocial = () => {
             </div>
           </TextSection>
           <div>
-          <img src={plantao2} alt="Semasa"/>
+          <img style={{
+            resizeMode: "center",
+            display: "flex",
+            margin: "auto",
+            height: 600,
+            width: 900,
+            alignItems: "center"
+          }} src={plantao2} alt="Semasa"/>
           </div>
 
           <TextSection>
@@ -63,7 +70,15 @@ const PlantaoSocial = () => {
           </TextSection>
 
           <div>
-            <img src={plantao3} alt="Semasa"/>
+            <img style={{
+            resizeMode: "center",
+            display: "flex",
+            margin: "auto",
+            height: 600,
+            width: 900,
+            alignItems: "center"
+          }} 
+            src={plantao3} alt="Semasa"/>
           </div>
 
           <TextSection>

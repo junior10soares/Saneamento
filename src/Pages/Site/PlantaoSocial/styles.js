@@ -69,7 +69,7 @@ export const Container = styled.div`
     text-decoration: none;
     &:before {
         content: '';
-        width: 25px;
+        width: 0px;
         height: 25px;
         background: url(/whatsapp-ico.svg);
         background-size: cover;
