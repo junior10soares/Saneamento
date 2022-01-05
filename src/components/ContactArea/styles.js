@@ -208,3 +208,13 @@ export const ButtonLink = styled(Button).attrs({
     text-decoration: none;
     line-height: 55px;
 `; 
+
+export const Mailto = styled.div`
+    .mailto {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        /* Center horizontally*/
+        margin: 0 auto;    
+    }
+`
