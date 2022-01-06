@@ -17,6 +17,7 @@ import { ErrorMessage } from "@hookform/error-message";
 import { ErrorLabel } from "../../styles/theme";
 import {notify} from '../../Notification';
 import api from '../../services/api';
+import { FaRegHandPointRight } from 'react-icons/fa';
 
 
 export function ContactArea() {
@@ -70,7 +71,7 @@ export function ContactArea() {
                   color:"white",                  
                   padding: 10
                 }} type="button">
-              Entre em contato</button>
+              <FaRegHandPointRight size={29} /> Entre em contato </button>
             </a>
             </TitleSection>
             {/* <Row>
