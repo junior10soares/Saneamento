@@ -65,7 +65,7 @@ export function ContactArea() {
                   fontSize: 40,
                   textDecorationLine: "none",
                   backgroundColor: "transparent",
-                  borderStyle:"solid",
+                  borderStyle:"none",
                   borderColor: "white",
                   borderRadius:10,
                   color:"white",                  
