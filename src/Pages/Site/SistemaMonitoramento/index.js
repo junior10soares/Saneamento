@@ -31,6 +31,8 @@ import software_gestao from '../../../assets/public/imagens/monitoramento/data-m
 import sistema_integrador from '../../../assets/public/imagens/monitoramento/deep-learning.png';
 import integracao from '../../../assets/public/imagens/monitoramento/web-development.png';
 import consultoria from '../../../assets/public/imagens/monitoramento/male-telemarketer.png';
+import data_center from '../../../assets/public/imagens/monitoramento/data-center.png';
+import security_cam from '../../../assets/public/imagens/monitoramento/security-cam.png';
 
 /* export async function getServerSideProps() {
   const response = await api({
@@ -116,70 +118,58 @@ const SistemaMonitoramento = ({ constructions }) =>  {
               <DocumentsList>
                 <div className="Grid">
                   <div className="row">
-                    <span className="span-column" style={{marginLeft: 5, marginRight: 6}}>
+                  <span className="span-column" style={{marginLeft: 20, marginRight: 12}}>
+                      <img style={{ height: 50, width: 50}} src={security_cam} />
+                      <p style={{margin: 0, flexWrap: 'wrap'}}>25 Câmeras de monitoramento, utilizadas para monitorar rios e córregos (já existem 14)</p>
+                    </span>
+                    <span className="span-column" style={{marginRight: 12}}>
                       <img style={{ height: 50, width: 50}} src={fluviometros} />
                       <p style={{margin: 0}}>23 fluviômetros (existem 9)</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 6}}>
+                    <span className="span-column" style={{marginRight: 12}}>
                       <img style={{ height: 50, width: 50}} src={estacoes} />
-                      <p style={{margin: 0, marginRight: 10}}>7 Estações meteorológicas (existem 5, mas 3 estão fora do ar)</p>
+                      <p style={{margin: 0, marginRight: 10}}>7 Estações meteorológicas (já existem 5)</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 6}}>
+                    <span className="span-column" style={{marginRight: 12}}>
                       <img style={{ height: 50, width: 50}} src={reabilitacao} />
                       <p style={{margin: 0, flexWrap: 'wrap'}}>Reablitação e readequação dos equipamentos existentes</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 6}}>
-                      <img style={{ height: 50, width: 50}} src={reestruturacao} />
-                      <p style={{margin: 0, flexWrap: 'wrap'}}>Reestruturação do CECOI e COI</p>
-                    </span>
-                    <span className="span-column" style={{marginRight: 6}}>
+                    <span className="span-column" style={{marginRight: 12}}>
                       <img style={{ height: 50, width: 50}} src={modelagem} />
                       <p style={{margin: 0, flexWrap: 'wrap'}}>Modelagem hidrológica</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 6}}>
-                      <img style={{ height: 50, width: 50}} src={software_simulacao} />
-                      <p style={{margin: 0, flexWrap: 'wrap'}}>Software de simulação de inudação</p>
-                    </span>
-                    <span className="span-column" style={{marginRight: 6}}>
+                    <span className="span-column" style={{marginRight: 12}}>
                       <img style={{ height: 50, width: 50}} src={compatibilizacao} />
                       <p style={{margin: 0, flexWrap: 'wrap'}}>Compatibilização com equipamentos existentes</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 5}}>
+                    <span className="span-column" style={{marginRight: 11}}>
                       <img style={{ height: 50, width: 50}} src={treinamento} />
                       <p style={{margin: 0 , flexWrap: 'wrap'}}>Treinamento</p>
                     </span>
                   </div>
 
                   <div className="row">
-                    <span className="span-column" style={{marginLeft: 5, marginRight: 6}}>
+                    <span className="span-column" style={{marginLeft: 0, marginRight: 12}}>
                       <img style={{ height: 50, width: 50}} src={pluviometros} />
-                      <p style={{margin: 0}}>9 pluviômetros (existem 2)</p>
+                      <p style={{margin: 0}}>17 pluviômetros (já existem 2)</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 6}}>
+                    <span className="span-column" style={{marginRight: 12}}>
                       <img style={{ height: 50, width: 50}} src={boca_lobos} />
-                      <p style={{margin: 0}}>560 Bocas de lobo inteligentes</p>
+                      <p style={{margin: 0}}>500 Bocas de lobo inteligentes</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 6}}>
+                    <span className="span-column" style={{marginRight: 12}}>
                       <img style={{ height: 50, width: 50}} src={servidores} />
                       <p style={{margin: 0}}>Servidores no COI e CECOI</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 6}}>
-                      <img style={{ height: 50, width: 50}} src={estudos} />
-                      <p style={{margin: 0}}>Estudos necessários</p>
-                    </span>
-                    <span className="span-column" style={{marginRight: 6}}>
-                      <img style={{ height: 50, width: 50}} src={software_gestao} />
-                      <p style={{margin: 0}}>Software de gestão de riscos e alertas</p>
-                    </span>
-                    <span className="span-column" style={{marginRight: 6}}>
-                      <img style={{ height: 50, width: 50}} src={sistema_integrador} />
-                      <p style={{margin: 0}}>Sistema Integrador</p>
-                    </span>
-                    <span className="span-column" style={{marginRight: 6}}>
+                    <span className="span-column" style={{marginRight: 14}}>
                       <img style={{ height: 50, width: 50}} src={integracao} />
                       <p style={{margin: 0}}>Integração e Compatibilização com bases/fontes externas</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 6}}>
+                    <span className="span-column" style={{marginRight: 14}}>
+                      <img style={{ height: 60, width: 80}} src={data_center} />
+                      <p style={{margin: 0}}>Novo Data Center</p>
+                    </span>
+                    <span className="span-column" style={{marginLeft: 12, marginRight: 12}}>
                       <img style={{ height: 50, width: 50}} src={consultoria} />
                       <p style={{margin: 0}}>Consultoria Especializada</p>
                     </span>
