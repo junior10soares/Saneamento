@@ -103,8 +103,18 @@ const Sobre = ({ workLocations }) =>  {
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded color="#F14E1D" before="12 de Junho - Início das obras do Complexo Viário Cassaquera">
+            <Rounded color="#D7A187" before="12 de Junho - Início das obras do Complexo Viário Cassaquera">
                 2020
+            </Rounded>
+          </TimelineLine>
+          <TimelineLine>
+            <Rounded color="#0A5DAB" after="23 de Janeiro - Inauguração do Complexo Viário Cassaquera">
+                2022
+            </Rounded>
+          </TimelineLine>
+          <TimelineLine>
+            <Rounded color="#62B948" before="11 de novembro - Começo do estudo de catadores de recicláveis">
+                2022
             </Rounded>
           </TimelineLine>
         </TimelineContainer>
