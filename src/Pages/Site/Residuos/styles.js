@@ -77,7 +77,16 @@ export const Container = styled.div`
     }
     }
     }
-
+    .iconsGrid .row {
+    displey: flex;
+    margin: auto;
+    justify-content: center;
+    }
+    .iconsGrid {
+      displey: flex;
+      margin: auto;
+      justify-content: center;
+      }
 
     @media(max-width: 1024px){
       padding: ${theme.spacing * 8}px 48px;
@@ -182,3 +191,4 @@ export const EstudoCatadores = styled.a`
     margin-right: 4px;
   }
 `;
+

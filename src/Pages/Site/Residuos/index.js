@@ -186,42 +186,43 @@ const Residuos = () => {
               isso, haverá monitoramento dos locais em um Centro de Controle
               Operacional, espaço que ainda será construído.
             </p>
+            <p style={{fontWeight: "bold", marginTop:30, marginBottom: 60}}>Infraestrutura das novas estações de coleta:</p>
           </TextSection>
         </Center>
-        <p style={{fontWeight: "bold"}}>Infraestrutura das novas estações de coleta:</p>
-        <DocumentsList>
+        <div className="iconsGrid">
+        <DocumentsList >
                 <div className="Grid">
                   <div className="row">
-                  <span className="span-column" style={{marginLeft: 150, marginRight: 150}}>
+                  <span className="span-column" style={{marginLeft: 0, marginRight:30}}>
                       <img style={{ height: 50, width: 50}} src={monitoramento} />
                       <p style={{margin: 0, flexWrap: 'wrap'}}>Câmeras de monitoramento</p>
                     </span>
-                    <span className="span-column" style={{marginLeft: 80, marginRight: 150}}>
+                    <span className="span-column" style={{marginLeft: 80, marginRight:60}}>
                       <img style={{ height: 50, width: 50}} src={tablets} />
                       <p style={{margin: 0, flexWrap: 'wrap'}}>Tablets</p>
                     </span>
-                    <span className="span-column" style={{marginLeft: 50, marginRight: 50}}>
+                    <span className="span-column" style={{marginLeft: 35, marginRight:5}}>
                       <img style={{ height: 50, width: 50}} src={seguranca} />
                       <p style={{margin: 0, marginRight:0, flexWrap: 'wrap'}}>Sistema de Segurança</p>
                     </span>
                   </div>
-
                   <div className="row">
-                    <span className="span-column" style={{marginLeft: 160, marginRight: 150}}>
+                    <span className="span-column" style={{marginLeft: 25 , marginRight:5 }}>
                       <img style={{ height: 50, width: 50}} src={cabeamento} />
                       <p style={{margin: 0}}>Cabeamento Estruturado</p>
                     </span>
-                    <span className="span-column" style={{marginLeft: 20, marginRight: 150}}>
+                    <span className="span-column" style={{marginLeft:45 , marginRight:10 }}>
                       <img style={{ height: 50, width: 50}} src={compactadora} />
                       <p style={{margin: 0}}>Caçambas Compactadoras</p>
                     </span>
-                    <span className="span-column" style={{marginLeft: -35, marginRight: 0}}>
+                    <span className="span-column" style={{marginLeft:0 , marginRight: 5}}>
                       <img style={{ height: 50, width: 50}} src={comunicacao} />
                       <p style={{margin: 0}}>Sistemas de comunicação</p>
                     </span>
                   </div>
                 </div>
               </DocumentsList>
+              </div>
       </Container>
                 
       {hasPictures && hasVideos && (
@@ -244,7 +245,7 @@ const Residuos = () => {
             </Row>
           </Center>
         )}
-         <TextSection style={{ marginTop: 110 }} columns="2">
+         <TextSection style={{ marginTop: -95 }} columns="2">
             <p style={{ textAlign: "justify" }}>
           Veja abaixo a <strong>localização dos novos 10 ecopontos.</strong> </p>
           </TextSection>
