@@ -186,7 +186,7 @@ const Residuos = () => {
               isso, haverá monitoramento dos locais em um Centro de Controle
               Operacional, espaço que ainda será construído.
             </p>
-            <p style={{fontWeight: "bold", marginTop:30, marginBottom: 60}}>Infraestrutura das novas estações de coleta:</p>
+            <p style={{textTransform:"uppercase", fontWeight: "bold", marginTop:30, marginBottom: 60}}>Infraestrutura das novas estações de coleta:</p>
           </TextSection>
         </Center>
         <div className="iconsGrid">
@@ -195,7 +195,7 @@ const Residuos = () => {
                   <div className="row">
                   <span className="span-column" style={{marginLeft: 0, marginRight:30}}>
                       <img style={{ height: 50, width: 50}} src={monitoramento} />
-                      <p style={{margin: 0, flexWrap: 'wrap'}}>Câmeras de monitoramento</p>
+                      <p style={{margin: 0, flexWrap: 'wrap'}}>Câmeras de Monitoramento</p>
                     </span>
                     <span className="span-column" style={{marginLeft: 80, marginRight:60}}>
                       <img style={{ height: 50, width: 50}} src={tablets} />
@@ -217,7 +217,7 @@ const Residuos = () => {
                     </span>
                     <span className="span-column" style={{marginLeft:0 , marginRight: 5}}>
                       <img style={{ height: 50, width: 50}} src={comunicacao} />
-                      <p style={{margin: 0}}>Sistemas de comunicação</p>
+                      <p style={{margin: 0}}>Sistemas de Comunicação</p>
                     </span>
                   </div>
                 </div>
