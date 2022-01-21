@@ -118,11 +118,11 @@ const SistemaMonitoramento = ({ constructions }) =>  {
               <DocumentsList>
                 <div className="Grid">
                   <div className="row">
-                  <span className="span-column" style={{marginLeft: 20, marginRight: 12}}>
+                  <span className="span-column" style={{marginLeft: 20, marginRight: 12, textAlign: 'center'}}>
                       <img style={{ height: 50, width: 50}} src={security_cam} />
                       <p style={{margin: 0, flexWrap: 'wrap'}}>25 Câmeras de monitoramento, utilizadas para monitorar rios e córregos (já existem 14)</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 12}}>
+                    <span className="span-column" style={{marginRight: 12, textAlign: 'center'}}>
                       <img style={{ height: 50, width: 50}} src={fluviometros} />
                       <p style={{margin: 0}}>23 fluviômetros (existem 9)</p>
                     </span>
@@ -130,7 +130,7 @@ const SistemaMonitoramento = ({ constructions }) =>  {
                       <img style={{ height: 50, width: 50}} src={estacoes} />
                       <p style={{margin: 0, marginRight: 10}}>7 Estações meteorológicas (já existem 5)</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 12}}>
+                    <span className="span-column" style={{marginRight: 12, textAlign: 'center'}}>
                       <img style={{ height: 50, width: 50}} src={reabilitacao} />
                       <p style={{margin: 0, flexWrap: 'wrap'}}>Reablitação e readequação dos equipamentos existentes</p>
                     </span>
@@ -142,24 +142,22 @@ const SistemaMonitoramento = ({ constructions }) =>  {
                       <img style={{ height: 50, width: 50}} src={compatibilizacao} />
                       <p style={{margin: 0, flexWrap: 'wrap'}}>Compatibilização com equipamentos existentes</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 11}}>
-                      <img style={{ height: 50, width: 50}} src={treinamento} />
-                      <p style={{margin: 0 , flexWrap: 'wrap'}}>Treinamento</p>
-                    </span>
+                    
                   </div>
 
                   <div className="row">
+                  <span className="span-column" style={{ marginLeft: 50, marginRight: 11, textAlign: 'center' }}>
+                      <img style={{ height: 50, width: 50}} src={treinamento} />
+                      <p style={{margin: 0 , flexWrap: 'wrap'}}>Treinamento</p>
+                    </span>
+                    
                     <span className="span-column" style={{marginLeft: 0, marginRight: 12}}>
                       <img style={{ height: 50, width: 50}} src={pluviometros} />
                       <p style={{margin: 0}}>17 pluviômetros (já existem 2)</p>
                     </span>
-                    <span className="span-column" style={{marginRight: 12}}>
+                    <span className="span-column" style={{marginRight: 0}}>
                       <img style={{ height: 50, width: 50}} src={boca_lobos} />
                       <p style={{margin: 0}}>500 Bocas de lobo inteligentes</p>
-                    </span>
-                    <span className="span-column" style={{marginRight: 12}}>
-                      <img style={{ height: 50, width: 50}} src={servidores} />
-                      <p style={{margin: 0}}>Servidores no COI e CECOI</p>
                     </span>
                     <span className="span-column" style={{marginRight: 14}}>
                       <img style={{ height: 50, width: 50}} src={integracao} />
