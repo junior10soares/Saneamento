@@ -103,7 +103,7 @@ const Macrodrenagem = () => {
             </p>
             <p style={{ textAlign: "justify" }}>
             Santo André ganhará um <strong>novo piscinão na  região do córrego Guarará</strong>, na avenida Capitão Mário Toledo de Camargo, no Jardim Ipanema. 
-            O tanque de detenção será o <strong>maior equipamento municipal</strong>, com capacidade de armazenamento de água de 263 mil m². 
+            O tanque de detenção será o <strong>maior equipamento municipal</strong>.<br></br> 
             A obra visa:
             </p>
             <p style={{ textAlign: "justify" }}>

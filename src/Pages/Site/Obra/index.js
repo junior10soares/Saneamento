@@ -298,34 +298,7 @@ const baseUrl = process.env.REACT_APP_API_BASE_URL;
               </TextSection>
             </Center>
           </Container>
-          <Container>
-            <Center>
-              <TitleSection className="text-center">
-              <strong>Progresso</strong> total
-              </TitleSection>      
-              <div className="desktopStepBar">
-                <StepsConstruction phase={construction?.work_fase} />
-              </div>
-              <div className="responsiveStepBar">
-                <Line style={{ position: "absolute", zIndex: -1}} percent={construction?.work_fase + "0"} strokeWidth="7" trailWidth="7" strokeColor="#27AE60" />
-                  <strong style={{ zIndex: 1, marginLeft: "50%", fontSize: 17, paddingTop: 5 }}>{construction?.work_fase + '0%'}</strong>
-              </div>
-            </Center>
-          </Container>
-
-          <ContainerGrafic className="container_obras">
-            <Center>
-              <TitleSection className="text-center">
-              <strong>Fases</strong> das obras
-              </TitleSection>
-          <Grafic>
-          <GraficCircle data={workPhase} />
-          </Grafic> 
-            </Center>
-          </ContainerGrafic>
-          
-          
-          <Container>
+          <Container style={{ marginTop: -200 }}>
             <Center>
               <AlbumPhotos
                 pictures={construction.work_pictures}
