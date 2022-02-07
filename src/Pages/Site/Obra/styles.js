@@ -158,9 +158,6 @@ export const TextSection = styled.div`
     font-weight: 300;
     /* padding-left: 70px;
     padding-right: 70px; */
-    p {
-     padding: 0 65px;
-    }
 `;
 
 export const BannerPage = styled.div`
