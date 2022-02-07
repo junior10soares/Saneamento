@@ -191,3 +191,20 @@ export const TextSection = styled.div`
     /* padding-left: 70px;
     padding-right: 70px; */
 `;
+
+export const ImgSection = styled.div`
+
+margin-top: 32px;
+text-align: center;
+.imageAbout{
+  img {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+
+
+`;

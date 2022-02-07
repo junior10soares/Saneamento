@@ -36,6 +36,7 @@ import {
   Info,
   DepoimentoInfo,
   IconDiv,
+  ImgSection,
 } from "./styles";
 import { Footer } from "../../../components/Footer";
 import { AlbumPhotos } from "../../../components/AlbumPhotos";
@@ -291,7 +292,11 @@ const Obra = () => {
               <div className="responsiveStepBar">
                 <div className="groupButtonsResponsive">
                   <div className="buttonAlignResponsive">
-                    <Projeto style={{ minWidth: 200 }}>
+                    <Projeto
+                      style={{ minWidth: 200 }}
+                      href="/projeto-socioambiental"
+                      target="_blank"
+                    >
                       <FiStar />
                       Trabalho Socioambiental
                     </Projeto>
@@ -322,31 +327,17 @@ const Obra = () => {
               </div>
               <TextSection style={{ marginTop: 110 }} columns="2">
                 <div>
-                  <img
-                    style={{
-                      resizeMode: "center",
-                      display: "flex",
-                      margin: "auto",
-                      height: 600,
-                      width: 900,
-                      alignItems: "center",
-                    }}
-                    src={comeco1}
-                    alt="Semasa"
-                  />
-                 <div  style={{marginTop:"20px"}}>
-                    <img
-                      style={{
-                        resizeMode: "center",
-                        display: "flex",
-                        margin: "auto",
-                        height: 600,
-                        width: 900,
-                        alignItems: "center",
-                      }}
-                      src={comeco2}
-                      alt="Semasa"
-                    />
+                  <ImgSection>
+                    <div className="imageAbout">
+                      <img src={comeco1} alt="Semasa" />
+                    </div>
+                  </ImgSection>
+                  <div style={{ marginTop: "20px" }}>
+                    <ImgSection>
+                      <div className="imageAbout">
+                        <img src={comeco2} alt="Semasa" />
+                      </div>
+                    </ImgSection>
                   </div>
                 </div>
                 <p>
@@ -382,19 +373,12 @@ const Obra = () => {
                   Também foram readequadas as passagens que ficam na região das
                   ruas João Caetano e Fernando Costa.
                 </p>
-                <div  style={{marginTop:"1px"}}>
-                  <img
-                    style={{
-                      resizeMode: "center",
-                      display: "flex",
-                      margin:'auto',
-                      height: 600,
-                      width: 900,
-                      alignItems: "center",
-                    }}
-                    src={meio1}
-                    alt="Semasa"
-                  />
+                <div style={{ marginTop: "1px" }}>
+                  <ImgSection>
+                    <div className="imageAbout">
+                      <img src={meio1} alt="Semasa" />
+                    </div>
+                  </ImgSection>
                 </div>
                 <p>
                   O novo sistema viário vai melhorar a ligação entre as avenidas
@@ -411,18 +395,11 @@ const Obra = () => {
                   d’água.
                 </p>
                 <div>
-                  <img
-                    style={{
-                      resizeMode: "center",
-                      display: "flex",
-                      margin: "auto",
-                      height: 600,
-                      width: 900,
-                      alignItems: "center",
-                    }}
-                    src={meio2}
-                    alt="Semasa"
-                  />
+                  <ImgSection>
+                    <div className="imageAbout">
+                      <img src={meio2} alt="Semasa" />
+                    </div>
+                  </ImgSection>
                 </div>
                 <p>
                   Todo o investimento para o Complexo Viário Cassaquera é de
@@ -481,59 +458,31 @@ const Obra = () => {
                   Prefeitura e investimento de R$ 7 milhões. A estimativa é de
                   que o equipamento possua 350 vagas.
                   <div>
-                    <img
-                      style={{
-                        resizeMode: "center",
-                        display: "flex",
-                        margin: "auto",
-                        height: 600,
-                        width: 900,
-                        alignItems: "center",
-                      }}
-                      src={lazer1}
-                      alt="Semasa"
-                    />
+                    <ImgSection>
+                      <div className="imageAbout">
+                        <img src={lazer1} alt="Semasa" />
+                      </div>
+                    </ImgSection>
                   </div>
-                  <div  style={{marginTop:"20px"}}>
-                    <img
-                      style={{
-                        resizeMode: "center",
-                        display: "flex",
-                        margin: "auto",
-                        height: 600,
-                        width: 900,
-                        alignItems: "center",
-                      }}
-                      src={lazer2}
-                      alt="Semasa"
-                    />
+                  <div style={{ marginTop: "20px" }}>
+                    <ImgSection>
+                      <div className="imageAbout">
+                        <img src={lazer2} alt="Semasa" />
+                      </div>
+                    </ImgSection>
                   </div>
-                  <div  style={{marginTop:"20px"}}>
-                    <img
-                      style={{
-                        resizeMode: "center",
-                        display: "flex",
-                        margin: "auto",
-                        height: 600,
-                        width: 900,
-                        alignItems: "center",
-                      }}
-                      src={creche2}
-                      alt="Semasa"
-                    />
-                    <div  style={{marginTop:"20px"}}>
-                      <img
-                        style={{
-                          resizeMode: "center",
-                          display: "flex",
-                          margin: "auto",
-                          height: 600,
-                          width: 900,
-                          alignItems: "center",
-                        }}
-                        src={creche1}
-                        alt="Semasa"
-                      />
+                  <div style={{ marginTop: "20px" }}>
+                    <ImgSection>
+                      <div className="imageAbout">
+                        <img src={creche2} alt="Semasa" />
+                      </div>
+                    </ImgSection>
+                    <div style={{ marginTop: "20px" }}>
+                      <ImgSection>
+                        <div className="imageAbout">
+                          <img src={creche1} alt="Semasa" />
+                        </div>
+                      </ImgSection>
                     </div>
                   </div>
                 </p>
