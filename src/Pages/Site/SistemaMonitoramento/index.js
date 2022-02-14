@@ -124,7 +124,7 @@ const SistemaMonitoramento = ({ constructions }) =>  {
                     </span>
                     <span className="span-column" style={{marginRight: 12, textAlign: 'center'}}>
                       <img style={{ height: 50, width: 50}} src={fluviometros} />
-                      <p style={{margin: 0}}>23 fluviômetros (existem 9)</p>
+                      <p style={{margin: 0}}>15 fluviômetros (existem 9)</p>
                     </span>
                     <span className="span-column" style={{marginRight: 12}}>
                       <img style={{ height: 50, width: 50}} src={estacoes} />
@@ -157,7 +157,7 @@ const SistemaMonitoramento = ({ constructions }) =>  {
                     </span>
                     <span className="span-column" style={{marginRight: 0}}>
                       <img style={{ height: 50, width: 50}} src={boca_lobos} />
-                      <p style={{margin: 0}}>500 Bocas de lobo inteligentes</p>
+                      <p style={{margin: 0}}>561 Bocas de lobo inteligentes</p>
                     </span>
                     <span className="span-column" style={{marginRight: 14}}>
                       <img style={{ height: 50, width: 50}} src={integracao} />
