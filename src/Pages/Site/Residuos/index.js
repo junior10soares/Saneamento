@@ -30,55 +30,46 @@ import { FiClipboard } from "react-icons/fi";
 
 const locations = [
   {
-    name: "Albert Einstein",
-    lat: "-23.6695957",
-    lng: "-46.5435572",
+    name: "R. Pintassilva",
+    lat: "-23.730087094744896",
+    lng: "-46.494524020194774",  
   },
   {
-    name: "Bangu",
-    lat: "-23.641372",
-    lng: "-46.5218887",
+    name: "Rua da Visão",
+    lat: "-23.706545114521383",
+    lng: "-46.49638566381487",  
   },
   {
-    name: "Jd. Cristiane",
-    lat: "-23.690221",
-    lng: "-46.5321896",
+    name: "Rua da Constituição",
+    lat: "-23.698315528762667", 
+    lng: "-46.508629288264814",
   },
   {
-    name: "",
-    lat: "-23.7303635",
-    lng: "-46.4945559",
+    name: "R. Rolândia", 
+    lat: "-23.69434398188793", 
+    lng: "-46.52216404677351",
   },
   {
-    name: "Jardim",
-    lat: "-23.6519862",
-    lng: "-46.5312363",
+    name: "R. Albert Einstein",
+    lat: "-23.66981155039881", 
+    lng: "-46.5434407486703",
   },
   {
-    name: "Jd. Alvorada",
-    lat: "-23.6942366",
-    lng: "-46.5218557",
+    name: "Tv. São Bento",
+    lat: " -23.652158874526105", 
+    lng: "-46.53155805990961",
   },
   {
-    name: "Palmeiras",
-    lat: "-23.6439247",
-    lng: "-46.5403729",
+    name: "Av Preste Maia",
+    lat: "-23.644084780360906", 
+    lng: "-46.54065794198922",
   },
   {
-    name: "Santa Cristina",
-    lat: "-23.6981998",
-    lng: "-46.5083826",
+    name: "Rua Antonio Cardoso",
+    lat: "-23.64149331843551",
+    lng: "-46.52233967268445",
   },
-  {
-    name: "Jd. Ana Maria",
-    lat: "-23.6268707",
-    lng: "-46.4863033",
-  },
-  {
-    name: "Jd. Santo André",
-    lat: "-23.706491",
-    lng: "-46.4962917",
-  },
+ 
 ];
 
 const Residuos = () => {
