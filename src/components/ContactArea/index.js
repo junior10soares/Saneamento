@@ -26,14 +26,14 @@ export function ContactArea() {
   const { register, handleSubmit, setValue, errors, reset } = useForm();
 
   const onSubmit = useCallback( async (data) => {
-    // console.log(data)
+     console.log(data)
     try {
         setLoading(true);
         const response = await api.post('contact', {
           name: data.name,
           email: data.email,
           phone: data.phone,
-          sector: data.sector,
+          work_categories_id: data.work_categories_id,
           message: data.message
         });
 
@@ -125,18 +125,18 @@ export function ContactArea() {
               <Column grid="6" className="text-right">
                 <FormItem column>
                   <SelectBox
-                    name="sector"
+                    name="work_categories_id"
                     defaultValue={undefined}
                     ref={register({ required: "Categoria obrigatória" })}
                   >
                     <option disabled value={undefined}>
                       Categoria
                     </option>
-                    <option value="Macrodrenagem">Macrodrenagem</option>
-                    <option value="Sistema de Monitoramento">
+                    <option value="2">Macrodrenagem</option>
+                    <option value="3">
                       Sistema de Monitoramento
                     </option>
-                    <option value="Resíduos Sólidos">Resíduos Sólidos</option>
+                    <option value="1">Resíduos Sólidos</option>
                   </SelectBox>
 
                   <ErrorMessage
