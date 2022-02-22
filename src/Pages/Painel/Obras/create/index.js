@@ -370,6 +370,8 @@ export default function ObrasCreate() {
             </Stepper>
           </ConstructionProgressContainer>
 
+
+
           {/* <AddVideoContainer>
             <h3>Vídeos</h3>
             <div style={{ display: "flex", flexDirection: "row" }}>
@@ -380,6 +382,8 @@ export default function ObrasCreate() {
 
             <Spacer size={60} />
           </AddVideoContainer> */}
+
+
 
           <MapContainer>
             <input
