@@ -16,6 +16,7 @@ import Banner from '../Pages/Painel/Banner';
 import PainelObras from '../Pages/Painel/Obras';
 import PainelVideos from '../Pages/Painel/Videos';
 import PainelNoticias from '../Pages/Painel/Noticias';
+import PainelMensagens from '../Pages/Painel/Mensagens';
 import ObrasCreate from '../Pages/Painel/Obras/create';
 import PhaseWork from '../Pages/Painel/PhaseWork';
 import PhaseWorkEdit from '../Pages/Painel/PhaseWork/edit';
@@ -39,6 +40,7 @@ const Routes = () => {
         <Route exact path="/painel/banner" component={Banner} />
         <Route exact path="/painel/videos" component={PainelVideos} />
         <Route exact path="/painel/noticias" component={PainelNoticias} />
+        <Route exact path="/painel/mensagens" component={PainelMensagens} />
         <Route exact path="/painel/obras" component={PainelObras} />
         <Route exact path="/painel/obras/create" component={ObrasCreate} />
         <Route exact path="/painel/obras/edit/:id" component={ObraEdit} />
