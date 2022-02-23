@@ -8,6 +8,7 @@ import { ReactComponent as ObraIcon } from "../../assets/public/obras.svg";
 import { ReactComponent as VideoIcon } from "../../assets/public/videos.svg";
 import { ReactComponent as NoticiaIcon } from "../../assets/public/noticias.svg";
 import { ReactComponent as BannerIcon } from "../../assets/public/banner.svg";
+import { ReactComponent as MessageIcon } from "../../assets/public/message.svg";
 
 import logo from '../../assets/public/imagens/header/logo.svg';
 import api from '../../services/api';
@@ -93,6 +94,20 @@ const DashboardLayout = ({ children, title }) => {
                   <span>Notícias</span>
                 </a>
               </Link>
+              
+            </li>
+            <li>
+              <Link to="/painel/mensagens">
+                <a
+                  className={
+                    pathname.name === 'mensagens' ? "active" : "inactive"
+                  }
+                >
+                  <MessageIcon />
+                  <span>Mensagens</span>
+                </a>
+              </Link>
+              
             </li>
             <li>
               <Link to="/painel/banner">
