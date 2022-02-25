@@ -169,6 +169,16 @@ margin: 0 auto;
     margin: 8px auto;
   }
 `;
+export const card = styled.div`
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: 0 auto;
+}
+
+`;
 
 export const ButtonForm = styled.div`
 display: flex;
