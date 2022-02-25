@@ -1,4 +1,4 @@
-import React, {useCallback, useRef, useState } from "react";
+import React, {useCallback, useRef, useState, useEffect } from "react";
 import {
  Container,
  Center,
@@ -22,6 +22,7 @@ import { FaRegHandPointRight } from 'react-icons/fa';
 
 export function ContactArea() {
   const [loading, setLoading] = useState(false);
+  const [categories, setCategories] = useState([]);
   const formRef = useRef(null);
   const { register, handleSubmit, setValue, errors, reset } = useForm();
 
@@ -52,6 +53,28 @@ export function ContactArea() {
     [reset]
   );
 
+  const getCategoryList = useCallback(async () => {
+    setLoading(true);
+    try {
+      const lista = await api.get('work-category').then(({ data }) => {
+        //console.log(data.data)
+        setCategories(data.data);
+        //console.log('categories',categories);
+      });
+
+      setLoading(false);
+    } catch (err) {
+      notify('error', 'Falha ao buscar lista de Categorias. Tente mais tarde!');
+      setLoading(false);
+      getCategoryList([]);
+    }
+  }, []);
+
+  useEffect(() => {
+    getCategoryList();
+  }, []);
+
+  //setTimeout(() => {console.log("ctg", categories)}, 5000);
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)} ref={formRef}>
@@ -132,11 +155,14 @@ export function ContactArea() {
                     <option disabled value={undefined}>
                       Categoria
                     </option>
-                    <option value="2">Macrodrenagem</option>
+                    {/* <option value="2">Macrodrenagem</option>
                     <option value="3">
                       Sistema de Monitoramento
                     </option>
-                    <option value="1">Resíduos Sólidos</option>
+                    <option value="1">Resíduos Sólidos</option> */}
+                    {categories.map(item => (
+                      <option value={item.uuid}>{item.name}</option>
+                    ))}
                   </SelectBox>
 
                   <ErrorMessage
