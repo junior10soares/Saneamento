@@ -74,6 +74,11 @@ const locations = [
     lat: "-23.62676680729257",
     lng: "-46.48654480202437",
   },
+  {
+    name: "R. José Fernando de Medina Braga",
+    lat: "-23.690163337206005",
+    lng: "-46.532107500118336",
+  },
  
 ];
 
