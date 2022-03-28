@@ -29,7 +29,7 @@ export const Container = styled.div`
 
     .buttonAlign{
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       padding-right: 24px;
       transform: translateY(130px);
       position: relative;
@@ -38,7 +38,7 @@ export const Container = styled.div`
 
     .buttonAlignResponsive{
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       position: relative;
       z-index: 41;
       margin-bottom: 10px
