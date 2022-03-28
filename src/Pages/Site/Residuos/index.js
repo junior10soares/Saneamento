@@ -30,10 +30,11 @@ import { FiClipboard } from "react-icons/fi";
 
 const locations = [
   {
-    name: "R. Pintassilva",
-    lat: "-23.730087094744896",
-    lng: "-46.494524020194774",  
+    name: "Av. Dom Jorge Marcos de Oliveira",
+    lat: "-23.660236991157788",
+    lng: "-46.54713773086169",  
   },
+  
   {
     name: "Rua da Visão",
     lat: "-23.706545114521383",
