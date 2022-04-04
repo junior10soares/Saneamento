@@ -117,6 +117,10 @@ const Residuos = () => {
         <div className="desktopStepBar" style={{ width: "100%" }}>
           <div className="groupButtons">
             <div className="buttonAlign">
+              <EstudoCatadores href="/projeto-trabalho-tecnico" target="_blank" style={{ marginRight: "10px" }}>
+                <FiClipboard />
+                Projeto Socioambiental
+              </EstudoCatadores>
               <EstudoCatadores href="/estudo-de-catadores" target="_blank">
                 <FiClipboard />
                 Estudo de catadores

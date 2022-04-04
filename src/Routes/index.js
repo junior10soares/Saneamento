@@ -7,6 +7,7 @@ import Noticia from '../Pages/Site/Noticia';
 import Obra from '../Pages/Site/Obra';
 import PlantaoSocial from '../Pages/Site/PlantaoSocial';
 import ProjetoSocioambiental from '../Pages/Site/ProjetoSocioambiental';
+import ProjetoTrabalhoTecnico from '../Pages/Site/ProjetoTrabalhoTecnico';
 import EstudoCatadores from '../Pages/Site/EstudoCatadores';
 import Residuos from '../Pages/Site/Residuos';
 import Sobre from '../Pages/Site/Sobre';
@@ -32,6 +33,7 @@ const Routes = () => {
         <Route exact path="/obra/:id" component={Obra} />
         <Route exact path="/plantao-social" component={PlantaoSocial} />
         <Route exact path="/projeto-socioambiental" component={ProjetoSocioambiental} />
+        <Route exact path="/projeto-trabalho-tecnico" component={ProjetoTrabalhoTecnico} />
         <Route exact path="/estudo-de-catadores" component={EstudoCatadores} />
         <Route exact path="/residuos" component={Residuos} />
         <Route exact path="/sobre" component={Sobre} />
