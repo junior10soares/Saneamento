@@ -19,7 +19,7 @@ import { Footer } from "../../../components/Footer";
 import banner from '../../../assets/public/imagens/Projeto/projeto_banner.jpeg';
 import funcionaria from '../../../assets/public/imagens/Projeto/funcionaria.jpg';
 import funcionaria2 from '../../../assets/public/imagens/Projeto/funcionaria2.jpg';
-import diagrama from '../../../assets/public/imagens/Projeto/diagrama.jpg';
+import diagrama from '../../../assets/public/imagens/Projeto/diagrama.png';
 
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -95,7 +95,7 @@ const ProjetoTrabalhoTecnico = () => {
                         A iniciativa visa:
                         </p>
                     </TextSection>
-                        <ImagePage src={diagrama} />
+                        <ImagePage src={diagrama}  style={{ width: '40%' }} />
                 </Center>
             </Container>
             <Container style={{ paddingTop: 20}}>
@@ -107,7 +107,7 @@ const ProjetoTrabalhoTecnico = () => {
                         Agentes devidamente identificados passam de casa em casa para efetuar uma pesquisa e entregar materiais educativos e com informações sobre as obras e os serviços da área de resíduos, executados pelo Semasa.
                         </p>
                     </TextSection>
-                    <ImagePage style={{width:"100%"}} src={funcionaria} />
+                    <ImagePage style={{width:"70%"}} src={funcionaria} />
                 </Center>  
             </Container>
             <Container style={{ paddingTop: 0}}>
@@ -120,7 +120,7 @@ const ProjetoTrabalhoTecnico = () => {
                         Com o resultado da pesquisa, o Semasa poderá compreender as necessidades, carências e dificuldade da população, o que é um importante instrumento para planejar e implementar atividades de sensibilização e educação ambiental, além de promover melhorias, o que corrobora com as diretrizes e os objetivos da Política Municipal de Educação Ambiental.
                         </p>
                     </TextSection>
-                    <ImagePage style={{width:"100%"}} src={funcionaria2} />
+                    <ImagePage style={{width:"70%"}} src={funcionaria2} />
                 </Center>  
             </Container>
             <Container style={{ paddingTop: 0}}>
