@@ -29,6 +29,9 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import {
+  Grid
+} from '@material-ui/core';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -95,10 +98,24 @@ const ProjetoTrabalhoTecnico = () => {
                         A iniciativa visa:
                         </p>
                     </TextSection>
-                        <ImagePage src={diagrama}  style={{ width: '40%' }} />
+                        <ImagePage src={diagrama}  style={{ width: '30%' }} />
+                        {/* <Grid container spacing={12} style={{ marginTop: 24 }} alignItems="center" justifyContent="center">
+                        <Grid item md={12} xs={12}>
+                            <TextSection columns="1">
+                            <p>
+                                Em  março  de  2022,  
+                                o  Semasa  começou  o  Projeto  de Trabalho  Técnico  Socioambiental  das  obras  das  Estações de Coleta. 
+                                A iniciativa visa:
+                            </p>
+                            </TextSection>
+                        </Grid>
+                        <Grid item md={6} xs={12}>
+                            <img src={diagrama} alt="EstudoCatadores" style={{ width: '80%' }} />
+                        </Grid>
+                    </Grid> */}
                 </Center>
             </Container>
-            <Container style={{ paddingTop: 20}}>
+            <Container style={{ paddingTop: '0px', marginTop: '-20px' }}>
                 <Center>
                     <TextSection columns="1">
                         <p>

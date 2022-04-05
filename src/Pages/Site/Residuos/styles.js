@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import theme from '../../../GlobalStyle/theme';
 
-export const Container = styled.div`
+export const Container = styled.div `
     max-width: ${props => props.full ? '100%' : theme.center + 'px'};
     margin: 0 auto;
     display: flex;
@@ -15,7 +15,7 @@ export const Container = styled.div`
     .groupButtons {
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: center;
       width: 100%;
     }
 
@@ -98,7 +98,7 @@ export const Container = styled.div`
     }
 `;
 
-export const Center = styled.div`
+export const Center = styled.div `
     max-width: ${theme.center}px;
     margin: 0 auto;
     display: block;
@@ -106,7 +106,7 @@ export const Center = styled.div`
     position: relative;   
 `;
 
-export const Row = styled.div`
+export const Row = styled.div `
     width: 100%;
     height: auto;
     margin: 0 -${theme.spacing * 2}px;
@@ -119,7 +119,7 @@ export const Row = styled.div`
     }
 `;
 
-export const TitleSection = styled.h1`
+export const TitleSection = styled.h1 `
     /* max-width: 650px; */
     width: 100%;
     /* padding-left: 70px; */
@@ -141,7 +141,7 @@ export const TitleSection = styled.h1`
     }
 `;
 
-export const BannerPage = styled.div`
+export const BannerPage = styled.div `
   background-repeat: no-repeat;
   background-position: 10% 66%;
   background-position-x: center;
@@ -152,14 +152,14 @@ export const BannerPage = styled.div`
   background-image: url(${props => props.image});
 `;
 
-export const HeaderPage = styled.div`
+export const HeaderPage = styled.div `
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: ${theme.spacing * 8}px;
 `;
 
-export const TextSection = styled.div`
+export const TextSection = styled.div `
   margin: ${theme.spacing * 3}px 0;
   color: ${theme.textColor};
   font-size: 21px;
@@ -169,7 +169,7 @@ export const TextSection = styled.div`
   padding-right: 70px; */
 `;
 
-export const EstudoCatadores = styled.a`
+export const EstudoCatadores = styled.a `
   height: 60px;
   padding: 0 ${theme.spacing * 4}px;
   background: #1182C6;
@@ -191,4 +191,25 @@ export const EstudoCatadores = styled.a`
     margin-right: 4px;
   }
 `;
-
+export const ProjetoTecnico = styled.a `
+  height: 60px;
+  padding: 0 ${theme.spacing * 4}px;
+  background: #11c66a;
+  font-size: 14px;
+  line-height: 60px;
+  min-width: 160px;
+  cursor: pointer;
+  color: #ffffff;
+  display: inline-block;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  text-decoration: none;
+  
+  & svg {
+    font-size: 25px;
+    margin-right: 4px;
+  }
+`;
