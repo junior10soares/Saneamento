@@ -162,15 +162,17 @@ export const ImagePage = styled.img `
   display: block;
   //width: 100%;
   position: relative;   
-   background-size: cover;
-   height:900px; width: 600px;
-   object-fit: cover;
-  background-color: black;
+  background-size: cover;
+ // height:900px; width: 600px;
+  object-fit: cover;
+  background-color: #fff;
   background-image: url(${props => props.image});
-
+  max-width:100%;
+  height:auto;
   @media (max-width: 768px) {
     max-width:100%;
     height:auto;
+    width:90%!important;
   }
 
 `;
