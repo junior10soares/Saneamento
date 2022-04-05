@@ -9,6 +9,7 @@ import {
   HeaderPage,
   TextSection,
   EstudoCatadores,
+  ProjetoTecnico,
 } from "./styles";
 import { DocumentsList } from "../../../components/DocumentsList";
 import MapComponent from "../../../components/MapComponent";
@@ -117,11 +118,11 @@ const Residuos = () => {
         <div className="desktopStepBar" style={{ width: "100%" }}>
           <div className="groupButtons">
             <div className="buttonAlign">
-              <EstudoCatadores href="/projeto-trabalho-tecnico" target="_blank" style={{ marginRight: "10px" }}>
+              <ProjetoTecnico href="/projeto-trabalho-tecnico" target="_blank" style={{ marginRight: "2px" , marginLeft: "25px" }}>
                 <FiClipboard />
                 Projeto Socioambiental
-              </EstudoCatadores>
-              <EstudoCatadores href="/estudo-de-catadores" target="_blank">
+              </ProjetoTecnico>
+              <EstudoCatadores href="/estudo-de-catadores" target="_blank" style={{ marginLeft: "2px" }}>
                 <FiClipboard />
                 Estudo de catadores
               </EstudoCatadores>
@@ -132,7 +133,7 @@ const Residuos = () => {
         <Center>
           <HeaderPage style={{ marginBottom: 60 }}>
             <TitleSection center>
-              Gestão de <strong>Resíduos Sólidos</strong>
+              Gestão de<strong> Resíduos Sólidos</strong>
             </TitleSection>
           </HeaderPage>
           <div className="responsiveStepBar">
