@@ -172,7 +172,7 @@ export const ImagePage = styled.img `
   @media (max-width: 768px) {
     max-width:100%;
     height:auto;
-    width:90%!important;
+    width:70%!important;
   }
 
 `;
