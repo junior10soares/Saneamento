@@ -98,7 +98,7 @@ const ProjetoTrabalhoTecnico = () => {
                         A iniciativa visa:
                         </p>
                     </TextSection>
-                        <ImagePage src={diagrama}  style={{ width: '30%' }} />
+                        <ImagePage src={diagrama}  style={{ width: '25%' }} />
                         {/* <Grid container spacing={12} style={{ marginTop: 24 }} alignItems="center" justifyContent="center">
                         <Grid item md={12} xs={12}>
                             <TextSection columns="1">
