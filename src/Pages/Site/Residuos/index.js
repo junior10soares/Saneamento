@@ -52,9 +52,9 @@ const locations = [
     lng: "-46.52216404677351",
   },
   {
-    name: "R. Albert Einstein",
-    lat: "-23.66981155039881", 
-    lng: "-46.5434407486703",
+    name: "R. Pintassilva",
+    lat: "-23.730238645892868", 
+    lng: "-46.494521753520246",
   },
   {
     name: "Tv. São Bento",
