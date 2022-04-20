@@ -139,6 +139,10 @@ const Residuos = () => {
           <div className="responsiveStepBar">
             <div className="groupButtonsResponsive">
               <div className="buttonAlignResponsive">
+                <ProjetoTecnico href="/projeto-trabalho-tecnico" target="_blank" style={{ minWidth: '200px' }}>
+                  <FiClipboard />
+                  Projeto Socioambiental
+                </ProjetoTecnico>
                 <EstudoCatadores
                   style={{ minWidth: 200 }}
                   href="/estudo-de-catadores"
@@ -150,7 +154,7 @@ const Residuos = () => {
               </div>
             </div>
           </div>
-          <TextSection style={{ marginTop: 110 }} columns="2">
+          <TextSection style={{ marginTop: 110 }} columns="2" id="firstParagraph">
             <p style={{ textAlign: "justify" }}>
               Com o Programa Sanear Santo André, o Semasa pretende construir
               mais 15 Estações de Coleta e implantar novos PEVS (Pontos de

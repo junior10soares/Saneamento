@@ -37,11 +37,19 @@ export const Container = styled.div `
     }
 
     .buttonAlignResponsive{
-      display: flex;
-      justify-content: flex-end;
-      position: relative;
-      z-index: 41;
-      margin-bottom: 10px
+      // display: flex;
+      // justify-content: flex-end;
+      // position: relative;
+      // z-index: 41;
+      // margin-bottom: 10px
+    
+        display: grid;
+        //flex-direction: column;
+        justify-content: center;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        grid-row-gap: 10px;
+
     }
     .buttonWhatas{
      width: 100%;
@@ -95,6 +103,10 @@ export const Container = styled.div `
     @media (max-width: 768px) {
         /* padding: ${theme.spacing * 4}px; */
         width: 100%;
+
+        #firstParagraph {
+          margin-top: 40px!important;
+      }
     }
 `;
 

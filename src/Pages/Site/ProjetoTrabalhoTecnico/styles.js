@@ -138,6 +138,7 @@ export const TextSection = styled.div `
     color: ${theme.textColor};
     font-size: 21px;
     line-height: 1.5;
+    text-align: justify;
     font-weight: 300;
     /* padding-left: 70px;
     padding-right: 70px; */
@@ -169,10 +170,10 @@ export const ImagePage = styled.img `
   background-image: url(${props => props.image});
   max-width:100%;
   height:auto;
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     max-width:100%;
     height:auto;
-    width:90%!important;
+    width:70%!important;
   }
 
 `;
