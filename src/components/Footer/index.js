@@ -12,16 +12,16 @@ export function Footer() {
       <Container color="#333333" full>
         <Center>
           <Row center>
-            <Column grid="3" style={{marginRight: 10}}>
+            <Column grid="3" style={{marginRight: 10, marginBottom: 10}}>
               <img className="logo" src={logo} width="110%" />
             </Column>
             <Column grid="3">
               <img className="logo" src={caf} width="100%" />
             </Column>
           </Row>
-          <Address>
+          {/* <Address>
             Endereço: Avenida José Caballero, 143, Vila Bastos – Santo André            
-          </Address>
+          </Address> */}
           <SocialIcons>
             <a href="https://www.facebook.com/sanearsantoandre" target="_blank">
               <img src={facebook} />
