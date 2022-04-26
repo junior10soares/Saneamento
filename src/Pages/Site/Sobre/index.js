@@ -72,8 +72,7 @@ const Sobre = ({ workLocations }) => {
             <p style={{ textAlign: "justify" }}>
               O Programa Sanear Santo André ainda inclui a construção de mais <strong>10
               Estações de Coleta</strong>, um <strong>Centro de Controle Operacional</strong> (estrutura
-              de comunicação e monitoramento dos ecopontos), um <strong>piscinão</strong>
-              subterrâneo no Parque da Juventude, uma nova <strong>Central de Triagem</strong>
+              de comunicação e monitoramento dos ecopontos), um <strong>piscinão</strong> subterrâneo no Parque da Juventude, uma nova <strong>Central de Triagem</strong>
               (espaço onde ficam as cooperativas de reciclagem que atuam no
               município) e a <strong>modernização e ampliação do sistema de
               monitoramento e alerta de chuva</strong>. As obras devem ser realizadas até
