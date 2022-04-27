@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Card, Image, Center, Content, Container, Row, Link, TitleObras } from "./styles";
+import { Card, Image, Center, Content, Container, Row, Link, TitleObras, Title } from "./styles";
 import obras from "../../assets/public/imagens/Home/obras.jpg";
 
 export function ObraImageLink() {
@@ -10,7 +10,8 @@ export function ObraImageLink() {
         </TitleObras>
       <Container>
         <Link href="/residuos">
-          <Image src={obras} alt="Banner Sanear"></Image>
+          <Image src={obras} alt="Banner Sanear" title="Resíduos"></Image>
+          <Title>Resíduos Sólidos</Title>
         </Link>
       </Container>
     </Content>

@@ -42,15 +42,23 @@ export const Card = styled.article`
 `;
 
 export const Title = styled.h2`
-  display: flex;
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 24px;
-  position: absolute;
-  padding: ${theme.spacing * 3}px;
-  bottom: 0;
-  margin: 0;
-  z-index: 10;
+color: #ffffff;
+font-weight: 400;
+font-size: 24px;
+position: absolute;
+padding: 24px;
+bottom: 0;
+margin: 0 0 0 35px;
+z-index: 10;
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+max-width: 296px;
+text-align: center;
+@media (max-width: 768px) {
+    font-size: 18px;
+}
 `;
 
 export const Link = styled.a`
@@ -60,6 +68,7 @@ width: 405px;
 background: black;
 position: relative;
 `;
+
 
 export const Image = styled.img`
   max-width: 100%;
