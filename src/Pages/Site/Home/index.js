@@ -30,8 +30,10 @@ import {
   InstagramFrame,
   CenterVideo,
   TitleVideo,
+  TitleObras,
 } from "./styles";
 import macrodrenagem from "../../../assets/public/imagens/Home/macrodrenagem.jpg";
+import obras from "../../../assets/public/imagens/Home/obras.jpg";
 import residuos from "../../../assets/public/imagens/Home/residuos_solidos.jpg";
 import monitoramento from "../../../assets/public/imagens/Home/monitoramento.jpg";
 import sobre from "../../../assets/public/imagens/Home/sobre.jpg";
@@ -40,9 +42,11 @@ import { VideoItem } from "../../../components/VideoItem";
 import { CardArticle } from "../../../components/CardArticle";
 import { Footer } from "../../../components/Footer";
 import { ContactArea } from "../../../components/ContactArea";
+import { ObraImageLink } from "../../../components/ObraImageLink";
 import Loader from "../../../components/Loader";
 import CardVideo from "../../../components/CardVideos";
 import { FiFacebook, FiInstagram } from "react-icons/fi";
+import { Directions } from "@material-ui/icons";
 
 const Home = () => {
   const [swiper, updateSwiper] = useState(null);
@@ -251,7 +255,9 @@ const Home = () => {
         </Row>
       </Container>
       <Container>{renderWork()}</Container>
-
+      <Container>
+        <ObraImageLink></ObraImageLink>
+      </Container>
       <Container color="#E5E5E5" full>
         <Column grid="15">
           <TitleVideo center>
