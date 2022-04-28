@@ -11,7 +11,7 @@ export function ObraImageLink() {
       <Container>
         <Link href="/residuos">
           <Image src={obras} alt="Banner Sanear" title="Resíduos"></Image>
-          <Title>Resíduos Sólidos</Title>
+          <Title>10 estações de coleta</Title>
         </Link>
       </Container>
     </Content>
