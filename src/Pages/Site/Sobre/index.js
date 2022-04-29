@@ -76,7 +76,7 @@ const Sobre = ({ workLocations }) => {
               (espaço onde ficam as cooperativas de reciclagem que atuam no
               município) e a <strong>modernização e ampliação do sistema de
               monitoramento e alerta de chuva</strong>. As obras devem ser realizadas até
-              202
+              2025
             </p>
             <p>Os investimentos têm como objetivo:</p>
             <p style={{ textAlign: "justify" }}>
