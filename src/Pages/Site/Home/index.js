@@ -152,8 +152,9 @@ const renderVideos = () => {
   }
   
   return(
-    videos.map((item) => (
-      <CardVideo content={item}/>  
+    videos.map((item, index) => (
+      console.log(item),
+      <CardVideo content={item} key={index} />  
     )) 
 
   );

@@ -31,14 +31,14 @@ const PlantaoSocial = () => {
           <TitleSection center>
             <strong>Plantão Social</strong>
           </TitleSection>
-          <div className="buttonWhatas">
+          {/* <div className="buttonWhatas">
             <a
               href="https://api.whatsapp.com/send?phone=5511937503181"
               target="_blank"
             >
               Plantão Social
             </a>
-          </div>
+          </div> */}
           <TextSection>
             <div className="contentText">
               <p>

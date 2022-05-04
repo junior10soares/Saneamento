@@ -136,17 +136,17 @@ const Macrodrenagem = () => {
         </Center>
       </Container>
 
-      <Container>
+      {/* <Container>
         <Center>
           <TitleSection className="text-center">
             Obras em <strong>andamento</strong>
           </TitleSection>
           <Row>
-            {/* <WorkCarouselMacro category="bb7f1800-35be-11eb-9d71-c1039530e0d5" /> */}
+             <WorkCarouselMacro category="bb7f1800-35be-11eb-9d71-c1039530e0d5" /> 
             <WorkCarouselMacro />
           </Row>
         </Center>
-      </Container>
+      </Container> */}
       <Footer />
     </>
   );
