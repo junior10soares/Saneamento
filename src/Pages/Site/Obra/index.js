@@ -250,7 +250,7 @@ const Obra = () => {
         <>
           <BannerPage image={baseUrl + "/" + construction?.img} />
           <Container>
-            <div className="desktopStepBar" style={{ width: "100%" }}>
+            <div className="desktopStepBar" style={{ width: "72%", alignItems: "center" }}>
               <div className="groupButtons">
                 <div className="buttonAlign">
                   <Projeto
@@ -269,7 +269,7 @@ const Obra = () => {
                   </Plantao>
                 </div>
 
-                {!!construction?.whatsapp_active && (
+              {/*  {!!construction?.whatsapp_active && (
                   <div className="buttonAlign">
                     <WhatsappButton
                       href={construction?.whatsapp}
@@ -279,7 +279,7 @@ const Obra = () => {
                       Nosso Whatsapp
                     </WhatsappButton>
                   </div>
-                )}
+              )}*/}
               </div>
             </div>
 
@@ -312,7 +312,7 @@ const Obra = () => {
                     </Plantao>
                   </div>
 
-                  {!!construction.whatsapp_active && (
+                  {/* {!!construction.whatsapp_active && (
                     <div className="buttonAlignResponsive">
                       <WhatsappButton
                         style={{ minWidth: 200 }}
@@ -321,8 +321,8 @@ const Obra = () => {
                       >
                         Nosso Whatsapp
                       </WhatsappButton>
-                    </div>
-                  )}
+                  </div> 
+                  )}*/}
                 </div>
               </div>
               <TextSection style={{ marginTop: 110 }} columns="2">

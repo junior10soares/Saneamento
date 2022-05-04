@@ -273,6 +273,20 @@ export const TitleVideo = styled.h1`
     }
 `;
 
+export const TitleObras = styled.h1`
+width: 100%;
+color: ${props => props.light ? '#ffffff' : theme.textColor};
+text-align: ${props => props.center ? 'center' : 'left'};
+font-size: 36px;
+line-height: 1.2;
+font-weight: 400;
+@media (max-width: 768px) {
+   width: 100%;
+   font-size: 24px;
+   margin: ${theme.spacing * 2}px 0;
+}
+`;
+
 export const ContainerHome = styled.div`
     max-width: ${props => props.full ? '100%' : theme.center + 'px'};
     margin: 0 auto;

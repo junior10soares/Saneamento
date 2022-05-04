@@ -35,7 +35,7 @@ export function ConstructionFilters({ constructions, locations, categories }) {
     <>
       <Content>
         <TitleObras>
-          Obras em <strong>andamento</strong>
+          Obras <strong>finalizadas</strong>
         </TitleObras>
         {/*   <Form>
             <Row>
