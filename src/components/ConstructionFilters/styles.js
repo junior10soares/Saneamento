@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import theme from '../../GlobalStyle/theme';
 
 
-export const Container = styled.div`
+export const Container = styled.div `
     max-width: ${props => props.full ? '100%' : theme.center + 'px'};
     margin: 0 auto;
     display: flex;
@@ -92,11 +92,11 @@ export const Container = styled.div`
     }
 `;
 
-export const Content = styled.div`
+export const Content = styled.div `
 width: 100%;
 `;
 
-export const Row = styled.div`
+export const Row = styled.div `
     width: 100%;
     height: auto;
     margin: 0 -${theme.spacing * 2}px;
@@ -110,11 +110,11 @@ export const Row = styled.div`
 `;
 
 
-export const TitleObras = styled.h1`
+export const TitleObras = styled.h1 `
     /* max-width: 650px; */
     width: 100%;
     /* padding-left: 70px; */
-    margin: 0 0 ${theme.spacing}px;
+    margin: -15px 0 0px;
     color: ${props => props.light ? '#ffffff' : theme.textColor};
     display: block;
     font-size: 36px;
@@ -130,7 +130,7 @@ export const TitleObras = styled.h1`
     }
 `;
 
-export const InputBox = styled.input`
+export const InputBox = styled.input `
     width: 100%;
     border-radius: 6px;
     border: 1px solid #E0E0E0;
@@ -143,7 +143,7 @@ export const InputBox = styled.input`
     padding: ${theme.spacing * 2}px; 
 `;
 
-export const Column = styled.div`
+export const Column = styled.div `
     padding: 0 ${theme.spacing * 2}px;
     box-sizing: border-box;
     width: ${props => (props.grid ? props.grid / 12 * 100 : '8:33')}%;
@@ -157,10 +157,11 @@ export const Column = styled.div`
 `;
 
 export const SelectBox = styled(InputBox).attrs({
-  as: "select"
-})``;
+    as: "select"
+})
+``;
 
-export const Button = styled.button`
+export const Button = styled.button `
     border-radius: 6px;
     height: 55px;
     min-width: 180px;

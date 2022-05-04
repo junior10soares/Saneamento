@@ -254,10 +254,10 @@ const Home = () => {
           </Column>
         </Row>
       </Container>
-      <Container>{renderWork()}</Container>
       <Container>
         <ObraImageLink></ObraImageLink>
       </Container>
+      <Container>{renderWork()}</Container>
       <Container color="#E5E5E5" full>
         <Column grid="15">
           <TitleVideo center>
