@@ -122,43 +122,28 @@ const Sobre = ({ workLocations }) => {
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded
-              color="#0A5DAB"
-              before="28 de Setembro - Envio de projeto de lei à câmara"
-            >
-              2018
+            <Rounded color="#0A5DAB" before="28 de setembro - Envio de projeto de lei à câmara">
+                2018
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded
-              color="#62B948"
-              after="24 e 26 de Junho - Visita de representantes da CAF"
-            >
-              2019
+            <Rounded color="#62B948" after="24 e 26 de junho - Visita de representantes da CAF">
+                2019
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded
-              color="#F14E1D"
-              before="17 de Dezembro - Aval do Senado para financiamento do banco"
-            >
-              2019
+            <Rounded color="#F14E1D" before="17 de dezembro - Aval do Senado para financiamento do banco">
+                2019
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded
-              color="#0A5DAB"
-              after="30 de Dezembro - Assinatura do contrato com a CAF"
-            >
-              2019
+            <Rounded color="#0A5DAB" after="30 de dezembro - Assinatura do contrato com a CAF">
+                2019
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded
-              color="#D7A187"
-              before="12 de Junho - Início das obras do Complexo Viário Cassaquera"
-            >
-              2020
+            <Rounded color="#D7A187" before="12 de junho - Início das obras do Complexo Viário Cassaquera">
+                2020
             </Rounded>
           </TimelineLine>
           <TimelineLine>
@@ -170,11 +155,13 @@ const Sobre = ({ workLocations }) => {
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded
-              color="#62B948"
-              before="30 de Janeiro - Entrega das obras do Complexo Viário Cassaquera"
-            >
-              2022
+            <Rounded color="#62B948" before="30 de janeiro - Entrega das obras do Complexo Viário Cassaquera">
+                2022
+            </Rounded>
+          </TimelineLine>
+          <TimelineLine>
+            <Rounded color="#D7A181" before="6 de abril - Construção de mais 10 Estações de Coleta">
+                2022
             </Rounded>
           </TimelineLine>
         </TimelineContainer>
