@@ -164,7 +164,7 @@ const Home = () => {
       return <Loader />;
     }
 
-    return videos.map((item) => <CardVideo content={item} />);
+    return videos.map((item,index) => <CardVideo content={item} key={index} />);
   };
 
   window.fbAsyncInit = function () {
