@@ -114,7 +114,7 @@ export const TitleObras = styled.h1 `
     /* max-width: 650px; */
     width: 100%;
     /* padding-left: 70px; */
-    margin: -15px 0 0px;
+    margin: -15px 0 -30px;
     color: ${props => props.light ? '#ffffff' : theme.textColor};
     display: block;
     font-size: 36px;

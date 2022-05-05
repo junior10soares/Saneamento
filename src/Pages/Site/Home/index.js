@@ -152,9 +152,9 @@ const Home = () => {
       return <Loader />;
     }
 
-    return news.map((item) => (
+    return news.map((item, index) => (
       <Link to={`/obra/${item.uuid}`}>
-        <CardArticle full="slider" content={item} />
+        <CardArticle full="slider" content={item} key={index} />
       </Link>
     ));
   };
