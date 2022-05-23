@@ -98,7 +98,7 @@ const ProjetoTrabalhoTecnico = () => {
                         A iniciativa visa:
                         </p>
                     </TextSection>
-                        <ImagePage src={diagrama}  style={{ width: '27%' }} />
+                        <ImagePage src={diagrama}  style={{ width: '30%' }} />
                         {/* <Grid container spacing={12} style={{ marginTop: 24 }} alignItems="center" justifyContent="center">
                         <Grid item md={12} xs={12}>
                             <TextSection columns="1">
@@ -115,7 +115,7 @@ const ProjetoTrabalhoTecnico = () => {
                     </Grid> */}
                 </Center>
             </Container>
-            <Container style={{ paddingTop: '0px', marginTop: '-40px' }}>
+            <Container style={{ paddingTop: '0px', marginTop: '-50px' }}>
                 <Center>
                     <TextSection columns="1">
                         <p>
