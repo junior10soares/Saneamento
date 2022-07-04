@@ -9,6 +9,7 @@ import { ReactComponent as VideoIcon } from "../../assets/public/videos.svg";
 import { ReactComponent as NoticiaIcon } from "../../assets/public/noticias.svg";
 import { ReactComponent as BannerIcon } from "../../assets/public/banner.svg";
 import { ReactComponent as MessageIcon } from "../../assets/public/message.svg";
+import { ReactComponent as PowerBiIcon } from "../../assets/public/powerbi.svg";
 
 import logo from '../../assets/public/imagens/header/logo.svg';
 import api from '../../services/api';
@@ -92,6 +93,19 @@ const DashboardLayout = ({ children, title }) => {
                 >
                   <NoticiaIcon />
                   <span>Notícias</span>
+                </a>
+              </Link>
+              
+            </li>
+            <li>
+              <Link to="/painel/dashboard">
+                <a
+                  className={
+                    pathname.name === 'dashboard' ? "active" : "inactive"
+                  }
+                >
+                  <PowerBiIcon width="28px" height="28px" fill="none" opacity={0.2} color="green" />
+                  <span>Dashboard Power BI</span>
                 </a>
               </Link>
               

@@ -22,6 +22,7 @@ import ObrasCreate from '../Pages/Painel/Obras/create';
 import PhaseWork from '../Pages/Painel/PhaseWork';
 import PhaseWorkEdit from '../Pages/Painel/PhaseWork/edit';
 import ObraEdit from '../Pages/Painel/Obras/Edit';
+import PowerBi from '../Pages/Painel/Dashboard';
 
 const Routes = () => {
   return(
@@ -41,6 +42,7 @@ const Routes = () => {
         <Route exact path="/auth/login" component={Login} />
         <Route exact path="/painel/banner" component={Banner} />
         <Route exact path="/painel/videos" component={PainelVideos} />
+        <Route exact path="/painel/dashboard" component={PowerBi} />
         <Route exact path="/painel/noticias" component={PainelNoticias} />
         <Route exact path="/painel/mensagens" component={PainelMensagens} />
         <Route exact path="/painel/obras" component={PainelObras} />
