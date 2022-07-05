@@ -20,12 +20,14 @@ import { Footer } from "../../../components/Footer";
 
 const PowerBi = () => {
   return (
-    <DashboardLayout title="Dashboard Power BI">
-      <Container  style={{marginBottom: 20}}>
-      <iframe width="100%" height="800" src={DashboardPowerBi}/>
+    // <DashboardLayout title="Dashboard Power BI">
+    <Form>
+      <Container style={{ marginBottom: 20 }}>
+        <iframe width="100%" height="800" src={DashboardPowerBi} />
       </Container>
-      <Footer/>
-    </DashboardLayout>
+      <Footer />
+    </Form>
+    // </DashboardLayout>
   );
 };
 

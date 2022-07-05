@@ -98,19 +98,6 @@ const DashboardLayout = ({ children, title }) => {
               
             </li>
             <li>
-              <Link to="/painel/dashboard">
-                <a
-                  className={
-                    pathname.name === 'dashboard' ? "active" : "inactive"
-                  }
-                >
-                  <PowerBiIcon width="28px" height="28px" fill="none" opacity={0.2} color="green" />
-                  <span>Dashboard Power BI</span>
-                </a>
-              </Link>
-              
-            </li>
-            <li>
               <Link to="/painel/mensagens">
                 <a
                   className={
@@ -134,6 +121,19 @@ const DashboardLayout = ({ children, title }) => {
                   <span>Banner</span>
                 </a>
               </Link>
+            </li>
+            <li>
+              <Link to="/painel/dashboard">
+                <a
+                  className={
+                    pathname.name === 'dashboard' ? "active" : "inactive"
+                  }
+                >
+                  <PowerBiIcon width="28px" height="28px" fill="none" opacity={0.2} color="green" />
+                  <span>Dashboard Power BI</span>
+                </a>
+              </Link>
+              
             </li>
            
           </ul>
