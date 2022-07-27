@@ -87,6 +87,14 @@ export const Container = styled.div`
         /* padding: ${theme.spacing * 4}px; */
         width: 100%;
     }
+
+    @media(max-width: 425px){
+      margin: -330px auto 0;
+    }
+
+    @media(max-width: 320px){
+      margin: -403px auto 0;
+    }
 `;
 
 export const ContainerCardHome = styled.div`
@@ -134,6 +142,13 @@ export const Column = styled.div`
     }
     ${InputBox} {
         margin-bottom: 10px;
+    } 
+    @media(max-width: 425px){
+      margin: -330px auto 0;
+    }
+
+    @media(max-width: 320px){
+      margin: -403px auto 0;
     }
 `;
 
@@ -147,6 +162,13 @@ export const Row = styled.div`
     justify-content: ${props => props.center ? 'center' : 'flex-start'};
     @media (max-width: 768px) {
         margin: 0;
+    }
+    @media(max-width: 425px){
+      margin: -330px auto 0;
+    }
+
+    @media(max-width: 320px){
+      margin: -403px auto 0;
     }
 `;
 
