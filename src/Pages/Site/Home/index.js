@@ -164,7 +164,9 @@ const Home = () => {
       return <Loader />;
     }
 
-    return videos.map((item,index) => <CardVideo content={item} key={index} />);
+    return videos.map((item, index) => (
+      <CardVideo content={item} key={index} />
+    ));
   };
 
   window.fbAsyncInit = function () {
@@ -193,7 +195,7 @@ const Home = () => {
     <>
       <Header />
       <FullBanner images={bannerImages} />
-      <ContainerCardHome column>
+      <ContainerCardHome classname="card-home" column>
         <CardImageLink
           image={macrodrenagem}
           theme="ternary"
@@ -240,10 +242,10 @@ const Home = () => {
                 urbana da história do município. As intervenções são executadas
                 pela Prefeitura de Santo André, por meio da Secretaria de
                 Manutenção e Serviços Urbanos, e pelo Semasa (Serviço Municipal
-                de Saneamento Ambiental de Santo André) com financiamento de US$
-                50 milhões pela CAF – Banco de Desenvolvimento da América
-                Latina. O Semasa e a Prefeitura vão investir US$ 12,5 milhões
-                como contrapartida.
+                de Saneamento Ambiental de Santo André), com financiamento de
+                US$ 50 milhões pela CAF – Banco de Desenvolvimento da América
+                Latina. Como contrapartida, o município investirá US$ 12,5
+                milhões.
               </p>
               <div className="buttonContainer">
                 <ButtonLink theme="primary" href="/sobre">

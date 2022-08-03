@@ -74,6 +74,8 @@ export const InstagramFrame = styled.iframe`
     height: 390px;
     margin-bottom: 20px;
 }
+`
 
-`;
+
+;
 

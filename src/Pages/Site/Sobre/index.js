@@ -58,25 +58,25 @@ const Sobre = ({ workLocations }) => {
               pela Prefeitura de Santo André, por meio da Secretaria de
               Manutenção e Serviços Urbanos, e pelo Semasa (Serviço Municipal de
               Saneamento Ambiental de Santo André), com financiamento de US$ 50
-              milhões pela CAF – Banco de Desenvolvimento da América Latina. A
-              Prefeitura e o Semasa investirão US$ 12,5 milhões como
-              contrapartida.
+              milhões pela CAF – Banco de Desenvolvimento da América Latina.
+              Como contrapartida, o município investirá US$ 12,5 milhões.
             </p>
             <p style={{ textAlign: "justify" }}>
               As primeiras intervenções começaram em junho de 2020 com a
               canalização do córrego Cassaquera, que também contempla a criação
               de um novo sistema viário na avenida Luiz Ignácio de Anhaia Melo.
-              Estas obras ganharam o nome de{" "}
+              Essas obras ganharam o nome de{" "}
               <strong>Complexo Viário Cassaquera. </strong>
             </p>
             <p style={{ textAlign: "justify" }}>
-              O Programa Sanear Santo André ainda inclui a construção de mais <strong>10
-              Estações de Coleta</strong>, um <strong>Centro de Controle Operacional</strong> (estrutura
-              de comunicação e monitoramento dos ecopontos), um <strong>piscinão</strong> subterrâneo no Parque da Juventude, uma nova <strong>Central de Triagem</strong>
-              (espaço onde ficam as cooperativas de reciclagem que atuam no
-              município) e a <strong>modernização e ampliação do sistema de
-              monitoramento e alerta de chuva</strong>. As obras devem ser realizadas até
-              2025
+              O Programa Sanear Santo André ainda inclui a construção de mais{" "}
+              <strong>10 Estações de Coleta</strong>, um{" "}
+              <strong>piscinão</strong> subterrâneo no Parque da Juventude, e a{" "}
+              <strong>
+                modernização e ampliação do sistema de monitoramento e alerta de
+                chuva
+              </strong>
+              . As obras devem ser realizadas até 2025
             </p>
             <p>Os investimentos têm como objetivo:</p>
             <p style={{ textAlign: "justify" }}>
@@ -89,7 +89,7 @@ const Sobre = ({ workLocations }) => {
               • Aperfeiçoar a gestão de resíduos sólidos.
             </p>
             <p style={{ textAlign: "justify" }}>
-              • Otimizar o sistema de monitoramento de chuva do município.{" "}
+              • Modernizar e otimizar o sistema de monitoramento e alerta de chuva.{" "}
             </p>{" "}
             <ImagemSobre>
               <div className="imageAbout">
@@ -122,28 +122,43 @@ const Sobre = ({ workLocations }) => {
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded color="#0A5DAB" before="28 de setembro - Envio de projeto de lei à câmara">
-                2018
+            <Rounded
+              color="#0A5DAB"
+              before="28 de setembro - Envio de projeto de lei à câmara"
+            >
+              2018
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded color="#62B948" after="24 e 26 de junho - Visita de representantes da CAF">
-                2019
+            <Rounded
+              color="#62B948"
+              after="24 e 26 de junho - Visita de representantes da CAF"
+            >
+              2019
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded color="#F14E1D" before="17 de dezembro - Aval do Senado para financiamento do banco">
-                2019
+            <Rounded
+              color="#F14E1D"
+              before="17 de dezembro - Aval do Senado para financiamento do banco"
+            >
+              2019
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded color="#0A5DAB" after="30 de dezembro - Assinatura do contrato com a CAF">
-                2019
+            <Rounded
+              color="#0A5DAB"
+              after="30 de dezembro - Assinatura do contrato com a CAF"
+            >
+              2019
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded color="#D7A187" before="12 de junho - Início das obras do Complexo Viário Cassaquera">
-                2020
+            <Rounded
+              color="#D7A187"
+              before="12 de junho - Início das obras do Complexo Viário Cassaquera"
+            >
+              2020
             </Rounded>
           </TimelineLine>
           <TimelineLine>
@@ -155,13 +170,19 @@ const Sobre = ({ workLocations }) => {
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded color="#62B948" before="30 de janeiro - Entrega das obras do Complexo Viário Cassaquera">
-                2022
+            <Rounded
+              color="#62B948"
+              before="30 de janeiro - Entrega das obras do Complexo Viário Cassaquera"
+            >
+              2022
             </Rounded>
           </TimelineLine>
           <TimelineLine>
-            <Rounded color="#D7A181" before="6 de abril - Construção de mais 10 Estações de Coleta">
-                2022
+            <Rounded
+              color="#D7A181"
+              before="6 de abril - Construção de mais 10 Estações de Coleta"
+            >
+              2022
             </Rounded>
           </TimelineLine>
         </TimelineContainer>
