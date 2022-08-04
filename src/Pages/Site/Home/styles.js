@@ -89,6 +89,21 @@ export const ContainerCardHome = styled.div`
 
 `;
 
+
+export const CardBanner = styled.div`
+height: 35vh;
+.kpQrA-d {
+  @media (max-width: 768px) {
+    height: 35vh;
+    display: Flex;
+  
+  }
+
+}
+
+`;
+
+
 export const InputBox = styled.input`
   width: 100%;
   border-radius: 6px;

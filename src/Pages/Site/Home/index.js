@@ -20,6 +20,7 @@ import api from "../../../services/api";
 import {
   ContainerHome,
   ContainerCardHome,
+  CardBanner,
   Container,
   Row,
   Column,
@@ -194,8 +195,10 @@ const Home = () => {
   return (
     <>
       <Header />
+      <CardBanner className="cardBanner">
       <FullBanner images={bannerImages} />
-      <ContainerCardHome classname="card-home" column>
+      </CardBanner>
+      <ContainerCardHome column>
         <CardImageLink
           image={macrodrenagem}
           theme="ternary"

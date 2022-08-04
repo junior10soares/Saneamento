@@ -10,6 +10,8 @@ import {
   TitleSection,
 } from "./styles";
 
+import Descarte from "../../../assets/pdf/descarte.pdf";
+import Compostagem from "../../../assets/pdf/compostagem.pdf";
 import { DocumentsList } from "../../../components/DocumentsList";
 import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf";
@@ -211,6 +213,23 @@ const ProjetoTrabalhoTecnico = () => {
             </p>
           </TextSection>
         </Center>
+      </Container>
+      <Container>
+        <TitleSection center>
+          <strong>Materiais Educativos</strong>
+          <Center style={{ marginTop: "40px" }}>
+            <TitleSection center style={{ fontSize: 21 }}>
+              <strong>Descarte correto de resíduos</strong>
+            </TitleSection>
+            <iframe width="100%" height="800" src={Descarte} />
+          </Center>
+          <Center style={{ marginTop: "40px" }}>
+            <TitleSection center style={{ fontSize: 21 }}>
+              <strong>Como fazer compostagem</strong>
+            </TitleSection>
+            <iframe width="100%" height="800" src={Compostagem} />
+          </Center>
+        </TitleSection>
       </Container>
 
       <Footer />
