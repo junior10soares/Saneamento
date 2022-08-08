@@ -85,24 +85,20 @@ export const ContainerCardHome = styled.div`
   display: flex;
   position: relative;
   z-index: 10;
- 
-
 `;
-
 
 export const CardBanner = styled.div`
-height: 35vh;
-.kpQrA-d {
-  @media (max-width: 768px) {
-    height: 35vh;
-    display: Flex;
-  
+  .kpQrA-d {
+    @media (max-width: 768px) {
+      display: Flex;
+    }
+    @media screen and (max-width: 410px) {
+      height: 35vh;
+      display: Flex;
+    }
   }
 
-}
-
 `;
-
 
 export const InputBox = styled.input`
   width: 100%;

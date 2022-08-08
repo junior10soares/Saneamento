@@ -323,7 +323,7 @@ const ProjetoSocioambiental = () => {
                     <DocumentsList>
                         <div className="Grid">
                             <div className="row">
-                                <span className="span-column">
+                                <span className="span-column" style={{ marginLeft: 5}}>
                                     <a href="/documentos/projeto_socioambiental/Banner_água.pdf" target="_blank">
                                         <Document
                                             file="/documentos/projeto_socioambiental/Banner_água.pdf"
@@ -402,7 +402,7 @@ const ProjetoSocioambiental = () => {
                                     </a>          
                                     <a href="/documentos/projeto_socioambiental/Folder_orientação_aos_moradores.pdf" target="_blank">Orientação aos moradores</a>
                                 </span>
-                                <span className="span-column" style={{ marginRight: 40}}>
+                                <span className="span-column" style={{ marginRight: 30}}>
                                     <a href="/documentos/projeto_socioambiental/Como_fazer_uma_horta.pdf" target="_blank">
                                         <Document
                                             file="/documentos/projeto_socioambiental/Como_fazer_uma_horta.pdf"
@@ -422,10 +422,21 @@ const ProjetoSocioambiental = () => {
                                         <Page pageNumber={1} height={250} width={250} />
                                     </Document>
                                     </a>
-                                    <a href="/documentos/projeto_socioambiental/Folder_lixo_nosso_cada_dia.pdf" target="_blank">O lixo nosso de cada dia</a>
+                                    <a href="/documentos/projeto_socioambiental/Folder_lixo_nosso_cada_dia.pdf" target="_blank" style={{ marginRight: 20}}>O lixo nosso de cada dia</a>
                                 </span>
                             </div>
                             <div className="row">
+                                <span className="span-column" style={{ marginLeft: 5}}>
+                                    <a href="/documentos/projeto_socioambiental/Banner_compostagem.pdf" target="_blank">
+                                        <Document
+                                            file="/documentos/projeto_socioambiental/Banner_compostagem.pdf"
+                                            onLoadError={console.error}
+                                        >
+                                            <Page pageNumber={1} height={250} width={250} />
+                                        </Document>
+                                    </a>
+                                    <a href="/documentos/projeto_socioambiental/Banner_compostagem.pdf" target="_blank">Compostagem Doméstica</a>
+                                </span>
                                 <span className="span-column">
                                     <a href="/documentos/projeto_socioambiental/Cartilha_infantil_saneamento_ambiental.pdf" target="_blank">
                                         <Document
