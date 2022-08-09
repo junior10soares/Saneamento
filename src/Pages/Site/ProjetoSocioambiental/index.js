@@ -376,7 +376,7 @@ const ProjetoSocioambiental = () => {
                                             <Page pageNumber={1} height={200} width={200} />
                                         </Document>
                                     </a>
-                                    <a href="/documentos/projeto_socioambiental/Banner_saúde_saneamento.pdf" target="_blank">Saúde e saneamento ambiental</a>
+                                    <a href="/documentos/projeto_socioambiental/Banner_saúde_saneamento.pdf" target="_blank">Saúde e Saneamento Ambiental</a>
                                 </span>
                             </div>
                             <div className="row">
@@ -400,7 +400,7 @@ const ProjetoSocioambiental = () => {
                                             <Page pageNumber={1} height={250} width={250} />
                                         </Document>
                                     </a>          
-                                    <a href="/documentos/projeto_socioambiental/Folder_orientação_aos_moradores.pdf" target="_blank">Orientação aos moradores</a>
+                                    <a href="/documentos/projeto_socioambiental/Folder_orientação_aos_moradores.pdf" target="_blank">Orientação aos Moradores</a>
                                 </span>
                                 <span className="span-column" style={{ marginRight: 30}}>
                                     <a href="/documentos/projeto_socioambiental/Como_fazer_uma_horta.pdf" target="_blank">
@@ -411,7 +411,7 @@ const ProjetoSocioambiental = () => {
                                             <Page pageNumber={1} height={250} width={250} />
                                         </Document>
                                     </a>
-                                    <a href="/documentos/projeto_socioambiental/Como_fazer_uma_horta.pdf" target="_blank">Como fazer uma horta</a>
+                                    <a href="/documentos/projeto_socioambiental/Como_fazer_uma_horta.pdf" target="_blank">Como Fazer Uma Horta</a>
                                 </span>
                                 <span className="span-column">
                                     <a href="/documentos/projeto_socioambiental/Folder_lixo_nosso_cada_dia.pdf" target="_blank">    
@@ -422,7 +422,7 @@ const ProjetoSocioambiental = () => {
                                         <Page pageNumber={1} height={250} width={250} />
                                     </Document>
                                     </a>
-                                    <a href="/documentos/projeto_socioambiental/Folder_lixo_nosso_cada_dia.pdf" target="_blank" style={{ marginRight: 20}}>O lixo nosso de cada dia</a>
+                                    <a href="/documentos/projeto_socioambiental/Folder_lixo_nosso_cada_dia.pdf" target="_blank" style={{ marginRight: 20}}>O Lixo Nosso De Cada Dia</a>
                                 </span>
                             </div>
                             <div className="row">
@@ -446,7 +446,7 @@ const ProjetoSocioambiental = () => {
                                             <Page pageNumber={1} height={250} width={250} />
                                         </Document>
                                     </a>
-                                    <a href="/documentos/projeto_socioambiental/Cartilha_infantil_saneamento_ambiental.pdf" target="_blank">Saneamento ambiental</a>
+                                    <a href="/documentos/projeto_socioambiental/Cartilha_infantil_saneamento_ambiental.pdf" target="_blank">Saneamento Ambiental</a>
                                 </span>
                             </div>
                         </div>
