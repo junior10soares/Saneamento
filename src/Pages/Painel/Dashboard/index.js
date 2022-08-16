@@ -32,15 +32,13 @@ const PowerBi = () => {
     setLoading(false);
   }, []);
 
-  useEffect(() => {
-    getUserMe();
-  }, [getUserMe]);
-
   const searchDataCharts = async () => {
     try {
       setLoading(true);
       const response = await api.get(
-        `dashboard-data?filters[periodo@less_than_or_equal_to]=${formData?.mes_ano_inicial}-01&filters[periodo@greater_than_or_equal_to]=${formData?.mes_ano_final}-01`,
+        (typeof formData?.mes_ano_inicial !== 'undefined') || (typeof formData?.mes_ano_final !== 'undefined') ? 
+        `dashboard-data?filters[periodo@less_than_or_equal_to]=${formData?.mes_ano_inicial}-01&filters[periodo@greater_than_or_equal_to]=${formData?.mes_ano_final}-01`:
+        `dashboard-data`,
       );
       setResponseDataCharts(response?.data?.original);
     } catch (error) {
@@ -48,7 +46,10 @@ const PowerBi = () => {
     }
     setLoading(false);
   };
-
+  useEffect(() => {
+    getUserMe();
+    searchDataCharts()
+  }, [getUserMe]);
   const convertBase64 = (arquivo) => {
     return new Promise((resolve, reject) => {
       const fileReader = new FileReader();
@@ -92,7 +93,7 @@ const PowerBi = () => {
       const response = await api.post('dashboard-data', {
         file: formatedBase64,
       });
-
+      console.log(response?.data?.original)
       setResponseDataCharts(response?.data?.original);
 
       notify('success', 'Importação efetuada com sucesso!');
