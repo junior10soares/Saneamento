@@ -25,9 +25,20 @@ const PowerBi = () => {
     try {
       setLoading(true);
       const response = await api.get('me');
-      setUserMe(response?.data?.data?.role?.name === 'Admin');
+      setUserMe(response?.data?.data);
     } catch (error) {
       notify('error', `Erro ao buscar permissões de usuário: ${error.message}`);
+    }
+    setLoading(false);
+  }, []);
+
+  const getDataCharts = useCallback(async () => {
+    try {
+      setLoading(true);
+      const response = await api.get('dashboard-data');
+      setResponseDataCharts(response?.data?.original);
+    } catch (error) {
+      notify('error', `Erro ao buscar os dados dos gráficos: ${error.message}`);
     }
     setLoading(false);
   }, []);
@@ -35,6 +46,10 @@ const PowerBi = () => {
   useEffect(() => {
     getUserMe();
   }, [getUserMe]);
+
+  useEffect(() => {
+    getDataCharts();
+  }, [getDataCharts]);
 
   const searchDataCharts = async () => {
     try {
@@ -118,20 +133,6 @@ const PowerBi = () => {
     await searchDataCharts();
   };
 
-  const handleExportFile = async () => {
-    const response = await api.get('dashboard-data/export');
-    const url = window.URL.createObjectURL(new Blob([response.data]));
-    console.log(url);
-    const link = document.createElement('a');
-    link.href = url;
-    link.setAttribute('download', 'dashboard.xlsx'); //or any other extension
-    document.body.appendChild(link);
-    link.click();
-    // TODO
-    // - /export n funcionou
-    // - trazer dados em milhoes
-  };
-
   const renderInput = () => {
     if (!userMe?.role?.name === 'admin') return <></>;
 
@@ -154,7 +155,6 @@ const PowerBi = () => {
           />
           <DashboardButton
             onClick={() => {
-              // handleExportFile
               window.open(`${apiUrl}/dashboard-data/export`);
             }}
             style={{ width: '25%' }}
