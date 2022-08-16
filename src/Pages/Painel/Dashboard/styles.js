@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
@@ -9,7 +9,48 @@ export const Container = styled.div`
     fill: currentColor;
     cursor: pointer;
   }
+`;
 
+export const ChartsContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
+
+export const FlexContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > * + * {
+    margin-left: 10px;
+  }
+`;
+
+export const LoadingContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > h5 {
+    color: #505050;
+    margin-right: 10px;
+  }
+
+  .icon-spin {
+    animation: iconSpin 2s infinite linear;
+    color: #505050;
+  }
+
+  @keyframes iconSpin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }
 `;
 
 export const RegisterButton = styled.button`
@@ -100,55 +141,53 @@ export const ActionIcons = styled.div`
 `;
 
 export const Modal = styled.div`
-width: 100vw;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-position: absolute;
-background: rgb(14 14 14 / 61%);
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgb(14 14 14 / 61%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 `;
 
 export const ModalContent = styled.div`
-width: 100%;
-max-width: 500px;
-height: 400px;
-display: flex;
-justify-content: center;
-align-items: center;
-background: #fff;
-margin: 0 auto;
-border-radius: 10px;
-position: relative;
-
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
 `;
 
 export const ModalForm = styled.div`
-width: 100%;
-margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 
-svg {
-  position: absolute;
-  right: 1%;
-  margin-right: 23px;
-  font-size: 16px;
-  top: 23px;
-  cursor: pointer;
-}
-
+  svg {
+    position: absolute;
+    right: 1%;
+    margin-right: 23px;
+    font-size: 16px;
+    top: 23px;
+    cursor: pointer;
+  }
 `;
 
 export const Form = styled.form`
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
 
   h1 {
     font-family: Inter;
@@ -160,8 +199,6 @@ margin: 0 auto;
   }
 
   textarea,
-
-
   input {
     width: 65% !important;
     padding: 16px;
@@ -169,20 +206,19 @@ margin: 0 auto;
     margin: 8px auto;
   }
 `;
-export const card = styled.div`
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-margin: 0 auto;
-}
 
+export const card = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
 `;
 
 export const ButtonForm = styled.div`
-display: flex;
-justify-content: flex-end;
-width: 100%;
-max-width: 72%;
-`
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 72%;
+`;
