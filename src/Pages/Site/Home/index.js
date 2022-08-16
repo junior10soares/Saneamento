@@ -20,6 +20,7 @@ import api from "../../../services/api";
 import {
   ContainerHome,
   ContainerCardHome,
+  CardBanner,
   Container,
   Row,
   Column,
@@ -164,7 +165,9 @@ const Home = () => {
       return <Loader />;
     }
 
-    return videos.map((item,index) => <CardVideo content={item} key={index} />);
+    return videos.map((item, index) => (
+      <CardVideo content={item} key={index} />
+    ));
   };
 
   window.fbAsyncInit = function () {
@@ -192,7 +195,9 @@ const Home = () => {
   return (
     <>
       <Header />
+      <CardBanner className="cardBanner">
       <FullBanner images={bannerImages} />
+      </CardBanner>
       <ContainerCardHome column>
         <CardImageLink
           image={macrodrenagem}
@@ -221,13 +226,13 @@ const Home = () => {
       <Container>
         <Row>
           <Column grid="5">
-            <img
+            <img className="img-container"
               src={sobre}
               style={{ width: "100%" }}
               alt="Programa Sanear Santo André"
             />
           </Column>
-          <Column grid="7">
+          <Column className="text-home" grid="7">
             <TitleHome>
               <strong>Sobre o{"\u00A0"}programa</strong>
             </TitleHome>
@@ -240,10 +245,10 @@ const Home = () => {
                 urbana da história do município. As intervenções são executadas
                 pela Prefeitura de Santo André, por meio da Secretaria de
                 Manutenção e Serviços Urbanos, e pelo Semasa (Serviço Municipal
-                de Saneamento Ambiental de Santo André) com financiamento de US$
-                50 milhões pela CAF – Banco de Desenvolvimento da América
-                Latina. O Semasa e a Prefeitura vão investir US$ 12,5 milhões
-                como contrapartida.
+                de Saneamento Ambiental de Santo André), com financiamento de
+                US$ 50 milhões pela CAF – Banco de Desenvolvimento da América
+                Latina. Como contrapartida, o município investirá US$ 12,5
+                milhões.
               </p>
               <div className="buttonContainer">
                 <ButtonLink theme="primary" href="/sobre">
@@ -255,7 +260,7 @@ const Home = () => {
         </Row>
       </Container>
       <Container>
-        <ObraImageLink></ObraImageLink>
+        <ObraImageLink className="obra-link"></ObraImageLink>
       </Container>
       <Container>{renderWork()}</Container>
       <Container color="#E5E5E5" full>
