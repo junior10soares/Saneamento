@@ -226,13 +226,13 @@ const Home = () => {
       <Container>
         <Row>
           <Column grid="5">
-            <img
+            <img className="img-container"
               src={sobre}
               style={{ width: "100%" }}
               alt="Programa Sanear Santo André"
             />
           </Column>
-          <Column grid="7">
+          <Column className="text-home" grid="7">
             <TitleHome>
               <strong>Sobre o{"\u00A0"}programa</strong>
             </TitleHome>
@@ -260,7 +260,7 @@ const Home = () => {
         </Row>
       </Container>
       <Container>
-        <ObraImageLink></ObraImageLink>
+        <ObraImageLink className="obra-link"></ObraImageLink>
       </Container>
       <Container>{renderWork()}</Container>
       <Container color="#E5E5E5" full>

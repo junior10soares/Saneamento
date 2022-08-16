@@ -12,6 +12,20 @@ export const Container = styled.div`
   background: ${(props) => props.color};
   box-sizing: border-box;
 
+  .img-container {
+    @media (max-width: 768px) {
+      display: Flex;
+      flex-direction: column;
+      min-width: 56vh
+    }
+    @media screen and (max-width: 410px) {
+      display: Flex;
+      flex-direction: column;
+      min-width: 46vh
+    }
+
+  }
+
   .groupButtons {
     display: flex;
     flex-direction: row;
@@ -85,6 +99,14 @@ export const ContainerCardHome = styled.div`
   display: flex;
   position: relative;
   z-index: 10;
+  @media (max-width: 768px) {
+    display: Flex;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 410px) {
+    display: Flex;
+    flex-direction: column;
+  }
 `;
 
 export const CardBanner = styled.div`
@@ -117,6 +139,21 @@ export const Column = styled.div`
   padding: 0 ${theme.spacing * 2}px;
   box-sizing: border-box;
   width: ${(props) => (props.grid ? (props.grid / 12) * 100 : "8:33")}%;
+
+  @media (max-width: 768px) {
+    display: flex;
+    padding: 0px 0px 0px 16px;
+    width: 100vh;
+    position: relative;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 410px) {
+    display: flex;
+    padding: 0px 0px 0px 9px;
+    width: 100vh;
+    position: relative;
+    flex-direction: column;
+  }
 `;
 
 export const Row = styled.div`
@@ -168,6 +205,16 @@ export const Button = styled.button`
     background: ${(props) => theme.colors[props.theme].dark};
   }
   width: ${(props) => (props.full ? "100%" : "auto")};
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  @media screen and (max-width: 410px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
 `;
 
 export const ButtonLink = styled(Button).attrs({
@@ -193,6 +240,17 @@ export const TextHome = styled.div`
     display: flex;
     display: block;
     text-align: start;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+    @media screen and (max-width: 410px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
   }
 `;
 
@@ -228,6 +286,7 @@ export const TitleObras = styled.h1`
   line-height: 1.2;
   font-weight: 400;
 `;
+
 
 export const ContainerHome = styled.div`
   max-width: ${(props) => (props.full ? "100%" : theme.center + "px")};
