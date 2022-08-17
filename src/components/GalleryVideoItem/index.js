@@ -10,7 +10,7 @@ export function GalleryVideoItem({ video, handleDeleteVideo }) {
         url={video.url}
         width='100%'
         height='100%'
-        // controls
+        controls
       />
       <Button onClick={()=>{if(confirm(`Tem certeza que deseja apagar o vídeo "${video.name}" ?`)){handleDeleteVideo(video.uuid)}}}><FaTrash /></Button>
     </Card>
