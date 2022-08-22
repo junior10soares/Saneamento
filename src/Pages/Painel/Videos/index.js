@@ -60,6 +60,44 @@ const PainelVideos = () => {
     }
   };
 
+  // const handleDeleteVideo = async (uuid) => {
+  //   console.log(uuid);
+  //   setLoading(true);
+  //   // Sample Video
+  //   // https://www.youtube.com/embed/L7OLY4HCctQ
+  //   try {
+  //     const response = await request.delete('video', uuid);
+
+  //     setLoading(false);
+  //     setModalActive(false);
+  //     if(response.status === 201){
+  //       notify('success', 'Video deletado com sucesso')
+  //     }
+
+  //   } catch (error) {
+  //     setLoading(false);
+  //   }
+  // };
+
+  const handleDeleteVideo = useCallback(async (uuid) => {
+    try {
+      console.log(uuid);
+      setLoading(true);
+      const response = await request.delete(
+         `video/${uuid}`
+      );
+      fetchVideos();
+      setLoading(false);
+      setModalActive(false);
+      if(response.status === 200){
+        notify('success', 'Video deletado com sucesso')
+      }
+    } catch (error) {
+      setLoading(false);
+      console.log(error);
+    }
+  }, []);
+
   return (
     <DashboardLayout title="Videos">
       <Container>
@@ -71,6 +109,7 @@ const PainelVideos = () => {
               <GalleryVideoItem
                 key={video.uuid}
                 video={video}
+                handleDeleteVideo={handleDeleteVideo}
               />
             ))}
 
