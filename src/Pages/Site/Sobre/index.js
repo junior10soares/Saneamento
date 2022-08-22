@@ -147,7 +147,7 @@ const Sobre = ({ workLocations }) => {
           </TimelineLine>
           <TimelineLine>
             <Rounded
-              color="#D7A187"
+              color="#0A5DAB"
               after="30 de dezembro - Assinatura do contrato com a CAF"
             >
               2019
@@ -155,7 +155,7 @@ const Sobre = ({ workLocations }) => {
           </TimelineLine>
           <TimelineLine>
             <Rounded
-              color="#0A5DAB"
+              color="#D7A187"
               before="12 de junho - Início das obras do Complexo Viário Cassaquera"
             >
               2020
@@ -163,48 +163,16 @@ const Sobre = ({ workLocations }) => {
           </TimelineLine>
           <TimelineLine>
             <Rounded
-              color="#62B948"
-              after="Agosto - Trabalho Técnico Socioambiental do Complexo Viário Cassaquera"
-            >
-              2020
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#F14E1D"
-              before="11 de novembro - Começo do estudo de catadores de recicláveis"
+              color="#0A5DAB"
+              after="11 de novembro - Começo do estudo de catadores de recicláveis"
             >
               2021
             </Rounded>
           </TimelineLine>
           <TimelineLine>
             <Rounded
-              color="#D7A187"
-              after="30 de janeiro - Entrega das obras do Complexo Viário Cassaquera"
-            >
-              2022
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#0A5DAB"
-              before="6 de abril - Construção de mais 10 Estações de Coleta"
-            >
-              2022
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
               color="#62B948"
-              after="Maio - Trabalho Técnico Socioambiental das Estações de Coleta"
-            >
-              2022
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#F14E1D"
-              before="30 de junho - Seminário: Um olhar integrado sobre os catadores de materiais recicláveis"
+              before="30 de janeiro - Entrega das obras do Complexo Viário Cassaquera"
             >
               2022
             </Rounded>
@@ -212,7 +180,7 @@ const Sobre = ({ workLocations }) => {
           <TimelineLine>
             <Rounded
               color="#D7A181"
-              after="30 de agosto - Lançamento do livro: Um olhar integrado sobre os catadores de materiais recicláveis de Santo André"
+              before="6 de abril - Construção de mais 10 Estações de Coleta"
             >
               2022
             </Rounded>

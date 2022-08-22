@@ -8,7 +8,7 @@ export const Card = styled.div`
   align-items: center;
   justify-content: center;
   transition: 0.1s;
-  margin: 4px;
+  margin: 15px;
 
   &:hover {
     background: #5171db;
