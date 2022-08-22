@@ -1,9 +1,8 @@
 import React from "react";
-import { Card, Image, Button } from "./style";
-import { FaTrash } from 'react-icons/fa';
+import { Card, Image } from "./style";
 import ReactPlayer from "react-player/lazy";
 
-export function GalleryVideoItem({ video, handleDeleteVideo }) {
+export function GalleryVideoItem({ video }) {
   return (
     <Card>
       <ReactPlayer
@@ -12,8 +11,6 @@ export function GalleryVideoItem({ video, handleDeleteVideo }) {
         height='100%'
         controls
       />
-      <Button onClick={()=>{if(confirm(`Tem certeza que deseja apagar o vídeo "${video.name}" ?`)){handleDeleteVideo(video.uuid)}}}><FaTrash /></Button>
     </Card>
-    
   );
 }
