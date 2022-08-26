@@ -49,6 +49,7 @@ const PainelVideos = () => {
     try {
       const response = await request.post('video', data);
 
+      window.location.reload();
       setLoading(false);
       setModalActive(false);
       if(response.status === 201){
@@ -117,12 +118,12 @@ const PainelVideos = () => {
           </div>
 
           <Spacer size={60} />
-
+{/* 
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
-            <DashboardButton onClick={() => push("/dashboard/obras")}>
+            <DashboardButton onClick={() => push("/painel/obras")}>
               Concluir
             </DashboardButton>
-          </div>
+          </div> */}
         </Paper>
       </Container>
 
