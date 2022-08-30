@@ -10,6 +10,7 @@ import {
   TextSection,
   EstudoCatadores,
   ProjetoTecnico,
+  LivroCatadores,
 } from "./styles";
 import { DocumentsList } from "../../../components/DocumentsList";
 import MapComponent from "../../../components/MapComponent";
@@ -133,6 +134,14 @@ const Residuos = () => {
                 <FiClipboard />
                 Estudo de catadores{" "}
               </EstudoCatadores>{" "}
+              <LivroCatadores
+                href="/livro-sobre-catadores"
+                target="_blank"
+                style={{ marginLeft: "2px" }}
+              >
+                <FiClipboard />
+                Livro sobre catadores{" "}
+              </LivroCatadores>{" "}
             </div>{" "}
           </div>{" "}
         </div>

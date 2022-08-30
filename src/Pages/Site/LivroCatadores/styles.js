@@ -15,7 +15,7 @@ export const Container = styled.div `
     .groupButtons {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-end;
       width: 100%;
     }
 
@@ -37,19 +37,11 @@ export const Container = styled.div `
     }
 
     .buttonAlignResponsive{
-      // display: flex;
-      // justify-content: flex-end;
-      // position: relative;
-      // z-index: 41;
-      // margin-bottom: 10px
-    
-        display: grid;
-        //flex-direction: column;
-        justify-content: center;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr;
-        grid-row-gap: 10px;
-
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      z-index: 41;
+      margin-bottom: 10px
     }
     .buttonWhatas{
      width: 100%;
@@ -85,16 +77,7 @@ export const Container = styled.div `
     }
     }
     }
-    .iconsGrid .row {
-    displey: flex;
-    margin: auto;
-    justify-content: center;
-    }
-    .iconsGrid {
-      displey: flex;
-      margin: auto;
-      justify-content: center;
-      }
+
 
     @media(max-width: 1024px){
       padding: ${theme.spacing * 8}px 48px;
@@ -103,10 +86,6 @@ export const Container = styled.div `
     @media (max-width: 768px) {
         /* padding: ${theme.spacing * 4}px; */
         width: 100%;
-
-        #firstParagraph {
-          margin-top: 40px!important;
-      }
     }
 `;
 
@@ -131,6 +110,7 @@ export const Row = styled.div `
     }
 `;
 
+
 export const TitleSection = styled.h1 `
     /* max-width: 650px; */
     width: 100%;
@@ -138,7 +118,7 @@ export const TitleSection = styled.h1 `
     margin: 0 0 ${theme.spacing}px;
     color: ${props => props.light ? '#ffffff' : theme.textColor};
     display: block;
-    font-size: 36px;
+    font-size: 33px;
     line-height: 1.2;
     font-weight: 400;
     text-align: ${props => props.center ? 'center' : 'left'};
@@ -153,6 +133,17 @@ export const TitleSection = styled.h1 `
     }
 `;
 
+export const TextSection = styled.div `
+    margin: ${theme.spacing * 3}px 0;
+    color: ${theme.textColor};
+    font-size: 21px;
+    line-height: 1.5;
+    text-align: justify;
+    font-weight: 300;
+    /* padding-left: 70px;
+    padding-right: 70px; */
+`;
+
 export const BannerPage = styled.div `
   background-repeat: no-repeat;
   background-position: 10% 66%;
@@ -164,86 +155,25 @@ export const BannerPage = styled.div `
   background-image: url(${props => props.image});
 `;
 
-export const HeaderPage = styled.div `
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: ${theme.spacing * 8}px;
-`;
+export const ImagePage = styled.img `
+//display:flex;
+  background-repeat: no-repeat;
+  max-width: ${theme.center}px;
+  margin: 0 auto;
+  display: block;
+  //width: 100%;
+  position: relative;   
+  background-size: cover;
+ // height:900px; width: 600px;
+  object-fit: cover;
+  background-color: #fff;
+  background-image: url(${props => props.image});
+  max-width:100%;
+  height:auto;
+  @media (max-width: 900px) {
+    max-width:100%;
+    height:auto;
+    width:70%!important;
+  }
 
-export const TextSection = styled.div `
-  margin: ${theme.spacing * 3}px 0;
-  color: ${theme.textColor};
-  font-size: 21px;
-  line-height: 1.5;
-  font-weight: 300;
-  /* padding-left: 70px;
-  padding-right: 70px; */
-`;
-
-export const EstudoCatadores = styled.a `
-  height: 60px;
-  padding: 0 ${theme.spacing * 4}px;
-  background: #1182C6;
-  font-size: 14px;
-  line-height: 60px;
-  min-width: 160px;
-  cursor: pointer;
-  color: #ffffff;
-  display: inline-block;
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30px;
-  text-decoration: none;
-  
-  & svg {
-    font-size: 25px;
-    margin-right: 4px;
-  }
-`;
-export const ProjetoTecnico = styled.a `
-  height: 60px;
-  padding: 0 ${theme.spacing * 4}px;
-  background: #11c66a;
-  font-size: 14px;
-  line-height: 60px;
-  min-width: 160px;
-  cursor: pointer;
-  color: #ffffff;
-  display: inline-block;
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30px;
-  text-decoration: none;
-  
-  & svg {
-    font-size: 25px;
-    margin-right: 4px;
-  }
-`;
-export const LivroCatadores = styled.a `
-  height: 60px;
-  padding: 0 ${theme.spacing * 4}px;
-  background: #006400;
-  font-size: 14px;
-  line-height: 60px;
-  min-width: 160px;
-  cursor: pointer;
-  color: #ffffff;
-  display: inline-block;
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30px;
-  text-decoration: none;
-  
-  & svg {
-    font-size: 25px;
-    margin-right: 4px;
-  }
 `;
