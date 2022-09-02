@@ -14,6 +14,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 import { Footer } from "../../../components/Footer";
 import Catadores from "../../../assets/public/imagens/LivroCatadores/livrocatadores.jpg";
+import CatadoresLivro from "../../../assets/pdf/livrocatadores.pdf";
 
 import { withStyles, makeStyles } from "@material-ui/core/styles";
 
@@ -112,19 +113,19 @@ const LivroCatadores = () => {
           <TextSection columns="1">
             <p>Clique na imagem e baixe o livro:</p>
           </TextSection>
-          <a href="http://www.semasa.sp.gov.br/wp-content/uploads/2022/08/Livro_Estudo_Catadores.pdf">
+          <a href={CatadoresLivro}>
             <ImagePage
-              style={{ width: "60%" }}
+              style={{ width: "40%" }}
               src={Catadores}
-              alt="Banner Sanear"
-              title="Resíduos"
+              alt="Livro sobre Catadores"
+              title="Livro sobre Catadores"
             ></ImagePage>
           </a>
           <TextSection>
             <p>
               A publicação também traz o contexto histórico relacionado ao tema
               reciclagem, informações sobre a gestão de resíduos sólidos do
-              município e histórias de vida de cinco personagens
+              município e histórias de vida de cinco personagens.
             </p>
           </TextSection>
         </Center>
