@@ -183,7 +183,7 @@ export const TextSection = styled.div `
 
 export const EstudoCatadores = styled.a `
   height: 60px;
-  padding: 0 ${theme.spacing * 4}px;
+  padding: 0 6px;
   background: #1182C6;
   font-size: 14px;
   line-height: 60px;
@@ -195,17 +195,24 @@ export const EstudoCatadores = styled.a `
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 30px;
+  border-radius: 16px;
   text-decoration: none;
   
   & svg {
     font-size: 25px;
     margin-right: 4px;
   }
+
+  .icon-estudo {
+    margin: 2px 10px 0px 0px;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 15px;
+  }
 `;
 export const ProjetoTecnico = styled.a `
   height: 60px;
-  padding: 0 ${theme.spacing * 4}px;
+  padding: 0 6px;
   background: #11c66a;
   font-size: 14px;
   line-height: 60px;
@@ -217,17 +224,23 @@ export const ProjetoTecnico = styled.a `
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 30px;
+  border-radius: 16px;
   text-decoration: none;
   
   & svg {
     font-size: 25px;
     margin-right: 4px;
   }
+  .icon-projeto {
+    margin: 2px 10px 0px 0px;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 15px;
+  }
 `;
 export const LivroCatadores = styled.a `
   height: 60px;
-  padding: 0 ${theme.spacing * 4}px;
+  padding: 0 6px;
   background: #006400;
   font-size: 14px;
   line-height: 60px;
@@ -239,11 +252,18 @@ export const LivroCatadores = styled.a `
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 30px;
+  border-radius: 16px;
   text-decoration: none;
   
   & svg {
     font-size: 25px;
     margin-right: 4px;
+  }
+
+  .icon-livro {
+    margin: 2px 10px 0px 0px;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 15px;
   }
 `;

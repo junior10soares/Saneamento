@@ -27,6 +27,10 @@ import seguranca from "../../../assets/public/imagens/ResiduosSolidos/security-s
 import compactadora from "../../../assets/public/imagens/ResiduosSolidos/garbage.png";
 import cabeamento from "../../../assets/public/imagens/ResiduosSolidos/cable.png";
 import comunicacao from "../../../assets/public/imagens/ResiduosSolidos/communication.png";
+import ProjetoSocioAmbiental from "../../../assets/public/imagens/ResiduosSolidos/socioambiental.png";
+import ProjetoSocioAmbiental2 from "../../../assets/public/imagens/ResiduosSolidos/socioambiental2.png";
+import LivrosobreCatadores from "../../../assets/public/imagens/ResiduosSolidos/livrocatadores.png";
+import EstudosobreCatadores from "../../../assets/public/imagens/ResiduosSolidos/estudocatadores.png";
 
 import { FiClipboard } from "react-icons/fi";
 
@@ -123,7 +127,10 @@ const Residuos = () => {
                 target="_blank"
                 style={{ marginRight: "2px", marginLeft: "25px" }}
               >
-                <FiClipboard />
+                <img className="icon-projeto"
+                  style={{ height: 30, width: 30 }}
+                  src={ProjetoSocioAmbiental2}
+                />
                 Projeto Socioambiental{" "}
               </ProjetoTecnico>{" "}
               <EstudoCatadores
@@ -131,7 +138,10 @@ const Residuos = () => {
                 target="_blank"
                 style={{ marginLeft: "2px" }}
               >
-                <FiClipboard />
+                <img className="icon-estudo"
+                  style={{ height: 30, width: 30 }}
+                  src={EstudosobreCatadores}
+                />
                 Estudo de catadores{" "}
               </EstudoCatadores>{" "}
               <LivroCatadores
@@ -139,7 +149,10 @@ const Residuos = () => {
                 target="_blank"
                 style={{ marginLeft: "2px" }}
               >
-                <FiClipboard />
+                <img className="icon-livro"
+                  style={{ height: 30, width: 30 }}
+                  src={LivrosobreCatadores}
+                />
                 Livro sobre catadores{" "}
               </LivroCatadores>{" "}
             </div>{" "}
@@ -186,24 +199,24 @@ const Residuos = () => {
               diretamente mais de 170 mil pessoas.
               <strong> As intervenções têm como objetivos </strong>:
             </p>
-            <p style={{ textAlign: "justify" }}>•{" "}Aumentar a reciclagem.</p>
+            <p style={{ textAlign: "justify" }}>• Aumentar a reciclagem.</p>
             <p style={{ textAlign: "justify" }}>
-              •{" "}Reduzir o volume de materiais secos que é aterrado e ampliar a
+              • Reduzir o volume de materiais secos que é aterrado e ampliar a
               vida útil do Aterro Sanitário Municipal. A previsão é de que o
               equipamento tenha apenas mais 5 anos de operação.
             </p>
             <p style={{ textAlign: "justify" }}>
-              •{" "}Diminuir pontos de descarte irregular de resíduos.
+              • Diminuir pontos de descarte irregular de resíduos.
             </p>
             <p style={{ textAlign: "justify" }}>
-              •{" "}Proporcionar economia de recursos públicos que são utilizados
+              • Proporcionar economia de recursos públicos que são utilizados
               com serviços de limpeza.
             </p>
             <p style={{ textAlign: "justify" }}>
-              •{" "}Deixar os bairros mais limpos e proteger o meio ambiente.
+              • Deixar os bairros mais limpos e proteger o meio ambiente.
             </p>
             <p style={{ textAlign: "justify" }}>
-              •{" "}Aumentar a criação de postos de trabalho nas duas cooperativas
+              • Aumentar a criação de postos de trabalho nas duas cooperativas
               de reciclagem que existem– a Coopcicla e a Cidade Limpa.
             </p>
             <p style={{ textAlign: "justify" }}>
@@ -253,9 +266,9 @@ const Residuos = () => {
               Estações de Coleta, bem como os dias e horários de funcionamento,
               pode ser consultados no{" "}
               <a href="http://www.semasa.sp.gov.br/residuos/coleta-domiciliar-2/coleta-seletiva/estacoes-de-coleta/">
-                
-                 site do Semasa
-              </a>.
+                site do Semasa
+              </a>
+              .
             </p>
             <p
               style={{
