@@ -222,6 +222,17 @@ export const ButtonLink = styled(Button).attrs({
 })`
   text-decoration: none;
   line-height: 55px;
+  & svg {
+    font-size: 25px;
+    margin-right: 4px;
+  }
+
+  .icon-tap {
+    margin: 3px 10px -18px -23px;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 15px;
+  }
 `;
 
 export const TextHome = styled.div`

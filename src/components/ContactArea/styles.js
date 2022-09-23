@@ -200,6 +200,18 @@ export const Button = styled.button`
         background: ${props => theme.colors[props.theme].dark};
     }
     width: ${props => props.full ? '100%': 'auto'};
+
+    & svg {
+        font-size: 25px;
+        margin-right: 4px;
+      }
+    
+      .icon-carregar {
+        margin:-13px 20px -19px -54px;
+        border: 1px solid;
+        padding: 8px;
+        border-radius: 15px;
+      }
 `;
 
 export const ButtonLink = styled(Button).attrs({

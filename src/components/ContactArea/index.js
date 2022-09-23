@@ -18,6 +18,7 @@ import { ErrorLabel } from "../../styles/theme";
 import {notify} from '../../Notification';
 import api from '../../services/api';
 import { FaRegHandPointRight } from 'react-icons/fa';
+import carregar from "../../assets/public/imagens/Home/carregar.png";
 
 
 export function ContactArea() {
@@ -185,6 +186,11 @@ export function ContactArea() {
                   />
                 </FormItem>
                 <Button theme="black" type='submit'>
+                <img
+                    className="icon-carregar"
+                    style={{ height: 30, width: 30 }}
+                    src={carregar}
+                  />
               {loading ? "Enviando..." : "Enviar"}
             </Button>
               </Column>

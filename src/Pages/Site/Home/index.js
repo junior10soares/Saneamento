@@ -15,6 +15,9 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import CarouselNoticias from "react-multi-carousel";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import tap from "../../../assets/public/imagens/Home/tap.png";
+
+
 
 import api from "../../../services/api";
 import {
@@ -196,7 +199,7 @@ const Home = () => {
     <>
       <Header />
       <CardBanner className="cardBanner">
-      <FullBanner images={bannerImages} />
+        <FullBanner images={bannerImages} />
       </CardBanner>
       <ContainerCardHome column>
         <CardImageLink
@@ -226,7 +229,8 @@ const Home = () => {
       <Container>
         <Row>
           <Column grid="5">
-            <img className="img-container"
+            <img
+              className="img-container"
               src={sobre}
               style={{ width: "100%" }}
               alt="Programa Sanear Santo André"
@@ -252,6 +256,11 @@ const Home = () => {
               </p>
               <div className="buttonContainer">
                 <ButtonLink theme="primary" href="/sobre">
+                  <img
+                    className="icon-tap"
+                    style={{ height: 30, width: 30 }}
+                    src={tap}
+                  />
                   Saiba mais
                 </ButtonLink>
               </div>
