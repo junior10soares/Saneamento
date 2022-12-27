@@ -56,10 +56,11 @@ const Sobre = ({ workLocations }) => {
               </strong>{" "}
               urbana da história do município. As intervenções são executadas
               pela Prefeitura de Santo André, por meio da Secretaria de
-              Manutenção e Serviços Urbanos, e pelo Semasa (Serviço Municipal de
-              Saneamento Ambiental de Santo André), com financiamento de US$ 50
-              milhões pela CAF – Banco de Desenvolvimento da América Latina.
-              Como contrapartida, o município investirá US$ 12,5 milhões.
+              Infraestrutura e Serviços Urbanos, e pelo Semasa (Serviço
+              Municipal de Saneamento Ambiental de Santo André), com
+              financiamento de US$ 50 milhões pela CAF – Banco de
+              Desenvolvimento da América Latina. Como contrapartida, o município
+              investirá US$ 12,5 milhões.
             </p>
             <p style={{ textAlign: "justify" }}>
               As primeiras intervenções começaram em junho de 2020 com a
@@ -71,12 +72,7 @@ const Sobre = ({ workLocations }) => {
             <p style={{ textAlign: "justify" }}>
               O Programa Sanear Santo André ainda inclui a construção de mais{" "}
               <strong>10 Estações de Coleta</strong>, um{" "}
-              <strong>piscinão</strong> subterrâneo no Parque da Juventude, e a{" "}
-              <strong>
-                modernização e ampliação do sistema de monitoramento e alerta de
-                chuva
-              </strong>
-              . As obras devem ser realizadas até 2025
+              <strong>piscinão</strong> subterrâneo no Parque da Juventude.
             </p>
             <p>Os investimentos têm como objetivo:</p>
             <p style={{ textAlign: "justify" }}>
@@ -89,7 +85,8 @@ const Sobre = ({ workLocations }) => {
               • Aperfeiçoar a gestão de resíduos sólidos.
             </p>
             <p style={{ textAlign: "justify" }}>
-              • Modernizar e otimizar o sistema de monitoramento e alerta de chuva.{" "}
+              • Modernizar e otimizar o sistema de monitoramento e alerta de
+              chuva.{" "}
             </p>{" "}
             <ImagemSobre>
               <div className="imageAbout">

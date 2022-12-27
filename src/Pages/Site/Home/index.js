@@ -17,8 +17,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import tap from "../../../assets/public/imagens/Home/tap.png";
 
-
-
 import api from "../../../services/api";
 import {
   ContainerHome,
@@ -248,11 +246,11 @@ const Home = () => {
                 </strong>{" "}
                 urbana da história do município. As intervenções são executadas
                 pela Prefeitura de Santo André, por meio da Secretaria de
-                Manutenção e Serviços Urbanos, e pelo Semasa (Serviço Municipal
-                de Saneamento Ambiental de Santo André), com financiamento de
-                US$ 50 milhões pela CAF – Banco de Desenvolvimento da América
-                Latina. Como contrapartida, o município investirá US$ 12,5
-                milhões.
+                Infraestrutura e Serviços Urbanos, e pelo Semasa (Serviço
+                Municipal de Saneamento Ambiental de Santo André), com
+                financiamento de US$ 50 milhões pela CAF – Banco de
+                Desenvolvimento da América Latina. Como contrapartida, o
+                município investirá US$ 12,5 milhões.
               </p>
               <div className="buttonContainer">
                 <ButtonLink theme="primary" href="/sobre">
