@@ -12,6 +12,7 @@ import EstudoCatadores from '../Pages/Site/EstudoCatadores';
 import Residuos from '../Pages/Site/Residuos';
 import Sobre from '../Pages/Site/Sobre';
 import SistemaMonitoramento from '../Pages/Site/SistemaMonitoramento';
+import EstacaoMeteorologicas from '../Pages/Site/EstacaoMeteorologicas';
 import Login from '../Pages/Painel/auth/login';
 import Banner from '../Pages/Painel/Banner';
 import PainelObras from '../Pages/Painel/Obras';
@@ -40,7 +41,8 @@ const Routes = () => {
         <Route exact path="/estudo-de-catadores" component={EstudoCatadores} />
         <Route exact path="/residuos" component={Residuos} />
         <Route exact path="/sobre" component={Sobre} />
-        <Route exact path="/sistemas-monitoramento" component={SistemaMonitoramento} />       
+        <Route exact path="/sistemas-monitoramento" component={SistemaMonitoramento} />   
+        <Route exact path="/estacao-meteorologicas" component={EstacaoMeteorologicas} />       
         <Route exact path="/auth/login" component={Login} />
         <Route exact path="/painel/banner" component={Banner} />
         <Route exact path="/painel/videos" component={PainelVideos} />

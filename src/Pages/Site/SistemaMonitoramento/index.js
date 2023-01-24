@@ -4,9 +4,11 @@ import {
   BannerPage,
   Center,
   Container,
+  ButtonLink,
   Row,
   TextSection,
   TitleSection,
+  ButtomSection,
 } from "./styles";
 import { DocumentsList } from "../../../components/DocumentsList";
 import "pure-react-carousel/dist/react-carousel.es.css";
@@ -33,6 +35,9 @@ import integracao from "../../../assets/public/imagens/monitoramento/web-develop
 import consultoria from "../../../assets/public/imagens/monitoramento/male-telemarketer.png";
 import data_center from "../../../assets/public/imagens/monitoramento/data-center.png";
 import security_cam from "../../../assets/public/imagens/monitoramento/security-cam.png";
+import estacao from "../../../assets/public/imagens/monitoramento/estacao.png";
+import EstacaoMeteorologicas from "../EstacaoMeteorologicas";
+
 
 /* export async function getServerSideProps() {
   const response = await api({
@@ -70,8 +75,20 @@ const SistemaMonitoramento = ({ constructions }) => {
       <Container>
         <Center>
           <TitleSection center>
-            <strong>Sistema de monitoramento</strong>
-          </TitleSection>
+            <strong>Sistemas de Monitoramento</strong>
+          </TitleSection>{" "}
+          <ButtomSection>
+            <div className="buttonContainer">
+              <ButtonLink theme="primary" href="/estacao-meteorologicas">
+                <img
+                  className="icon-estacao"
+                  style={{ height: 30, width: 30 }}
+                  src={estacao}
+                />
+                Estações meteorológicas
+              </ButtonLink>
+            </div>
+          </ButtomSection>
           <TextSection columns="1">
             <p style={{ textAlign: "justify" }}>
               Santo André terá o seu{" "}
