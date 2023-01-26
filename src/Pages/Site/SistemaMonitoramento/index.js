@@ -9,6 +9,7 @@ import {
   TextSection,
   TitleSection,
   ButtomSection,
+  ButtomContainer,
 } from "./styles";
 import { DocumentsList } from "../../../components/DocumentsList";
 import "pure-react-carousel/dist/react-carousel.es.css";
@@ -143,13 +144,13 @@ const SistemaMonitoramento = ({ constructions }) => {
           </TextSection>
           <Center>
             <DocumentsList>
-              <div className="Grid">
+              <div className="Grid" style={{padding: "20px 65px" }}>
                 <div className="row">
                   <span
                     className="span-column"
                     style={{
-                      marginLeft: 20,
-                      marginRight: 12,
+                      marginLeft: -20,
+                      marginRight: -20,
                       textAlign: "center",
                     }}
                   >
@@ -160,12 +161,12 @@ const SistemaMonitoramento = ({ constructions }) => {
                   </span>
                   <span
                     className="span-column"
-                    style={{ marginRight: 12, textAlign: "center" }}
+                    style={{ marginRight: 0, textAlign: "center" }}
                   >
                     <img style={{ height: 50, width: 50 }} src={fluviometros} />
                     <p style={{ margin: 0 }}>78 fluviômetros (existem 9)</p>
                   </span>
-                  <span className="span-column" style={{ marginRight: 12 }}>
+                  <span className="span-column" style={{ marginRight: 0 }}>
                     <img style={{ height: 50, width: 50 }} src={estacoes} />
                     <p style={{ margin: 0, marginRight: 10 }}>
                       25 Estações meteorológicas (existia apenas 1 em operação)
@@ -173,20 +174,20 @@ const SistemaMonitoramento = ({ constructions }) => {
                   </span>
                   <span
                     className="span-column"
-                    style={{ marginRight: 12, textAlign: "center" }}
+                    style={{ marginRight: 0, textAlign: "center" }}
                   >
                     <img style={{ height: 50, width: 50 }} src={reabilitacao} />
                     <p style={{ margin: 0, flexWrap: "wrap" }}>
                       Reablitação e readequação dos equipamentos existentes
                     </p>
                   </span>
-                  <span className="span-column" style={{ marginRight: 12 }}>
+                  <span className="span-column" style={{ marginRight: 0 }}>
                     <img style={{ height: 50, width: 50 }} src={modelagem} />
                     <p style={{ margin: 0, flexWrap: "wrap" }}>
                       Modelagem hidrológica
                     </p>
                   </span>
-                  <span className="span-column" style={{ marginRight: 12 }}>
+                  <span className="span-column" style={{ marginRight: 0 }}>
                     <img
                       style={{ height: 50, width: 50 }}
                       src={compatibilizacao}
@@ -201,39 +202,39 @@ const SistemaMonitoramento = ({ constructions }) => {
                   <span
                     className="span-column"
                     style={{
-                      marginLeft: 50,
+                      marginLeft: 5,
                       marginRight: 11,
                       textAlign: "center",
                     }}
                   >
                     <img style={{ height: 50, width: 50 }} src={treinamento} />
-                    <p style={{ margin: 0, flexWrap: "wrap" }}>Treinamento</p>
+                    <p style={{ margin: 0 }}>Treinamento</p>
                   </span>
 
                   <span
                     className="span-column"
-                    style={{ marginLeft: 0, marginRight: 12 }}
+                    style={{ marginLeft: 0, marginRight: 0 }}
                   >
                     <img style={{ height: 50, width: 50 }} src={pluviometros} />
                     <p style={{ margin: 0 }}>17 pluviômetros (já existem 2)</p>
                   </span>
-                  <span className="span-column" style={{ marginRight: 0 }}>
+                  <span className="span-column" style={{ marginLeft: -5, marginRight: 0 }}>
                     <img style={{ height: 50, width: 50 }} src={boca_lobos} />
                     <p style={{ margin: 0 }}>561 Bocas de lobo inteligentes</p>
                   </span>
-                  <span className="span-column" style={{ marginRight: 14 }}>
+                  <span className="span-column" style={{ marginRight: 0 }}>
                     <img style={{ height: 50, width: 50 }} src={integracao} />
                     <p style={{ margin: 0 }}>
                       Integração e Compatibilização com bases/fontes externas
                     </p>
                   </span>
-                  <span className="span-column" style={{ marginRight: 14 }}>
+                  <span className="span-column" style={{ marginRight: 0 }}>
                     <img style={{ height: 60, width: 80 }} src={data_center} />
                     <p style={{ margin: 0 }}>Novo Data Center</p>
                   </span>
                   <span
                     className="span-column"
-                    style={{ marginLeft: 12, marginRight: 12 }}
+                    style={{ marginLeft: -5, marginRight: 0 }}
                   >
                     <img style={{ height: 50, width: 50 }} src={consultoria} />
                     <p style={{ margin: 0 }}>Consultoria Especializada</p>

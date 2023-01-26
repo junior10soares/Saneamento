@@ -167,22 +167,39 @@ const Residuos = () => {
           <div className="responsiveStepBar">
             <div className="groupButtonsResponsive">
               <div className="buttonAlignResponsive">
-                <ProjetoTecnico
-                  href="/projeto-trabalho-tecnico"
-                  target="_blank"
-                  style={{ minWidth: "200px" }}
-                >
-                  <FiClipboard />
-                  Projeto Socioambiental{" "}
-                </ProjetoTecnico>{" "}
-                <EstudoCatadores
-                  style={{ minWidth: 200 }}
-                  href="/estudo-de-catadores"
-                  target="_blank"
-                >
-                  <FiClipboard />
-                  Estudo de catadores{" "}
-                </EstudoCatadores>{" "}
+              <ProjetoTecnico
+                href="/projeto-trabalho-tecnico"
+                target="_blank"
+                style={{ marginRight: "0px", marginLeft: "5px" }}
+              >
+                <img className="icon-projeto"
+                  style={{ height: 30, width: 30 }}
+                  src={ProjetoSocioAmbiental2}
+                />
+                Projeto Socioambiental{" "}
+              </ProjetoTecnico>{" "}
+              <EstudoCatadores
+                href="/estudo-de-catadores"
+                target="_blank"
+                style={{marginRight: "0px", marginLeft: "2px" }}
+              >
+                <img className="icon-estudo"
+                  style={{ height: 30, width: 30 }}
+                  src={EstudosobreCatadores}
+                />
+                Estudo de catadores{" "}
+              </EstudoCatadores>{" "}
+                <LivroCatadores
+                href="/livro-sobre-catadores"
+                target="_blank"
+                style={{ marginLeft: "2px" }}
+              >
+                <img className="icon-livro"
+                  style={{ height: 30, width: 30 }}
+                  src={LivrosobreCatadores}
+                />
+                Livro sobre catadores{" "}
+              </LivroCatadores>{" "}
               </div>{" "}
             </div>{" "}
           </div>{" "}

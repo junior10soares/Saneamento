@@ -94,6 +94,7 @@ export const Center = styled.div`
   display: block;
   width: 100%;
   position: relative;
+  }
 `;
 
 export const Row = styled.div`
@@ -120,14 +121,6 @@ export const TitleSection = styled.h1`
   line-height: 1.2;
   font-weight: 400;
   text-align: ${(props) => (props.center ? "center" : "left")};
-
-  .buttonContainer {
-    width: 100%;
-    display: flex;
-    display: block;
-    text-align: start;
-
-
   
   @media (max-width: 768px) {
     font-size: 24px;
@@ -156,8 +149,6 @@ export const ButtomSection = styled.div`
     display: flex;
     text-align: start;
     justify-content: center;
-
-
   
   @media (max-width: 768px) {
     font-size: 24px;
@@ -168,6 +159,8 @@ export const ButtomSection = styled.div`
     padding-left: 0px;
   }
 `;
+
+
 
 export const BannerPage = styled.div`
   background-repeat: no-repeat;
@@ -200,12 +193,12 @@ export const Button = styled.button`
   }
   width: ${(props) => (props.full ? "100%" : "auto")};
   @media (max-width: 768px) {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
   }
   @media screen and (max-width: 410px) {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
   }

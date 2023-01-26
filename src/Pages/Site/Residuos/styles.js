@@ -232,7 +232,7 @@ export const ProjetoTecnico = styled.a `
     margin-right: 4px;
   }
   .icon-projeto {
-    margin: 2px 10px 0px 0px;
+    margin: 2px 10px 0px 10px;
     border: 1px solid;
     padding: 8px;
     border-radius: 15px;
@@ -261,7 +261,7 @@ export const LivroCatadores = styled.a `
   }
 
   .icon-livro {
-    margin: 2px 10px 0px 0px;
+    margin: 2px 10px 0px 5px;
     border: 1px solid;
     padding: 8px;
     border-radius: 15px;
