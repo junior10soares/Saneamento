@@ -177,7 +177,9 @@ const EstacaoMeteorologicas = () => {
       <Container>
         <Center>
           <HeaderPage style={{ marginBottom: 10 }}>
-            <TitleSection center><strong>Estações meteorológicas</strong></TitleSection>{" "}
+            <TitleSection center>
+              <strong>Estações meteorológicas</strong>
+            </TitleSection>{" "}
           </HeaderPage>{" "}
           <TextSection
             style={{ marginTop: 30 }}
@@ -188,22 +190,23 @@ const EstacaoMeteorologicas = () => {
               Santo André nunca investiu tanto em tecnologia e modernização para
               melhorar o sistema de monitoramento e alerta de chuva. Antes, a
               cidade possuía apenas 1 estação meteorológica em funcionamento,
-              agora são <strong>26 equipamentos em operação</strong>. Isso significa que houve
-              <strong>ampliação de 2.500% no número de dispositivos</strong>. Eles servem para
-              registrar e monitorar a temperatura, umidade relativa do ar,
-              direção e velocidade dos ventos, índice pluviométrico (chuva) e
-              radiação solar.O <strong>Departamento de Proteção e Defesa Civil de Santo
-              André</strong> utiliza as estações meteorológicas para avisar a população
-              sobre riscos de chuvas intensas, deslizamentos, desabamentos,
-              ventanias, granizo, baixa umidade do ar, dentre outros eventos
-              climáticos e meteorológicos. Os equipamentos também são
-              fundamentais para projetar o desenvolvimento de ações preventivas,
-              com o objetivo de preservar vidas e garantir a segurança dos
-              moradores. A Defesa Civil encaminha os avisos por meio do
-              WhatsApp. Para receber as mensagens, o munícipe deve se cadastrar
-              pelo número <strong>99584-5372 ou pelo link</strong>{" "}
+              agora são <strong>26 equipamentos em operação</strong>. Isso
+              significa que houve
+              <strong> ampliação de 2.500% no número de dispositivos</strong>.
+              Eles servem para registrar e monitorar a temperatura, umidade
+              relativa do ar, direção e velocidade dos ventos, índice
+              pluviométrico (chuva) e radiação solar.
+              </p>
+              <p style={{ textAlign: "justify" }}>O<strong> Departamento de Proteção e Defesa Civil de Santo André</strong> utiliza as estações meteorológicas para avisar a população sobre
+              riscos de chuvas intensas, deslizamentos, desabamentos, ventanias,
+              granizo, baixa umidade do ar, dentre outros eventos climáticos e
+              meteorológicos. Os equipamentos também são fundamentais para
+              projetar o desenvolvimento de ações preventivas, com o objetivo de
+              preservar vidas e garantir a segurança dos moradores. 
+              </p>
+              <p style={{ textAlign: "justify" }}>A Defesa Civil encaminha os avisos por meio do WhatsApp. Para receber as mensagens, o munícipe deve se cadastrar pelo número<strong> 99584-5372 ou pelo link</strong>{" "}
               <a href="https://www3.santoandre.sp.gov.br/defesacivil/alertas-preventivos-por-sms/">
-              <strong>Alertas Preventivos por WhatsApp</strong>
+                <strong>Alertas Preventivos por WhatsApp</strong>
               </a>{" "}
             </p>
             <p style={{ textAlign: "justify" }}>
@@ -224,7 +227,6 @@ const EstacaoMeteorologicas = () => {
         )}{" "}
         <TextSection style={{ marginTop: -95 }} columns="2"></TextSection>{" "}
         <Center>
-          <h2> Estações Meteorológicas</h2>
           <MapComponent markers={locations} />
         </Center>{" "}
       </Container>{" "}
