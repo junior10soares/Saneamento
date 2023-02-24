@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import theme from "../../../GlobalStyle/theme";
+
 export const Container = styled.div`
   max-width: ${(props) => (props.full ? "100%" : theme.center + "px")};
   margin: 0 auto;
@@ -110,7 +111,7 @@ export const Container = styled.div`
 
 export const Center = styled.div`
   max-width: ${theme.center}px;
-  margin: 20px auto;
+  margin: 0 auto;
   display: block;
   width: 100%;
   position: relative;
@@ -141,8 +142,8 @@ export const TitleSection = styled.h1`
   font-weight: 400;
   text-align: ${(props) => (props.center ? "center" : "left")};
   @media (max-width: 768px) {
-    font-size: 30px;
-    margin: ${theme.spacing * 2}px 0px -60px 1px;
+    font-size: 24px;
+    margin: ${theme.spacing * 2}px 0;
   }
 
   @media (max-width: 320px) {
@@ -178,142 +179,58 @@ export const TextSection = styled.div`
   padding-right: 70px; */
 `;
 
-export const EstudoCatadores = styled.a`
-  height: 60px;
-  padding: 0 6px;
-  background: #1182c6;
-  font-size: 14px;
-  line-height: 60px;
-  min-width: 160px;
-  cursor: pointer;
-  color: #ffffff;
-  display: inline-block;
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  text-decoration: none;
+export const TableSection = styled.div`
+  padding: 1rem;
 
-  & svg {
-    font-size: 25px;
-    margin-right: 4px;
-  }
 
-  .icon-estudo {
-    margin: 2px 10px 0px 0px;
-    border: 1px solid;
-    padding: 8px;
-    border-radius: 15px;
-  }
-`;
-export const ProjetoTecnico = styled.a`
-  height: 60px;
-  padding: 0 6px;
-  background: #11c66a;
-  font-size: 14px;
-  line-height: 60px;
-  min-width: 160px;
-  cursor: pointer;
-  color: #ffffff;
-  display: inline-block;
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  text-decoration: none;
+  table {
+    border-spacing: 0;
+    border: 1px solid black;
 
-  & svg {
-    font-size: 25px;
-    margin-right: 4px;
-  }
-  .icon-projeto {
-    margin: 2px 10px 0px 10px;
-    border: 1px solid;
-    padding: 8px;
-    border-radius: 15px;
-  }
-`;
-export const LivroCatadores = styled.a`
-  height: 60px;
-  padding: 0 6px;
-  background: #006400;
-  font-size: 14px;
-  line-height: 60px;
-  min-width: 160px;
-  cursor: pointer;
-  color: #ffffff;
-  display: inline-block;
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  text-decoration: none;
+    tr {
+      :first-child {
+        td {
+          border-top: 0px solid black;
+        }
+      }
 
-  & svg {
-    font-size: 25px;
-    margin-right: 4px;
-  }
+      :last-child {
+        td {
+          border-bottom: 0;
+        }
+      }
+    }
 
-  .icon-livro {
-    margin: 2px 10px 0px 5px;
-    border: 1px solid;
-    padding: 8px;
-    border-radius: 15px;
-  }
-`;
+    th {
+      background: #1182C6;
+      margin: 0;
+      padding: 0.5rem;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
 
-export const EstacaoLink = styled.a`
-  height: 60px;
-  padding: 0 6px;
-  background: #11c66a;
-  font-size: 20px;
-  line-height: 60px;
-  min-width: 160px;
-  cursor: pointer;
-  color: #ffffff;
-  display: inline-block;
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  text-decoration: none;
+      :last-child {
+        border-right: 0;
+      }
+    }
+    td {
+      margin: 0;
+      padding: 0.5rem;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
 
-  & svg {
-    font-size: 25px;
-    margin-right: 4px;
-  }
+      :last-child {
+        border-right: 0;
+      }
+    }
 
-  .icon-estacao {
-    margin: 2px 10px 0px 5px;
-  }
-`;
-export const BueirosLink = styled.a`
-  height: 60px;
-  padding: 0 6px;
-  background: #1182c6;
-  font-size: 20px;
-  line-height: 60px;
-  min-width: 160px;
-  cursor: pointer;
-  color: #ffffff;
-  display: inline-block;
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  text-decoration: none;
-
-  & svg {
-    font-size: 25px;
-    margin-right: 4px;
-  }
-
-  .icon-estacao {
-    margin: 2px 10px 0px 5px;
+    tfoot {
+      tr:first-child {
+        td {
+          
+          border-top: 1px solid black;
+        }
+      }
+      font-weight: bolder;
+    }
   }
 `;

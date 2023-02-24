@@ -25,6 +25,7 @@ import PhaseWorkEdit from '../Pages/Painel/PhaseWork/edit';
 import ObraEdit from '../Pages/Painel/Obras/Edit';
 import PowerBi from '../Pages/Painel/Dashboard';
 import LivroCatadores from '../Pages/Site/LivroCatadores';
+import BueirosInteligentes from '../Pages/Site/BueirosInteligentes';
 
 const Routes = () => {
   return(
@@ -41,8 +42,9 @@ const Routes = () => {
         <Route exact path="/estudo-de-catadores" component={EstudoCatadores} />
         <Route exact path="/residuos" component={Residuos} />
         <Route exact path="/sobre" component={Sobre} />
-        <Route exact path="/sistemas-monitoramento" component={SistemaMonitoramento} />   
-        <Route exact path="/estacao-meteorologicas" component={EstacaoMeteorologicas} />       
+        <Route exact path="/sistemas-monitoramento" component={SistemaMonitoramento} />
+        <Route exact path="/estacao-meteorologicas" component={EstacaoMeteorologicas} />  
+        <Route exact path="/bueiros-inteligentes" component={BueirosInteligentes} />      
         <Route exact path="/auth/login" component={Login} />
         <Route exact path="/painel/banner" component={Banner} />
         <Route exact path="/painel/videos" component={PainelVideos} />

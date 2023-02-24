@@ -10,6 +10,9 @@ import {
   TitleSection,
   ButtomSection,
   ButtomContainer,
+  EstacaoLink,
+  BueirosLink,
+  HeaderPage,
 } from "./styles";
 import { DocumentsList } from "../../../components/DocumentsList";
 import "pure-react-carousel/dist/react-carousel.es.css";
@@ -37,8 +40,8 @@ import consultoria from "../../../assets/public/imagens/monitoramento/male-telem
 import data_center from "../../../assets/public/imagens/monitoramento/data-center.png";
 import security_cam from "../../../assets/public/imagens/monitoramento/security-cam.png";
 import estacao from "../../../assets/public/imagens/monitoramento/estacao.png";
+import bueiro from "../../../assets/public/imagens/monitoramento/manhole.png";
 import EstacaoMeteorologicas from "../EstacaoMeteorologicas";
-
 
 /* export async function getServerSideProps() {
   const response = await api({
@@ -72,24 +75,66 @@ const SistemaMonitoramento = ({ constructions }) => {
   return (
     <>
       <Header />
-      <BannerPage image={monitoramento} />
+      <BannerPage image={monitoramento} />{" "}
       <Container>
-        <Center>
-          <TitleSection center>
-            <strong>Sistemas de Monitoramento</strong>
-          </TitleSection>{" "}
-          <ButtomSection>
-            <div className="buttonContainer">
-              <ButtonLink theme="primary" href="/estacao-meteorologicas">
+        <div className="desktopStepBar" style={{ width: "100%" }}>
+          <div className="groupButtons">
+            <div className="buttonAlign">
+              <div style={{ marginRight: 4}}>
+              <EstacaoLink theme="primary" href="/estacao-meteorologicas">
                 <img
                   className="icon-estacao"
-                  style={{ height: 30, width: 30 }}
+                  style={{ height: 40, width: 40 }}
                   src={estacao}
                 />
                 Estações meteorológicas
-              </ButtonLink>
-            </div>
-          </ButtomSection>
+              </EstacaoLink>
+              </div>
+              <div>
+              <BueirosLink theme="primary" href="/bueiros-inteligentes">
+                <img
+                  className="icon-estacao"
+                  style={{ height: 40, width: 40 }}
+                  src={bueiro}
+                />
+                Bueiros Inteligentes
+              </BueirosLink>
+              </div>
+            </div>{" "}
+          </div>{" "}
+        </div>
+        <Center>
+          <HeaderPage style={{ marginBottom: 110, marginTop: -20 }}>
+            <TitleSection center>
+              <strong>Sistemas de Monitoramento</strong>
+            </TitleSection>{" "}
+          </HeaderPage>{" "}
+          <div className="responsiveStepBar">
+            <div className="groupButtonsResponsive">
+              <div className="buttonAlignResponsive">
+                <div>
+                  <EstacaoLink theme="primary" href="/estacao-meteorologicas">
+                    <img
+                      className="icon-estacao"
+                      style={{ height: 40, width: 40 }}
+                      src={estacao}
+                    />
+                    Estações meteorológicas
+                  </EstacaoLink>
+                </div>
+                <div>
+                  <BueirosLink theme="primary" href="/bueiros-inteligentes">
+                    <img
+                      className="icon-estacao"
+                      style={{ height: 40, width: 40 }}
+                      src={estacao}
+                    />
+                    Bueiros Inteligentes
+                  </BueirosLink>
+                </div>
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
           <TextSection columns="1">
             <p style={{ textAlign: "justify" }}>
               Santo André terá o seu{" "}
@@ -144,7 +189,7 @@ const SistemaMonitoramento = ({ constructions }) => {
           </TextSection>
           <Center>
             <DocumentsList>
-              <div className="Grid" style={{padding: "20px 65px" }}>
+              <div className="Grid" style={{ padding: "20px 65px" }}>
                 <div className="row">
                   <span
                     className="span-column"
@@ -218,7 +263,10 @@ const SistemaMonitoramento = ({ constructions }) => {
                     <img style={{ height: 50, width: 50 }} src={pluviometros} />
                     <p style={{ margin: 0 }}>17 pluviômetros (já existem 2)</p>
                   </span>
-                  <span className="span-column" style={{ marginLeft: -5, marginRight: 0 }}>
+                  <span
+                    className="span-column"
+                    style={{ marginLeft: -5, marginRight: 0 }}
+                  >
                     <img style={{ height: 50, width: 50 }} src={boca_lobos} />
                     <p style={{ margin: 0 }}>561 Bocas de lobo inteligentes</p>
                   </span>
@@ -262,7 +310,6 @@ const SistemaMonitoramento = ({ constructions }) => {
           </TextSection>
         </Center>
       </Container>
-
       {/*       {hasPictures && hasVideos && (
         <Container>
           <Center>
@@ -270,7 +317,6 @@ const SistemaMonitoramento = ({ constructions }) => {
           </Center>
         </Container>
       )} */}
-
       <Container>
         <Center>
           {isVisible && (

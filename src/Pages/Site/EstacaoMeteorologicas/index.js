@@ -147,29 +147,11 @@ const locations = [
 const EstacaoMeteorologicas = () => {
   const [isVisible, setVisible] = useState(false);
   const [constructions, setConstrutions] = useState([]);
-  const construction = useCallback(() => {
-    api
-      .get(
-        "work?filters[][work_category.uuid@equal]=bb7f1740-35be-11eb-8cc1-1540c95fed24"
-      )
-      .then(({ data }) => setConstrutions(data.data));
-  }, []);
+ 
 
-  useEffect(() => {
-    construction();
-  }, [construction]);
 
-  const hasPictures = constructions.find(
-    (construction) => construction.work_pictures.length > 0
-  );
 
-  if (constructions.length > 0) {
-    setVisible(true);
-  }
-
-  const hasVideos = constructions.find(
-    (construction) => construction.work_videos.length > 0
-  );
+ 
   return (
     <>
       <Header />
