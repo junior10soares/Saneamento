@@ -80,25 +80,25 @@ const SistemaMonitoramento = ({ constructions }) => {
         <div className="desktopStepBar" style={{ width: "100%" }}>
           <div className="groupButtons">
             <div className="buttonAlign">
-              <div style={{ marginRight: 4}}>
-              <EstacaoLink theme="primary" href="/estacao-meteorologicas">
-                <img
-                  className="icon-estacao"
-                  style={{ height: 40, width: 40 }}
-                  src={estacao}
-                />
-                Estações meteorológicas
-              </EstacaoLink>
+              <div style={{ marginRight: 4 }}>
+                <EstacaoLink theme="primary" href="/estacao-meteorologicas">
+                  <img
+                    className="icon-estacao"
+                    style={{ height: 40, width: 40 }}
+                    src={estacao}
+                  />
+                  Estações meteorológicas
+                </EstacaoLink>
               </div>
               <div>
-              <BueirosLink theme="primary" href="/bueiros-inteligentes">
-                <img
-                  className="icon-estacao"
-                  style={{ height: 40, width: 40 }}
-                  src={bueiro}
-                />
-                Bueiros Inteligentes
-              </BueirosLink>
+                <BueirosLink theme="primary" href="/bueiros-inteligentes">
+                  <img
+                    className="icon-estacao"
+                    style={{ height: 40, width: 40 }}
+                    src={bueiro}
+                  />
+                  Bueiros Inteligentes
+                </BueirosLink>
               </div>
             </div>{" "}
           </div>{" "}
@@ -127,7 +127,7 @@ const SistemaMonitoramento = ({ constructions }) => {
                     <img
                       className="icon-estacao"
                       style={{ height: 40, width: 40 }}
-                      src={estacao}
+                      src={bueiro}
                     />
                     Bueiros Inteligentes
                   </BueirosLink>

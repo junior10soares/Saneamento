@@ -17,8 +17,14 @@ export const Banner = styled.div`
     margin: 0 !important;
   }
 
-  @media(max-width: 768px){
-    height: 70vh;
+  @media (min-width: 400px) and (max-width: 599px){
+    height: 36vh;
+  }
+  @media(min-width: 600px) and (max-width: 799px){
+    height: 61vh;
+  }
+  @media (min-width: 800px) and (max-width: 1280px) {
+    height: 51vh;
   }
 `;
 

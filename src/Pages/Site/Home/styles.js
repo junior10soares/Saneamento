@@ -16,14 +16,13 @@ export const Container = styled.div`
     @media (max-width: 768px) {
       display: Flex;
       flex-direction: column;
-      min-width: 56vh
+      min-width: 56vh;
     }
     @media screen and (max-width: 410px) {
       display: Flex;
       flex-direction: column;
-      min-width: 46vh
+      min-width: 46vh;
     }
-
   }
 
   .groupButtons {
@@ -57,6 +56,24 @@ export const Container = styled.div`
     z-index: 41;
     margin-bottom: 10px;
   }
+
+  .imagemObra {
+    display: flex;
+
+    @media (max-width: 768px) {
+      display: grid;
+      justify-content: center;
+    }
+    @media (max-width: 500px) {
+      display: grid;
+      justify-content: center;
+    }
+    @media (max-width: 1180px) {
+      display: grid;
+      justify-content: center;
+    }
+  }
+
   .buttonWhatas {
     width: 100%;
     display: flex;
@@ -119,7 +136,6 @@ export const CardBanner = styled.div`
       display: Flex;
     }
   }
-
 `;
 
 export const InputBox = styled.input`
@@ -172,6 +188,20 @@ export const Center = styled.div`
   display: block;
   width: 100%;
   position: relative;
+  .carousel-videos {
+    @media (min-width: 300px) and (max-width: 400px) {
+      width: 35vh;
+    }
+    @media (min-width: 401px) and (max-width: 500px) {
+      width: 45vh;
+    }
+    @media (min-width: 501px) and (max-width: 768px) {
+      width: 65vh;
+    }
+    @media (min-width: 769px) and (max-width: 1180px) {
+      width: 110vh;
+    }
+  }
 `;
 
 export const CenterVideo = styled.div`
@@ -207,28 +237,42 @@ export const Button = styled.button`
   width: ${(props) => (props.full ? "100%" : "auto")};
   @media (max-width: 768px) {
     display: flex;
-    flex-direction: column;
-    align-items: center
+    flex-direction: row;
+    align-items: center;
   }
   @media screen and (max-width: 410px) {
     display: flex;
-    flex-direction: column;
-    align-items: center
+    flex-direction: row;
+    align-items: center;
   }
 `;
 
 export const ButtonLink = styled(Button).attrs({
   as: "a",
 })`
+  height: 60px;
+  padding: 0 6px;
+  background: #27ae60;
+  font-size: 18px;
+  line-height: 60px;
+  min-width: 160px;
+  cursor: pointer;
+  color: #ffffff;
+  display: inline-block;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
   text-decoration: none;
-  line-height: 55px;
+
   & svg {
     font-size: 25px;
     margin-right: 4px;
   }
 
   .icon-tap {
-    margin: 3px 10px -18px -23px;
+    margin: 2px 10px 0px -7px;
     border: 1px solid;
     padding: 8px;
     border-radius: 15px;
@@ -247,20 +291,25 @@ export const TextHome = styled.div`
   flex-direction: column;
 
   .buttonContainer {
-    width: 100%;
     display: flex;
-    display: block;
-    text-align: start;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 
     @media (max-width: 768px) {
       display: flex;
       flex-direction: column;
-      align-items: center
+      align-items: center;
     }
     @media screen and (max-width: 410px) {
       display: flex;
       flex-direction: column;
-      align-items: center
+      align-items: center;
+    }
+    @media screen and (max-width: 1180px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 `;
@@ -298,7 +347,6 @@ export const TitleObras = styled.h1`
   font-weight: 400;
 `;
 
-
 export const ContainerHome = styled.div`
   max-width: ${(props) => (props.full ? "100%" : theme.center + "px")};
   margin: 0 auto;
@@ -323,4 +371,31 @@ export const Iframe = styled.div`
     height: 240px;
     margin-left: 34px;
   }
+`;
+export const ContainerImagem = styled.div`
+  max-width: ${(props) => (props.full ? "100%" : theme.center + "px")};
+  margin: 0 auto;
+  display: flex;
+  padding: ${theme.spacing * 8}px 16px;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  background: ${(props) => props.color};
+  box-sizing: border-box;
+
+  @media  (min-width: 300px) and  (max-width: 400px) {
+    display: grid;
+    justify-content: center;
+  }
+  @media  screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin: -157px 15px 9px 44px;
+    width: 60vh;
+  }
+  @media screen and (max-width: 1180px) {
+    display: flex;
+    width: auto;
+  }
+}
 `;

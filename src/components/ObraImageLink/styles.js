@@ -16,7 +16,7 @@ export const Container = styled.div `
 
   @media (max-width: 1024px) {
     padding: ${theme.spacing * 8}px 48px;
-    max-width: 706px;
+    width: 100%;
   }
   @media (max-width: 768px) {
     /* padding: ${theme.spacing * 4}px; */

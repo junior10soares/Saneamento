@@ -21,6 +21,7 @@ import api from "../../../services/api";
 import {
   ContainerHome,
   ContainerCardHome,
+  ContainerImagem,
   CardBanner,
   Container,
   Row,
@@ -252,6 +253,7 @@ const Home = () => {
                 Desenvolvimento da América Latina. Como contrapartida, o
                 município investirá US$ 12,5 milhões.
               </p>
+
               <div className="buttonContainer">
                 <ButtonLink theme="primary" href="/sobre">
                   <img
@@ -269,14 +271,14 @@ const Home = () => {
       <Container>
         <ObraImageLink className="obra-link"></ObraImageLink>
       </Container>
-      <Container>{renderWork()}</Container>
+      <ContainerImagem className="container-imagem">{renderWork()}</ContainerImagem>
       <Container color="#E5E5E5" full>
         <Column grid="15">
           <TitleVideo center>
             Galeria de <strong> vídeos</strong>
           </TitleVideo>
           <Center>
-            <Carousel
+            <Carousel className="carousel-videos"
               arrows
               autoPlaySpeed={3000}
               centerMode={false}

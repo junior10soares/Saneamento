@@ -43,4 +43,8 @@ export const Title = styled.a`
         font-size: 13px;
         padding: ${theme.spacing}px;
     }
+    @media (max-width: 1180px) {
+        font-size: 20px;
+        padding: ${theme.spacing}px;
+    }
 `;
