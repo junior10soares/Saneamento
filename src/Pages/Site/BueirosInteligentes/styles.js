@@ -181,7 +181,9 @@ export const TextSection = styled.div`
 
 export const TableSection = styled.div`
   padding: 1rem;
-
+  display: flex;
+  justify-content: center;
+  text-align: center;
 
   table {
     border-spacing: 0;
@@ -202,7 +204,7 @@ export const TableSection = styled.div`
     }
 
     th {
-      background: #1182C6;
+      background: #1182c6;
       margin: 0;
       padding: 0.5rem;
       border-bottom: 1px solid black;
@@ -217,16 +219,19 @@ export const TableSection = styled.div`
       padding: 0.5rem;
       border-bottom: 1px solid black;
       border-right: 1px solid black;
-
       :last-child {
         border-right: 0;
+        padding-left: 5px;
       }
+    }
+    @media screen and (max-width: 1180px) {
+      justify-content: center;
+      text-align: center;
     }
 
     tfoot {
       tr:first-child {
         td {
-          
           border-top: 1px solid black;
         }
       }
