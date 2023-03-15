@@ -151,6 +151,7 @@ export const TitleSection = styled.h1`
   }
 `;
 
+
 export const BannerPage = styled.div`
   background-repeat: no-repeat;
   background-position: 10% 66%;
@@ -177,6 +178,26 @@ export const TextSection = styled.div`
   font-weight: 300;
   /* padding-left: 70px;
   padding-right: 70px; */
+`;
+
+export const ImagemBueiros = styled.div`
+margin-top: 32px;
+text-align: center;
+.imageAbout{
+  img {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.textAbout {
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+}
+
 `;
 
 export const TableSection = styled.div`
