@@ -106,19 +106,19 @@ const BueirosInteligentes = () => {
         <Center>
           <TextSection columns="2">
             <p style={{ textAlign: "justify" }}>
-              Para reforçar ações preventivas e o combate a enchentes e
-              alagamentos, Santo André iniciou a instalação de bocas de lobo
-              inteligentes, popularmente conhecidas como bueiros.
+              Para reforçar{" "}
+              <strong>
+                ações preventivas e o combate a enchentes e alagamentos,
+              </strong>{" "}
+              Santo André iniciou a instalação de{" "}
+              <strong>bocas de lobo inteligentes,</strong> popularmente
+              conhecidas como bueiros.
             </p>
             <p style={{ textAlign: "justify" }}>
               Os novos equipamentos de drenagem, inéditos não só no município
-              mas no ABC Paulista, possuem cesto com sensor, que emite um sinal
-              de alerta quando os dispositivos estão cheios de resíduos. As
-              bocas de lobo inteligentes têm como objetivos:
-            </p>
-            <p style={{ textAlign: "justify" }}>
-              • Informar em tempo real às equipes que atuam no setor de drenagem
-              quando os bueiros atingem determinado nível de enchimento.
+              mas no ABC Paulista, possuem <strong>cesto com sensor</strong>,
+              que emite um sinal de alerta quando os dispositivos estão cheios
+              de resíduos. As bocas de lobo inteligentes têm como objetivos:
             </p>
             <p style={{ textAlign: "justify" }}>
               • Fortalecer ações preventivas e corretivas para que os resíduos
@@ -127,19 +127,19 @@ const BueirosInteligentes = () => {
             </p>
             <p style={{ textAlign: "justify" }}>
               • Impedir que os resíduos tenham como destino córregos e rios,
-              contribuindo para a despoluição e preservação do meio ambiente.
+              contribuindo para a{" "}
+              <strong>despoluição e preservação do meio ambiente.</strong>
             </p>
             <p style={{ textAlign: "justify" }}>
               • Otimizar o processo de limpeza de bueiros, direcionando os
               profissionais para locais onde realmente há necessidade de
               atuação, o que agrega vantagens em relação à eficiência
-              operacional, racionalidade e economicidade na execução dos
-              serviços.
+              operacional, além de economia de recursos públicos.
             </p>{" "}
             <p style={{ textAlign: "justify" }}>
-              A primeira instalação foi feita em fevereiro de 2023, no bairro
-              Vila Vitória. Ao todo, vão ser implantados 561 equipamentos do
-              tipo, com investimento de R$ 840 mil.
+              A primeira instalação foi feita em janeiro de 2023, no bairro Vila
+              Vitória. Ao todo, vão ser implantados 561 equipamentos do tipo,
+              com investimento de mais de R$ 1 milhão.
             </p>
             <p style={{ textAlign: "justify" }}>
               Na imagem abaixo estão os bairros beneficiados, bem como o número
@@ -150,9 +150,7 @@ const BueirosInteligentes = () => {
                 <img src={bueiros} alt="Semasa" />
               </div>
               <div className="textAbout">
-                <p style={{ fontStyle: "italic" }}>
-                
-                </p>
+                <p style={{ fontStyle: "italic" }}></p>
               </div>
             </ImagemBueiros>
           </TextSection>
