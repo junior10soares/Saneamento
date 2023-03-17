@@ -5,91 +5,48 @@ import _ from "lodash";
 import {
   Container,
   Center,
-  Row,
   TitleSection,
   BannerPage,
   HeaderPage,
-  TableSection,
   TextSection,
   ImagemBueiros,
+  ImagemModal,
 } from "./styles";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { Footer } from "../../../components/Footer";
 import monitoramento from "../../../assets/public/imagens/monitoramento/monitoramento.jpeg";
-import Table from "../../../components/Table";
 import bueiros from "../../../assets/public/imagens/Bueiros/bairros.png";
+import { makeStyles, Modal, Fade } from "@material-ui/core";
 
-const data = [
-  {
-    qtd: "62",
-    obs: "Ribeirão Oratório",
+const useStyles = makeStyles((theme) => ({
+  gridList: {
+    flexWrap: "nowrap",
+    transform: "translateZ(0)",
   },
-  {
-    qtd: "104",
-    obs: "Rio Tamanduateí",
+  modal: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    "&:hover": {
+      backgroundcolor: "red",
+    },
   },
-  {
-    qtd: "6",
-    obs: "Rio Tamanduateí - Córrego Havana",
+  img: {
+    outline: "none",
   },
-  {
-    qtd: "16",
-    obs: "Rio Tamanduateí - Córrego Jundiai",
-  },
-  {
-    qtd: "18",
-    obs: "Rio Tamanduateí - Córrego Comprido",
-  },
-  {
-    qtd: "60",
-    obs: "Rio Tamanduateí - Córrego Cemitério",
-  },
-  {
-    qtd: "22",
-    obs: "Rio Tamanduateí - Córrego Apiaí",
-  },
-  {
-    qtd: "125",
-    obs: "Rio Tamanduateí - Córrego Guaraná",
-  },
-  {
-    qtd: "64",
-    obs: "Rio Tamanduateí - Córrego Cassaquera",
-  },
-  {
-    qtd: "66",
-    obs: "Ribeirão dos Meninos",
-  },
-  {
-    qtd: "5",
-    obs: "Córrego Cassaquera",
-  },
-  {
-    qtd: "11",
-    obs: "Córrego Cemitério",
-  },
-];
+}));
 
 const BueirosInteligentes = () => {
-  const columns = React.useMemo(() => [
-    {
-      Header: "LOCALIDADE",
-      accessor: "obs",
-    },
-    {
-      Header: "QUANTIDADE",
-      accessor: "qtd",
-      Footer: (
-        <span>
-          {" "}
-          <stron>TOTAL: </stron>
-          {data
-            .map((value) => value.qtd)
-            .reduce((a, b) => parseInt(a) + parseInt(b))}
-        </span>
-      ),
-    },
-  ]);
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <>
@@ -146,11 +103,29 @@ const BueirosInteligentes = () => {
               de equipamentos que serão instalados.
             </p>
             <ImagemBueiros>
-              <div className="imageAbout">
-                <img src={bueiros} alt="Semasa" />
-              </div>
-              <div className="textAbout">
-                <p style={{ fontStyle: "italic" }}></p>
+              <div>
+                <div>
+                  <div className="imageAbout" onClick={handleOpen}>
+                    <img
+                      src={bueiros}
+                      alt="Localização dos Bueiros Inteligentes"
+                    />
+                  </div>
+                  <Modal
+                    className={classes.modal}
+                    open={open}
+                    onClose={handleClose}
+                    closeAfterTransition
+                  >
+                    <Fade in={open} timeout={500} className={classes.img}>
+                      <img
+                        src={bueiros}
+                        alt="Localização dos Bueiros Inteligentes"
+                        style={{ maxHeight: "99%", maxWidth: "99%" }}
+                      />
+                    </Fade>
+                  </Modal>
+                </div>
               </div>
             </ImagemBueiros>
           </TextSection>

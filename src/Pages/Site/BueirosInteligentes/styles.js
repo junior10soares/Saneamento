@@ -151,7 +151,6 @@ export const TitleSection = styled.h1`
   }
 `;
 
-
 export const BannerPage = styled.div`
   background-repeat: no-repeat;
   background-position: 10% 66%;
@@ -181,24 +180,34 @@ export const TextSection = styled.div`
 `;
 
 export const ImagemBueiros = styled.div`
-margin-top: 32px;
-text-align: center;
-.imageAbout{
-  img {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
+  margin-top: 32px;
+  text-align: center;
+  .imageAbout {
+    img {
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+      margin: auto;
+    }
+  }
+  .textAbout {
+    text-align: left;
+    max-width: 70vh;
     margin: auto;
   }
-}
-
-.textAbout {
-  text-align: left;
-  max-width: 600px;
-  margin: auto;
-}
-
 `;
+
+export const ImagemModal = styled.div`
+display: flex;
+ 
+  .imagem-modal {
+    width: 98vh;
+    height: 98vh;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+  }
+  `;
+
 
 export const TableSection = styled.div`
   padding: 1rem;
