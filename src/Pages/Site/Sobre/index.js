@@ -1,6 +1,4 @@
-import { useMemo, useState, useCallback, useEffect } from "react";
 import { Header } from "../../../components/Header";
-import api from "../../../services/api";
 import {
   Container,
   Center,
@@ -10,34 +8,132 @@ import {
   ImagemSobre,
   Rounded,
   TimelineContainer,
+  TimelineContent,
   TimelineTitle,
+  TimelineText,
   TimelineLine,
 } from "./styles";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { Footer } from "../../../components/Footer";
-import MapComponent from "../../../components/MapComponent";
 import sobre from "../../../assets/public/imagens/Sobre/sobre.jpg";
 import prefeito from "../../../assets/public/imagens/Sobre/prefeito.jpg";
+import { Chrono } from "react-chrono";
+
+const data = [
+  {
+    title: (
+      <div>
+        <p>{"\u25cf Mobilização para buscar recursos junto à CAF"}</p>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <div>
+        <p>{"\u25cf 28 de setembro - Envio de projeto de lei à câmara"}</p>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <div>
+        <p>{"\u25cf 24 e 26 de junho - Visita de representantes da CAF"}</p>
+        <p>
+          {"\u25cf 17 de dezembro - Aval do Senado para financiamento do banco"}
+        </p>
+        <p>{"\u25cf 30 de dezembro - Assinatura do contrato com a CAF"}</p>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <div>
+        <p>
+          {
+            "\u25cf 12 de junho - Início das obras do Complexo Viário Cassaquera"
+          }
+        </p>
+        <p>
+          {
+            "\u25cf Agosto - Trabalho Técnico Socioambiental do Complexo Viário Cassaquera"
+          }
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <div>
+        <p>
+          {
+            "\u25cf 11 de novembro - Começo do estudo de catadores de recicláveis"
+          }
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <div>
+        <p>
+          {
+            "\u25cf 4 e 12 de abril - Construção das Estações de Coleta Ana Maria, Bangu e Palmeiras"
+          }
+        </p>
+        <p>
+          {"\u25cf Maio - Trabalho Técnico Socioambiental dos novos ecopontos"}
+        </p>
+        <p>{"\u25cf 13 de junho - Construção da Estação de Coleta Centro"}</p>
+        <p>
+          {
+            "\u25cf 11 de julho - Construção da Estação de Coleta Jardim Cristiane"
+          }
+        </p>
+        <p>
+          {
+            "\u25cf 11 de julho - Exposição sobre catadores autônomos de recicláveis"
+          }
+        </p>
+        <p>
+          {
+            "\u25cf 15 de agosto - Construção da Estação de Coleta Jardim Cristiane"
+          }
+        </p>
+        <p>
+          {
+            "\u25cf 12 de setembro - Abertura das Estações de Coleta Ana Maria, Bangu e Palmeiras"
+          }
+        </p>
+        <p>
+          {
+            "\u25cf 10 de outubro - Construção da Estação de Coleta Vila Guiomar"
+          }
+        </p>
+        <p>
+          {
+            "\u25cf 22 de novembro - Construção da Estação de Coleta Jardim Santo André"
+          }
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <div>
+        <p>
+          {"\u25cf 20 de janeiro - Construção da Estação de Coleta Vila Linda"}
+        </p>
+        <p>
+          {
+            "\u25cf 23 de janeiro - Construção da Estação de Coleta Parque Miami"
+          }
+        </p>
+      </div>
+    ),
+  },
+];
 
 const Sobre = ({ workLocations }) => {
-  const [location, setLocation] = useState([]);
-  const workRequest = useCallback(() => {
-    api
-      .get("work-coordinate?order[id]=desc")
-      .then(({ data }) => setLocation(data.data));
-  }, []);
-  /*   const worksCoordinates = useMemo(() =>
-    workLocations.map((location) => ({
-      lng: location.long,
-      lat: location.lat,
-      name: location.name,
-    }))
-  ); */
-
-  useEffect(() => {
-    workRequest();
-  }, [workRequest]);
-
   return (
     <>
       <Header />
@@ -102,121 +198,57 @@ const Sobre = ({ workLocations }) => {
             </ImagemSobre>
           </TextSection>
         </Center>
+        <TimelineTitle>
+          <h2>
+            Trajetória para viabilizar o<br />
+            <strong>Programa Sanear Santo André</strong>
+          </h2>
+        </TimelineTitle>
         <TimelineContainer>
-          <TimelineTitle>
-            <h2>
-              Trajetória para viabilizar o<br />
-              <strong>Programa Sanear Santo André</strong>
-            </h2>
-          </TimelineTitle>
-
-          <TimelineLine>
-            <Rounded
-              color="#D7A187"
-              after="Mobilização para buscar recursos junto à CAF"
-            >
-              2017
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#0A5DAB"
-              before="28 de setembro - Envio de projeto de lei à câmara"
-            >
-              2018
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#62B948"
-              after="24 e 26 de junho - Visita de representantes da CAF"
-            >
-              2019
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#F14E1D"
-              before="17 de dezembro - Aval do Senado para financiamento do banco"
-            >
-              2019
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#D7A187"
-              after="30 de dezembro - Assinatura do contrato com a CAF"
-            >
-              2019
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#0A5DAB"
-              before="12 de junho - Início das obras do Complexo Viário Cassaquera"
-            >
-              2020
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#62B948"
-              after="Agosto - Trabalho Técnico Socioambiental do Complexo Viário Cassaquera"
-            >
-              2020
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#F14E1D"
-              before="11 de novembro - Começo do estudo de catadores de recicláveis"
-            >
-              2021
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#D7A187"
-              after="30 de janeiro - Entrega das obras do Complexo Viário Cassaquera"
-            >
-              2022
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#0A5DAB"
-              before="6 de abril - Construção de mais 10 Estações de Coleta"
-            >
-              2022
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#62B948"
-              after="Maio - Trabalho Técnico Socioambiental das Estações de Coleta"
-            >
-              2022
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#F14E1D"
-              before="30 de junho - Seminário: Um olhar integrado sobre os catadores de materiais recicláveis"
-            >
-              2022
-            </Rounded>
-          </TimelineLine>
-          <TimelineLine>
-            <Rounded
-              color="#D7A181"
-              after="30 de agosto - Lançamento do livro: Um olhar integrado sobre os catadores de materiais recicláveis de Santo André"
-            >
-              2022
-            </Rounded>
-          </TimelineLine>
+          <TimelineContent>
+            <div style={{ width: "100%", height: "95vh" }}>
+              <Chrono
+                items={data}
+                mode="VERTICAL_ALTERNATING"
+                focusActiveItemOnLoad
+                activeItemIndex={1}
+                theme={{
+                  primary: "black",
+                  secondary: "none",
+                  titleColor: "black",
+                  cardBgColor: "none",
+                  titleColorActive: "black",
+                }}
+                cardHeight={320}
+              >
+                <div className="chrono-icons">
+                  <Rounded after={"\u2192"} color="#D7A187">
+                    2017
+                  </Rounded>
+                  <Rounded before={"\u2190"} color="#0A5DAB">
+                    2018
+                  </Rounded>
+                  <Rounded after={"\u2192"} color="#62B948">
+                    2019
+                  </Rounded>
+                  <Rounded before={"\u2190"} color="#F14E1D">
+                    2020
+                  </Rounded>
+                  <Rounded after={"\u2192"} color="#D7A187">
+                    2021
+                  </Rounded>
+                  <Rounded before={"\u2190"} color="#0A5DAB">
+                    2022
+                  </Rounded>
+                  <Rounded after={"\u2192"} color="#F14E1D">
+                    2023
+                  </Rounded>
+                </div>
+              </Chrono>
+            </div>
+          </TimelineContent>
         </TimelineContainer>
       </Container>
-      <Container></Container>
       <Footer />
     </>
   );
