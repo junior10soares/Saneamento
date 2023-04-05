@@ -256,7 +256,7 @@ export const TimelineContainer = styled.div`
     visibility: visible;
     text-align: start;
     color: black;
-    margin: 30px;
+    margin: 50px 50px;
     border: 2px solid;
   }
 
