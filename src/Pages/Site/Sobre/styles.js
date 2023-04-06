@@ -247,7 +247,7 @@ export const TimelineContainer = styled.div`
   flex-direction: row;
   align-items: flex-start;
 
-  .gHLrvg {
+  .timeline-item-title {
     border-radius: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;

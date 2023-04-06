@@ -204,9 +204,9 @@ const Sobre = ({ workLocations }) => {
             <strong>Programa Sanear Santo André</strong>
           </h2>
         </TimelineTitle>
-        <TimelineContainer>
-          <TimelineContent>
-            <div style={{ width: "100%", height: "95vh" }}>
+        <TimelineContainer className="timelineContainer">
+          <TimelineContent className="timelineContent">
+            <div className="chronoDiv" style={{ width: "100%", height: "95vh" }}>
               <Chrono
                 items={data}
                 mode="VERTICAL_ALTERNATING"
