@@ -260,7 +260,7 @@ export const TimelineContainer = styled.div`
     border: 2px solid;
   }
 
-    .bzOnz {
+    .timeline-controls {
       background: rgba(229,229,229,0.85);
       border-radius: 25px;
       display: -webkit-box;
