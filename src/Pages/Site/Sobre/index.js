@@ -23,25 +23,7 @@ const data = [
   {
     title: (
       <div>
-        <p>{"\u25cf Mobilização para buscar recursos junto à CAF"}</p>
-      </div>
-    ),
-  },
-  {
-    title: (
-      <div>
-        <p>{"\u25cf 28 de setembro - Envio de projeto de lei à câmara"}</p>
-      </div>
-    ),
-  },
-  {
-    title: (
-      <div>
-        <p>{"\u25cf 24 e 26 de junho - Visita de representantes da CAF"}</p>
-        <p>
-          {"\u25cf 17 de dezembro - Aval do Senado para financiamento do banco"}
-        </p>
-        <p>{"\u25cf 30 de dezembro - Assinatura do contrato com a CAF"}</p>
+        <p>{"\u25cf"} Mobilização para buscar recursos junto à CAF</p>
       </div>
     ),
   },
@@ -49,14 +31,8 @@ const data = [
     title: (
       <div>
         <p>
-          {
-            "\u25cf 12 de junho - Início das obras do Complexo Viário Cassaquera"
-          }
-        </p>
-        <p>
-          {
-            "\u25cf Agosto - Trabalho Técnico Socioambiental do Complexo Viário Cassaquera"
-          }
+          {"\u25cf"} <strong>28 de setembro</strong> - Envio de projeto de lei à
+          câmara
         </p>
       </div>
     ),
@@ -65,9 +41,16 @@ const data = [
     title: (
       <div>
         <p>
-          {
-            "\u25cf 11 de novembro - Começo do estudo de catadores de recicláveis"
-          }
+          {"\u25cf"}
+          <strong>24 e 26 de junho</strong> - Visita de representantes da CAF
+        </p>
+        <p>
+          {"\u25cf"} <strong>17 de dezembro</strong> - Aval do Senado para
+          financiamento do banco
+        </p>
+        <p>
+          {"\u25cf"} <strong>30 de dezembro</strong> - Assinatura do contrato
+          com a CAF
         </p>
       </div>
     ),
@@ -76,43 +59,12 @@ const data = [
     title: (
       <div>
         <p>
-          {
-            "\u25cf 4 e 12 de abril - Construção das Estações de Coleta Ana Maria, Bangu e Palmeiras"
-          }
+          {"\u25cf"} <strong>12 de junho</strong> - Início das obras do Complexo
+          Viário Cassaquera
         </p>
         <p>
-          {"\u25cf Maio - Trabalho Técnico Socioambiental dos novos ecopontos"}
-        </p>
-        <p>{"\u25cf 13 de junho - Construção da Estação de Coleta Centro"}</p>
-        <p>
-          {
-            "\u25cf 11 de julho - Construção da Estação de Coleta Jardim Cristiane"
-          }
-        </p>
-        <p>
-          {
-            "\u25cf 11 de julho - Exposição sobre catadores autônomos de recicláveis"
-          }
-        </p>
-        <p>
-          {
-            "\u25cf 15 de agosto - Construção da Estação de Coleta Jardim Cristiane"
-          }
-        </p>
-        <p>
-          {
-            "\u25cf 12 de setembro - Abertura das Estações de Coleta Ana Maria, Bangu e Palmeiras"
-          }
-        </p>
-        <p>
-          {
-            "\u25cf 10 de outubro - Construção da Estação de Coleta Vila Guiomar"
-          }
-        </p>
-        <p>
-          {
-            "\u25cf 22 de novembro - Construção da Estação de Coleta Jardim Santo André"
-          }
+          {"\u25cf"} <strong>Agosto</strong> - Trabalho Técnico Socioambiental
+          do Complexo Viário Cassaquera
         </p>
       </div>
     ),
@@ -121,12 +73,64 @@ const data = [
     title: (
       <div>
         <p>
-          {"\u25cf 20 de janeiro - Construção da Estação de Coleta Vila Linda"}
+          {"\u25cf"} <strong>11 de novembro</strong> - Começo do estudo de
+          catadores de recicláveis
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <div>
+        <p>
+          {"\u25cf"} <strong>4 e 12 de abril</strong> - Construção das Estações
+          de Coleta Ana Maria, Bangu e Palmeiras
         </p>
         <p>
-          {
-            "\u25cf 23 de janeiro - Construção da Estação de Coleta Parque Miami"
-          }
+          {"\u25cf"} <strong>Maio</strong> - Trabalho Técnico Socioambiental dos
+          novos ecopontos
+        </p>
+        <p>
+          {"\u25cf"} <strong>13 de junho</strong> - Construção da Estação de
+          Coleta Centro
+        </p>
+        <p>
+          {"\u25cf"} <strong>11 de julho</strong> - Construção da Estação de
+          Coleta Jardim Cristiane
+        </p>
+        <p>
+          {"\u25cf"} <strong>11 de julho</strong> - Exposição sobre catadores
+          autônomos de recicláveis
+        </p>
+        <p>
+          {"\u25cf"} <strong>15 de agosto</strong> - Construção da Estação de
+          Coleta Jardim Cristiane
+        </p>
+        <p>
+          {"\u25cf"} <strong>12 de setembro</strong> - Abertura das Estações de
+          Coleta Ana Maria, Bangu e Palmeiras
+        </p>
+        <p>
+          {"\u25cf"} <strong>10 de outubro</strong> - Construção da Estação de
+          Coleta Vila Guiomar
+        </p>
+        <p>
+          {"\u25cf"} <strong>22 de novembro</strong> - Construção da Estação de
+          Coleta Jardim Santo André
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <div>
+        <p>
+          <strong>20 de janeiro</strong> - Construção da Estação de Coleta Vila
+          Linda
+        </p>
+        <p>
+          <strong>23 de janeiro</strong> - Construção da Estação de Coleta
+          Parque Miami
         </p>
       </div>
     ),
@@ -206,7 +210,10 @@ const Sobre = ({ workLocations }) => {
         </TimelineTitle>
         <TimelineContainer className="timelineContainer">
           <TimelineContent className="timelineContent">
-            <div className="chronoDiv" style={{ width: "100%", height: "95vh" }}>
+            <div
+              className="chronoDiv"
+              style={{ width: "100%", height: "95vh" }}
+            >
               <Chrono
                 items={data}
                 mode="VERTICAL_ALTERNATING"
@@ -219,7 +226,7 @@ const Sobre = ({ workLocations }) => {
                   cardBgColor: "none",
                   titleColorActive: "black",
                 }}
-                cardHeight={320}
+                cardHeight={1}
               >
                 <div className="chrono-icons">
                   <Rounded after={"\u2192"} color="#D7A187">

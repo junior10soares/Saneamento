@@ -175,16 +175,16 @@ export const Rounded = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   background-color: ${(props) => props.color};
-  height: calc(20px + (70 - 30) * ((50vw - 300px) / (1600 - 300)));
-  width: calc(30px + (70 - 30) * ((50vw - 300px) / (1600 - 300)));
+  height: calc(100px + (70 - 200) * ((35vw - 200px) / (1600 - 300)));
+  width: calc(50px + (70 - 30) * ((50vw - 300px) / (1600 - 300)));
   border-radius: 50%;
-  padding: 2px;
+  padding: 6px;
   color: white;
   margin: 0;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: calc(12px + (24 - 10) * ((50vw - 300px) / (1600 - 300)));
+  font-size: calc(20px + (24 - 10) * ((50vw - 300px) / (1600 - 300)));
 
   &::before {
     color: black;
@@ -252,7 +252,7 @@ export const TimelineContainer = styled.div`
     font-size: 1.5rem;
     font-weight: 500;
     overflow: hidden;
-    padding: 4.25rem;
+    padding: 0.25rem 0.25rem 0.25rem 1.25rem;
     visibility: visible;
     text-align: start;
     color: black;
@@ -260,18 +260,23 @@ export const TimelineContainer = styled.div`
     border: 2px solid;
   }
 
-    .timeline-controls {
-      background: rgba(229,229,229,0.85);
-      border-radius: 25px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      margin-left: 30px;
-      display: -ms-flexbox;
-      display: flex;
-      list-style: none;
-      padding: 0.25em 0.25em;
-    }
-  
+  .timeline-controls {
+    background: rgba(229, 229, 229, 0.85);
+    border-radius: 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    margin-left: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0.25em 0.25em;
+  }
+  @media (max-width: 1024px) {
+    max-width: 706px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const TimelineContent = styled.div`
