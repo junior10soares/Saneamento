@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     outline: "none",
+    background: "white",
   },
 }));
 
@@ -119,6 +120,7 @@ const BueirosInteligentes = () => {
                   >
                     <Fade in={open} timeout={500} className={classes.img}>
                       <img
+                        className="imagemBueiros"
                         src={bueiros}
                         alt="Localização dos Bueiros Inteligentes"
                         style={{ maxHeight: "99%", maxWidth: "99%" }}

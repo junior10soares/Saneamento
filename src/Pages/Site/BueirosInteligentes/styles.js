@@ -198,16 +198,15 @@ export const ImagemBueiros = styled.div`
 `;
 
 export const ImagemModal = styled.div`
-display: flex;
- 
+  display: flex;
+
   .imagem-modal {
     width: 98vh;
     height: 98vh;
     text-align: center;
     margin: 10px 0px 10px 0px;
   }
-  `;
-
+`;
 
 export const TableSection = styled.div`
   padding: 1rem;
