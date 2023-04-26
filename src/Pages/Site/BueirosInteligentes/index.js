@@ -14,7 +14,7 @@ import {
 } from "./styles";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { Footer } from "../../../components/Footer";
-import monitoramento from "../../../assets/public/imagens/monitoramento/monitoramento.jpeg";
+import bueirosInteligentes from "../../../assets/public/imagens/Bueiros/bueiros.jpeg";
 import bueiros from "../../../assets/public/imagens/Bueiros/bairros.png";
 import { makeStyles, Modal, Fade } from "@material-ui/core";
 
@@ -52,7 +52,7 @@ const BueirosInteligentes = () => {
   return (
     <>
       <Header />
-      <BannerPage image={monitoramento} />{" "}
+      <BannerPage image={bueirosInteligentes} />{" "}
       <Container>
         <Center>
           <HeaderPage style={{ marginBottom: 10 }}>

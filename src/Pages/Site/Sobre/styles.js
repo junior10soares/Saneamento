@@ -154,13 +154,12 @@ export const BannerPage = styled.div`
 export const ImagemSobre = styled.div`
   margin-top: 32px;
   text-align: center;
-  .imageAbout {
-    img {
-      width: 100%;
-      max-width: 600px;
-      text-align: center;
-      margin: auto;
-    }
+
+  .imageSobre {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
   }
 
   .textAbout {
@@ -241,25 +240,35 @@ export const Column = styled.div`
 `;
 
 export const TimelineContainer = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-direction: row;
-  align-items: flex-start;
+  // display: flex;
+  // width: 100%;
+  // justify-content: center;
+  // flex-direction: row;
+  // align-items: flex-start;
 
-  .timeline-item-title {
-    border-radius: 1.2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    overflow: hidden;
-    padding: 0.25rem 0.25rem 0.25rem 1.25rem;
-    visibility: visible;
-    text-align: start;
-    color: black;
-    margin: 50px 50px;
-    border: 2px solid;
+  .timeline-card-content {
+    margin: 35px 35px;
+    min-height: 0px;
+  }
+  .cardDetailedText {
+    font-size: 1.4rem;
   }
 
+  .using-icon {
+    .imgTimeLine {
+      max-width: 10vh;
+      max-height: 100vh;
+
+      @media (max-width: 1024px) {
+        max-width: 8vh;
+        max-height: 100vh;
+      }
+      @media (max-width: 768px) {
+        max-width: 4vh;
+        max-height: 100vh;
+      }
+    }
+  }
   .timeline-controls {
     background: rgba(229, 229, 229, 0.85);
     border-radius: 25px;
@@ -271,12 +280,7 @@ export const TimelineContainer = styled.div`
     list-style: none;
     padding: 0.25em 0.25em;
   }
-  @media (max-width: 1024px) {
-    max-width: 706px;
-  }
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+ 
 `;
 
 export const TimelineContent = styled.div`

@@ -14,7 +14,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import { Footer } from "../../../components/Footer";
 import WorkCarousel from "../../../components/WorkCarousel";
 import api from "../../../services/api";
-import monitoramento from "../../../assets/public/imagens/monitoramento/monitoramento.jpeg";
+import estacao from "../../../assets/public/imagens/Estacao/estacao.jpeg";
 
 const locations = [
   {
@@ -155,7 +155,7 @@ const EstacaoMeteorologicas = () => {
   return (
     <>
       <Header />
-      <BannerPage image={monitoramento} />{" "}
+      <BannerPage image={estacao} />{" "}
       <Container>
         <Center>
           <HeaderPage style={{ marginBottom: 10 }}>

@@ -75,7 +75,7 @@ const SistemaMonitoramento = ({ constructions }) => {
   return (
     <>
       <Header />
-      <BannerPage image={monitoramento} />{" "}
+      <BannerPage image={monitoramento}   />
       <Container>
         <div className="desktopStepBar" style={{ width: "100%" }}>
           <div className="groupButtons">

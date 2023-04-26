@@ -16,9 +16,6 @@ import { Header } from "../../../components/Header";
 import request from "../../../services/api";
 import capa from "../../../assets/public/imagens/Macrodrenagem/capa.jpg";
 
-
-
-
 const Macrodrenagem = () => {
   const [works, setWorks] = useState([]);
   return (
@@ -59,7 +56,6 @@ const Macrodrenagem = () => {
           </TitleSection>
           <TextSection columns="1">
             <p style={{ textAlign: "justify" }}>
-              
               O <strong>Complexo Viário Cassaquera</strong> foi a primeira
               intervenção de macrodrenagem, infraestrutura e mobilidade urbana
               realizada pelo Semasa, por meio do Programa Sanear Santo André. Em
@@ -90,47 +86,12 @@ const Macrodrenagem = () => {
                 Mello, além de facilitar o acesso ao Rodoanel.
               </p>
               <p style={{ textAlign: "justify" }}>
-                <a href="https://sanear.vercel.app/obra/bb02fa20-5b46-11eb-b245-7f8b63d57198">Clique aqui</a> para saber mais sobre o Complexo Viário Cassaquera, que teve
+                <a href="https://sanear.vercel.app/obra/bb02fa20-5b46-11eb-b245-7f8b63d57198">
+                  Clique aqui
+                </a>{" "}
+                para saber mais sobre o Complexo Viário Cassaquera, que teve
                 investimento de mais de R$ 45 milhões.
               </p>
-            </p>
-          </TextSection>
-
-          <Title>
-            <strong>Piscinão</strong>
-          </Title>
-          <TextSection columns="1">
-            <p style={{ textAlign: "justify" }}>
-              Quando chove demais, os córregos podem encher rapidamente e
-              transbordar, provocando inundações nas áreas vizinhas. É para
-              evitar isso que os piscinões são construídos. A drenagem urbana
-              direciona o escoamento das águas pluviais para os tanques de
-              detenção, fazendo com que seja armazenado o excesso de água, o que
-              evita enchentes.
-            </p>
-            <p style={{ textAlign: "justify" }}>
-              Santo André ganhará um{" "}
-              <strong>novo piscinão na região do córrego Guarará</strong>, na
-              avenida Capitão Mário Toledo de Camargo, no Jardim Ipanema. O
-              tanque de detenção será o{" "}
-              <strong>maior equipamento municipal</strong>.<br></br>A obra visa:
-            </p>
-            <p style={{ textAlign: "justify" }}>
-              • Reduzir a ocorrência de alagamentos.
-            </p>
-            <p style={{ textAlign: "justify" }}>
-              • Diminuir perdas materiais e humanas em residências, indústrias e
-              comércios, além de riscos à saúde pública com a transmissão de
-              doenças pela água da chuva, como a leptospirose.
-            </p>
-            <p style={{ textAlign: "justify" }}>
-              • Economizar custos com manutenção, restauração e reabilitação de
-              equipamentos públicos danificados após a ocorrência de chuvas.
-            </p>
-            <p style={{ textAlign: "justify" }}>
-              • Reduzir transtornos causados pela interdição de ruas e a
-              paralisação de serviços públicos essenciais, como o transporte
-              público.
             </p>
           </TextSection>
         </Center>

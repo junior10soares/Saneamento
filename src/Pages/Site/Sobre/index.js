@@ -13,6 +13,15 @@ import {
   TimelineText,
   TimelineLine,
 } from "./styles";
+//img timeline
+import img2017 from "../../../assets/public/imagens/Sobre/2017.png";
+import img2018 from "../../../assets/public/imagens/Sobre/2018.png";
+import img2019 from "../../../assets/public/imagens/Sobre/2019.png";
+import img2020 from "../../../assets/public/imagens/Sobre/2020.png";
+import img2021 from "../../../assets/public/imagens/Sobre/2021.png";
+import img2022 from "../../../assets/public/imagens/Sobre/2022.png";
+import img2023 from "../../../assets/public/imagens/Sobre/2023.png";
+
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { Footer } from "../../../components/Footer";
 import sobre from "../../../assets/public/imagens/Sobre/sobre.jpg";
@@ -21,16 +30,18 @@ import { Chrono } from "react-chrono";
 
 const data = [
   {
-    title: (
+    cardDetailedText: (
       <div>
-        <p>{"\u25cf"} Mobilização para buscar recursos junto à CAF</p>
+        <p className="cardDetailedText">
+          {"\u25cf"} Mobilização para buscar recursos junto à CAF
+        </p>
       </div>
     ),
   },
   {
-    title: (
+    cardDetailedText: (
       <div>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>28 de setembro</strong> - Envio de projeto de lei à
           câmara
         </p>
@@ -38,17 +49,17 @@ const data = [
     ),
   },
   {
-    title: (
+    cardDetailedText: (
       <div>
-        <p>
-          {"\u25cf"}
-          <strong>24 e 26 de junho</strong> - Visita de representantes da CAF
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>24 e 26 de junho</strong> - Visita de
+          representantes da CAF
         </p>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>17 de dezembro</strong> - Aval do Senado para
           financiamento do banco
         </p>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>30 de dezembro</strong> - Assinatura do contrato
           com a CAF
         </p>
@@ -56,13 +67,13 @@ const data = [
     ),
   },
   {
-    title: (
+    cardDetailedText: (
       <div>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>12 de junho</strong> - Início das obras do Complexo
           Viário Cassaquera
         </p>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>Agosto</strong> - Trabalho Técnico Socioambiental
           do Complexo Viário Cassaquera
         </p>
@@ -70,9 +81,9 @@ const data = [
     ),
   },
   {
-    title: (
+    cardDetailedText: (
       <div>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>11 de novembro</strong> - Começo do estudo de
           catadores de recicláveis
         </p>
@@ -80,41 +91,41 @@ const data = [
     ),
   },
   {
-    title: (
+    cardDetailedText: (
       <div>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>4 e 12 de abril</strong> - Construção das Estações
           de Coleta Ana Maria, Bangu e Palmeiras
         </p>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>Maio</strong> - Trabalho Técnico Socioambiental dos
           novos ecopontos
         </p>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>13 de junho</strong> - Construção da Estação de
           Coleta Centro
         </p>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>11 de julho</strong> - Construção da Estação de
           Coleta Jardim Cristiane
         </p>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>11 de julho</strong> - Exposição sobre catadores
           autônomos de recicláveis
         </p>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>15 de agosto</strong> - Construção da Estação de
           Coleta Jardim Cristiane
         </p>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>12 de setembro</strong> - Abertura das Estações de
           Coleta Ana Maria, Bangu e Palmeiras
         </p>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>10 de outubro</strong> - Construção da Estação de
           Coleta Vila Guiomar
         </p>
-        <p>
+        <p className="cardDetailedText">
           {"\u25cf"} <strong>22 de novembro</strong> - Construção da Estação de
           Coleta Jardim Santo André
         </p>
@@ -122,15 +133,15 @@ const data = [
     ),
   },
   {
-    title: (
+    cardDetailedText: (
       <div>
-        <p>
-          <strong>20 de janeiro</strong> - Construção da Estação de Coleta Vila
-          Linda
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>20 de janeiro</strong> - Construção da Estação de
+          Coleta Vila Linda
         </p>
-        <p>
-          <strong>23 de janeiro</strong> - Construção da Estação de Coleta
-          Parque Miami
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>23 de janeiro</strong> - Construção da Estação de
+          Coleta Parque Miami
         </p>
       </div>
     ),
@@ -170,9 +181,9 @@ const Sobre = ({ workLocations }) => {
               <strong>Complexo Viário Cassaquera. </strong>
             </p>
             <p style={{ textAlign: "justify" }}>
-              O Programa Sanear Santo André ainda inclui a construção de mais{" "}
-              <strong>10 Estações de Coleta</strong>, um{" "}
-              <strong>piscinão</strong> subterrâneo no Parque da Juventude.
+              O Programa Sanear Santo André ainda inclui a construção de mais 12
+              Estações de Coleta e a instalação de estações meteorológicas,
+              bocas de lobo (bueiros) inteligentes, fluviômetros e pluviômetros.
             </p>
             <p>Os investimentos têm como objetivo:</p>
             <p style={{ textAlign: "justify" }}>
@@ -190,7 +201,7 @@ const Sobre = ({ workLocations }) => {
             </p>{" "}
             <ImagemSobre>
               <div className="imageAbout">
-                <img src={prefeito} alt="Semasa" />
+                <img className="imageSobre" src={prefeito} alt="Semasa" />
               </div>
               <div className="textAbout">
                 <p style={{ fontStyle: "italic" }}>
@@ -208,54 +219,85 @@ const Sobre = ({ workLocations }) => {
             <strong>Programa Sanear Santo André</strong>
           </h2>
         </TimelineTitle>
-        <TimelineContainer className="timelineContainer">
-          <TimelineContent className="timelineContent">
-            <div
-              className="chronoDiv"
-              style={{ width: "100%", height: "95vh" }}
-            >
-              <Chrono
-                items={data}
-                mode="VERTICAL_ALTERNATING"
-                focusActiveItemOnLoad
-                activeItemIndex={1}
-                theme={{
-                  primary: "black",
-                  secondary: "none",
-                  titleColor: "black",
-                  cardBgColor: "none",
-                  titleColorActive: "black",
-                }}
-                cardHeight={1}
-              >
-                <div className="chrono-icons">
-                  <Rounded after={"\u2192"} color="#D7A187">
-                    2017
-                  </Rounded>
-                  <Rounded before={"\u2190"} color="#0A5DAB">
-                    2018
-                  </Rounded>
-                  <Rounded after={"\u2192"} color="#62B948">
-                    2019
-                  </Rounded>
-                  <Rounded before={"\u2190"} color="#F14E1D">
-                    2020
-                  </Rounded>
-                  <Rounded after={"\u2192"} color="#D7A187">
-                    2021
-                  </Rounded>
-                  <Rounded before={"\u2190"} color="#0A5DAB">
-                    2022
-                  </Rounded>
-                  <Rounded after={"\u2192"} color="#F14E1D">
-                    2023
-                  </Rounded>
-                </div>
-              </Chrono>
-            </div>
-          </TimelineContent>
-        </TimelineContainer>
       </Container>
+      <TimelineContainer className="timelineContainer">
+        <TimelineContent className="timelineContent">
+          <div className="desktopStepBar">
+            <div className="groupButtons">
+              <div className="buttonAlign">
+                <div
+                  className="chronoDiv"
+                  style={{ width: "100%", height: "95vh" }}
+                >
+                  <Chrono
+                    items={data}
+                    mode="VERTICAL_ALTERNATING"
+                    focusActiveItemOnLoad
+                    activeItemIndex={1}
+                    contentDetailsHeight={380}
+                    readMore={true}
+                    theme={{
+                      primary: "black",
+                      secondary: "none",
+                      titleColor: "black",
+                      titleColorActive: "black",
+                    }}
+                    buttonTexts={{
+                      first: "Primeiro",
+                      last: "Último",
+                      next: "Próximo",
+                      previous: "Anterior",
+                    }}
+                  >
+                    <div className="chrono-icons">
+                      <img className="imgTimeLine" src={img2017} alt="2017" />
+                      <img className="imgTimeLine" src={img2018} alt="2018" />
+                      <img className="imgTimeLine" src={img2019} alt="2019" />
+                      <img className="imgTimeLine" src={img2020} alt="2020" />
+                      <img className="imgTimeLine" src={img2021} alt="2021" />
+                      <img className="imgTimeLine" src={img2022} alt="2022" />
+                      <img className="imgTimeLine" src={img2023} alt="2023" />
+                    </div>
+                  </Chrono>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="responsiveStepBar">
+            <div className="groupButtonsResponsive">
+              <div className="buttonAlignResponsive">
+                <div
+                  className="chronoDivResponsive"
+                  style={{ width: "100%", height: "95vh" }}
+                >
+                  <Chrono
+                    items={data}
+                    mode="VERTICAL"
+                    focusActiveItemOnLoad
+                    activeItemIndex={1}
+                    theme={{
+                      primary: "black",
+                      secondary: "none",
+                      titleColor: "black",
+                      titleColorActive: "black",
+                    }}
+                  >
+                    <div className="chrono-icons">
+                      <img className="imgTimeLine" src={img2017} alt="2017" />
+                      <img className="imgTimeLine" src={img2018} alt="2018" />
+                      <img className="imgTimeLine" src={img2019} alt="2019" />
+                      <img className="imgTimeLine" src={img2020} alt="2020" />
+                      <img className="imgTimeLine" src={img2021} alt="2021" />
+                      <img className="imgTimeLine" src={img2022} alt="2022" />
+                      <img className="imgTimeLine" src={img2023} alt="2023" />
+                    </div>
+                  </Chrono>
+                </div>
+              </div>
+            </div>
+          </div>
+        </TimelineContent>
+      </TimelineContainer>
       <Footer />
     </>
   );

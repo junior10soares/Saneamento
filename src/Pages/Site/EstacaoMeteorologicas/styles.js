@@ -155,7 +155,7 @@ export const TitleSection = styled.h1 `
 
 export const BannerPage = styled.div `
   background-repeat: no-repeat;
-  background-position: 10% 66%;
+  background-position: 10% 35%;
   background-position-x: center;
   background-size: cover;
   background-attachment: scroll;
