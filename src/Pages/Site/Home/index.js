@@ -388,7 +388,7 @@ const Home = () => {
                 Instagram
               </TitleHome>
               <InstagramFrame
-                src="https://www.instagram.com/semasasantoandre/embed"
+                src="https://www.instagram.com/sanearsantoandre/embed"
                 scrolling="no"
                 allowtransparency="true"
                 className="lightwidget-widget"
