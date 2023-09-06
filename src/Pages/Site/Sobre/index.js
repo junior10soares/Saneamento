@@ -143,6 +143,14 @@ const data = [
           {"\u25cf"} <strong>23 de janeiro</strong> - Construção da Estação de
           Coleta Parque Miami
         </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>25 de agosto</strong> - Abertura da Estação de
+          Coleta Jardim Cristiane
+        </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>31 de agosto</strong> - Fim do Trabalho Técnico
+          Socioambiental das obras dos ecopontos
+        </p>
       </div>
     ),
   },
