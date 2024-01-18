@@ -43,7 +43,7 @@ const data = [
       <div>
         <p className="cardDetailedText">
           {"\u25cf"} <strong>28 de setembro</strong> - Envio de projeto de lei à
-          câmara
+          Câmara de Santo André
         </p>
       </div>
     ),
@@ -94,8 +94,13 @@ const data = [
     cardDetailedText: (
       <div>
         <p className="cardDetailedText">
-          {"\u25cf"} <strong>4 e 12 de abril</strong> - Construção das Estações
-          de Coleta Ana Maria, Bangu e Palmeiras
+          {"\u25cf"} <strong>30 de janeiro</strong> - Inauguração do Complexo
+          Viário Cassaquera.
+        </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>4, 5 e 12 de abril</strong> - Construção,
+          respectivamente, das Estações de Coleta Ana Maria e Bangu e reforma da
+          EC Palmeiras
         </p>
         <p className="cardDetailedText">
           {"\u25cf"} <strong>Maio</strong> - Trabalho Técnico Socioambiental dos
@@ -104,6 +109,10 @@ const data = [
         <p className="cardDetailedText">
           {"\u25cf"} <strong>13 de junho</strong> - Construção da Estação de
           Coleta Centro
+        </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>11 de julho</strong> - Construção da Estação de
+          Coleta Alvorada
         </p>
         <p className="cardDetailedText">
           {"\u25cf"} <strong>11 de julho</strong> - Construção da Estação de
@@ -118,15 +127,19 @@ const data = [
           Coleta Jardim Cristiane
         </p>
         <p className="cardDetailedText">
-          {"\u25cf"} <strong>12 de setembro</strong> - Abertura das Estações de
-          Coleta Ana Maria, Bangu e Palmeiras
+          {"\u25cf"} <strong>30 de agosto</strong> - Lançamento do livro ‘Um
+          olhar integrado sobre os catadores de materiais recicláveis’
         </p>
         <p className="cardDetailedText">
-          {"\u25cf"} <strong>10 de outubro</strong> - Construção da Estação de
+          {"\u25cf"} <strong>12 de setembro</strong> - Abertura dos ecopontos
+          Ana Maria, Palmeiras e Bangu
+        </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>7 de outubro</strong> - Construção da Estação de
           Coleta Vila Guiomar
         </p>
         <p className="cardDetailedText">
-          {"\u25cf"} <strong>22 de novembro</strong> - Construção da Estação de
+          {"\u25cf"} <strong>16 de novembro</strong> - Construção da Estação de
           Coleta Jardim Santo André
         </p>
       </div>
@@ -136,7 +149,7 @@ const data = [
     cardDetailedText: (
       <div>
         <p className="cardDetailedText">
-          {"\u25cf"} <strong>20 de janeiro</strong> - Construção da Estação de
+          {"\u25cf"} <strong>17 de janeiro</strong> - Construção da Estação de
           Coleta Vila Linda
         </p>
         <p className="cardDetailedText">
@@ -144,12 +157,40 @@ const data = [
           Coleta Parque Miami
         </p>
         <p className="cardDetailedText">
-          {"\u25cf"} <strong>25 de agosto</strong> - Abertura da Estação de
-          Coleta Jardim Cristiane
+          {"\u25cf"} <strong>30 de abril</strong> - Abertura dos ecopontos
+          Centro e Alvorada
         </p>
         <p className="cardDetailedText">
-          {"\u25cf"} <strong>31 de agosto</strong> - Fim do Trabalho Técnico
-          Socioambiental das obras dos ecopontos
+          {"\u25cf"} <strong>25 de agosto</strong> - Abertura do ecoponto Jardim
+          Cristiane
+        </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>31 de agosto</strong> - Fim do Projeto de Trabalho
+          Técnico Socioambiental das obras dos ecopontos
+        </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>22 de setembro </strong> - Abertura do ecoponto
+          Vila Linda
+        </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>25 de setembro</strong> - Construção da Estação de
+          Coleta Parque Marajoara
+        </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>27 de setembro</strong> - Abertura do ecoponto
+          Parque Miami
+        </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>27 de setembro</strong> - Abertura do ecoponto
+          Jardim Santo André
+        </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>2 de outubro</strong> - Reforma da Estação de
+          Coleta Paranapiacaba
+        </p>
+        <p className="cardDetailedText">
+          {"\u25cf"} <strong>2 de outubro</strong> - Abertura do ecoponto Vila
+          Guiomar
         </p>
       </div>
     ),
@@ -168,44 +209,47 @@ const Sobre = ({ workLocations }) => {
           </TitleSection>
           <TextSection columns="2">
             <p style={{ textAlign: "justify" }}>
-              O Sanear Santo André (Saneasa) é um dos{" "}
-              <strong>
-                maiores programas de saneamento, drenagem, combate às enchentes
-                e infraestrutura
-              </strong>{" "}
-              urbana da história do município. As intervenções são executadas
-              pela Prefeitura de Santo André, por meio da Secretaria de
-              Infraestrutura e Serviços Urbanos, e pelo Semasa (Serviço
-              Municipal de Saneamento Ambiental de Santo André), com
-              financiamento de US$ 50 milhões pela CAF – Banco de
-              Desenvolvimento da América Latina. Como contrapartida, o município
-              investirá US$ 12,5 milhões.
+              O Sanear Santo André (Saneasa) é um dos maiores programas de{" "}
+              <strong>saneamento, mobilidade e infraestrutura urbana</strong> a
+              história de Santo André. Ele recebe financiamento de US$ 50
+              milhões pela CAF – Banco de Desenvolvimento da América Latina.
+              Como contrapartida, o município investirá US$ 12,5 milhões.
             </p>
             <p style={{ textAlign: "justify" }}>
-              As primeiras intervenções começaram em junho de 2020 com a
-              canalização do córrego Cassaquera, que também contempla a criação
-              de um novo sistema viário na avenida Luiz Ignácio de Anhaia Melo.
-              Essas obras ganharam o nome de{" "}
-              <strong>Complexo Viário Cassaquera. </strong>
+              As primeiras obras começaram em junho de 2020, com o Complexo
+              Viário Cassaquera. Até março de 2022, o programa foi executado
+              pelo Semasa (Serviço Municipal de Saneamento Ambiental de Santo
+              André), passando a ser de responsabilidade da Prefeitura.
             </p>
             <p style={{ textAlign: "justify" }}>
-              O Programa Sanear Santo André ainda inclui a construção de mais 12
-              Estações de Coleta e a instalação de estações meteorológicas,
-              bocas de lobo (bueiros) inteligentes, fluviômetros e pluviômetros.
+              O Sanear Santo André também inclui obras de construção e reforma
+              de estações de coleta; implantação de estações meteorológicas,
+              bocas de lobo inteligentes e fluviômetros; desenvolvimento de
+              inteligência artificial para prever e alertar sobre a ocorrência
+              de eventos meteorológicos; construção do Complexo Maurício de
+              Medeiros e de microrreservatórios na Vila Pires; melhorias no
+              reservatório de água da Vila América; instalação de um datacenter;
+              mapeamento de catadores autônomos e de estabelecimentos que
+              comercializam recicláveis e realização de trabalhos técnicos
+              socioambientais junto à população.
             </p>
-            <p>Os investimentos têm como objetivo:</p>
+            <p>As obras têm como objetivos:</p>
             <p style={{ textAlign: "justify" }}>
-              • Reduzir a incidência de enchentes.{" "}
+              • Melhorar o sistema de drenagem urbana.{" "}
             </p>
             <p style={{ textAlign: "justify" }}>
-              • Melhorar o sistema de mobilidade urbana.{" "}
+              • Minimizar riscos de ocorrer enchentes e alagamentos.{" "}
             </p>
             <p style={{ textAlign: "justify" }}>
-              • Aperfeiçoar a gestão de resíduos sólidos.
+              • Modernizar e ampliar o sistema de monitoramento e alerta de
+              chuva.
             </p>
             <p style={{ textAlign: "justify" }}>
-              • Modernizar e otimizar o sistema de monitoramento e alerta de
-              chuva.{" "}
+              • Otimizar a gestão de resíduos sólidos.{" "}
+            </p>
+            <p style={{ textAlign: "justify" }}>
+              • Ampliar a reciclagem, diminuir pontos de descarte irregular de
+              resíduos e aumentar a vida útil do Aterro Sanitário Municipal.{" "}
             </p>{" "}
             <ImagemSobre>
               <div className="imageAbout">
@@ -213,7 +257,7 @@ const Sobre = ({ workLocations }) => {
               </div>
               <div className="textAbout">
                 <p style={{ fontStyle: "italic" }}>
-                  O prefeito de Santo André, Paulo Serra, assinou no dia 30 de
+                  Prefeito de Santo André, Paulo Serra, assinou no dia 30 de
                   dezembro de 2019 o contrato de financiamento de US$ 50 milhões
                   junto à CAF – Banco de Desenvolvimento da América Latina.{" "}
                 </p>

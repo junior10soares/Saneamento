@@ -176,8 +176,8 @@ const captionStyle = {
 };
 const centerImageStyle = {
   textAlign: "center",
-  marginTop: "20px", 
-  marginBottom:"30px",
+  marginTop: "20px",
+  marginBottom: "30px",
 };
 
 const Residuos = () => {
@@ -366,8 +366,14 @@ const Residuos = () => {
               </div>
             </div> */}
             <div style={centerImageStyle}>
-              <img src={avCandido} alt="Imagem Centralizada" style={imgStyle2} />
-              <p style={captionStyle}>Antes x depois da avenida Cândigo Camargo, no Jardim Ana Maria</p>
+              <img
+                src={avCandido}
+                alt="Imagem Centralizada"
+                style={imgStyle2}
+              />
+              <p style={captionStyle}>
+                Antes x depois da avenida Cândigo Camargo, no Jardim Ana Maria
+              </p>
             </div>
             <p style={{ textAlign: "justify" }}>
               O segundo bloco de obras contemplou a construção das Estações de
