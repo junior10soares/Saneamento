@@ -534,7 +534,7 @@ const Residuos = () => {
         )}{" "}
         <TextSection style={{ marginTop: -95 }} columns="2">
           <p style={{ textAlign: "justify" }}>
-            Veja abaixo a <strong> localização dos novos 10 ecopontos. </strong>{" "}
+            Veja abaixo a <strong> localização dos novos 12 ecopontos. </strong>{" "}
           </p>{" "}
         </TextSection>{" "}
         <Center>
