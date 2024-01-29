@@ -4,7 +4,7 @@ import facebook from '../../assets/public/facebook.svg';
 import instagram from '../../assets/public/instagram.svg';
 import youtube from '../../assets/public/youtube.svg';
 import logo from '../../assets/public/01.png';
-import caf from '../../assets/public/CAF.svg';
+import caf from '../../assets/public/CAF.png';
 
 export function Footer() {
   return (
