@@ -109,11 +109,10 @@ const locations = [
   },
 ];
 
-const gallery2 = [
+const imagem = [
   { url: "https://via.placeholder.com/300", caption: "Imagem 1" },
-  { url: "https://via.placeholder.com/300", caption: "Imagem 2" },
 ];
-const images = [
+const gallery = [
   {
     url: bangu,
     caption: "EC Bangu",
@@ -158,14 +157,17 @@ const columnStyle = {
 };
 
 const imgStyle = {
-  width: "612px",
-  height: "415px",
+  height: "320px",
   marginTop: "10px",
 };
 const imgStyle2 = {
   width: "100%",
   height: "auto",
   marginTop: "10px",
+};
+const imgStyleResponsive = {
+  width: "100%",
+  height: "auto",
 };
 
 const captionStyle = {
@@ -181,6 +183,7 @@ const centerImageStyle = {
 };
 
 const Residuos = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isVisible, setVisible] = useState(false);
   const [constructions, setConstrutions] = useState([]);
   const construction = useCallback(() => {
@@ -206,6 +209,21 @@ const Residuos = () => {
   const hasVideos = constructions.find(
     (construction) => construction.work_videos.length > 0
   );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const isMobile = windowWidth < 600;
+  const imageStyle = isMobile ? imgStyleResponsive : imgStyle;
 
   return (
     <>
@@ -347,24 +365,6 @@ const Residuos = () => {
               retirar 680 toneladas de materiais que foram descartadas
               irregularmente no terreno desse equipamento.
             </p>
-            {/* <div style={{ display: "flex" }}>
-              <div style={columnStyle}>
-                {gallery2.slice(0, 1).map((image, index) => (
-                  <div key={index}>
-                    <img src={image.url} alt={image.caption} style={imgStyle} />
-                    <p style={captionStyle}>{image.caption}</p>
-                  </div>
-                ))}
-              </div>
-              <div style={columnStyle}>
-                {gallery2.slice(1, 2).map((image, index) => (
-                  <div key={index + 1}>
-                    <img src={image.url} alt={image.caption} style={imgStyle} />
-                    <p style={captionStyle}>{image.caption}</p>
-                  </div>
-                ))}
-              </div>
-            </div> */}
             <div style={centerImageStyle}>
               <img
                 src={avCandido}
@@ -385,23 +385,34 @@ const Residuos = () => {
               O quarto e último bloco de obras teve a construção da EC Parque
               Marajoara e a reforma da EC Paranapiacaba.
             </p>
-            <div style={{ display: "flex" }}>
-              <div style={columnStyle}>
-                {images.slice(0, 3).map((image, index) => (
-                  <div key={index}>
-                    <img src={image.url} alt={image.caption} style={imgStyle} />
-                    <p style={captionStyle}>{image.caption}</p>
-                  </div>
-                ))}
-              </div>
-              <div style={columnStyle}>
-                {images.slice(3, 6).map((image, index) => (
-                  <div key={index + 3}>
-                    <img src={image.url} alt={image.caption} style={imgStyle} />
-                    <p style={captionStyle}>{image.caption}</p>
-                  </div>
-                ))}
-              </div>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                flexDirection: isMobile ? "column" : "row",
+              }}
+            >
+              {gallery.map((image, index) => (
+                <div
+                  key={index}
+                  style={{
+                    flex: isMobile ? "1" : "0 0 33.33%",
+                    padding: "10px",
+                    boxSizing: "border-box",
+                  }}
+                >
+                  <img
+                    src={image.url}
+                    alt={image.caption}
+                    style={{
+                      ...imageStyle,
+                      width: "100%",
+                    }}
+                    className="img-responsive"
+                  />
+                  <p style={captionStyle}>{image.caption}</p>
+                </div>
+              ))}
             </div>
             <p style={{ textAlign: "justify" }}>
               <strong> Modernização dos equipamentos </strong>

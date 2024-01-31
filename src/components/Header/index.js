@@ -18,6 +18,10 @@ const listmenu = [
     url: "/macrodrenagem",
   },
   {
+    label: "Microrreservatórios",
+    url: "/microrreservatorios",
+  },
+  {
     label: "Resíduos Sólidos",
     url: "/residuos",
   },

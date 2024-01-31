@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import {ContainerMap} from './style'
+import { ContainerMap } from "./style";
 import { GoogleApiWrapper, Map, Marker } from "google-maps-react";
 
 const containerStyle = {
