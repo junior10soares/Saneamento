@@ -2,10 +2,10 @@ import request from "../../services/api";
 import React, { Fragment, useCallback, useState } from "react";
 import WorkCarousel from "../WorkCarousel";
 import { useForm } from "react-hook-form";
-import Select from '../../components/Select';
-import { Form } from '@unform/web';
-import Input from '../Input';
-import Button from '../Button';
+import Select from "../../components/Select";
+import { Form } from "@unform/web";
+import Input from "../Input";
+import Button from "../Button";
 import {
   Container,
   Content,
