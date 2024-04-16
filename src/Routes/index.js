@@ -8,6 +8,7 @@ import Noticia from "../Pages/Site/Noticia";
 import Obra from "../Pages/Site/Obra";
 import PlantaoSocial from "../Pages/Site/PlantaoSocial";
 import ProjetoSocioambiental from "../Pages/Site/ProjetoSocioambiental";
+import ComplexoMauricioMedeiros from "../Pages/Site/ComplexoMauricioMedeiros";
 import ProjetoTrabalhoTecnico from "../Pages/Site/ProjetoTrabalhoTecnico";
 import EstudoCatadores from "../Pages/Site/EstudoCatadores";
 import Residuos from "../Pages/Site/Residuos";
@@ -42,6 +43,11 @@ const Routes = () => {
       <Route exact path="/noticias/:slug/:id" component={Noticia} />
       <Route exact path="/obra/:id" component={Obra} />
       <Route exact path="/plantao-social" component={PlantaoSocial} />
+      <Route
+        exact
+        path="/complexo-mauricio"
+        component={ComplexoMauricioMedeiros}
+      />
       <Route
         exact
         path="/projeto-socioambiental"
