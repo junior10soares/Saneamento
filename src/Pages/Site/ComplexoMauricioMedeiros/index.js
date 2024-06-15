@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Header } from "../../../components/Header";
-
+import { Footer } from "../../../components/Footer";
+import maquete from "../../../assets/public/imagens/ComplexoMauricio/maquete.jpeg";
+import Charts from "../../../components/Charts";
 import {
   Container,
   Center,
@@ -9,10 +11,6 @@ import {
   ImagemComplexo,
   VideoContainer,
 } from "./styles";
-
-import { Footer } from "../../../components/Footer";
-
-import maquete from "../../../assets/public/imagens/ComplexoMauricio/maquete.jpeg";
 
 const ComplexoMauricioMedeiros = () => {
   return (
@@ -128,6 +126,9 @@ const ComplexoMauricioMedeiros = () => {
               </div>
             </VideoContainer>
           </TextSection>
+          <div>
+            <Charts />
+          </div>
         </Center>
       </Container>
       <Footer />
