@@ -20,22 +20,20 @@ export function ObraImageLink() {
         Obras em <strong>execução</strong>
       </TitleObras>
       <Container>
-        <div className="slide-obra">
+        {/* <div className="slide-obra">
           <Link href="/residuos">
             <Image src={obras} alt="Banner Sanear" title="Resíduos"></Image>
             <Title>12 Estações de Coleta</Title>
           </Link>
-        </div>
-        <div className="slide-obra" style={{ marginRight: 20 }}>
-          <Link href="/complexo-mauricio">
-            <Image
-              src={maquete}
-              alt="Banner Sanear"
-              title="Complexo Maurício de Medeiros"
-            ></Image>
-            <Title>Complexo Maurício de Medeiros</Title>
-          </Link>
-        </div>
+        </div> */}
+        <Link href="/complexo-mauricio">
+          <Image
+            src={maquete}
+            alt="Banner Sanear"
+            title="Complexo Maurício de Medeiros"
+          ></Image>
+          <Title>Complexo Maurício de Medeiros</Title>
+        </Link>
       </Container>
     </Content>
   );

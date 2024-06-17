@@ -19,7 +19,7 @@ export const Container = styled.div`
   }
   @media (max-width: 768px) {
     /* padding: ${theme.spacing * 4}px; */
-    width: 100%;
+    width: 108%;
   }
 `;
 
@@ -57,17 +57,22 @@ export const Title = styled.h2`
   text-align: center;
   @media (max-width: 768px) {
     font-size: 18px;
-    margin: 0 0 0 -15px;
+    margin: 0 0 0 -10px;
   }
 `;
 
-export const Link = styled.a`
+export const LinkEstatico = styled.a`
   display: flex;
   align-content: center;
   width: 405px;
+  margin: 0 20px 20px 0px;
   height: 225px;
   background: black;
   position: relative;
+  @media (max-width: 768px) {
+    width: 311px;
+    height: 225px;
+  }
 `;
 
 export const Image = styled.img`

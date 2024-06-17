@@ -35,7 +35,7 @@ const Macrodrenagem = () => {
             <p style={{ textAlign: "justify" }}>
               A drenagem urbana é uma rede de infraestrutura de equipamentos
               urbanos feita para coletar, escoar, direcionar e dispor as águas
-              pluviais em corpos d’agua. O sistema de drenagem urbana engloba
+              pluviais em corpos d'agua. O sistema de drenagem urbana engloba
               dois subsistemas principais característicos: a microdrenagem e a
               macrodrenagem.
             </p>
@@ -86,7 +86,7 @@ const Macrodrenagem = () => {
                 Mello, além de facilitar o acesso ao Rodoanel.
               </p>
               <p style={{ textAlign: "justify" }}>
-                <a href="https://sanear.vercel.app/obra/bb02fa20-5b46-11eb-b245-7f8b63d57198">
+                <a href="http://programasanear.santoandre.sp.gov.br/projeto-socioambiental">
                   Clique aqui
                 </a>{" "}
                 para saber mais sobre o Complexo Viário Cassaquera, que teve
@@ -97,17 +97,6 @@ const Macrodrenagem = () => {
         </Center>
       </Container>
 
-      {/* <Container>
-        <Center>
-          <TitleSection className="text-center">
-            Obras em <strong>andamento</strong>
-          </TitleSection>
-          <Row>
-             <WorkCarouselMacro category="bb7f1800-35be-11eb-9d71-c1039530e0d5" /> 
-            <WorkCarouselMacro />
-          </Row>
-        </Center>
-      </Container> */}
       <Footer />
     </>
   );

@@ -1,12 +1,11 @@
 import React from "react";
 import { Card, Link, Title, Image } from "./style";
 import ImagePlaceholder from "../ImagePlaceholder";
-import {baseURL} from '../../services/api';
+import { baseURL } from "../../services/api";
 
 const CardConstruction = ({ image, title, link }) => {
-
   const hasImage = !!image;
-  
+
   return (
     <>
       <Card>
@@ -19,6 +18,6 @@ const CardConstruction = ({ image, title, link }) => {
       </Card>
     </>
   );
-}
+};
 
-export default CardConstruction
+export default CardConstruction;

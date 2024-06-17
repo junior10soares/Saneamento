@@ -482,13 +482,6 @@ const Residuos = () => {
                 </span>{" "}
                 <span
                   className="span-column"
-                  style={{ marginLeft: 80, marginRight: 60 }}
-                >
-                  <img style={{ height: 50, width: 50 }} src={tablets} />{" "}
-                  <p style={{ margin: 0, flexWrap: "wrap" }}> Tablets </p>{" "}
-                </span>{" "}
-                <span
-                  className="span-column"
                   style={{ marginLeft: 35, marginRight: 5 }}
                 >
                   <img style={{ height: 50, width: 50 }} src={seguranca} />{" "}

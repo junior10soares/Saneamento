@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useCallback } from "react";
-import {Center} from './styles';
-import  CardConstruction from "../CardConstruction";
+import { Center } from "./styles";
+import CardConstruction from "../CardConstruction";
 import request from "../../services/api";
-import {Link} from "react-router-dom";
-import Swiper from 'react-id-swiper';
-import 'swiper/css/swiper.css';
+import { Link } from "react-router-dom";
+import Swiper from "react-id-swiper";
+import "swiper/css/swiper.css";
 
 function WorkCarousel({ category }) {
   const [works, setWorks] = useState([]);
@@ -20,6 +20,7 @@ function WorkCarousel({ category }) {
             }
           : {},
       });
+      console.log("obras1", constructionsResponse);
       setWorks(constructionsResponse.data.data);
     } catch (error) {
       console.log(error);
@@ -39,21 +40,21 @@ function WorkCarousel({ category }) {
     freeMode: true,
     getSwiper: updateSwiper,
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
   };
   return (
-    <Center>   
-        <Swiper {...params}>
-          {works?.map((work, index) => {
-            return (
-              <Link to={`/obra/${work.uuid}`}>
-                  <CardConstruction title={work.name} image={work.img} />
-              </Link>
-            );
-          })}
-        </Swiper>
+    <Center>
+      <Swiper {...params}>
+        {works?.map((work, index) => {
+          return (
+            <Link to={`/obra/${work.uuid}`}>
+              <CardConstruction title={work.name} image={work.img} />
+            </Link>
+          );
+        })}
+      </Swiper>
     </Center>
   );
 }

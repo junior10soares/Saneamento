@@ -147,11 +147,7 @@ const locations = [
 const EstacaoMeteorologicas = () => {
   const [isVisible, setVisible] = useState(false);
   const [constructions, setConstrutions] = useState([]);
- 
 
-
-
- 
   return (
     <>
       <Header />
@@ -178,16 +174,25 @@ const EstacaoMeteorologicas = () => {
               Eles servem para registrar e monitorar a temperatura, umidade
               relativa do ar, direção e velocidade dos ventos, índice
               pluviométrico (chuva) e radiação solar.
-              </p>
-              <p style={{ textAlign: "justify" }}>O<strong> Departamento de Proteção e Defesa Civil de Santo André</strong> utiliza as estações meteorológicas para avisar a população sobre
+            </p>
+            <p style={{ textAlign: "justify" }}>
+              O
+              <strong>
+                {" "}
+                Departamento de Proteção e Defesa Civil de Santo André
+              </strong>{" "}
+              utiliza as estações meteorológicas para avisar a população sobre
               riscos de chuvas intensas, deslizamentos, desabamentos, ventanias,
               granizo, baixa umidade do ar, dentre outros eventos climáticos e
               meteorológicos. Os equipamentos também são fundamentais para
               projetar o desenvolvimento de ações preventivas, com o objetivo de
-              preservar vidas e garantir a segurança dos moradores. 
-              </p>
-              <p style={{ textAlign: "justify" }}>A Defesa Civil encaminha os avisos por meio do WhatsApp. Para receber as mensagens, o munícipe deve se cadastrar pelo número<strong> 99584-5372 ou pelo link</strong>{" "}
-              <a href="https://www3.santoandre.sp.gov.br/defesacivil/alertas-preventivos-por-sms/">
+              preservar vidas e garantir a segurança dos moradores.
+            </p>
+            <p style={{ textAlign: "justify" }}>
+              A Defesa Civil encaminha os avisos por meio do WhatsApp. Para
+              receber as mensagens, o munícipe deve se cadastrar pelo número
+              <strong> 99584-5372 ou pelo link</strong>{" "}
+              <a href="https://chat.whatsapp.com/Ih5yw9yJXGg7HDedVZbjCs">
                 <strong>Alertas Preventivos por WhatsApp</strong>
               </a>{" "}
             </p>

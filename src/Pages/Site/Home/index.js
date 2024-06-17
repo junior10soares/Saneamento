@@ -46,6 +46,7 @@ import { CardArticle } from "../../../components/CardArticle";
 import { Footer } from "../../../components/Footer";
 import { ContactArea } from "../../../components/ContactArea";
 import { ObraImageLink } from "../../../components/ObraImageLink";
+import { ObraImageLink2 } from "../../../components/ObraImageLink2";
 import Loader from "../../../components/Loader";
 import CardVideo from "../../../components/CardVideos";
 import { FiFacebook, FiInstagram } from "react-icons/fi";
@@ -271,14 +272,20 @@ const Home = () => {
       <Container>
         <ObraImageLink className="obra-link"></ObraImageLink>
       </Container>
-      <ContainerImagem className="container-imagem">{renderWork()}</ContainerImagem>
+      <Container>
+        <ObraImageLink2 className="obra-link" works={work} />
+      </Container>
+      {/* <ContainerImagem className="container-imagem">
+        {renderWork()}
+      </ContainerImagem> */}
       <Container color="#E5E5E5" full>
         <Column grid="15">
           <TitleVideo center>
             Galeria de <strong> vídeos</strong>
           </TitleVideo>
           <Center>
-            <Carousel className="carousel-videos"
+            <Carousel
+              className="carousel-videos"
               arrows
               autoPlaySpeed={3000}
               centerMode={false}

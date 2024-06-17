@@ -1,0 +1,14 @@
+.link-style {
+  display: flex;
+  align-content: center;
+  width: 405px;
+  margin: 0 20px 20px 0px;
+  height: 225px;
+  background: black;
+  position: relative;
+  
+  @media (max-width: 768px) {
+    width: 311px;
+    height: 225px;
+  }
+}

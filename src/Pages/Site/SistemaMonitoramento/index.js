@@ -12,7 +12,10 @@ import {
   ButtomContainer,
   EstacaoLink,
   BueirosLink,
+  FluvioLink,
   HeaderPage,
+  GridContainer,
+  IconTextContainer,
 } from "./styles";
 import { DocumentsList } from "../../../components/DocumentsList";
 import "pure-react-carousel/dist/react-carousel.es.css";
@@ -38,23 +41,12 @@ import sistema_integrador from "../../../assets/public/imagens/monitoramento/dee
 import integracao from "../../../assets/public/imagens/monitoramento/web-development.png";
 import consultoria from "../../../assets/public/imagens/monitoramento/male-telemarketer.png";
 import data_center from "../../../assets/public/imagens/monitoramento/data-center.png";
+import ai from "../../../assets/public/imagens/monitoramento/AI.png";
 import security_cam from "../../../assets/public/imagens/monitoramento/security-cam.png";
 import estacao from "../../../assets/public/imagens/monitoramento/estacao.png";
 import bueiro from "../../../assets/public/imagens/monitoramento/manhole.png";
+import fluviometer from "../../../assets/public/imagens/monitoramento/fluviometer.png";
 import EstacaoMeteorologicas from "../EstacaoMeteorologicas";
-
-/* export async function getServerSideProps() {
-  const response = await api({
-    url: `work?filters[][work_category.uuid@equal]=bb7f1850-35be-11eb-afab-b56d7c8b75a2`,
-  });
-  const constructions = response.data.data || [];
-
-  return {
-    props: {
-      constructions,
-    },
-  };
-} */
 
 const SistemaMonitoramento = ({ constructions }) => {
   const [isVisible, setVisible] = useState(false);
@@ -75,7 +67,7 @@ const SistemaMonitoramento = ({ constructions }) => {
   return (
     <>
       <Header />
-      <BannerPage image={monitoramento}   />
+      <BannerPage image={monitoramento} />
       <Container>
         <div className="desktopStepBar" style={{ width: "100%" }}>
           <div className="groupButtons">
@@ -90,15 +82,25 @@ const SistemaMonitoramento = ({ constructions }) => {
                   Estações meteorológicas
                 </EstacaoLink>
               </div>
-              <div>
+              <div style={{ marginRight: 4 }}>
                 <BueirosLink theme="primary" href="/bueiros-inteligentes">
                   <img
                     className="icon-estacao"
                     style={{ height: 40, width: 40 }}
                     src={bueiro}
                   />
-                  Bueiros Inteligentes
+                  Boca de Lobo Inteligente
                 </BueirosLink>
+              </div>
+              <div>
+                <FluvioLink theme="primary" href="/fluviometros">
+                  <img
+                    className="icon-estacao"
+                    style={{ height: 50, width: 40 }}
+                    src={fluviometer}
+                  />
+                  Fluviômetros
+                </FluvioLink>
               </div>
             </div>{" "}
           </div>{" "}
@@ -188,108 +190,59 @@ const SistemaMonitoramento = ({ constructions }) => {
             </p>
           </TextSection>
           <Center>
-            <DocumentsList>
-              <div className="Grid" style={{ padding: "20px 65px" }}>
-                <div className="row">
-                  <span
-                    className="span-column"
-                    style={{
-                      marginLeft: -20,
-                      marginRight: -20,
-                      textAlign: "center",
-                    }}
-                  >
-                    <img style={{ height: 50, width: 50 }} src={security_cam} />
-                    <p style={{ margin: 0, flexWrap: "wrap" }}>
-                      114 câmeras de monitoramento (já existiam 14)
-                    </p>
-                  </span>
-                  <span
-                    className="span-column"
-                    style={{ marginRight: 0, textAlign: "center" }}
-                  >
-                    <img style={{ height: 50, width: 50 }} src={fluviometros} />
-                    <p style={{ margin: 0 }}>78 fluviômetros (existem 9)</p>
-                  </span>
-                  <span className="span-column" style={{ marginRight: 0 }}>
-                    <img style={{ height: 50, width: 50 }} src={estacoes} />
-                    <p style={{ margin: 0, marginRight: 10 }}>
-                      25 Estações meteorológicas (existia apenas 1 em operação)
-                    </p>
-                  </span>
-                  <span
-                    className="span-column"
-                    style={{ marginRight: 0, textAlign: "center" }}
-                  >
-                    <img style={{ height: 50, width: 50 }} src={reabilitacao} />
-                    <p style={{ margin: 0, flexWrap: "wrap" }}>
-                      Reablitação e readequação dos equipamentos existentes
-                    </p>
-                  </span>
-                  <span className="span-column" style={{ marginRight: 0 }}>
-                    <img style={{ height: 50, width: 50 }} src={modelagem} />
-                    <p style={{ margin: 0, flexWrap: "wrap" }}>
-                      Modelagem hidrológica
-                    </p>
-                  </span>
-                  <span className="span-column" style={{ marginRight: 0 }}>
-                    <img
-                      style={{ height: 50, width: 50 }}
-                      src={compatibilizacao}
-                    />
-                    <p style={{ margin: 0, flexWrap: "wrap" }}>
-                      Compatibilização com equipamentos existentes
-                    </p>
-                  </span>
-                </div>
-
-                <div className="row">
-                  <span
-                    className="span-column"
-                    style={{
-                      marginLeft: 5,
-                      marginRight: 11,
-                      textAlign: "center",
-                    }}
-                  >
-                    <img style={{ height: 50, width: 50 }} src={treinamento} />
-                    <p style={{ margin: 0 }}>Treinamento</p>
-                  </span>
-
-                  <span
-                    className="span-column"
-                    style={{ marginLeft: 0, marginRight: 0 }}
-                  >
-                    <img style={{ height: 50, width: 50 }} src={pluviometros} />
-                    <p style={{ margin: 0 }}>17 pluviômetros (já existem 2)</p>
-                  </span>
-                  <span
-                    className="span-column"
-                    style={{ marginLeft: -5, marginRight: 0 }}
-                  >
-                    <img style={{ height: 50, width: 50 }} src={boca_lobos} />
-                    <p style={{ margin: 0 }}>561 Bocas de lobo inteligentes</p>
-                  </span>
-                  <span className="span-column" style={{ marginRight: 0 }}>
-                    <img style={{ height: 50, width: 50 }} src={integracao} />
-                    <p style={{ margin: 0 }}>
-                      Integração e Compatibilização com bases/fontes externas
-                    </p>
-                  </span>
-                  <span className="span-column" style={{ marginRight: 0 }}>
-                    <img style={{ height: 60, width: 80 }} src={data_center} />
-                    <p style={{ margin: 0 }}>Novo Data Center</p>
-                  </span>
-                  <span
-                    className="span-column"
-                    style={{ marginLeft: -5, marginRight: 0 }}
-                  >
-                    <img style={{ height: 50, width: 50 }} src={consultoria} />
-                    <p style={{ margin: 0 }}>Consultoria Especializada</p>
-                  </span>
-                </div>
-              </div>
-            </DocumentsList>
+            <GridContainer>
+              <IconTextContainer>
+                <img style={{ height: 50, width: 50 }} src={security_cam} />
+                <p>114 câmeras de monitoramento (já existiam 14)</p>
+              </IconTextContainer>
+              <IconTextContainer>
+                <img style={{ height: 50, width: 50 }} src={fluviometros} />
+                <p>78 fluviômetros (existem 9)</p>
+              </IconTextContainer>
+              <IconTextContainer>
+                <img style={{ height: 50, width: 50 }} src={estacoes} />
+                <p>25 Estações meteorológicas (existia apenas 1 em operação)</p>
+              </IconTextContainer>
+              <IconTextContainer>
+                <img style={{ height: 50, width: 50 }} src={reabilitacao} />
+                <p>Reabilitação e readequação dos equipamentos existentes</p>
+              </IconTextContainer>
+              <IconTextContainer>
+                <img style={{ height: 50, width: 50 }} src={modelagem} />
+                <p>Modelagem hidrológica</p>
+              </IconTextContainer>
+              <IconTextContainer>
+                <img style={{ height: 50, width: 50 }} src={compatibilizacao} />
+                <p>Compatibilização com equipamentos existentes</p>
+              </IconTextContainer>
+              <IconTextContainer>
+                <img style={{ height: 50, width: 50 }} src={treinamento} />
+                <p>Treinamento</p>
+              </IconTextContainer>
+              <IconTextContainer>
+                <img style={{ height: 50, width: 50 }} src={ai} />
+                <p>
+                  Predição de chuvas utilizando Inteligência Artificial com base
+                  de dados históricos do município
+                </p>
+              </IconTextContainer>
+              <IconTextContainer>
+                <img style={{ height: 50, width: 50 }} src={boca_lobos} />
+                <p>561 Bocas de lobo inteligentes</p>
+              </IconTextContainer>
+              <IconTextContainer>
+                <img style={{ height: 50, width: 50 }} src={integracao} />
+                <p>Integração e Compatibilização com bases/fontes externas</p>
+              </IconTextContainer>
+              <IconTextContainer>
+                <img style={{ height: 60, width: 80 }} src={data_center} />
+                <p>Novo Data Center</p>
+              </IconTextContainer>
+              <IconTextContainer>
+                <img style={{ height: 50, width: 50 }} src={consultoria} />
+                <p>Consultoria</p>
+              </IconTextContainer>
+            </GridContainer>
           </Center>
           <TextSection columns="1">
             <p style={{ textAlign: "justify" }}>
@@ -300,23 +253,9 @@ const SistemaMonitoramento = ({ constructions }) => {
               Semasa para que seus técnicos façam a manutenção preventiva da
               rede de drenagem nos eventos pós-chuva.
             </p>
-            <p style={{ textAlign: "justify" }}>
-              As imagens e informações do novo sistema de monitoramento estão
-              disponíveis na Defesa Civil de Santo André, no COI (Centro de
-              Operações Integradas), localizado no prédio executivo da
-              Prefeitura, e no Cecoi (Centro de Controle Operacional Integrado),
-              espaço onde ficam as equipes que atuam no setor de drenagem.
-            </p>
           </TextSection>
         </Center>
       </Container>
-      {/*       {hasPictures && hasVideos && (
-        <Container>
-          <Center>
-            <AlbumPhotos midiaArray={midiaArray} />
-          </Center>
-        </Container>
-      )} */}
       <Container>
         <Center>
           {isVisible && (

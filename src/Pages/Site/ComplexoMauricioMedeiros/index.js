@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Header } from "../../../components/Header";
-import { Footer } from "../../../components/Footer";
-import maquete from "../../../assets/public/imagens/ComplexoMauricio/maquete.jpeg";
-import Charts from "../../../components/Charts";
+
 import {
   Container,
   Center,
   TextSection,
   TitleSection,
   ImagemComplexo,
+  ImagemComplexoGrafico,
   VideoContainer,
 } from "./styles";
+
+import { Footer } from "../../../components/Footer";
+import maquete from "../../../assets/public/imagens/ComplexoMauricio/maquete.jpeg";
+import grafico from "../../../assets/public/imagens/ComplexoMauricio/grafico.jpeg";
 
 const ComplexoMauricioMedeiros = () => {
   return (
@@ -125,10 +128,23 @@ const ComplexoMauricioMedeiros = () => {
                 ></iframe>
               </div>
             </VideoContainer>
+            <ImagemComplexoGrafico>
+              <div className="imageComplexoGrafico">
+                <img
+                  className="imageComplexoGrafico"
+                  src={grafico}
+                  alt="Semasa"
+                  // style={{ width: "150vh" }}
+                />
+              </div>
+              <div className="textAbout">
+                <p
+                  className="LegendaComplexo"
+                  style={{ fontStyle: "italic" }}
+                ></p>
+              </div>
+            </ImagemComplexoGrafico>
           </TextSection>
-          <div>
-            <Charts />
-          </div>
         </Center>
       </Container>
       <Footer />

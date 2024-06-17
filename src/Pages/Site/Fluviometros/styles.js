@@ -156,22 +156,6 @@ export const ImagemComplexo = styled.div`
     margin: auto;
   }
 `;
-export const ImagemComplexoGrafico = styled.div`
-  margin-top: 32px;
-  text-align: center;
-
-  .imageComplexoGrafico {
-    width: 102%;
-    text-align: center;
-    margin: auto;
-  }
-
-  .textAbout {
-    text-align: left;
-    max-width: 600px;
-    margin: auto;
-  }
-`;
 
 export const VideoContainer = styled.div`
   .video-container {

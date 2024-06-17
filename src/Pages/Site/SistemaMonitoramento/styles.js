@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import theme from "../../../GlobalStyle/theme";
+
 export const Container = styled.div`
   max-width: ${(props) => (props.full ? "100%" : theme.center + "px")};
   margin: 0 auto;
@@ -19,9 +20,10 @@ export const Container = styled.div`
   }
 
   .groupButtonsResponsive {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 10px;
     width: 100%;
     margin-top: -15px;
   }
@@ -35,61 +37,32 @@ export const Container = styled.div`
     z-index: 41;
   }
 
-  .buttonAlignResponsive {
-    // display: flex;
-    // justify-content: flex-end;
-    // position: relative;
-    // z-index: 41;
-    // margin-bottom: 10px
-
-    display: grid;
-    //flex-direction: column;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-row-gap: 10px;
-  }
-  .buttonWhatas {
-    width: 100%;
+  .buttonWhatas a {
+    height: 60px;
+    padding: 0 ${theme.spacing * 4}px;
+    background: #27ae60;
+    font-size: 14px;
+    line-height: 20px;
+    min-width: 160px;
+    cursor: pointer;
+    color: #ffffff;
+    display: inline-block;
+    border: 0;
     display: flex;
-    justify-content: flex-end;
-    padding-right: 24px;
-    transform: translateY(125px);
-    position: relative;
-    z-index: 41;
-    a {
-      height: 60px;
-      padding: 0 ${theme.spacing * 4}px;
-      background: #27ae60;
-      font-size: 14px;
-      line-height: 60px;
-      min-width: 160px;
-      cursor: pointer;
-      color: #ffffff;
-      display: inline-block;
-      border: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 30px;
-      text-decoration: none;
-      &:before {
-        content: "";
-        width: 25px;
-        height: 25px;
-        background: url(/whatsapp-ico.svg);
-        background-size: cover;
-        margin: 0 4px;
-      }
-    }
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    text-decoration: none;
   }
+
   .iconsGrid .row {
-    displey: flex;
+    display: flex;
     margin: auto;
     justify-content: center;
   }
+
   .iconsGrid {
-    displey: flex;
+    display: flex;
     margin: auto;
     justify-content: center;
   }
@@ -98,10 +71,9 @@ export const Container = styled.div`
     padding: ${theme.spacing * 8}px 48px;
     max-width: 706px;
   }
-  @media (max-width: 768px) {
-    /* padding: ${theme.spacing * 4}px; */
-    width: 100%;
 
+  @media (max-width: 768px) {
+    width: 100%;
     #firstParagraph {
       margin-top: 40px !important;
     }
@@ -130,9 +102,7 @@ export const Row = styled.div`
 `;
 
 export const TitleSection = styled.h1`
-  /* max-width: 650px; */
   width: 100%;
-  /* padding-left: 70px; */
   margin: 0 0 ${theme.spacing}px;
   color: ${(props) => (props.light ? "#ffffff" : theme.textColor)};
   display: block;
@@ -174,8 +144,6 @@ export const TextSection = styled.div`
   font-size: 21px;
   line-height: 1.5;
   font-weight: 300;
-  /* padding-left: 70px;
-  padding-right: 70px; */
 `;
 
 export const EstudoCatadores = styled.a`
@@ -183,7 +151,7 @@ export const EstudoCatadores = styled.a`
   padding: 0 6px;
   background: #1182c6;
   font-size: 14px;
-  line-height: 60px;
+  line-height: 20px;
   min-width: 160px;
   cursor: pointer;
   color: #ffffff;
@@ -212,7 +180,7 @@ export const ProjetoTecnico = styled.a`
   padding: 0 6px;
   background: #11c66a;
   font-size: 14px;
-  line-height: 60px;
+  line-height: 20px;
   min-width: 160px;
   cursor: pointer;
   color: #ffffff;
@@ -240,7 +208,7 @@ export const LivroCatadores = styled.a`
   padding: 0 6px;
   background: #006400;
   font-size: 14px;
-  line-height: 60px;
+  line-height: 20px;
   min-width: 160px;
   cursor: pointer;
   color: #ffffff;
@@ -267,10 +235,10 @@ export const LivroCatadores = styled.a`
 
 export const EstacaoLink = styled.a`
   height: 60px;
-  padding: 0 6px;
+  padding: 0 10px;
   background: #11c66a;
   font-size: 20px;
-  line-height: 60px;
+  line-height: 20px;
   min-width: 160px;
   cursor: pointer;
   color: #ffffff;
@@ -293,10 +261,10 @@ export const EstacaoLink = styled.a`
 `;
 export const BueirosLink = styled.a`
   height: 60px;
-  padding: 0 6px;
+  padding: 0 10px;
   background: #1182c6;
   font-size: 20px;
-  line-height: 60px;
+  line-height: 20px;
   min-width: 160px;
   cursor: pointer;
   color: #ffffff;
@@ -316,4 +284,73 @@ export const BueirosLink = styled.a`
   .icon-estacao {
     margin: 2px 10px 0px 5px;
   }
+`;
+
+export const FluvioLink = styled.a`
+  height: 60px;
+  padding: 0 10px;
+  background: #1182c6;
+  font-size: 20px;
+  line-height: 20px;
+  min-width: 160px;
+  cursor: pointer;
+  color: #ffffff;
+  display: inline-block;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  text-decoration: none;
+
+  & svg {
+    font-size: 25px;
+    margin-right: 4px;
+  }
+
+  .icon-estacao {
+    margin: 2px 10px 0px 5px;
+  }
+`;
+
+export const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 30px;
+
+  @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  @media (max-width: 380px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 30px;
+  }
+`;
+
+export const IconTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
 `;

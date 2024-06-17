@@ -9,6 +9,7 @@ import Obra from "../Pages/Site/Obra";
 import PlantaoSocial from "../Pages/Site/PlantaoSocial";
 import ProjetoSocioambiental from "../Pages/Site/ProjetoSocioambiental";
 import ComplexoMauricioMedeiros from "../Pages/Site/ComplexoMauricioMedeiros";
+import Fluviometros from "../Pages/Site/Fluviometros";
 import ProjetoTrabalhoTecnico from "../Pages/Site/ProjetoTrabalhoTecnico";
 import EstudoCatadores from "../Pages/Site/EstudoCatadores";
 import Residuos from "../Pages/Site/Residuos";
@@ -48,6 +49,7 @@ const Routes = () => {
         path="/complexo-mauricio"
         component={ComplexoMauricioMedeiros}
       />
+      <Route exact path="/fluviometros" component={Fluviometros} />
       <Route
         exact
         path="/projeto-socioambiental"

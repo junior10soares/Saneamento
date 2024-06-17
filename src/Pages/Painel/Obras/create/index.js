@@ -1,17 +1,17 @@
 import { useState, useCallback, useEffect, useRef } from "react";
-import {Link, useHistory} from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import MapComponent from "../../../../components/FormMap";
 import DashboardLayout from "../../../../components/DashboardLayout";
 import DashboardButton from "../../../../components/DashboardButton";
 import FlatButton from "../../../../components/FlatButton";
 import convertToBase64 from "../../../../helpers/convertToBase64";
-import {notify} from "../../../../Notification";
+import { notify } from "../../../../Notification";
 import { Editor } from "@tinymce/tinymce-react";
 import { Delete } from "@material-ui/icons";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import StepConnector from "@material-ui/core/StepConnector";
-import StepLabel from "@material-ui/core/StepLabel"
+import StepLabel from "@material-ui/core/StepLabel";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { ReactComponent as ListIcon } from "../../../../assets/public/list-icon.svg";
@@ -36,8 +36,6 @@ import {
   ErrorLabel,
 } from "../../../../styles/dashboard/create/obras";
 
-
-
 export default function ObrasCreate() {
   const router = useHistory();
 
@@ -52,15 +50,15 @@ export default function ObrasCreate() {
   const [location, setLocation] = useState({ lat: "", lng: "" });
   const [categories, setCategories] = useState([]);
   const imageRef = useRef(null);
-  const docRef =  useRef(null);
+  const docRef = useRef(null);
 
   const categoriesRequest = useCallback(() => {
-    request.get('work-category').then(({ data }) => setCategories(data.data));
-   }, [])
+    request.get("work-category").then(({ data }) => setCategories(data.data));
+  }, []);
 
-   useEffect(() => {
+  useEffect(() => {
     categoriesRequest();
-   }, [categoriesRequest])
+  }, [categoriesRequest]);
 
   function getSteps() {
     return [
@@ -128,7 +126,6 @@ export default function ObrasCreate() {
     setEditorValue(content);
   };
 
-
   const { register, handleSubmit, setValue, errors } = useForm();
 
   const handleStep = (step) => () => {
@@ -148,7 +145,6 @@ export default function ObrasCreate() {
     [setValue, location]
   );
 
-
   const Connector = withStyles({
     active: {
       "& $line": {
@@ -167,52 +163,46 @@ export default function ObrasCreate() {
       borderRadius: 1,
     },
   })(StepConnector);
-  const onSubmit = useCallback(
-    async (data) => {
-      try {
-        setLoading(true);
+  const onSubmit = useCallback(async (data) => {
+    try {
+      setLoading(true);
 
-        const create =  {
-          name: data.name,
-          description: data.description,
-          whatsapp: data.whatsapp,
-          whatsapp_active: data.whatsapp_active,
-          work_categories_uuid: data.work_categories_uuid,
-          work_fase: data.work_fase,
-          img: uploadedImage,
-        }    
+      const create = {
+        name: data.name,
+        description: data.description,
+        whatsapp: data.whatsapp,
+        whatsapp_active: data.whatsapp_active,
+        work_categories_uuid: data.work_categories_uuid,
+        work_fase: data.work_fase,
+        img: uploadedImage,
+      };
 
-             const response = await request.post('work', create);
-        
-             const coordinate = {
-              works_uuid: response.data.data.uuid,
-              name: data.name,
-              long: location.lng,
-              lat: location.lat,
-              reference: "reference",
-             }
-             
-           request.post('work-coordinate', coordinate);
+      const response = await request.post("work", create);
 
-     
+      const coordinate = {
+        works_uuid: response.data.data.uuid,
+        name: data.name,
+        long: location.lng,
+        lat: location.lat,
+        reference: "reference",
+      };
 
-        if(await response.status === 200 || await response.status === 201) {
-          notify('success', 'Obra cadastrada com sucesso!');
-        }
-        
-        router.push("/painel/obras");
-      } catch (error) {
-        console.log(error);
-        setLoading(false);
-        notify('error', 'Oops! Houve um erro ao cadastrar, tente novamente!');
-        
+      request.post("work-coordinate", coordinate);
+
+      if ((await response.status) === 200 || (await response.status) === 201) {
+        notify("success", "Obra cadastrada com sucesso!");
       }
-    },
-    []
-  );
-  
-  console.log(location.lat)
-  console.log(location.lng)
+
+      router.push("/painel/obras");
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+      notify("error", "Oops! Houve um erro ao cadastrar, tente novamente!");
+    }
+  }, []);
+
+  console.log(location.lat);
+  console.log(location.lng);
 
   return (
     <DashboardLayout title="Obras">
@@ -257,10 +247,10 @@ export default function ObrasCreate() {
             </FormItem>
           </FormItem>
 
-          <FormItem style={{ marginLeft: '10px'}}>
-          <input type="text" hidden name="description" ref={register}  />
+          <FormItem style={{ marginLeft: "10px" }}>
+            <input type="text" hidden name="description" ref={register} />
             <Editor
-              apiKey="jmxkgsh5p1wvnnjxdghns4la6w678kpcz905navyed34m8t6"
+              apiKey="jtrh95yzmoucpabutmdxdp7qvl9uoxn8u2f31jjxod4b7z4s"
               init={{
                 height: 400,
                 menubar: false,
@@ -370,8 +360,6 @@ export default function ObrasCreate() {
             </Stepper>
           </ConstructionProgressContainer>
 
-
-
           {/* <AddVideoContainer>
             <h3>Vídeos</h3>
             <div style={{ display: "flex", flexDirection: "row" }}>
@@ -382,8 +370,6 @@ export default function ObrasCreate() {
 
             <Spacer size={60} />
           </AddVideoContainer> */}
-
-
 
           <MapContainer>
             <input
@@ -404,23 +390,25 @@ export default function ObrasCreate() {
             <h3>Documentos da Obra</h3>
             <FormItem column>
               <FileInput
-             name="work_documents"
-             id="work_documents"
-             type="file"
-             accept=".pdf"
-             ref={register({ required: "Documento obrigatório" })}
-             onChange={handleFileChange}
-             title={
-              uploadedDocuments ? uploadedDocuments.name : "Selecione o arquivo..."
-             }
-             textButton="Selecionar"
-              />             
+                name="work_documents"
+                id="work_documents"
+                type="file"
+                accept=".pdf"
+                ref={register({ required: "Documento obrigatório" })}
+                onChange={handleFileChange}
+                title={
+                  uploadedDocuments
+                    ? uploadedDocuments.name
+                    : "Selecione o arquivo..."
+                }
+                textButton="Selecionar"
+              />
               <ErrorMessage
                 errors={errors}
                 name="work_documents"
                 render={({ message }) => <ErrorLabel>{message}</ErrorLabel>}
               />
-            </FormItem>  
+            </FormItem>
           </DocumentsContainer>
 
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
