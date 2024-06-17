@@ -13,7 +13,7 @@ export default function Charts() {
         { series: [0], label: 'Pavimentação', solidFill: '#808080' },
         { series: [0], label: 'Iluminação', solidFill: '#800080' },
         { series: [0], label: 'Sinalização', solidFill: '#FF5733' }
-    ];
+    ]
     const [state, setState] = useState({
         options: {
             chart: {
